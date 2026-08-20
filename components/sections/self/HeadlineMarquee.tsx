@@ -1,0 +1,49 @@
+const items = [
+"Social positioning",
+"Personal branding",
+"The reveal framework",
+"8+ years of mastery",
+];
+
+export default function HeadlineMarquee() {
+ // Render the items 4× inside the track so the seamless -50% loop has enough width
+ const set = items.flatMap((it, i) => [it, i === items.length - 1 ? null :"•"]);
+ const doubled = [...set, ...set];
+
+ return (
+ <div
+ data-theme="dark"
+ className="relative overflow-hidden py-1 md:py-2"
+ style={{
+ maskImage:
+"linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%)",
+ WebkitMaskImage:
+"linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%)",
+ }}
+ >
+ <div
+ className="marquee-track flex w-max items-center gap-x-12 md:gap-x-16"
+ style={{"--marquee-duration":"55s"} as React.CSSProperties}
+ >
+ {doubled.map((it, i) =>
+ it ==="•"? (
+ <span
+ key={i}
+ aria-hidden
+ className="text-[clamp(48px,6vw,88px)] text-bone/40"
+ >
+ •
+ </span>
+ ) : it ? (
+ <span
+ key={i}
+ className="font-display text-[clamp(48px,6vw,88px)] font-normal uppercase tracking-[0.12em] text-bone/90"
+ >
+ {it}
+ </span>
+ ) : null
+ )}
+ </div>
+ </div>
+ );
+}

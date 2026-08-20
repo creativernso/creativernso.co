@@ -1,0 +1,333 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #141414;
+  --ink-2: #1f1f1f;
+  --ink-3: #2a2a2a;
+  --bone: #f5f2ec;
+  --bone-2: #efebe2;
+  --paper: #f8f6f1;
+  --cream: #fafaf6;
+  --muted: #807a70;
+  --muted-2: #a8a29a;
+  --muted-3: #c9c4bb;
+  --gold: #c49a55;
+  --gold-2: #d8b477;
+  --gold-ember: #e6a95b;
+  --rule-light: rgba(0, 0, 0, 0.08);
+  --rule-dark: rgba(255, 255, 255, 0.08);
+}
+
+html,
+body {
+  background: var(--ink);
+  color: var(--bone);
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Site-wide background — solid black */
+.bg-site,
+body {
+  background-color: #000000;
+}
+
+/* =====================================================================
+   SECTION SNAP SCROLLING
+   Each major section snaps to the top of the viewport on scroll —
+   "you don't see the page scroll, only section changes".
+   Uses `proximity` (soft snap) so small sections don't trap the user.
+   ===================================================================== */
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+  /* Account for the fixed nav so scroll-snap targets don't land hidden
+     behind it (and so window.scrollTo(0,0) actually settles at 0). */
+  scroll-padding-top: 100px;
+}
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 120px;
+  }
+}
+
+main > section,
+main > div > section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+  }
+}
+
+/* Hide native scrollbar on the document */
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+body {
+  scrollbar-width: none;
+}
+
+/* Universal tactile press feedback, applies to anything with [data-press] */
+[data-press] {
+  transition: transform 120ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+[data-press]:active {
+  transform: scale(0.97);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-press] {
+    transition: none;
+  }
+  [data-press]:active {
+    transform: none;
+  }
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--bone);
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@media (pointer: fine) {
+  * {
+    cursor: none;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+}
+
+.meta {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: lowercase;
+  font-weight: 400;
+}
+
+.display {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+}
+
+.hairline-light {
+  height: 1px;
+  background: var(--rule-light);
+}
+.hairline-dark {
+  height: 1px;
+  background: var(--rule-dark);
+}
+
+.grain {
+  position: fixed;
+  /* Extend beyond viewport so animation shifts don't expose edges */
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.12;
+  mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size: 220px 220px;
+  animation: grain-shift 8s steps(8) infinite;
+}
+
+@keyframes grain-shift {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0%);
+  }
+  70% {
+    transform: translate(0%, 15%);
+  }
+  80% {
+    transform: translate(3%, 35%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grain {
+    animation: none;
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.96); }
+}
+
+@keyframes marquee-x {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+/* Typewriter — wrapper width grows so the caret tracks the typing edge */
+@keyframes typewriter-grow {
+  0%   { max-width: 0; }
+  25%  { max-width: 40ch; }   /* fully revealed (larger window for typing) */
+  82%  { max-width: 40ch; }   /* longer hold for reading */
+  97%  { max-width: 0; }       /* erase right-to-left */
+  100% { max-width: 0; }
+}
+
+@keyframes caret-blink {
+  0%, 49%   { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.typewriter-wrapper {
+  display: inline-flex;
+  align-items: baseline;
+  overflow: hidden;
+  max-width: 0;
+  vertical-align: bottom;
+  animation: typewriter-grow forwards;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.typewriter-text {
+  white-space: nowrap;
+}
+
+.typewriter-caret {
+  display: inline-block;
+  width: 0.05em;
+  height: 0.85em;
+  background: currentColor;
+  margin-left: 0.1em;
+  flex-shrink: 0;
+  animation: caret-blink 0.7s infinite step-end;
+  align-self: center;
+}
+
+/* Same caret style for inline paragraph typewriter (BrandQuote) */
+.typing-caret {
+  display: inline-block;
+  width: 0.05em;
+  height: 0.85em;
+  background: currentColor;
+  margin-left: 0.08em;
+  vertical-align: text-bottom;
+  animation: caret-blink 0.7s infinite step-end;
+}
+
+/* Cinematic Ken Burns — slow continuous breathing scale */
+@keyframes ken-burns {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.hero-image-breath {
+  animation: ken-burns 22s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+@keyframes hero-image-entrance {
+  from { transform: scale(1.08); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+.hero-image-entrance {
+  animation: hero-image-entrance 2.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: center center;
+}
+
+.marquee-track {
+  animation: marquee-x var(--marquee-duration, 60s) linear infinite;
+  will-change: transform;
+}
+.marquee-track[data-direction="right"] {
+  animation-direction: reverse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none !important; }
+}
+
+.pulse-dot {
+  animation: pulse-soft 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes glow-ring {
+  0%, 100% {
+    box-shadow: 0 0 60px 0px rgba(230, 169, 91, 0.55),
+                0 0 120px 0px rgba(230, 169, 91, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 90px 0px rgba(230, 169, 91, 0.75),
+                0 0 180px 0px rgba(230, 169, 91, 0.35);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
