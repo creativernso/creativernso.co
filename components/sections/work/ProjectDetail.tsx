@@ -79,7 +79,7 @@ export default function ProjectDetail({
             </h2>
           </div>
         </div>
-        <div className="mt-6 space-y-5 text-[20px] leading-relaxed text-muted-2 md:text-[24px]">
+        <div className="mt-6 space-y-5 text-[15px] leading-relaxed text-muted-2 md:text-[24px]">
           {(p.overview ?? []).map((para, i) => (
             <p key={i}>{para}</p>
           ))}
