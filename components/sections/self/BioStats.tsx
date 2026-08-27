@@ -19,9 +19,9 @@ export default function BioStats() {
  className="relative overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 p-5 md:p-10"
  style={{ boxShadow:"inset 0 0 0 1px rgba(255,255,255,0.14)"}}
  >
- <div className="grid grid-cols-12 gap-x-8 gap-y-10">
+ <div className="md:grid md:grid-cols-12 md:gap-x-8">
  {/* Portrait — fills row height on desktop, aspect on mobile */}
- <div className="col-span-12 md:col-span-5">
+ <div className="mb-8 md:col-span-5 md:mb-0">
  <div className="relative aspect-square overflow-hidden bg-black md:aspect-auto md:h-full">
  <Image
  src="/about-portrait.png"
@@ -34,7 +34,7 @@ export default function BioStats() {
  </div>
 
  {/* Bio + stats + cta */}
- <div className="col-span-12 md:col-span-7">
+ <div className="md:col-span-7">
  <h2 className="font-display text-bone text-[clamp(30px,4vw,52px)] font-bold leading-[1.1] tracking-[-0.04em]">
  I didn&rsquo;t choose branding.
  <br />
