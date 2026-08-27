@@ -30,7 +30,7 @@ export default function WorkFilter({
  <>
  {/* Filter tabs */}
  <LayoutGroup>
- <div className="mt-12 flex flex-wrap items-center gap-6 md:mt-14 md:gap-10">
+ <div className="mt-12 flex flex-wrap items-center gap-3 md:mt-14 md:gap-10">
  {filters.map((f) => {
  const isActive = f.key === active;
  return (
@@ -38,7 +38,7 @@ export default function WorkFilter({
  key={f.key}
  onClick={() => setActive(f.key)}
  data-cursor="hover"
- className={`relative isolate text-[18px] transition-colors md:text-[20px] ${
+ className={`relative isolate text-[13px] transition-colors md:text-[20px] ${
  isActive ?"text-bone":"text-bone/65 hover:text-bone"
  }`}
  >
@@ -51,7 +51,7 @@ export default function WorkFilter({
  )}
  <span
  className={`relative block ${
- isActive ?"px-6 py-3":"py-3"
+ isActive ?"px-3 py-1.5 md:px-6 md:py-3":"py-1.5 md:py-3"
  }`}
  >
  {f.label}
