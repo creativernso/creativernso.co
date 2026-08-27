@@ -68,7 +68,7 @@ export default function SelectedWork({ projects }: { projects: Project[] }) {
  alt={p.title}
  fill
  sizes="(min-width: 1400px) 620px, (min-width: 768px) 45vw, 90vw"
- quality={85}
+ quality={92}
  className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
  />
  </div>
