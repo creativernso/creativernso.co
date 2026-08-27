@@ -98,18 +98,18 @@ export default function ProjectDetail({
           </div>
         )}
 
-        {/* Gallery 2 columns */}
-        <div className="mt-6 grid grid-cols-1 gap-4 md:mt-8 md:grid-cols-2 md:gap-6">
+        {/* Gallery — one full-width image per row, like the hero */}
+        <div className="mt-6 flex flex-col gap-4 md:mt-8 md:gap-6">
           {(p.gallery ?? []).map((src, idx) => (
             <div
               key={idx}
-              className="relative aspect-[4/3] overflow-hidden bg-black/30"
+              className="relative aspect-[16/10] overflow-hidden bg-black/30"
             >
               <Image
                 src={src}
                 alt={`${p.title} detail ${idx + 1}`}
                 fill
-                sizes="(min-width: 768px) 45vw, 90vw"
+                sizes="(min-width: 768px) 80vw, 95vw"
                 className="object-cover"
               />
             </div>
