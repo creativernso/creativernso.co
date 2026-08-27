@@ -52,7 +52,7 @@ export default function ProjectDetail({
         </p>
 
         {/* Hero image */}
-        <div className="relative mt-10 aspect-[16/10] overflow-hidden bg-black/30 md:mt-12">
+        <div className="relative mt-10 aspect-[1400/714] overflow-hidden bg-black/30 md:mt-12">
           <Image
             src={p.hero}
             alt={p.title}
@@ -87,7 +87,7 @@ export default function ProjectDetail({
 
         {/* Feature image */}
         {p.feature && (
-          <div className="relative mt-16 aspect-[16/10] overflow-hidden bg-black/30 md:mt-20">
+          <div className="relative mt-16 aspect-[1400/714] overflow-hidden bg-black/30 md:mt-20">
             <Image
               src={p.feature}
               alt={`${p.title} feature`}
