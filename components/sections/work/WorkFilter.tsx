@@ -30,7 +30,7 @@ export default function WorkFilter({
  <>
  {/* Filter tabs */}
  <LayoutGroup>
- <div className="mt-12 flex flex-wrap items-center gap-3 md:mt-14 md:gap-10">
+ <div className="mt-5 flex flex-wrap items-center gap-3 md:mt-14 md:gap-10">
  {filters.map((f) => {
  const isActive = f.key === active;
  return (
