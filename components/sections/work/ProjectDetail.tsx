@@ -64,7 +64,7 @@ export default function ProjectDetail({
         </div>
 
         {/* Overview */}
-        <div className="mt-16 md:mt-20">
+        <div className="mt-10 md:mt-12">
           <div ref={overviewRef}>
             <h2
               ref={overview.textRef}
@@ -79,7 +79,7 @@ export default function ProjectDetail({
             </h2>
           </div>
         </div>
-        <div className="mt-6 space-y-5 text-[15px] leading-relaxed text-muted-2 md:text-[24px]">
+        <div className="mt-4 space-y-5 text-[15px] leading-relaxed text-muted-2 md:text-[24px]">
           {(p.overview ?? []).map((para, i) => (
             <p key={i}>{para}</p>
           ))}
