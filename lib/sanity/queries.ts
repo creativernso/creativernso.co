@@ -15,7 +15,7 @@ const projectFields = groq`
   date,
   tags,
   year,
-  "image": image.asset->url + "?w=1300&q=82&auto=format",
+  "image": image.asset->url + "?w=1600&q=85&auto=format",
   "hero": hero.asset->url + "?w=2600&q=82&auto=format",
   "feature": feature.asset->url + "?w=2600&q=82&auto=format",
   "gallery": gallery[]{ "url": asset->url + "?w=2600&q=82&auto=format" }.url,
