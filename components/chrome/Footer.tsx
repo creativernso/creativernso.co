@@ -2,7 +2,7 @@ import Link from"next/link";
 
 const socials = [
  {
- href:"mailto:hello@ernsoazor.com",
+ href:"mailto:hey@creativernso.co",
  label:"Email",
  external: false,
  icon: (
@@ -23,7 +23,29 @@ const socials = [
  ),
  },
  {
- href:"https://linkedin.com/in/ernso-azor",
+ href:"https://www.instagram.com/creativernso/",
+ label:"Instagram",
+ external: true,
+ icon: (
+ <svg
+ width="16"
+ height="16"
+ viewBox="0 0 24 24"
+ fill="none"
+ stroke="currentColor"
+ strokeWidth="1.7"
+ strokeLinecap="round"
+ strokeLinejoin="round"
+ aria-hidden
+ >
+ <rect x="2"y="2"width="20"height="20"rx="5"ry="5"/>
+ <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+ <line x1="17.5"x2="17.51"y1="6.5"y2="6.5"/>
+ </svg>
+ ),
+ },
+ {
+ href:"https://www.linkedin.com/in/ernsoazor/",
  label:"LinkedIn",
  external: true,
  icon: (
@@ -39,7 +61,20 @@ const socials = [
  ),
  },
  {
- href:"https://x.com/creativernso",
+ href:"https://www.behance.net/ernsoazor7",
+ label:"Behance",
+ external: true,
+ icon: (
+ <span
+ aria-hidden
+ className="font-display text-[11px] font-bold leading-none tracking-tight"
+ >
+ Bē
+ </span>
+ ),
+ },
+ {
+ href:"https://x.com/Creativ_ernso",
  label:"X",
  external: true,
  icon: (
@@ -62,12 +97,12 @@ export default function Footer() {
  <div className="mx-auto max-w-[1400px] px-6 md:px-12">
  <div
  className="relative overflow-hidden bg-black px-6 py-12 md:px-12 md:py-14"
- style={{ boxShadow:"inset 0 0 0 0.5px rgba(255,255,255,0.08)"}}
+ style={{ boxShadow:"inset 0 0 0 1px rgba(255,255,255,0.14)"}}
  >
  <div className="grid grid-cols-12 items-end gap-x-6 gap-y-10">
  {/* Left, Let's Connect + socials */}
  <div className="col-span-12 md:col-span-6">
- <h2 className="font-display text-bone text-[clamp(34px,4.6vw,56px)] font-normal leading-[1.02] tracking-[-0.04em]">
+ <h2 className="font-display text-bone text-[clamp(34px,4.6vw,56px)] font-bold leading-[1.02] tracking-[-0.04em]">
  Let&rsquo;s Connect
  </h2>
 

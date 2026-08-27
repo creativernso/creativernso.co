@@ -84,7 +84,7 @@ export default function WorkFilter({
  <article
  className="overflow-hidden bg-black/70 p-3 backdrop-blur-2xl md:p-4"
  style={{
- boxShadow:"inset 0 0 0 0.5px rgba(255,255,255,0.08)",
+ boxShadow:"inset 0 0 0 1px rgba(255,255,255,0.14)",
  }}
  >
  {/* Image — inset inside the outer container */}
@@ -100,7 +100,7 @@ export default function WorkFilter({
 
  {/* Title + tag pills row — same line on all viewports */}
  <div className="mt-4 flex flex-wrap items-center justify-between gap-3 px-2 pb-1 md:mt-5">
- <h3 className="font-display text-[16px] font-normal leading-tight text-bone md:text-[20px]">
+ <h3 className="font-display text-[16px] font-bold leading-tight text-bone md:text-[20px]">
  {p.title}
  </h3>
  <ul className="flex flex-wrap items-center gap-1.5 md:gap-2">
@@ -108,7 +108,7 @@ export default function WorkFilter({
  <li
  key={tag}
  className="px-2.5 py-1 text-[10px] font-medium text-bone/85 md:px-3.5 md:py-1.5 md:text-[12px]"
- style={{ boxShadow:"inset 0 0 0 0.5px rgba(255,255,255,0.08)"}}
+ style={{ boxShadow:"inset 0 0 0 1px rgba(255,255,255,0.14)"}}
  >
  {tag}
  </li>

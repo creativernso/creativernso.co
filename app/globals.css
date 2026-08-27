@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --ink: #141414;
-  --ink-2: #1f1f1f;
-  --ink-3: #2a2a2a;
+  --ink: #151516;
+  --ink-2: #2a2c2e;
+  --ink-3: #35373a;
   --bone: #f5f2ec;
   --bone-2: #efebe2;
   --paper: #f8f6f1;
@@ -32,10 +32,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Site-wide background — solid black */
+/* Site-wide background — solid dark */
 .bg-site,
 body {
-  background-color: #000000;
+  background-color: #151516;
 }
 
 /* =====================================================================

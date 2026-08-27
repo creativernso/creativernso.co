@@ -19,7 +19,7 @@ export default async function WorkPage() {
  <div className="mx-auto max-w-[1400px] px-6 md:px-12">
  {/* Header */}
  <header>
- <h1 className="font-display text-bone text-[clamp(36px,5vw,64px)] font-normal leading-[1.05] tracking-[-0.04em]">
+ <h1 className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]">
  Work that reveals.
  </h1>
  </header>

@@ -64,30 +64,29 @@ export default function Hero() {
  const buttonStart = subtitleStart + 0.3;
 
  return (
- <section id="top"data-theme="dark"className="relative">
- {/* Outer wrapper — same width as Nav + page content (1400px) */}
- <div className="mx-auto max-w-[1400px] px-6 pb-4 pt-4 md:px-12 md:pb-6 md:pt-6">
- {/* The rectangle frame */}
- <div className="relative overflow-hidden">
+ <section
+ id="top"
+ data-theme="dark"
+ className="relative -mt-[100px] h-[100svh] w-full py-4 md:-mt-[120px] md:py-10"
+ >
+ <div className="mx-auto h-full max-w-[1400px] px-0">
+ <div className="relative h-full w-full overflow-hidden bg-black">
  {/* ============== DESKTOP ============== */}
- <div className="relative hidden w-full md:block">
- <div className="hero-image-entrance relative h-full w-full">
- <div className="hero-image-breath relative h-full w-full">
+ <div className="relative hidden h-full w-full md:block">
  <Image
  src={heroDesktop}
  alt="Ernso Azor"
+ fill
  sizes="100vw"
  priority
  placeholder="blur"
- className="h-auto w-full"
+ className="object-cover"
  />
- </div>
- </div>
 
- {/* Text overlay — anchored toward the bottom-left of the frame */}
- <div className="absolute inset-0 mx-auto flex max-w-[1400px] items-end px-6 pb-[6%] md:px-12">
- <div className="max-w-[720px]">
- <h1 className="font-display text-bone text-[clamp(40px,4.8vw,72px)] font-normal leading-[1.05] tracking-[-0.04em]">
+ {/* Text overlay — vertically centered (shifted down), left-aligned */}
+ <div className="absolute inset-0 flex translate-y-12 items-center px-6 md:translate-y-16 md:px-12">
+ <div className="max-w-[720px] lg:max-w-[1000px] xl:max-w-[1200px]">
+ <h1 className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]">
  <span className="block">{line1}</span>
  <span className="block font-bold text-bone/30">
  <RotatingTypewriter
@@ -109,7 +108,7 @@ export default function Hero() {
  data-press
  className="group inline-flex items-center gap-3 bg-black/30 px-9 py-4 text-[12px] font-medium uppercase tracking-[0.22em] text-bone backdrop-blur-sm transition-colors hover:bg-bone hover:text-black"
  style={{
- boxShadow:"inset 0 0 0 1px rgba(255,255,255,0.08)",
+ boxShadow:"inset 0 0 0 1px rgba(255,255,255,0.22)",
  }}
  >
  <span>Initiate</span>
@@ -126,23 +125,20 @@ export default function Hero() {
  </div>
 
  {/* ============== MOBILE ============== */}
- <div className="relative w-full md:hidden">
- <div className="hero-image-entrance relative h-full w-full">
- <div className="hero-image-breath relative h-full w-full">
+ <div className="relative h-full w-full md:hidden">
  <Image
  src={heroMobile}
  alt="Ernso Azor"
+ fill
  sizes="100vw"
  priority
  placeholder="blur"
- className="h-auto w-full"
+ className="object-cover"
  />
- </div>
- </div>
 
  {/* Text overlay — anchored toward the top of the image, below the nav */}
- <div className="absolute inset-x-0 top-0 flex flex-col items-center px-6 pt-[calc(100px+5vh)] text-center">
- <h1 className="font-display text-bone text-[30px] font-normal leading-[1.1] tracking-[-0.04em]">
+ <div className="absolute inset-x-0 top-0 flex flex-col items-center px-6 pt-[calc(100px+9vh)] text-center">
+ <h1 className="font-display text-bone text-[30px] font-bold leading-[1.1] tracking-[-0.04em]">
  <span className="block">{line1}</span>
  <span className="block font-bold text-bone/30">
  <RotatingTypewriter
@@ -164,7 +160,7 @@ export default function Hero() {
  data-press
  className="group inline-flex items-center gap-3 bg-black/30 px-10 py-3.5 text-[11px] font-medium uppercase tracking-[0.22em] text-bone backdrop-blur-sm transition-colors hover:bg-bone hover:text-black"
  style={{
- boxShadow:"inset 0 0 0 1px rgba(255,255,255,0.08)",
+ boxShadow:"inset 0 0 0 1px rgba(255,255,255,0.22)",
  }}
  >
  <span>Initiate</span>
@@ -179,10 +175,11 @@ export default function Hero() {
  </div>
  </div>
 
- {/* Outline overlay — matches the INITIATE button's border-bone/20 intensity */}
+ {/* Outline overlay — painted on top of the image, always visible */}
  <div
  aria-hidden
- className="pointer-events-none absolute inset-0 border border-bone/20"
+ className="pointer-events-none absolute inset-0 z-10"
+ style={{ boxShadow:"inset 0 0 0 1px rgba(255,255,255,0.14)"}}
  />
  </div>
  </div>

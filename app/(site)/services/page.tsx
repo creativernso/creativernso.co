@@ -62,7 +62,7 @@ export default function BeliefPage() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: EASE }}
-          className="font-display text-[clamp(32px,4.4vw,56px)] font-normal leading-[1.05] tracking-[-0.04em]"
+          className="font-display text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]"
         >
           <span className="text-bone">What </span>
           <span className="text-bone/35">I believe.</span>
@@ -163,7 +163,7 @@ export default function BeliefPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, ease: EASE }}
-          className="mt-24 font-display text-[clamp(26px,3.4vw,42px)] font-normal leading-[1.1] tracking-[-0.03em] text-bone md:mt-32"
+          className="mt-24 font-display text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.03em] text-bone md:mt-32"
         >
           The beliefs that never change.
         </motion.h2>
@@ -181,10 +181,10 @@ export default function BeliefPage() {
               transition={{ duration: 0.55, delay: i * 0.05, ease: EASE }}
               className="grid grid-cols-12 gap-x-6 gap-y-3 py-7 md:gap-x-10 md:py-9"
             >
-              <h3 className="col-span-12 font-display text-[16px] font-normal tracking-tight text-bone md:col-span-5 md:text-[19px]">
+              <h3 className="col-span-12 font-display text-[26px] font-bold tracking-tight text-bone md:col-span-5 md:text-[32px]">
                 {b.n}- {b.title}
               </h3>
-              <p className="col-span-12 max-w-[58ch] text-[13.5px] leading-[1.55] text-muted-2 md:col-span-7 md:text-[14.5px]">
+              <p className="col-span-12 text-[16px] leading-[1.55] text-bone md:col-span-7 md:text-[18px]">
                 {b.body}
               </p>
               {/* hairline under each row */}
@@ -199,7 +199,7 @@ export default function BeliefPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, ease: EASE }}
-          className="mt-24 font-display text-[clamp(26px,3.4vw,42px)] font-normal leading-[1.1] tracking-[-0.03em] md:mt-32"
+          className="mt-24 font-display text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.03em] md:mt-32"
         >
           <span className="text-bone">The </span>
           <span className="text-bone/30">REVEAL</span>
@@ -217,26 +217,26 @@ export default function BeliefPage() {
               transition={{ duration: 0.5, delay: i * 0.06, ease: EASE }}
               className="group grid grid-cols-12 items-center gap-x-4 bg-black/40 px-5 py-5 backdrop-blur-md transition-colors hover:bg-black/55 md:gap-x-8 md:px-8 md:py-7"
               style={{
-                boxShadow: "inset 0 0 0 0.5px rgba(255,255,255,0.08)",
+                boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)",
               }}
             >
               {/* Letter */}
               <div className="col-span-2 md:col-span-1">
-                <span className="font-display text-[clamp(32px,4.2vw,56px)] font-normal leading-none tracking-[-0.04em] text-bone">
+                <span className="font-display text-[clamp(32px,4.2vw,56px)] font-bold leading-none tracking-[-0.04em] text-bone">
                   {r.letter}
                 </span>
               </div>
 
               {/* Name (subtle / faded) */}
               <div className="col-span-4 md:col-span-4">
-                <span className="font-mono text-[12px] uppercase tracking-[0.32em] text-bone/30 transition-colors group-hover:text-bone/55 md:text-[14px] md:tracking-[0.42em]">
+                <span className="font-mono text-[48px] uppercase tracking-[0.32em] text-bone/30 transition-colors group-hover:text-bone/55 md:text-[56px] md:tracking-[0.42em]">
                   {r.name}
                 </span>
               </div>
 
               {/* Description */}
               <div className="col-span-6 md:col-span-7 md:text-right">
-                <span className="text-[12.5px] leading-snug text-bone/80 md:text-[15px]">
+                <span className="text-[25px] leading-snug text-bone/80 md:text-[30px]">
                   {r.desc}
                 </span>
               </div>
@@ -267,11 +267,11 @@ export default function BeliefPage() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.7, ease: EASE }}
           className="mt-16 bg-black/40 px-6 py-8 backdrop-blur-md md:mt-24 md:px-12 md:py-14"
-          style={{ boxShadow: "inset 0 0 0 0.5px rgba(255,255,255,0.08)" }}
+          style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
         >
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
             <div>
-              <h3 className="font-display text-[clamp(22px,2.6vw,34px)] font-normal leading-[1.1] tracking-[-0.03em] text-bone">
+              <h3 className="font-display text-[clamp(22px,2.6vw,34px)] font-bold leading-[1.1] tracking-[-0.03em] text-bone">
                 Let&rsquo;s build something
               </h3>
               <p className="mt-3 max-w-md text-[13.5px] leading-relaxed text-muted-2 md:text-[14.5px]">

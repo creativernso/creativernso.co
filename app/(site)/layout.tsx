@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from"next";
-import { Space_Grotesk, Instrument_Sans, JetBrains_Mono } from"next/font/google";
+import { JetBrains_Mono, Inter } from"next/font/google";
 import"../globals.css";
 import Nav from"@/components/chrome/Nav";
 import Footer from"@/components/chrome/Footer";
@@ -9,16 +9,16 @@ import Grain from"@/components/chrome/Grain";
 // import SmoothScroll from"@/components/chrome/SmoothScroll";
 import PageTransition from"@/components/chrome/PageTransition";
 
-const sans = Space_Grotesk({
+const sans = Inter({
  subsets: ["latin"],
  weight: ["300","400","500","600","700"],
  variable:"--font-sans",
  display:"swap",
 });
 
-const body = Instrument_Sans({
+const body = Inter({
  subsets: ["latin"],
- weight: ["400","500","600","700"],
+ weight: ["300","400","500","600","700"],
  variable:"--font-body",
  display:"swap",
 });
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
  title:"Ernso Azor. Revealing what was always there.",
  description:
 "Brand strategist & designer building identities across institutions, professionals and creators. One philosophy. Three worlds. No average.",
- metadataBase: new URL("https://ernsoazor.com"),
+ metadataBase: new URL("https://creativernso.co"),
  openGraph: {
  title:"Ernso Azor. Revealing what was always there.",
  description:"One philosophy. Three worlds. No average.",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
- themeColor:"#000000",
+ themeColor:"#151516",
  width:"device-width",
  initialScale: 1,
 };

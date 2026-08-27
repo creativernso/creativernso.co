@@ -1,9 +1,8 @@
-import Link from"next/link";
-import Image from"next/image";
 import { notFound } from"next/navigation";
 import { client } from"@/lib/sanity/client";
 import { projectsQuery } from"@/lib/sanity/queries";
 import type { Project } from"@/lib/content";
+import ProjectDetail from"@/components/sections/work/ProjectDetail";
 
 export async function generateStaticParams() {
  const projects = await client.fetch<Project[]>(projectsQuery);
@@ -27,124 +26,5 @@ export default async function ProjectPage({ params }: { params: { slug: string }
  const p = projects[index];
  const next = projects[(index + 1) % projects.length];
 
- return (
- <section
- data-theme="dark"
- className="relative min-h-screen bg-ink py-10 text-bone md:py-14"
- >
- <div className="mx-auto max-w-[1400px] px-6 md:px-12">
- {/* Top row Back + date */}
- <div className="flex items-center justify-between">
- <Link
- href="/work"
- data-cursor="hover"
- className="group inline-flex items-center gap-2 text-[14px] text-bone transition-colors hover:text-gold-ember"
- >
- <span
- aria-hidden
- className="transition-transform duration-500 ease-cinematic group-hover:-translate-x-0.5"
- >
- ←
- </span>
- <span>Back</span>
- </Link>
- <div className="font-mono text-[12px] text-muted-2">{p.date}</div>
- </div>
-
- {/* Hairline */}
- <div className="mt-6 h-px w-full bg-bone/15"/>
-
- {/* Title + subtitle */}
- <h1 className="mt-8 font-display text-bone text-[clamp(28px,3.6vw,44px)] font-normal leading-[1.1] tracking-[-0.04em]">
- {p.label}
- </h1>
- <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-muted-2 md:text-[16px]">
- {p.subtitle}
- </p>
-
- {/* Hero image */}
- <div className="relative mt-10 aspect-[16/10] overflow-hidden bg-black/30 md:mt-12">
- <Image
- src={p.hero}
- alt={p.title}
- fill
- sizes="(min-width: 768px) 80vw, 95vw"
- className="object-cover"
- priority
- />
- </div>
-
- {/* Overview */}
- <div className="mt-16 flex items-center gap-6 md:mt-20 md:gap-10">
- <h2 className="font-display text-bone text-[clamp(24px,3vw,36px)] font-normal tracking-[-0.04em]">
- The project overview
- </h2></div>
- <div className="mt-6 max-w-[60ch] space-y-5 text-[14.5px] leading-relaxed text-muted-2 md:text-[15px]">
- {p.overview.map((para, i) => (
- <p key={i}>{para}</p>
- ))}
- </div>
-
- {/* Feature image */}
- <div className="relative mt-16 aspect-[16/10] overflow-hidden bg-black/30 md:mt-20">
- <Image
- src={p.feature}
- alt={`${p.title} feature`}
- fill
- sizes="(min-width: 768px) 80vw, 95vw"
- className="object-cover"
- />
- </div>
-
- {/* Gallery 2 columns */}
- <div className="mt-6 grid grid-cols-1 gap-4 md:mt-8 md:grid-cols-2 md:gap-6">
- {p.gallery.map((src, idx) => (
- <div
- key={idx}
- className="relative aspect-[4/3] overflow-hidden bg-black/30"
- >
- <Image
- src={src}
- alt={`${p.title} detail ${idx + 1}`}
- fill
- sizes="(min-width: 768px) 45vw, 90vw"
- className="object-cover"
- />
- </div>
- ))}
- </div>
-
- {/* Next project card */}
- <div className="mt-20 overflow-hidden border border-bone/10 bg-black/30 backdrop-blur-md backdrop-saturate-100 p-5 md:mt-28 md:p-6">
- <div className="relative aspect-[16/10] overflow-hidden bg-black/30">
- <Image
- src={next.hero}
- alt={`${next.title} preview`}
- fill
- sizes="(min-width: 768px) 75vw, 90vw"
- className="object-cover"
- />
- </div>
- <div className="mt-5 flex flex-wrap items-center justify-between gap-4 px-1 md:mt-6 md:px-2">
- <div className="text-[13.5px] text-muted-2 md:text-[14px]">
- Brand Strategy &amp; UI/UX Website Design
- </div>
- <Link
- href={`/work/${next.slug}`}
- data-cursor="hover"
- className="group inline-flex items-center gap-2 border border-bone/20 px-6 py-2.5 text-[13.5px] font-medium text-bone transition-colors hover:bg-bone hover:text-black"
- >
- <span>Next</span>
- <span
- aria-hidden
- className="transition-transform duration-500 ease-cinematic group-hover:translate-x-0.5"
- >
- →
- </span>
- </Link>
- </div>
- </div>
- </div>
- </section>
- );
+ return <ProjectDetail p={p} next={next} />;
 }

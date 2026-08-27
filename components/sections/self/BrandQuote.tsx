@@ -99,7 +99,7 @@ export default function BrandQuote() {
  className="relative h-24 w-24 overflow-hidden md:h-28 md:w-28"
  style={{
  boxShadow:
-"0 0 0 3px rgba(255,255,255,0.08), 0 0 0 18px rgba(255,255,255,0.04)",
+"0 0 0 1px rgba(255,255,255,0.18), 0 0 0 18px rgba(255,255,255,0.04)",
  }}
  >
  <Image
@@ -115,11 +115,10 @@ export default function BrandQuote() {
 
  {/* Quote box */}
  <div
- className="relative overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 px-5 pb-8 pt-16 md:px-16 md:pb-16 md:pt-24"
- style={{ boxShadow:"inset 0 0 0 0.5px rgba(255,255,255,0.08)"}}
+ className="relative overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 px-0 pb-8 pt-16 md:pb-16 md:pt-24"
  >
  {/* Typewriter quote */}
- <p className="mx-auto max-w-3xl text-center font-display text-bone text-[clamp(18px,2vw,28px)] font-normal leading-[1.5] tracking-[-0.02em] md:[text-align:justify] md:">
+ <p className="text-center font-display text-bone text-[clamp(18px,2vw,26px)] font-normal leading-[1.5] tracking-[-0.02em] [text-wrap:pretty] md:[text-align:justify]">
  <TypingParagraph text={QUOTE} />
  </p>
 

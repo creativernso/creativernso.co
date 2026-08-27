@@ -5,10 +5,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        black: "#151516",
         ink: {
-          DEFAULT: "#141414",
-          2: "#1F1F1F",
-          3: "#2A2A2A",
+          DEFAULT: "#151516",
+          2: "#2A2C2E",
+          3: "#35373A",
         },
         bone: {
           DEFAULT: "#F5F2EC",

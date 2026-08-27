@@ -1,138 +1,122 @@
 "use client";
 
-import Link from"next/link";
-import { useEffect, useState } from"react";
-import { AnimatePresence, motion } from"framer-motion";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const items = [
- { label:"Self", href:"/"},
- { label:"Story", href:"/about"},
- { label:"Belief", href:"/services"},
- { label:"Creations", href:"/work"},
+  { label: "Self", href: "/" },
+  { label: "Story", href: "/about" },
+  { label: "Belief", href: "/services" },
+  { label: "Creations", href: "/work" },
 ] as const;
 
-const EASE = [0.16, 1, 0.3, 1] as const;
-
 export default function Nav() {
- const [open, setOpen] = useState(false);
- const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [atTop, setAtTop] = useState(true);
+  const pathname = usePathname();
 
- useEffect(() => {
- const onScroll = () => setScrolled(window.scrollY > 32);
- onScroll();
- window.addEventListener("scroll", onScroll, { passive: true });
- return () => window.removeEventListener("scroll", onScroll);
- }, []);
+  useEffect(() => {
+    const onScroll = () => setAtTop(window.scrollY < 50);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
- return (
- <>
- <header className="fixed inset-x-0 top-0 z-50 flex h-[100px] items-center md:h-[120px]">
- <div className="relative mx-auto flex w-full max-w-[1400px] items-center justify-between px-12 md:px-24">
- {/* Pill background — fades in on scroll, aligned with the Hero frame edges */}
- <span
- aria-hidden
- className={`pointer-events-none absolute inset-x-6 -inset-y-3 bg-black/30 backdrop-blur-lg transition-opacity duration-[900ms] md:inset-x-12 md:-inset-y-4 ${
- scrolled ?"opacity-100":"opacity-0"
- }`}
- style={{
- boxShadow:"inset 0 0 0 1px rgba(255,255,255,0.08)",
- transitionTimingFunction:"cubic-bezier(0.22, 1, 0.36, 1)",
- }}
- />
+  useEffect(() => {
+    if (!open) return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [open]);
 
- <Link
- href="/"
- scroll={false}
- data-cursor="hover"
- className="relative z-10 font-display text-[18px] font-semibold tracking-tight text-bone md:text-[19px]"
- >
- Ernso Azor
- </Link>
+  const chromeVisible = open || atTop;
 
- <nav className="relative z-10 hidden items-center gap-8 md:flex">
- {items.map((item) => (
- <Link
- key={item.label}
- href={item.href}
- scroll={false}
- data-cursor="hover"
- className="text-[12px] font-medium uppercase tracking-[0.18em] text-bone/85 transition-colors hover:text-bone"
- >
- {item.label}
- </Link>
- ))}
- <Link
- href="/#contact"
- data-cursor="hover"
- data-press
- className="group inline-flex items-center gap-2 border border-bone/20 px-5 py-2.5 text-[12px] font-medium uppercase tracking-[0.18em] text-bone transition-colors hover:bg-bone hover:text-black"
- >
- <span>Initiate</span>
- <span
- aria-hidden
- className="transition-transform duration-200 ease-out group-hover:translate-x-0.5"
- >
- ↗
- </span>
- </Link>
- </nav>
+  return (
+    <>
+      <header
+        className={`fixed inset-x-0 top-0 z-50 flex h-[90px] items-end pb-5 transition-opacity duration-300 md:h-[140px] md:pb-8 ${
+          chromeVisible ? "opacity-100" : "pointer-events-none opacity-0"
+        }`}
+      >
+        <div className="relative mx-auto flex w-full max-w-[1400px] items-center justify-between px-6 md:px-12">
+          <Link
+            href="/"
+            scroll={false}
+            data-cursor="hover"
+            className={`relative z-10 font-display text-[18px] font-bold tracking-tight text-bone transition-opacity duration-200 md:text-[19px] ${
+              open ? "pointer-events-none opacity-0" : "opacity-100"
+            }`}
+          >
+            Ernso Azor
+          </Link>
 
- <button
- aria-label="Toggle menu"
- onClick={() => setOpen((v) => !v)}
- className="relative z-10 flex h-9 w-9 flex-col items-end justify-center gap-1.5 text-bone md:hidden"
- data-cursor="hover"
- >
- <span
- className={`h-px w-6 bg-current transition-transform duration-300 ease-in-out ${
- open ?"translate-y-[3px] rotate-45":""
- }`}
- />
- <span
- className={`h-px w-4 bg-current transition-all duration-300 ease-in-out ${
- open ?"-translate-y-[3px] -rotate-45 w-6":""
- }`}
- />
- </button>
- </div>
- </header>
+          <button
+            aria-label="Toggle menu"
+            onClick={() => setOpen((v) => !v)}
+            className="relative z-10 flex h-9 w-9 flex-col items-end justify-center gap-2 text-bone"
+            data-cursor="hover"
+          >
+            <span
+              className={`h-px w-7 bg-current transition-transform duration-300 ease-in-out ${
+                open ? "translate-y-[4.5px] rotate-45" : ""
+              }`}
+            />
+            <span
+              className={`h-px w-7 bg-current transition-transform duration-300 ease-in-out ${
+                open ? "-translate-y-[4.5px] -rotate-45" : ""
+              }`}
+            />
+          </button>
+        </div>
+      </header>
 
- <AnimatePresence>
- {open && (
- <motion.div
- initial={{ opacity: 0 }}
- animate={{ opacity: 1 }}
- exit={{ opacity: 0 }}
- transition={{ duration: 0.25, ease:"easeOut"}}
- className="fixed inset-0 z-40 flex flex-col bg-black px-6 pt-24 text-bone md:hidden"
- >
- <nav className="flex flex-col gap-6">
- {[...items, { label:"Initiate", href:"/#contact"}].map(
- (item, i) => (
- <motion.div
- key={item.label}
- initial={{ opacity: 0, y: 12 }}
- animate={{ opacity: 1, y: 0 }}
- transition={{
- duration: 0.35,
- delay: 0.05 + i * 0.04,
- ease: [0.16, 1, 0.3, 1],
- }}
- >
- <Link
- href={item.href}
- onClick={() => setOpen(false)}
- className="block font-display text-5xl font-semibold tracking-tight"
- >
- {item.label}
- </Link>
- </motion.div>
- )
- )}
- </nav>
- </motion.div>
- )}
- </AnimatePresence>
- </>
- );
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="fixed inset-y-4 inset-x-0 z-40 mx-auto flex max-w-[1400px] flex-col justify-center overflow-hidden bg-black px-6 text-bone md:inset-y-10 md:px-12"
+          >
+            <nav className="flex flex-col gap-3">
+              {[...items, { label: "Initiate", href: "/#contact" }].map(
+                (item, i) => {
+                  const active = item.href === pathname;
+                  return (
+                    <motion.div
+                      key={item.label}
+                      initial={{ opacity: 0, y: 12 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{
+                        duration: 0.35,
+                        delay: 0.05 + i * 0.04,
+                        ease: [0.16, 1, 0.3, 1],
+                      }}
+                    >
+                      <Link
+                        href={item.href}
+                        onClick={() => setOpen(false)}
+                        className={`block font-display text-5xl tracking-tight transition-colors md:text-6xl ${
+                          active
+                            ? "font-normal text-muted-2"
+                            : "font-semibold text-bone hover:text-muted-2"
+                        }`}
+                      >
+                        {item.label}
+                      </Link>
+                    </motion.div>
+                  );
+                }
+              )}
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  );
 }

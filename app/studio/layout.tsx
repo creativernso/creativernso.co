@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Studio — Ernso Azor',
+  title: 'Studio · Ernso Azor',
 }
 
 export default function StudioLayout({

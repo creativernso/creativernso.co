@@ -1,3 +1,12 @@
+import { Anton } from"next/font/google";
+
+const condensed = Anton({
+ subsets: ["latin"],
+ weight: ["400"],
+ variable:"--font-condensed",
+ display:"swap",
+});
+
 const items = [
 "Social positioning",
 "Personal branding",
@@ -13,7 +22,7 @@ export default function HeadlineMarquee() {
  return (
  <div
  data-theme="dark"
- className="relative overflow-hidden py-1 md:py-2"
+ className="relative overflow-hidden py-3 md:py-5"
  style={{
  maskImage:
 "linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%)",
@@ -30,14 +39,14 @@ export default function HeadlineMarquee() {
  <span
  key={i}
  aria-hidden
- className="text-[clamp(48px,6vw,88px)] text-bone/40"
+ className="text-[clamp(56px,8vw,120px)] leading-none text-bone/5"
  >
  •
  </span>
  ) : it ? (
  <span
  key={i}
- className="font-display text-[clamp(48px,6vw,88px)] font-normal uppercase tracking-[0.12em] text-bone/90"
+ className={`${condensed.className} text-[clamp(56px,8vw,120px)] uppercase leading-none tracking-[0.12em] text-bone/5`}
  >
  {it}
  </span>
