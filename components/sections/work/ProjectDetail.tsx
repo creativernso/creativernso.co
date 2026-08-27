@@ -103,7 +103,7 @@ export default function ProjectDetail({
           {(p.gallery ?? []).map((src, idx) => (
             <div
               key={idx}
-              className="relative aspect-[16/10] overflow-hidden bg-black/30"
+              className="relative aspect-[1400/714] overflow-hidden bg-black/30"
             >
               <Image
                 src={src}
