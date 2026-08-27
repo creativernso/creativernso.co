@@ -45,28 +45,11 @@ body {
    Uses `proximity` (soft snap) so small sections don't trap the user.
    ===================================================================== */
 html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
-  /* Account for the fixed nav so scroll-snap targets don't land hidden
-     behind it (and so window.scrollTo(0,0) actually settles at 0). */
   scroll-padding-top: 100px;
 }
 @media (min-width: 768px) {
   html {
     scroll-padding-top: 120px;
-  }
-}
-
-main > section,
-main > div > section {
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-    scroll-snap-type: none;
   }
 }
 
@@ -159,58 +142,12 @@ button {
 
 .grain {
   position: fixed;
-  /* Extend beyond viewport so animation shifts don't expose edges */
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
+  inset: 0;
   pointer-events: none;
   z-index: 60;
-  opacity: 0.12;
-  mix-blend-mode: soft-light;
+  opacity: 0.05;
   background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
   background-size: 220px 220px;
-  animation: grain-shift 8s steps(8) infinite;
-}
-
-@keyframes grain-shift {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translate(-5%, -10%);
-  }
-  20% {
-    transform: translate(-15%, 5%);
-  }
-  30% {
-    transform: translate(7%, -25%);
-  }
-  40% {
-    transform: translate(-5%, 25%);
-  }
-  50% {
-    transform: translate(-15%, 10%);
-  }
-  60% {
-    transform: translate(15%, 0%);
-  }
-  70% {
-    transform: translate(0%, 15%);
-  }
-  80% {
-    transform: translate(3%, 35%);
-  }
-  90% {
-    transform: translate(-10%, 10%);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .grain {
-    animation: none;
-  }
 }
 
 @keyframes pulse-soft {

@@ -15,11 +15,11 @@ const projectFields = groq`
   date,
   tags,
   year,
-  "image": image.asset->url,
-  "hero": hero.asset->url,
-  "feature": feature.asset->url,
-  "gallery": gallery[].asset->url,
-  "closer": closer.asset->url,
+  "image": image.asset->url + "?w=1200&q=70&auto=format",
+  "hero": hero.asset->url + "?w=2200&q=70&auto=format",
+  "feature": feature.asset->url + "?w=2200&q=70&auto=format",
+  "gallery": gallery[]{ "url": asset->url + "?w=2000&q=70&auto=format" }.url,
+  "closer": closer.asset->url + "?w=1600&q=70&auto=format",
 `
 
 export const projectsQuery = groq`
