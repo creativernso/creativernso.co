@@ -75,6 +75,7 @@ export default function Testimonials() {
             className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
             style={{
               fontSize: fontSize ? `${fontSize}px` : "clamp(36px, 5vw, 96px)",
+              visibility: fontSize ? "visible" : "hidden",
             }}
           >
             What they say.

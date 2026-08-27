@@ -73,6 +73,7 @@ export default function ProjectDetail({
                 fontSize: overview.fontSize
                   ? `${overview.fontSize}px`
                   : "clamp(36px, 5vw, 96px)",
+                visibility: overview.fontSize ? "visible" : "hidden",
               }}
             >
               The project overview

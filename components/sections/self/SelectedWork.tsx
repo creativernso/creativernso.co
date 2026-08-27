@@ -31,6 +31,7 @@ export default function SelectedWork({ projects }: { projects: Project[] }) {
  className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
  style={{
  fontSize: fontSize ? `${fontSize}px` :"clamp(44px, 6vw, 120px)",
+ visibility: fontSize ?"visible":"hidden",
  }}
  >
  Selected work.

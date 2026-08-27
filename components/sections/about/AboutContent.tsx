@@ -61,6 +61,7 @@ export default function AboutContent() {
             className="mt-6 font-display text-bone whitespace-nowrap font-bold leading-[1.05] tracking-[-0.04em] md:mt-10"
             style={{
               fontSize: hero.fontSize ? `${hero.fontSize}px` : "clamp(36px, 5vw, 96px)",
+              visibility: hero.fontSize ? "visible" : "hidden",
             }}
           >
             Where it all began
@@ -128,6 +129,7 @@ export default function AboutContent() {
               className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
               style={{
                 fontSize: years.fontSize ? `${years.fontSize}px` : "clamp(36px, 5vw, 96px)",
+                visibility: years.fontSize ? "visible" : "hidden",
               }}
             >
               8+ years across three worlds.
@@ -210,6 +212,7 @@ export default function AboutContent() {
                 fontSize: brandsTitle.fontSize
                   ? `${brandsTitle.fontSize}px`
                   : "clamp(36px, 5vw, 96px)",
+                visibility: brandsTitle.fontSize ? "visible" : "hidden",
               }}
             >
               Brands I&rsquo;ve worked for
