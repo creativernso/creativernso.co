@@ -57,7 +57,7 @@ export default function ProjectDetail({
             src={p.hero}
             alt={p.title}
             fill
-            sizes="(min-width: 768px) 80vw, 95vw"
+            sizes="(min-width: 1400px) 1304px, (min-width: 768px) 80vw, 95vw"
             className="object-cover"
             priority
           />
@@ -92,7 +92,7 @@ export default function ProjectDetail({
               src={p.feature}
               alt={`${p.title} feature`}
               fill
-              sizes="(min-width: 768px) 80vw, 95vw"
+              sizes="(min-width: 1400px) 1304px, (min-width: 768px) 80vw, 95vw"
               className="object-cover"
             />
           </div>
@@ -109,7 +109,7 @@ export default function ProjectDetail({
                 src={src}
                 alt={`${p.title} detail ${idx + 1}`}
                 fill
-                sizes="(min-width: 768px) 80vw, 95vw"
+                sizes="(min-width: 1400px) 1304px, (min-width: 768px) 80vw, 95vw"
                 className="object-cover"
               />
             </div>
@@ -123,7 +123,7 @@ export default function ProjectDetail({
               src={next.hero}
               alt={`${next.title} preview`}
               fill
-              sizes="(min-width: 768px) 75vw, 90vw"
+              sizes="(min-width: 1400px) 1220px, (min-width: 768px) 75vw, 90vw"
               className="object-cover"
             />
           </div>
