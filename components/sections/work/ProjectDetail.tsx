@@ -80,25 +80,27 @@ export default function ProjectDetail({
           </div>
         </div>
         <div className="mt-6 space-y-5 text-[20px] leading-relaxed text-muted-2 md:text-[24px]">
-          {p.overview.map((para, i) => (
+          {(p.overview ?? []).map((para, i) => (
             <p key={i}>{para}</p>
           ))}
         </div>
 
         {/* Feature image */}
-        <div className="relative mt-16 aspect-[16/10] overflow-hidden bg-black/30 md:mt-20">
-          <Image
-            src={p.feature}
-            alt={`${p.title} feature`}
-            fill
-            sizes="(min-width: 768px) 80vw, 95vw"
-            className="object-cover"
-          />
-        </div>
+        {p.feature && (
+          <div className="relative mt-16 aspect-[16/10] overflow-hidden bg-black/30 md:mt-20">
+            <Image
+              src={p.feature}
+              alt={`${p.title} feature`}
+              fill
+              sizes="(min-width: 768px) 80vw, 95vw"
+              className="object-cover"
+            />
+          </div>
+        )}
 
         {/* Gallery 2 columns */}
         <div className="mt-6 grid grid-cols-1 gap-4 md:mt-8 md:grid-cols-2 md:gap-6">
-          {p.gallery.map((src, idx) => (
+          {(p.gallery ?? []).map((src, idx) => (
             <div
               key={idx}
               className="relative aspect-[4/3] overflow-hidden bg-black/30"

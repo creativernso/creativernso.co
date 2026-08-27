@@ -77,7 +77,7 @@ export default function SelectedWork({ projects }: { projects: Project[] }) {
  {p.title}
  </h3>
  <ul className="flex flex-wrap items-center gap-1.5 md:gap-2">
- {p.tags.map((tag) => (
+ {(p.tags ?? []).map((tag) => (
  <li
  key={tag}
  className="px-2.5 py-1 text-[10px] font-medium text-bone/85 md:px-3.5 md:py-1.5 md:text-[12px]"
