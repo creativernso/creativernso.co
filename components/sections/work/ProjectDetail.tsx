@@ -47,7 +47,7 @@ export default function ProjectDetail({
         <h1 className="mt-8 font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.04em]">
           {p.label}
         </h1>
-        <p className="mt-3 whitespace-nowrap text-[30px] font-light leading-relaxed text-muted-2 md:text-[32px]">
+        <p className="mt-3 text-[18px] font-light leading-relaxed text-muted-2 md:whitespace-nowrap md:text-[32px]">
           {p.subtitle}
         </p>
 
