@@ -9,6 +9,8 @@ import { client } from"@/lib/sanity/client";
 import { projectsQuery } from"@/lib/sanity/queries";
 import type { Project } from"@/lib/content";
 
+export const revalidate = 30;
+
 export default async function HomePage() {
  const projects = await client.fetch<Project[]>(projectsQuery);
  return (

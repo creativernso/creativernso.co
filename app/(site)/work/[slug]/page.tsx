@@ -4,6 +4,8 @@ import { projectsQuery } from"@/lib/sanity/queries";
 import type { Project } from"@/lib/content";
 import ProjectDetail from"@/components/sections/work/ProjectDetail";
 
+export const revalidate = 30;
+
 export async function generateStaticParams() {
  const projects = await client.fetch<Project[]>(projectsQuery);
  return projects.map((p) => ({ slug: p.slug }));

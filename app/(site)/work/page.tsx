@@ -3,6 +3,8 @@ import { projectsQuery } from"@/lib/sanity/queries";
 import type { Project } from"@/lib/content";
 import WorkFilter from"@/components/sections/work/WorkFilter";
 
+export const revalidate = 30;
+
 export const metadata = {
  title:"Work Ernso Azor",
  description:
