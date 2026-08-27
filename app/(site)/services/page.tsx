@@ -77,7 +77,7 @@ export default function BeliefPage() {
         >
           <div className="relative w-full">
             <Image
-              src="/img-blf.png"
+              src="/img-blf.jpg"
               alt="Ernso Azor portrait"
               width={2400}
               height={1200}
@@ -119,7 +119,7 @@ export default function BeliefPage() {
           {/* Portrait image — fills the frame */}
           <div className="relative w-full">
             <Image
-              src="/Mobil_beleif.png"
+              src="/Mobil_beleif.jpg"
               alt="Ernso Azor portrait"
               width={1200}
               height={1778}

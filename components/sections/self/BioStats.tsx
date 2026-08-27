@@ -24,7 +24,7 @@ export default function BioStats() {
  <div className="mb-8 md:col-span-5 md:mb-0">
  <div className="relative aspect-square overflow-hidden bg-black md:aspect-auto md:h-full">
  <Image
- src="/about-portrait.png"
+ src="/about-portrait.jpg"
  alt="Ernso Azor"
  fill
  sizes="(min-width: 768px) 40vw, 90vw"

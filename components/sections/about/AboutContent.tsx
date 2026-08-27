@@ -76,7 +76,7 @@ export default function AboutContent() {
             {/* Image — square */}
             <div className="relative aspect-square overflow-hidden bg-black">
               <Image
-                src="/about-portrait.png"
+                src="/about-portrait.jpg"
                 alt="Ernso Azor"
                 fill
                 sizes="(min-width: 768px) 50vw, 90vw"

@@ -2,8 +2,8 @@
 
 import Link from"next/link";
 import Image from"next/image";
-import heroDesktop from"@/public/hero-desktop.png";
-import heroMobile from"@/public/hero-mobile.png";
+import heroDesktop from"@/public/hero-desktop.jpg";
+import heroMobile from"@/public/hero-mobile.jpg";
 import { motion } from"framer-motion";
 import { useEffect, useState } from"react";
 
