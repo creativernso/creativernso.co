@@ -260,7 +260,7 @@ export default function BeliefPage() {
                   <div className="flex items-center gap-4 sm:contents">
                     <span
                       aria-hidden
-                      className="flex h-14 w-14 shrink-0 items-center justify-center border border-bone/15 font-display text-[22px] font-bold text-bone md:h-16 md:w-16 md:text-[26px]"
+                      className="flex h-14 w-14 shrink-0 items-center justify-center border border-bone/15 font-display text-[22px] font-bold text-bone md:h-20 md:w-20 md:text-[34px]"
                     >
                       {r.letter}
                     </span>
@@ -271,7 +271,7 @@ export default function BeliefPage() {
                     </span>
                   </div>
 
-                  <span className="hidden font-display text-[24px] font-bold text-bone sm:block sm:w-[150px] md:w-[180px] md:text-[28px]">
+                  <span className="hidden font-display text-[24px] font-bold text-bone sm:block sm:w-[150px] md:w-[220px] md:text-[38px]">
                     {r.name}
                   </span>
 
