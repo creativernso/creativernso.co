@@ -276,7 +276,7 @@ export default function BeliefPage() {
                   </span>
 
                   {/* Description */}
-                  <span className="text-[15px] leading-relaxed text-muted-2 sm:flex-1 md:text-[17px]">
+                  <span className="text-[15px] leading-relaxed text-muted-2 sm:flex-1 sm:text-right md:text-[22px]">
                     {r.desc}
                   </span>
                 </motion.div>
