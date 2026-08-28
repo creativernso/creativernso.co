@@ -37,7 +37,9 @@ export default function ProjectDetail({
             </span>
             <span>Back</span>
           </Link>
-          <div className="font-mono text-[12px] text-muted-2">{p.date}</div>
+          <div className="text-[14px] text-bone">
+            {p.date.replace(/\s*[·.]\s*/g, "/")}
+          </div>
         </div>
 
         {/* Hairline */}
