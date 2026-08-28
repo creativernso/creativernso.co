@@ -293,11 +293,9 @@ export default function BeliefPage() {
           transition={{ duration: 0.6, ease: EASE }}
           className="mt-10 md:mt-14"
         >
-          <p className="font-display text-[clamp(18px,1.8vw,24px)] font-normal leading-tight tracking-[-0.02em] text-bone">
-            One process. Three worlds. One direction:
-          </p>
-          <p className="mt-1 font-display text-[clamp(18px,1.8vw,24px)] font-normal leading-tight tracking-[-0.02em] text-bone/35">
-            from obscurity to unmistakable
+          <p className="font-display text-[clamp(14px,1.8vw,24px)] font-normal leading-tight tracking-[-0.02em] text-bone md:whitespace-nowrap">
+            <span>One process. Three worlds. One direction: </span>
+            <span className="text-bone/35">from obscurity to unmistakable</span>
           </p>
         </motion.div>
 
