@@ -2,7 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useRef } from "react";
 import { motion } from "framer-motion";
+import { useFitText } from "@/lib/useFitText";
 
 export const dynamic = "force-static";
 
@@ -42,15 +44,21 @@ const beliefs = [
 ] as const;
 
 const revealRows = [
-  { letter: "R", name: "ROOT", desc: "Who you truly are before anything else" },
-  { letter: "E", name: "EXCAVATE", desc: "The uniqueness that already exists" },
-  { letter: "V", name: "VOICE", desc: "The language through which the brand speaks" },
-  { letter: "E", name: "EXPRESS", desc: "Strategy translated into visible identity" },
-  { letter: "A", name: "ALIGN", desc: "Consistent across every touchpoint" },
-  { letter: "L", name: "LAUNCH", desc: "Unmissable from the very first moment" },
+  { letter: "R", name: "Root", desc: "Who you truly are before anything else" },
+  { letter: "E", name: "Excavate", desc: "The uniqueness that already exists" },
+  { letter: "V", name: "Voice", desc: "The language through which the brand speaks" },
+  { letter: "E", name: "Express", desc: "Strategy translated into visible identity" },
+  { letter: "A", name: "Align", desc: "Consistent across every touchpoint" },
+  { letter: "L", name: "Launch", desc: "Unmissable from the very first moment" },
 ] as const;
 
 export default function BeliefPage() {
+  const beliefsRectRef = useRef<HTMLDivElement>(null);
+  const beliefsTitle = useFitText<HTMLHeadingElement>(beliefsRectRef);
+
+  const revealRectRef = useRef<HTMLDivElement>(null);
+  const revealTitle = useFitText<HTMLHeadingElement>(revealRectRef);
+
   return (
     <section
       data-theme="dark"
@@ -87,7 +95,6 @@ export default function BeliefPage() {
             />
           </div>
 
-          {/* Text overlay — anchored to the right side, vertically centered */}
           <div className="absolute inset-0 mx-auto flex max-w-[1400px] items-center justify-end px-6 md:pl-16 md:pr-28 lg:pr-36 xl:pr-44">
             <div className="max-w-[640px] md:max-w-[720px]">
               <p className="font-display text-[clamp(28px,3.4vw,56px)] font-bold leading-[1.05] tracking-[-0.035em]">
@@ -109,14 +116,13 @@ export default function BeliefPage() {
           />
         </motion.div>
 
-        {/* ============== MOBILE — portrait fills frame, text overlaid at top (like Hero) ============== */}
+        {/* ============== MOBILE — portrait fills frame, text overlaid at top ============== */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1, ease: EASE }}
           className="relative mt-8 overflow-hidden md:hidden"
         >
-          {/* Portrait image — fills the frame */}
           <div className="relative w-full">
             <Image
               src="/Mobil_beleif.jpg"
@@ -129,9 +135,7 @@ export default function BeliefPage() {
             />
           </div>
 
-          {/* Text overlay — anchored at the top of the image, centered */}
           <div className="absolute inset-x-0 top-0 flex flex-col items-center px-5 pt-[14%] text-center">
-            {/* Attribution */}
             <p className="text-[10px] leading-snug text-bone/85">
               <span className="font-semibold text-bone">Ernso Azor</span>
               <span className="px-1.5 text-bone/45">·</span>
@@ -140,7 +144,6 @@ export default function BeliefPage() {
               </span>
             </p>
 
-            {/* Quote */}
             <p className="mt-3 font-display text-[26px] font-bold leading-[1.08] tracking-[-0.03em]">
               <span className="block text-bone">Everyone is a brand.</span>
               <span className="block text-bone">
@@ -150,7 +153,6 @@ export default function BeliefPage() {
             </p>
           </div>
 
-          {/* Hairline outline — matches Hero */}
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0 border border-bone/15"
@@ -158,90 +160,129 @@ export default function BeliefPage() {
         </motion.div>
 
         {/* "The beliefs that never change." */}
-        <motion.h2
-          initial={{ opacity: 0, y: 14 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.6, ease: EASE }}
-          className="mt-24 font-display text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.03em] text-bone md:mt-32"
-        >
-          The beliefs that never change.
-        </motion.h2>
-
-        {/* Belief rows */}
-        <div className="mt-10 md:mt-14">
-          {/* top hairline */}
-          <div className="h-px w-full bg-bone/10" />
-          {beliefs.map((b, i) => (
-            <motion.div
-              key={b.n}
-              initial={{ opacity: 0, y: 16 }}
+        <div className="mt-24 md:mt-32">
+          <div>
+            <motion.h2
+              ref={beliefsTitle.textRef}
+              initial={{ opacity: 0, y: 14 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.55, delay: i * 0.05, ease: EASE }}
-              className="grid grid-cols-12 gap-x-6 gap-y-3 py-7 md:gap-x-10 md:py-9"
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.6, ease: EASE }}
+              className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.03em]"
+              style={{
+                fontSize: beliefsTitle.fontSize
+                  ? `${beliefsTitle.fontSize}px`
+                  : "clamp(36px, 5vw, 96px)",
+                visibility: beliefsTitle.fontSize ? "visible" : "hidden",
+              }}
             >
-              <h3 className="col-span-12 font-display text-[26px] font-bold tracking-tight text-bone md:col-span-5 md:text-[32px]">
-                {b.n}- {b.title}
-              </h3>
-              <p className="col-span-12 text-[16px] leading-[1.55] text-bone md:col-span-7 md:text-[18px]">
-                {b.body}
-              </p>
-              {/* hairline under each row */}
-              <div className="col-span-12 mt-3 h-px w-full bg-bone/10 md:mt-4" />
-            </motion.div>
-          ))}
+              The beliefs that never change.
+            </motion.h2>
+          </div>
+
+          {/* Beliefs — merged rectangle, 2-col grid on tablet+, ghost numeral per card */}
+          <div
+            ref={beliefsRectRef}
+            className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 md:mt-8"
+            style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
+          >
+            <div className="grid grid-cols-1 border-l border-t border-bone/10 sm:grid-cols-2">
+              {beliefs.map((b, i) => (
+                <motion.article
+                  key={b.n}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.55, delay: (i % 2) * 0.08, ease: EASE }}
+                  className="flex flex-col border-b border-r border-bone/10 px-6 pb-7 pt-7 md:px-10 md:pb-9 md:pt-9"
+                  data-cursor="hover"
+                >
+                  <span
+                    aria-hidden
+                    className="select-none font-display text-[15px] font-bold tracking-[0.1em] text-gold-ember/70"
+                  >
+                    {b.n}
+                  </span>
+                  <h3 className="mt-3 font-display text-bone text-[22px] font-bold leading-[1.2] tracking-[-0.02em] md:text-[26px]">
+                    {b.title}
+                  </h3>
+                  <p className="mt-3 text-[15px] leading-[1.6] text-muted-2 md:text-[16px]">
+                    {b.body}
+                  </p>
+                </motion.article>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* The REVEAL Framework. title */}
-        <motion.h2
-          initial={{ opacity: 0, y: 14 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.6, ease: EASE }}
-          className="mt-24 font-display text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.03em] md:mt-32"
-        >
-          <span className="text-bone">The </span>
-          <span className="text-bone/30">REVEAL</span>
-          <span className="text-bone"> Framework.</span>
-        </motion.h2>
-
-        {/* REVEAL rows */}
-        <div className="mt-10 flex flex-col gap-3 md:mt-14 md:gap-4">
-          {revealRows.map((r, i) => (
-            <motion.div
-              key={i}
+        <div className="mt-24 md:mt-32">
+          <div>
+            <motion.h2
+              ref={revealTitle.textRef}
               initial={{ opacity: 0, y: 14 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: i * 0.06, ease: EASE }}
-              className="group grid grid-cols-12 items-center gap-x-4 bg-black/40 px-5 py-5 backdrop-blur-md transition-colors hover:bg-black/55 md:gap-x-8 md:px-8 md:py-7"
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.6, ease: EASE }}
+              className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.03em]"
               style={{
-                boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)",
+                fontSize: revealTitle.fontSize
+                  ? `${revealTitle.fontSize}px`
+                  : "clamp(36px, 5vw, 96px)",
+                visibility: revealTitle.fontSize ? "visible" : "hidden",
               }}
             >
-              {/* Letter */}
-              <div className="col-span-2 md:col-span-1">
-                <span className="font-display text-[clamp(32px,4.2vw,56px)] font-bold leading-none tracking-[-0.04em] text-bone">
-                  {r.letter}
-                </span>
-              </div>
+              The REVEAL Framework.
+            </motion.h2>
+            <p className="mt-3 text-[15px] text-muted-2 md:text-[18px]">
+              A six-stage methodology, applied in order, every time.
+            </p>
+          </div>
 
-              {/* Name (subtle / faded) */}
-              <div className="col-span-4 md:col-span-4">
-                <span className="font-mono text-[48px] uppercase tracking-[0.32em] text-bone/30 transition-colors group-hover:text-bone/55 md:text-[56px] md:tracking-[0.42em]">
-                  {r.name}
-                </span>
-              </div>
+          {/* REVEAL rows — merged rectangle, one row per stage */}
+          <div
+            ref={revealRectRef}
+            className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 md:mt-8"
+            style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
+          >
+            <div className="divide-y divide-bone/10">
+              {revealRows.map((r, i) => (
+                <motion.div
+                  key={r.name}
+                  initial={{ opacity: 0, y: 14 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.5, delay: i * 0.05, ease: EASE }}
+                  className="group flex flex-col gap-3 px-6 py-6 transition-colors hover:bg-bone/[0.03] sm:flex-row sm:items-center sm:gap-6 md:px-10 md:py-7"
+                  data-cursor="hover"
+                >
+                  {/* Letter badge */}
+                  <div className="flex items-center gap-4 sm:contents">
+                    <span
+                      aria-hidden
+                      className="flex h-11 w-11 shrink-0 items-center justify-center border border-bone/15 font-display text-[18px] font-bold text-bone md:h-12 md:w-12 md:text-[20px]"
+                    >
+                      {r.letter}
+                    </span>
 
-              {/* Description */}
-              <div className="col-span-6 md:col-span-7 md:text-right">
-                <span className="text-[25px] leading-snug text-bone/80 md:text-[30px]">
-                  {r.desc}
-                </span>
-              </div>
-            </motion.div>
-          ))}
+                    {/* Name — shown next to the badge on mobile, own column on desktop */}
+                    <span className="font-display text-[18px] font-bold text-bone sm:hidden">
+                      {r.name}
+                    </span>
+                  </div>
+
+                  <span className="hidden font-display text-[19px] font-bold text-bone sm:block sm:w-[140px] md:w-[170px] md:text-[22px]">
+                    {r.name}
+                  </span>
+
+                  {/* Description */}
+                  <span className="text-[15px] leading-relaxed text-muted-2 sm:flex-1 md:text-[17px]">
+                    {r.desc}
+                  </span>
+                </motion.div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Tagline under REVEAL */}
