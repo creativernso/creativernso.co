@@ -2,6 +2,7 @@ import { client } from"@/lib/sanity/client";
 import { projectsQuery } from"@/lib/sanity/queries";
 import type { Project } from"@/lib/content";
 import WorkFilter from"@/components/sections/work/WorkFilter";
+import MarkLibrary from"@/components/sections/work/MarkLibrary";
 
 export const revalidate = 30;
 
@@ -27,6 +28,8 @@ export default async function WorkPage() {
  </header>
 
  <WorkFilter projects={projects} />
+
+ <MarkLibrary />
  </div>
  </section>
  );
