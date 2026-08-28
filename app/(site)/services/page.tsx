@@ -199,7 +199,7 @@ export default function BeliefPage() {
                 >
                   <span
                     aria-hidden
-                    className="select-none font-display text-[15px] font-bold tracking-[0.1em] text-gold-ember/70"
+                    className="select-none font-display text-[15px] font-bold tracking-[0.1em] text-bone"
                   >
                     {b.n}
                   </span>
