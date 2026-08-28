@@ -21,7 +21,8 @@ export default function MarkLibrary() {
         The Mark Library
       </h2>
       <p className="mt-3 text-[15px] text-muted-2 md:text-[18px]">
-        Identity distilled to its irreducible form.
+        Every shape carries a decision. Every curve, every angle, every
+        weight chosen with intention.
       </p>
 
       <div
