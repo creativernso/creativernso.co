@@ -183,7 +183,7 @@ export default function AboutContent() {
               </p>
             </div>
             <Link
-              href="/#contact"
+              href="/initiate"
               data-cursor="hover"
               data-press
               className="group inline-flex items-center gap-2 bg-black/30 px-10 py-4 text-[12px] font-medium uppercase tracking-[0.22em] text-bone backdrop-blur-sm transition-colors hover:bg-bone hover:text-black md:text-[13px]"

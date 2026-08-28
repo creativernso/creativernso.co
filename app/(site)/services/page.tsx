@@ -319,7 +319,7 @@ export default function BeliefPage() {
             </div>
 
             <Link
-              href="/#contact"
+              href="/initiate"
               data-cursor="hover"
               data-press
               className="group inline-flex items-center gap-3 px-7 py-4 font-mono text-[12px] font-medium uppercase tracking-[0.32em] text-bone transition-colors hover:bg-bone hover:text-black md:text-[13px] md:tracking-[0.4em]"

@@ -103,7 +103,7 @@ export default function Hero() {
  className="mt-8"
  >
  <Link
- href="/#contact"
+ href="/initiate"
  data-cursor="hover"
  data-press
  className="group inline-flex items-center gap-3 bg-black/30 px-9 py-4 text-[12px] font-medium uppercase tracking-[0.22em] text-bone backdrop-blur-sm transition-colors hover:bg-bone hover:text-black"
@@ -155,7 +155,7 @@ export default function Hero() {
  className="mt-5"
  >
  <Link
- href="/#contact"
+ href="/initiate"
  data-cursor="hover"
  data-press
  className="group inline-flex items-center gap-3 bg-black/30 px-10 py-3.5 text-[11px] font-medium uppercase tracking-[0.22em] text-bone backdrop-blur-sm transition-colors hover:bg-bone hover:text-black"

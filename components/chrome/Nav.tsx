@@ -84,7 +84,7 @@ export default function Nav() {
             className="fixed inset-y-4 inset-x-0 z-40 mx-auto flex max-w-[1400px] flex-col justify-center overflow-hidden bg-black px-6 text-bone md:inset-y-10 md:px-12"
           >
             <nav className="flex flex-col gap-3">
-              {[...items, { label: "Initiate", href: "/#contact" }].map(
+              {[...items, { label: "Initiate", href: "/initiate" }].map(
                 (item, i) => {
                   const active = item.href === pathname;
                   return (

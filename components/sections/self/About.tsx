@@ -100,7 +100,7 @@ export default function About() {
  className="mt-16 flex justify-center"
  >
  <Link
- href="#contact"
+ href="/initiate"
  data-cursor="hover"
  className="group inline-flex items-center gap-2 border border-bone/15 bg-bone/[0.03] px-6 py-3.5 text-[13.5px] font-semibold text-bone transition-colors hover:border-bone/40"
  >

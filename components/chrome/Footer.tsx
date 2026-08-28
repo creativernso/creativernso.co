@@ -155,7 +155,7 @@ export default function Footer() {
  Creations
  </Link>
  <Link
- href="/#contact"
+ href="/initiate"
  data-cursor="hover"
  data-press
  className="group inline-flex items-center gap-2 border border-bone/20 px-5 py-2.5 text-[12px] font-medium uppercase tracking-[0.18em] text-bone transition-colors hover:bg-bone hover:text-black"

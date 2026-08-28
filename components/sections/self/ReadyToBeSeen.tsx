@@ -28,7 +28,7 @@ export default function ReadyToBeSeen() {
  </p>
  </div>
  <Link
- href="/#contact"
+ href="/initiate"
  data-cursor="hover"
  data-press
  className="inline-flex items-center gap-2 border border-bone/20 px-7 py-3.5 text-[12px] font-medium uppercase tracking-[0.22em] text-bone transition-colors hover:bg-bone hover:text-black md:px-9 md:py-4 md:text-[14px]"
