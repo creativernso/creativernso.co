@@ -33,7 +33,7 @@ export default function MarkLibrary() {
           {marks.map((n) => (
             <div
               key={n}
-              className="relative flex aspect-square items-center justify-center border-b border-r border-bone/10 p-8 md:p-10"
+              className="relative flex aspect-square items-center justify-center border-b border-r border-bone/10 p-4 md:p-10"
             >
               <div className="relative h-full w-full">
                 <Image
