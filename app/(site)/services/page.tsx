@@ -260,18 +260,18 @@ export default function BeliefPage() {
                   <div className="flex items-center gap-4 sm:contents">
                     <span
                       aria-hidden
-                      className="flex h-11 w-11 shrink-0 items-center justify-center border border-bone/15 font-display text-[18px] font-bold text-bone md:h-12 md:w-12 md:text-[20px]"
+                      className="flex h-14 w-14 shrink-0 items-center justify-center border border-bone/15 font-display text-[22px] font-bold text-bone md:h-16 md:w-16 md:text-[26px]"
                     >
                       {r.letter}
                     </span>
 
                     {/* Name — shown next to the badge on mobile, own column on desktop */}
-                    <span className="font-display text-[18px] font-bold text-bone sm:hidden">
+                    <span className="font-display text-[26px] font-bold text-bone sm:hidden">
                       {r.name}
                     </span>
                   </div>
 
-                  <span className="hidden font-display text-[19px] font-bold text-bone sm:block sm:w-[140px] md:w-[170px] md:text-[22px]">
+                  <span className="hidden font-display text-[24px] font-bold text-bone sm:block sm:w-[150px] md:w-[180px] md:text-[28px]">
                     {r.name}
                   </span>
 
