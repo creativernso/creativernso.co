@@ -41,7 +41,7 @@ export default function ProjectDetail({
         </div>
 
         {/* Hairline */}
-        <div className="mt-6 h-px w-full bg-bone/15" />
+        <div className="mt-3 h-px w-full bg-bone/15" />
 
         {/* Title + subtitle */}
         <h1 className="mt-8 font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.04em]">
