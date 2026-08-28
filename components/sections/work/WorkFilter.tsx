@@ -73,7 +73,7 @@ export default function WorkFilter({
  animate={{ opacity: 1, y: 0 }}
  exit={{ opacity: 0, y: -12 }}
  transition={{ duration: 0.7, ease: EASE }}
- className="sticky"
+ className="sticky md:static"
  style={{ top: `calc(96px + ${i * 14}px)` }}
  >
  <Link
