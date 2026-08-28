@@ -313,10 +313,8 @@ export default function BeliefPage() {
               <h3 className="font-display text-[clamp(22px,2.6vw,34px)] font-bold leading-[1.1] tracking-[-0.03em] text-bone">
                 Let&rsquo;s build something
               </h3>
-              <p className="mt-3 max-w-md text-[13.5px] leading-relaxed text-muted-2 md:text-[14.5px]">
-                If what you&rsquo;ve read here
-                <br className="hidden md:block" />
-                aligns with how you see your brand
+              <p className="mt-3 text-[13.5px] leading-relaxed text-muted-2 md:whitespace-nowrap md:text-[14.5px]">
+                If what you&rsquo;ve read here aligns with how you see your brand
               </p>
             </div>
 
