@@ -68,56 +68,6 @@ export default function AboutContent() {
           </h1>
         </div>
 
-        {/* Portrait + Bio, wrapped in a dark gray card with hairline outline */}
-        <div
-          className="mt-8 bg-black/30 backdrop-blur-md backdrop-saturate-100 p-6 md:mt-10 md:p-10"
-          style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
-        >
-          <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-8">
-            {/* Image — square */}
-            <div className="relative aspect-square overflow-hidden bg-black">
-              <Image
-                src="/about-portrait.jpg"
-                alt="Ernso Azor"
-                fill
-                sizes="(min-width: 768px) 50vw, 90vw"
-                className="object-cover"
-                priority
-              />
-            </div>
-
-            {/* Text — content vertically centered, no square cropping */}
-            <div className="flex flex-col justify-center">
-              <h2 className="font-display text-bone text-[clamp(28px,3.4vw,48px)] font-bold leading-[1.1] tracking-[-0.04em] md:mt-10">
-                I don&rsquo;t choose branding.
-                <br />
-                Branding chose me.
-              </h2>
-              <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 md:text-[18px] md:leading-[1.65] md:[text-align:justify]">
-                <p>
-                  It started long before I knew what design was. As a child, I
-                  was the one who noticed things. The way a logo felt wrong, the
-                  way a colour changed a room, the way certain names stayed in
-                  your mind and others disappeared. I was paying attention to
-                  identity before I had language for it.
-                </p>
-                <p>
-                  That obsession led me into design. And design led me somewhere
-                  deeper: into the realisation that every person, every
-                  institution, every artist carries a uniqueness most never
-                  learn to show. Over 8+ years, across three very different
-                  worlds, I have done the same thing every time.
-                </p>
-                <p>
-                  From the boardrooms of corporate institutions to the studios
-                  of artists and the platforms of public figures, I find the
-                  truth that was always there, and make it impossible to ignore.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Stats, animated counters */}
         <Stats />
 
