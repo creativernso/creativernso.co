@@ -142,7 +142,7 @@ export default function AboutContent() {
           >
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
               {/* Text — left side, aligned to top of image */}
-              <div className="flex flex-col justify-start text-[20px] leading-[1.6] text-muted-2 md:text-[24px] md:leading-[1.65] md:[text-align:justify]">
+              <div className="flex flex-col justify-start text-[14px] leading-[1.6] text-muted-2 md:text-[17px] md:leading-[1.65] md:[text-align:justify]">
                 <p>
                   The corporate world taught me rigor, systems thinking, and
                   the architecture of credibility. The professional world taught
@@ -156,10 +156,10 @@ export default function AboutContent() {
                 </p>
               </div>
 
-              {/* Image — right side, square */}
-              <div className="relative aspect-square overflow-hidden bg-black">
+              {/* Image — right side, horizontal */}
+              <div className="relative aspect-[1627/1080] self-start overflow-hidden bg-black">
                 <Image
-                  src="https://picsum.photos/seed/workspace-craft/1080/1080?grayscale"
+                  src="/about-worlds.jpg"
                   alt="Working across three worlds"
                   fill
                   sizes="(min-width: 768px) 50vw, 90vw"
