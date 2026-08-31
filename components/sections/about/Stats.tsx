@@ -13,7 +13,7 @@ type Stat = {
 
 const stats: Stat[] = [
  { target: 8, suffix:"+", label:"Experience"},
- { target: 50, suffix:"+", label:"Brands revealed"},
+ { target: 80, suffix:"+", label:"Brands revealed"},
  { target: 3, label:"Worlds served"},
 ];
 
