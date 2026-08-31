@@ -82,7 +82,7 @@ export default function AboutContent() {
         </div>
 
         {/* Parcours */}
-        <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 md:mt-8 md:text-[19px] md:leading-[1.65] md:[text-align:justify]">
+        <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 [text-align:justify] md:mt-8 md:text-[19px] md:leading-[1.65]">
           <p>
             It started long before I had a word for any of it. As a child, I
             was the one who noticed things nobody else seemed to register:
@@ -158,7 +158,7 @@ export default function AboutContent() {
           >
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
               {/* Text — left side, aligned to top of image */}
-              <div className="flex flex-col justify-start text-[14px] leading-[1.6] text-muted-2 md:text-[17px] md:leading-[1.65] md:[text-align:justify]">
+              <div className="flex flex-col justify-start text-[14px] leading-[1.6] text-muted-2 [text-align:justify] md:text-[17px] md:leading-[1.65]">
                 <p>
                   The corporate world taught me rigor, systems thinking, and
                   the architecture of credibility. The professional world taught
