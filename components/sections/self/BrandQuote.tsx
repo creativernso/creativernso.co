@@ -118,7 +118,7 @@ export default function BrandQuote() {
  className="relative overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 px-0 pb-8 pt-16 md:pb-16 md:pt-24"
  >
  {/* Typewriter quote */}
- <p className="text-center font-display text-bone text-[clamp(18px,2vw,26px)] font-normal leading-[1.5] tracking-[-0.02em] [text-wrap:pretty] md:[text-align:justify]">
+ <p className="text-center font-display text-bone text-[clamp(18px,2vw,26px)] font-normal leading-[1.5] tracking-[-0.02em] [text-wrap:pretty] md:[hyphens:auto] md:[text-align:justify]">
  <TypingParagraph text={QUOTE} />
  </p>
 
