@@ -172,11 +172,19 @@ export default function Footer() {
  </div>
 
  {/* Sub-footer line */}
- <div className="mt-12 flex flex-wrap items-center justify-between gap-3 border-t border-bone/10 pt-6 text-[12px] text-muted-2 md:mt-16">
+ <div className="mt-12 flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border-t border-bone/10 pt-6 text-[12px] text-muted-2 md:mt-16">
  <div>
  © {new Date().getFullYear()} Ernso Azor. Revealing what was always there.
  </div>
- <div>@creativernso · Brand Strategy &amp; Design</div>
+ <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+ <Link href="/terms" data-cursor="hover" className="transition-colors hover:text-bone">
+ Terms of Service
+ </Link>
+ <Link href="/privacy" data-cursor="hover" className="transition-colors hover:text-bone">
+ Privacy Policy
+ </Link>
+ <span>@creativernso · Brand Strategy &amp; Design</span>
+ </div>
  </div>
  </div>
  </div>
