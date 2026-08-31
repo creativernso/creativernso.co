@@ -68,70 +68,74 @@ export default function AboutContent() {
           </h1>
         </div>
 
-        {/* Portrait */}
-        <div className="relative mt-6 aspect-[2400/1126] overflow-hidden border border-bone/20 bg-black/30 md:mt-10">
-          <Image
-            src="/personal-intro.jpg"
-            alt="Ernso Azor at his desk"
-            fill
-            sizes="(min-width: 1400px) 1304px, (min-width: 768px) 90vw, 95vw"
-            quality={88}
-            className="object-cover"
-            priority
-          />
-        </div>
+        {/* Portrait + Parcours, wrapped in one bordered card */}
+        <div
+          className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 p-6 md:mt-10 md:p-10"
+          style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
+        >
+          <div className="relative aspect-[2400/1126] overflow-hidden bg-black">
+            <Image
+              src="/personal-intro.jpg"
+              alt="Ernso Azor at his desk"
+              fill
+              sizes="(min-width: 1400px) 1232px, (min-width: 768px) 84vw, 88vw"
+              quality={88}
+              className="object-cover"
+              priority
+            />
+          </div>
 
-        {/* Parcours */}
-        <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 [hyphens:auto] [text-align:justify] [text-wrap:pretty] md:mt-8 md:text-[19px] md:leading-[1.65]">
-          <p>
-            It started long before I had a word for any of it. As a child, I
-            was the one who noticed things nobody else seemed to register:
-            the way a logo felt subtly wrong even when I couldn&rsquo;t say
-            why, the way a single colour could change the entire mood of a
-            room, the way some names lodged themselves in your memory
-            forever while others vanished the moment you looked away. I
-            wasn&rsquo;t studying identity. I was simply unable to stop
-            seeing it, in everything, all the time. That kind of attention
-            doesn&rsquo;t feel like a gift when you&rsquo;re young. It feels
-            like noise. It took years to understand it was actually a
-            compass.
-          </p>
-          <p>
-            That compass finally found its language in 2018, in
-            Port-au-Prince, Haiti, at one of the country&rsquo;s leading
-            technical schools, where I enrolled to train as a computer
-            science technician, not a designer. Graphic design entered my
-            life almost as an afterthought, a single module tucked inside a
-            much larger technical curriculum. But the moment I touched it,
-            everything the child in me had been noticing for years suddenly
-            had somewhere to go. I wasn&rsquo;t learning a new skill. I was
-            finally being handed the vocabulary for something I&rsquo;d
-            already been doing instinctively my whole life.
-          </p>
-          <p>
-            The real turning point came fast, faster than I was ready for.
-            In my second year, still a student with more theory than
-            experience, a company trusted me to build its entire visual
-            identity from nothing. I remember the weight of that moment more
-            than the details of the brief: the realization that someone was
-            staking their business, their name, their credibility, on my
-            judgment. I said yes anyway. That project became the proof
-            I&rsquo;ve carried ever since: precision isn&rsquo;t just a
-            technical habit, it&rsquo;s a form of respect. The same rigor
-            that makes a system run without failure is the exact rigor that
-            makes a brand impossible to look away from.
-          </p>
-          <p>
-            Today, that dual foundation, an engineer&rsquo;s obsession with
-            structure and a designer&rsquo;s instinct for what moves people,
-            shows up in every project I touch, whether the client is a
-            corporation, a founder, or an artist. Strategy always comes
-            before style. Nothing is decorative unless it&rsquo;s also
-            deliberate. And every identity I build still starts exactly
-            where it started for me at nineteen: with the discipline to
-            notice what&rsquo;s actually true, and the craft to make sure no
-            one can ignore it again.
-          </p>
+          <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 [hyphens:auto] [text-align:justify] [text-wrap:pretty] md:mt-8 md:text-[19px] md:leading-[1.65]">
+            <p>
+              It started long before I had a word for any of it. As a child, I
+              was the one who noticed things nobody else seemed to register:
+              the way a logo felt subtly wrong even when I couldn&rsquo;t say
+              why, the way a single colour could change the entire mood of a
+              room, the way some names lodged themselves in your memory
+              forever while others vanished the moment you looked away. I
+              wasn&rsquo;t studying identity. I was simply unable to stop
+              seeing it, in everything, all the time. That kind of attention
+              doesn&rsquo;t feel like a gift when you&rsquo;re young. It feels
+              like noise. It took years to understand it was actually a
+              compass.
+            </p>
+            <p>
+              That compass finally found its language in 2018, in
+              Port-au-Prince, Haiti, at one of the country&rsquo;s leading
+              technical schools, where I enrolled to train as a computer
+              science technician, not a designer. Graphic design entered my
+              life almost as an afterthought, a single module tucked inside a
+              much larger technical curriculum. But the moment I touched it,
+              everything the child in me had been noticing for years suddenly
+              had somewhere to go. I wasn&rsquo;t learning a new skill. I was
+              finally being handed the vocabulary for something I&rsquo;d
+              already been doing instinctively my whole life.
+            </p>
+            <p>
+              The real turning point came fast, faster than I was ready for.
+              In my second year, still a student with more theory than
+              experience, a company trusted me to build its entire visual
+              identity from nothing. I remember the weight of that moment more
+              than the details of the brief: the realization that someone was
+              staking their business, their name, their credibility, on my
+              judgment. I said yes anyway. That project became the proof
+              I&rsquo;ve carried ever since: precision isn&rsquo;t just a
+              technical habit, it&rsquo;s a form of respect. The same rigor
+              that makes a system run without failure is the exact rigor that
+              makes a brand impossible to look away from.
+            </p>
+            <p>
+              Today, that dual foundation, an engineer&rsquo;s obsession with
+              structure and a designer&rsquo;s instinct for what moves people,
+              shows up in every project I touch, whether the client is a
+              corporation, a founder, or an artist. Strategy always comes
+              before style. Nothing is decorative unless it&rsquo;s also
+              deliberate. And every identity I build still starts exactly
+              where it started for me at nineteen: with the discipline to
+              notice what&rsquo;s actually true, and the craft to make sure no
+              one can ignore it again.
+            </p>
+          </div>
         </div>
 
         {/* Stats, animated counters */}
