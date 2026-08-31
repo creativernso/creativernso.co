@@ -42,10 +42,12 @@ const tools = [
 
 export default function AboutContent() {
   const heroRef = useRef<HTMLDivElement>(null);
-  const yearsRef = useRef<HTMLDivElement>(null);
+  const drivesRef = useRef<HTMLDivElement>(null);
+  const beyondRef = useRef<HTMLDivElement>(null);
   const brandsRef = useRef<HTMLDivElement>(null);
   const hero = useFitText<HTMLHeadingElement>(heroRef);
-  const years = useFitText<HTMLHeadingElement>(yearsRef);
+  const drives = useFitText<HTMLHeadingElement>(drivesRef);
+  const beyond = useFitText<HTMLHeadingElement>(beyondRef);
   const brandsTitle = useFitText<HTMLHeadingElement>(brandsRef);
 
   return (
@@ -141,18 +143,18 @@ export default function AboutContent() {
         {/* Stats, animated counters */}
         <Stats />
 
-        {/* 8+ years across three worlds */}
+        {/* What drives me. */}
         <div className="mt-24 md:mt-32">
-          <div ref={yearsRef}>
+          <div ref={drivesRef}>
             <h2
-              ref={years.textRef}
+              ref={drives.textRef}
               className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
               style={{
-                fontSize: years.fontSize ? `${years.fontSize}px` : "clamp(36px, 5vw, 96px)",
-                visibility: years.fontSize ? "visible" : "hidden",
+                fontSize: drives.fontSize ? `${drives.fontSize}px` : "clamp(36px, 5vw, 96px)",
+                visibility: drives.fontSize ? "visible" : "hidden",
               }}
             >
-              8+ years across three worlds.
+              What drives me.
             </h2>
           </div>
 
@@ -160,32 +162,105 @@ export default function AboutContent() {
             className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 p-6 md:mt-8 md:p-10"
             style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
           >
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
-              {/* Text — left side, aligned to top of image */}
-              <div className="flex flex-col justify-start text-[14px] leading-[1.6] text-muted-2 [hyphens:auto] [text-align:justify] [text-wrap:pretty] md:text-[17px] md:leading-[1.65]">
+            <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-8">
+              <div className="flex flex-col justify-center space-y-5 text-[14px] leading-[1.6] text-muted-2 [hyphens:auto] [text-align:justify] [text-wrap:pretty] md:text-[17px] md:leading-[1.65]">
                 <p>
-                  The corporate world taught me rigor, systems thinking, and
-                  the architecture of credibility. The professional world taught
-                  me the intimacy of personal positioning and how deeply a brand
-                  can shape someone&rsquo;s sense of authority. The creative world
-                  taught me that emotion and identity are inseparable, and that
-                  the most powerful brands are felt before they are seen.
-                  Together, these three worlds built a practitioner who can walk
-                  into any room: boardroom, consulting room, recording studio,
-                  and find the truth that makes that brand irreplaceable.
+                  I don&rsquo;t do this for the applause. I do it because most
+                  people, and most brands, are walking around with their real
+                  value hidden in plain sight, and that feels like a waste I
+                  can&rsquo;t ignore.
+                </p>
+                <p>
+                  Every project starts the same way: not with a mood board,
+                  but with a question. What is actually true here, that
+                  hasn&rsquo;t been said yet? Corporation, professional, or
+                  artist, it doesn&rsquo;t matter. The moment someone stops
+                  managing how they&rsquo;re perceived and starts building
+                  from what&rsquo;s real, everything changes: how
+                  they&rsquo;re trusted, how they&rsquo;re remembered, how
+                  they&rsquo;re paid.
+                </p>
+                <p>
+                  That&rsquo;s the job. Not to make things look good. To make
+                  the truth impossible to miss.
                 </p>
               </div>
 
-              {/* Image — right side, horizontal */}
-              <div className="relative aspect-[1627/1080] self-start overflow-hidden bg-black">
+              <div className="relative aspect-square overflow-hidden bg-black">
                 <Image
-                  src="/about-worlds.jpg"
-                  alt="Working across three worlds"
+                  src="/about-portrait.jpg"
+                  alt="Ernso Azor"
                   fill
-                  sizes="(min-width: 768px) 50vw, 90vw"
+                  sizes="(min-width: 768px) 40vw, 90vw"
                   className="object-cover"
                 />
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Beyond the work. */}
+        <div className="mt-24 md:mt-32">
+          <div ref={beyondRef}>
+            <h2
+              ref={beyond.textRef}
+              className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
+              style={{
+                fontSize: beyond.fontSize ? `${beyond.fontSize}px` : "clamp(36px, 5vw, 96px)",
+                visibility: beyond.fontSize ? "visible" : "hidden",
+              }}
+            >
+              Beyond the work.
+            </h2>
+          </div>
+
+          <div
+            className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 p-6 md:mt-8 md:p-10"
+            style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
+          >
+            <div className="relative aspect-[2400/1126] overflow-hidden bg-black">
+              <Image
+                src="/beyond-work.jpg"
+                alt="Ernso Azor outside of work"
+                fill
+                sizes="(min-width: 1400px) 1232px, (min-width: 768px) 84vw, 88vw"
+                quality={88}
+                className="object-cover"
+              />
+            </div>
+
+            <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 [hyphens:auto] [text-align:justify] [text-wrap:pretty] md:mt-8 md:text-[19px] md:leading-[1.65]">
+              <p>
+                Outside brand strategy, I&rsquo;m still building. I run my
+                own digital ventures, and digital marketing is as much an
+                obsession as design: understanding how attention moves, what
+                makes someone stop scrolling and actually stay, never really
+                leaves me.
+              </p>
+              <p>
+                The rest of my life follows the same instinct that runs
+                through my work: notice, refine, repeat. I play guitar. I
+                train, because discipline in the gym and discipline in a
+                brand system come from the same place. I spend hours in
+                tutorials and podcasts from people who think sharper than I
+                do, not to collect information, but because learning never
+                stops feeling urgent to me.
+              </p>
+              <p>
+                I&rsquo;m drawn to nature for the same reason I&rsquo;m drawn
+                to identity: it rewards attention. Look closely enough at
+                anything and it starts telling you the truth about itself.
+              </p>
+              <p>
+                I hold myself to a standard most people would call excessive.
+                Everything I touch, a project, a room, a plan, has to be
+                right, not almost right. And I do my best thinking alone.
+                Solitude isn&rsquo;t withdrawal for me, it&rsquo;s where I
+                actually interrogate myself and question my own decisions
+                before anyone else has to. It&rsquo;s how ambition stays
+                honest instead of becoming noise.
+              </p>
+              <p>I think in decades, not quarters.</p>
             </div>
           </div>
         </div>
