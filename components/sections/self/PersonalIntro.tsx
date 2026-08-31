@@ -41,7 +41,7 @@ export default function PersonalIntro() {
           </div>
         </motion.div>
 
-        <div className="mt-6 max-w-3xl space-y-5 text-[14px] leading-[1.6] text-muted-2 md:mt-8 md:text-[16px] md:leading-[1.65]">
+        <div className="mt-6 max-w-3xl space-y-5 text-[14px] leading-[1.6] text-muted-2 md:mt-8 md:max-w-none md:text-[19px] md:leading-[1.65]">
           <p>
             I&rsquo;m Ernso Azor, a brand designer and strategist based in
             Curitiba, Brazil, with 8+ years spent working across
