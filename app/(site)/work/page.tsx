@@ -22,10 +22,7 @@ export default async function WorkPage() {
  >
  <div className="mx-auto max-w-[1400px] px-6 md:px-12">
  {/* Hero image */}
- <div
- className="relative aspect-[2400/1126] overflow-hidden bg-black/30"
- style={{ boxShadow:"inset 0 0 0 1px rgba(255,255,255,0.14)"}}
- >
+ <div className="relative aspect-[2400/1126] overflow-hidden border border-bone/20 bg-black/30">
  <Image
  src="/work-hero.jpg"
  alt="Ernso Azor at work"
