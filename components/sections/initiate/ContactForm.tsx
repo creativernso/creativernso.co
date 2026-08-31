@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
+const deadlineOptions = ["1 month", "1–3 months", "3+ months"];
+
 const budgetOptions = [
   "$1,000 – $3,000",
   "$3,000 – $5,000",
@@ -87,6 +89,26 @@ export default function ContactForm() {
   const inputClass =
     "w-full border border-bone/15 bg-transparent px-4 py-3 text-[15px] text-bone placeholder:text-muted-2 focus:border-bone focus:outline-none";
 
+  const selectClass =
+    "w-full appearance-none border border-bone/15 bg-transparent px-4 py-3 pr-10 text-[15px] focus:border-bone focus:outline-none";
+
+  const Chevron = () => (
+    <svg
+      aria-hidden
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-muted-2"
+    >
+      <path d="M6 9l6 6 6-6" />
+    </svg>
+  );
+
   return (
     <motion.form
       initial={{ opacity: 0, y: 24 }}
@@ -129,61 +151,83 @@ export default function ContactForm() {
           onChange={(e) => setBrandName(e.target.value)}
           className={inputClass}
         />
-        <input
-          type="text"
-          placeholder="Estimated deadline"
-          required
-          value={deadline}
-          onChange={(e) => setDeadline(e.target.value)}
-          className={inputClass}
-        />
+      </div>
+
+      {/* Deadline */}
+      <div className="mt-8">
+        <label className="text-[13px] font-medium uppercase tracking-[0.18em] text-muted-2">
+          Estimated deadline
+        </label>
+        <div className="relative mt-3">
+          <select
+            required
+            data-cursor="hover"
+            value={deadline}
+            onChange={(e) => setDeadline(e.target.value)}
+            className={`${selectClass} ${deadline ? "text-bone" : "text-muted-2"}`}
+          >
+            <option value="" disabled hidden>
+              Select an option
+            </option>
+            {deadlineOptions.map((d) => (
+              <option key={d} value={d} className="bg-ink text-bone">
+                {d}
+              </option>
+            ))}
+          </select>
+          <Chevron />
+        </div>
       </div>
 
       {/* Budget */}
       <div className="mt-8">
-        <div className="text-[13px] font-medium uppercase tracking-[0.18em] text-muted-2">
+        <label className="text-[13px] font-medium uppercase tracking-[0.18em] text-muted-2">
           Estimated budget
-        </div>
-        <div className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-4">
-          {budgetOptions.map((b) => (
-            <button
-              key={b}
-              type="button"
-              data-cursor="hover"
-              onClick={() => setBudget(b)}
-              className={`border px-4 py-3 text-[13px] font-medium transition-colors md:text-[14px] ${
-                budget === b
-                  ? "border-bone bg-bone/[0.06] text-bone"
-                  : "border-bone/15 text-muted-2 hover:border-bone/40 hover:text-bone"
-              }`}
-            >
-              {b}
-            </button>
-          ))}
+        </label>
+        <div className="relative mt-3">
+          <select
+            required
+            data-cursor="hover"
+            value={budget}
+            onChange={(e) => setBudget(e.target.value)}
+            className={`${selectClass} ${budget ? "text-bone" : "text-muted-2"}`}
+          >
+            <option value="" disabled hidden>
+              Select an option
+            </option>
+            {budgetOptions.map((b) => (
+              <option key={b} value={b} className="bg-ink text-bone">
+                {b}
+              </option>
+            ))}
+          </select>
+          <Chevron />
         </div>
       </div>
 
       {/* Source */}
       <div className="mt-8">
-        <div className="text-[13px] font-medium uppercase tracking-[0.18em] text-muted-2">
+        <label className="text-[13px] font-medium uppercase tracking-[0.18em] text-muted-2">
           How did you find me
-        </div>
-        <div className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-3">
-          {sourceOptions.map((s) => (
-            <button
-              key={s}
-              type="button"
-              data-cursor="hover"
-              onClick={() => setSource(s)}
-              className={`border px-4 py-3 text-[13px] font-medium transition-colors md:text-[14px] ${
-                source === s
-                  ? "border-bone bg-bone/[0.06] text-bone"
-                  : "border-bone/15 text-muted-2 hover:border-bone/40 hover:text-bone"
-              }`}
-            >
-              {s}
-            </button>
-          ))}
+        </label>
+        <div className="relative mt-3">
+          <select
+            required
+            data-cursor="hover"
+            value={source}
+            onChange={(e) => setSource(e.target.value)}
+            className={`${selectClass} ${source ? "text-bone" : "text-muted-2"}`}
+          >
+            <option value="" disabled hidden>
+              Select an option
+            </option>
+            {sourceOptions.map((s) => (
+              <option key={s} value={s} className="bg-ink text-bone">
+                {s}
+              </option>
+            ))}
+          </select>
+          <Chevron />
         </div>
       </div>
 
