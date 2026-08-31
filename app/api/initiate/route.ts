@@ -50,7 +50,7 @@ export async function POST(req: Request) {
   const fullName = `${firstName} ${lastName}`;
 
   try {
-    await resend.emails.send({
+    const adminResult = await resend.emails.send({
       from: FROM_EMAIL,
       to: ADMIN_EMAIL,
       replyTo: email,
@@ -70,7 +70,12 @@ export async function POST(req: Request) {
       `,
     });
 
-    await resend.emails.send({
+    if (adminResult.error) {
+      console.error("Failed to send admin notification", adminResult.error);
+      return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
+    }
+
+    const visitorResult = await resend.emails.send({
       from: FROM_EMAIL,
       to: email,
       subject: "Your brief has been received",
@@ -86,6 +91,11 @@ export async function POST(req: Request) {
         </div>
       `,
     });
+
+    if (visitorResult.error) {
+      console.error("Failed to send visitor confirmation", visitorResult.error);
+      return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
+    }
 
     return NextResponse.json({ ok: true });
   } catch (err) {
