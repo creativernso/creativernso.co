@@ -1,7 +1,6 @@
 import Hero from"@/components/sections/self/Hero";
 import HeadlineMarquee from"@/components/sections/self/HeadlineMarquee";
 import ThreeWorlds from"@/components/sections/self/ThreeWorlds";
-import BioStats from"@/components/sections/self/BioStats";
 import SelectedWork from"@/components/sections/self/SelectedWork";
 import PersonalIntro from"@/components/sections/self/PersonalIntro";
 import Testimonials from"@/components/sections/self/Testimonials";
@@ -22,7 +21,6 @@ export default async function HomePage() {
  <SelectedWork projects={projects} />
  <PersonalIntro />
  <ThreeWorlds />
- <BioStats />
  <Testimonials />
  <ReadyToBeSeen />
  </div>

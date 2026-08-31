@@ -193,7 +193,7 @@ export default function AboutContent() {
         >
           <div className="flex flex-wrap items-center justify-between gap-8">
             <div className="max-w-2xl">
-              <p className="text-[16px] leading-[1.5] text-bone md:text-[20px]">
+              <p className="text-[18px] font-bold leading-[1.4] text-bone md:text-[28px]">
                 If what you&rsquo;ve read here resonates, you already know what
                 the next step is.
               </p>
