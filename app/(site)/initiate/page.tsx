@@ -1,10 +1,9 @@
 import DirectContact from "@/components/sections/initiate/DirectContact";
-import QuoteForm from "@/components/sections/initiate/QuoteForm";
+import ContactForm from "@/components/sections/initiate/ContactForm";
 
 export const metadata = {
   title: "Initiate — Ernso Azor",
-  description:
-    "Start a conversation or get an instant, tailored brand investment estimate.",
+  description: "Start a conversation about your brand or product.",
 };
 
 export default function InitiatePage() {
@@ -19,8 +18,8 @@ export default function InitiatePage() {
             Let&rsquo;s build something.
           </h1>
           <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-muted-2 md:text-[18px]">
-            Reach out directly, or answer a few questions and get a tailored
-            estimate sent straight to your inbox.
+            Reach out directly, or share a few details about your project
+            below.
           </p>
         </header>
 
@@ -30,10 +29,10 @@ export default function InitiatePage() {
 
         <div className="mt-16 md:mt-20">
           <h2 className="font-display text-bone text-[clamp(24px,3.6vw,48px)] font-bold leading-[1.15] tracking-[-0.03em]">
-            Get an instant estimate
+            Tell me about your project
           </h2>
           <div className="mt-6 md:mt-8">
-            <QuoteForm />
+            <ContactForm />
           </div>
         </div>
       </div>
