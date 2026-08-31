@@ -3,6 +3,7 @@ import HeadlineMarquee from"@/components/sections/self/HeadlineMarquee";
 import ThreeWorlds from"@/components/sections/self/ThreeWorlds";
 import BioStats from"@/components/sections/self/BioStats";
 import SelectedWork from"@/components/sections/self/SelectedWork";
+import PersonalIntro from"@/components/sections/self/PersonalIntro";
 import Testimonials from"@/components/sections/self/Testimonials";
 import ReadyToBeSeen from"@/components/sections/self/ReadyToBeSeen";
 import { client } from"@/lib/sanity/client";
@@ -19,6 +20,7 @@ export default async function HomePage() {
  <div className="bg-site relative z-10">
  <HeadlineMarquee />
  <SelectedWork projects={projects} />
+ <PersonalIntro />
  <ThreeWorlds />
  <BioStats />
  <Testimonials />
