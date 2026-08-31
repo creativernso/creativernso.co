@@ -255,7 +255,7 @@ export default function ContactForm() {
           type="submit"
           data-cursor="hover"
           disabled={!isComplete || status === "submitting"}
-          className="inline-flex items-center gap-2 border border-bone bg-bone/[0.06] px-9 py-3.5 text-[12px] font-medium uppercase tracking-[0.2em] text-bone transition-colors enabled:hover:bg-bone enabled:hover:text-black disabled:border-bone/30 disabled:bg-transparent disabled:text-bone/40"
+          className="inline-flex items-center gap-2 border border-bone bg-bone/[0.06] px-9 py-3.5 text-[12px] font-medium uppercase tracking-[0.2em] text-bone transition-colors enabled:hover:bg-bone enabled:hover:text-black disabled:border-bone/60 disabled:bg-transparent disabled:text-bone/50"
         >
           {status === "submitting" ? "Sending…" : "Submit"}
         </button>
