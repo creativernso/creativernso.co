@@ -74,7 +74,7 @@ export default function Testimonials() {
             transition={{ duration: 0.55, ease: EASE }}
             className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
             style={{
-              fontSize: fontSize ? `${fontSize}px` : "clamp(36px, 5vw, 96px)",
+              fontSize: fontSize ? `${fontSize}px` : "clamp(36px, 6.5vw, 116px)",
               visibility: fontSize ? "visible" : "hidden",
             }}
           >

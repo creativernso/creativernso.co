@@ -30,7 +30,7 @@ export default function SelectedWork({ projects }: { projects: Project[] }) {
  transition={{ duration: 0.55, ease: EASE }}
  className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
  style={{
- fontSize: fontSize ? `${fontSize}px` :"clamp(44px, 6vw, 120px)",
+ fontSize: fontSize ? `${fontSize}px` :"clamp(44px, 7.5vw, 140px)",
  visibility: fontSize ?"visible":"hidden",
  }}
  >
