@@ -2,14 +2,16 @@
 
 import { motion } from"framer-motion";
 import Image from"next/image";
-import Link from"next/link";
+import { Link } from"@/i18n/navigation";
 import { useRef } from"react";
 import { useFitText } from"@/lib/useFitText";
 import type { Project } from"@/lib/content";
+import { useTranslations } from"next-intl";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
 export default function SelectedWork({ projects }: { projects: Project[] }) {
+ const t = useTranslations("selectedWork");
  const featured = projects.slice(0, 6);
  const gridRef = useRef<HTMLDivElement>(null);
  const { textRef, fontSize } = useFitText<HTMLHeadingElement>(gridRef);
@@ -34,7 +36,7 @@ export default function SelectedWork({ projects }: { projects: Project[] }) {
  visibility: fontSize ?"visible":"hidden",
  }}
  >
- Selected work.
+ {t("title")}
  </motion.h2>
 
  {/* Project cards grid */}
@@ -111,7 +113,7 @@ export default function SelectedWork({ projects }: { projects: Project[] }) {
  className="group inline-flex items-center gap-4 bg-black/30 px-8 py-4 text-[12px] font-medium uppercase tracking-[0.22em] text-bone backdrop-blur-md transition-colors hover:bg-bone hover:text-black md:text-[13px]"
  style={{ boxShadow:"inset 0 0 0 1px rgba(255,255,255,0.22)"}}
  >
- <span>See all projects</span>
+ <span>{t("seeAll")}</span>
  <span
  aria-hidden
  className="inline-flex h-5 w-5 items-center justify-center transition-transform duration-200 ease-out group-hover:translate-x-1"

@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "self": "Profil",
+    "story": "Histoire",
+    "belief": "Conviction",
+    "creations": "Créations",
+    "initiate": "Initier"
+  },
+  "footer": {
+    "connect": "Restons en contact",
+    "terms": "Conditions d'utilisation",
+    "privacy": "Politique de confidentialité",
+    "copyright": "Ernso Azor. Révéler ce qui était déjà là.",
+    "tagline": "@creativernso · Stratégie de marque & Design"
+  },
+  "language": {
+    "en": "Anglais",
+    "fr": "Français",
+    "pt": "Portugais",
+    "es": "Espagnol"
+  },
+  "hero": {
+    "line1": "Je ne construis pas des marques.",
+    "phrase1": "Je les révèle.",
+    "phrase2": "Je les dévoile.",
+    "phrase3": "Je les positionne.",
+    "phrase4": "Je les élève.",
+    "cta": "Initier"
+  },
+  "marquee": {
+    "item1": "Positionnement social",
+    "item2": "Marque personnelle",
+    "item3": "La méthode révélation",
+    "item4": "8+ ans de maîtrise"
+  },
+  "selectedWork": {
+    "title": "Travaux sélectionnés.",
+    "seeAll": "Voir tous les projets"
+  },
+  "personalIntro": {
+    "titleLine1": "Avant la marque,",
+    "titleLine2": "la personne.",
+    "p1": "Je suis Ernso Azor, designer de marque et stratège basé à Curitiba, au Brésil, avec plus de 8 ans passés à travailler avec des institutions, des professionnels et des créatifs qui refusent la médiocrité. J'aide les personnes et les entreprises à révéler ce qui les rend vraiment différentes, puis je construis une identité qui le met pleinement en lumière. Pas de décoration. Pas d'approximation. Je cherche la vérité déjà présente dans une marque, celle que son propriétaire ne voit souvent plus tant il est proche d'elle, et je lui donne une forme que le monde ne peut plus ignorer.",
+    "p2": "Ma mission est de travailler avec des institutions ambitieuses, des professionnels déterminés et des créatifs audacieux prêts à être vus au niveau où ils opèrent réellement, pas celui que suggère leur présence actuelle.",
+    "p3": "Que vous soyez une entreprise prête à assumer l'autorité que vous avez déjà gagnée, ou un artiste prêt à être ressenti avant même d'être entendu, j'apporte la même discipline : la stratégie d'abord, un récit qui capte l'attention, et un savoir-faire qui garantit qu'on se souvienne de vous.",
+    "cta": "Lire mon histoire"
+  },
+  "worlds": {
+    "title": "Les mondes dans lesquels j'évolue.",
+    "world1Title": "Entreprises & Organisations",
+    "world1Body": "Pour les institutions qui opèrent à grande échelle et ont besoin d'une présence de marque aussi forte que leur travail. Des systèmes d'identité stratégiques qui imposent le respect dans les salles de conseil, auprès des partenaires, et en public, avant même qu'un mot ne soit prononcé.",
+    "world2Title": "Professionnels & Experts",
+    "world2Body": "Pour les professionnels déterminés qui ont bâti une véritable expertise et ont besoin que le monde la voie clairement. Une marque personnelle qui les positionne au niveau où ils opèrent réellement, pas celui que suggère leur présence actuelle.",
+    "world3Title": "Artistes, Créateurs & Personnalités publiques",
+    "world3Body": "Pour les artistes, influenceurs et personnalités publiques qui touchent un public mais n'ont pas encore bâti l'architecture de marque à la hauteur de leur talent. Une identité de marque complète, un positionnement social, et un système qui rend leur présence aussi puissante que leur travail."
+  },
+  "testimonials": {
+    "title": "Ce qu'ils en disent.",
+    "t1role": "PDG, Vantage Holdings",
+    "t1quote": "Ernso n'a pas seulement conçu notre identité, il l'a révélée. Les salles de conseil nous prennent au sérieux maintenant, d'une façon qu'elles ne faisaient pas avant.",
+    "t2role": "Consultante indépendante",
+    "t2quote": "Ma marque personnelle correspond enfin au niveau où j'opère réellement. Les clients viennent maintenant à moi déjà convaincus.",
+    "t3role": "Artiste musical",
+    "t3quote": "Il a rendu ma présence aussi puissante que ma musique. Tout le système, visuels, ton, récit, s'aligne enfin.",
+    "t4role": "Directrice, Fondation Prescott",
+    "t4quote": "Il a traduit une décennie de travail institutionnel en une présence qui impose enfin le respect. Les partenaires le remarquent immédiatement.",
+    "t5role": "Fondateur, Osei & Partners",
+    "t5quote": "Chaque point de contact semble désormais réfléchi. Les clients me disent qu'ils nous faisaient confiance avant même d'avoir ouvert la bouche."
+  },
+  "readyToBeSeen": {
+    "title": "Prêt à être vu ?",
+    "subtitle": "Parlez-moi de votre vision. Je vous dirai comment la rendre incontournable.",
+    "cta": "Initier"
+  }
+}

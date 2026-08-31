@@ -1,4 +1,5 @@
 import { Anton } from"next/font/google";
+import { getTranslations } from"next-intl/server";
 
 const condensed = Anton({
  subsets: ["latin"],
@@ -7,14 +8,9 @@ const condensed = Anton({
  display:"swap",
 });
 
-const items = [
-"Social positioning",
-"Personal branding",
-"The reveal framework",
-"8+ years of mastery",
-];
-
-export default function HeadlineMarquee() {
+export default async function HeadlineMarquee() {
+ const t = await getTranslations("marquee");
+ const items = [t("item1"), t("item2"), t("item3"), t("item4")];
  // Render the items 4× inside the track so the seamless -50% loop has enough width
  const set = items.flatMap((it, i) => [it, i === items.length - 1 ? null :"•"]);
  const doubled = [...set, ...set];

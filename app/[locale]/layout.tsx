@@ -1,6 +1,10 @@
 import type { Metadata, Viewport } from"next";
 import { JetBrains_Mono, Inter } from"next/font/google";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { setRequestLocale } from "next-intl/server";
 import"../globals.css";
+import { routing } from "@/i18n/routing";
 import Nav from"@/components/chrome/Nav";
 import Footer from"@/components/chrome/Footer";
 import Cursor from"@/components/chrome/Cursor";
@@ -48,14 +52,26 @@ export const viewport: Viewport = {
  initialScale: 1,
 };
 
-export default function RootLayout({
+export function generateStaticParams() {
+ return routing.locales.map((locale) => ({ locale }));
+}
+
+export default async function RootLayout({
  children,
+ params,
 }: {
  children: React.ReactNode;
+ params: Promise<{ locale: string }>;
 }) {
+ const { locale } = await params;
+ if (!hasLocale(routing.locales, locale)) {
+ notFound();
+ }
+ setRequestLocale(locale);
+
  return (
  <html
- lang="en"
+ lang={locale}
  className={`${sans.variable} ${body.variable} ${mono.variable}`}
  >
  <body className="bg-black text-bone">
@@ -65,6 +81,7 @@ export default function RootLayout({
 "if('scrollRestoration' in history)history.scrollRestoration='manual';window.scrollTo(0,0);",
  }}
  />
+ <NextIntlClientProvider>
  <Cursor />
  <Grain />
 
@@ -78,6 +95,7 @@ export default function RootLayout({
  <Footer />
 
  {/* <SmoothScroll /> */}
+ </NextIntlClientProvider>
  </body>
  </html>
  );

@@ -1,4 +1,5 @@
-import Link from"next/link";
+import { Link } from"@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
 
 const socials = [
  {
@@ -91,7 +92,9 @@ const socials = [
  },
 ];
 
-export default function Footer() {
+export default async function Footer() {
+ const t = await getTranslations("footer");
+ const nav = await getTranslations("nav");
  return (
  <footer data-theme="dark"className="pb-6 md:pb-12">
  <div className="mx-auto max-w-[1400px] px-6 md:px-12">
@@ -103,7 +106,7 @@ export default function Footer() {
  {/* Left, Let's Connect + socials */}
  <div className="col-span-12 md:col-span-6">
  <h2 className="font-display text-bone text-[clamp(34px,4.6vw,56px)] font-bold leading-[1.02] tracking-[-0.04em]">
- Let&rsquo;s Connect
+ {t("connect")}
  </h2>
 
  <ul className="mt-8 flex items-center gap-3">
@@ -131,28 +134,28 @@ export default function Footer() {
  data-cursor="hover"
  className="text-[12px] font-medium uppercase tracking-[0.18em] text-bone/85 transition-colors hover:text-bone"
  >
- Self
+ {nav("self")}
  </Link>
  <Link
  href="/about"
  data-cursor="hover"
  className="text-[12px] font-medium uppercase tracking-[0.18em] text-bone/85 transition-colors hover:text-bone"
  >
- Story
+ {nav("story")}
  </Link>
  <Link
  href="/services"
  data-cursor="hover"
  className="text-[12px] font-medium uppercase tracking-[0.18em] text-bone/85 transition-colors hover:text-bone"
  >
- Belief
+ {nav("belief")}
  </Link>
  <Link
  href="/work"
  data-cursor="hover"
  className="text-[12px] font-medium uppercase tracking-[0.18em] text-bone/85 transition-colors hover:text-bone"
  >
- Creations
+ {nav("creations")}
  </Link>
  <Link
  href="/initiate"
@@ -160,7 +163,7 @@ export default function Footer() {
  data-press
  className="group inline-flex items-center gap-2 border border-bone/20 px-5 py-2.5 text-[12px] font-medium uppercase tracking-[0.18em] text-bone transition-colors hover:bg-bone hover:text-black"
  >
- <span>Initiate</span>
+ <span>{nav("initiate")}</span>
  <span
  aria-hidden
  className="transition-transform duration-200 ease-out group-hover:translate-x-0.5"
@@ -174,16 +177,16 @@ export default function Footer() {
  {/* Sub-footer line */}
  <div className="mt-12 flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border-t border-bone/10 pt-6 text-[12px] text-muted-2 md:mt-16">
  <div>
- © {new Date().getFullYear()} Ernso Azor. Revealing what was always there.
+ © {new Date().getFullYear()} {t("copyright")}
  </div>
  <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
  <Link href="/terms" data-cursor="hover" className="transition-colors hover:text-bone">
- Terms of Service
+ {t("terms")}
  </Link>
  <Link href="/privacy" data-cursor="hover" className="transition-colors hover:text-bone">
- Privacy Policy
+ {t("privacy")}
  </Link>
- <span>@creativernso · Brand Strategy &amp; Design</span>
+ <span>{t("tagline")}</span>
  </div>
  </div>
  </div>

@@ -1,21 +1,15 @@
 "use client";
 
-import Link from"next/link";
+import { Link } from"@/i18n/navigation";
 import Image from"next/image";
 import heroDesktop from"@/public/hero-desktop.jpg";
 import heroMobile from"@/public/hero-mobile.jpg";
 import { motion } from"framer-motion";
 import { useEffect, useState } from"react";
+import { useTranslations } from"next-intl";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
-// Phrases that rotate after"I don't build brands."
-const ROTATING_PHRASES = [
-"I reveal them.",
-"I uncover them.",
-"I position them.",
-"I elevate them.",
-];
 const CYCLE_MS = 8500; // per phrase: type → hold → erase (slower, more cinematic)
 
 /**
@@ -57,8 +51,14 @@ function RotatingTypewriter({
 }
 
 export default function Hero() {
- // Line 1 is static — line 2 rotates through ROTATING_PHRASES
- const line1 ="I don’t build brands.";
+ const t = useTranslations("hero");
+ const line1 = t("line1");
+ const rotatingPhrases = [
+ t("phrase1"),
+ t("phrase2"),
+ t("phrase3"),
+ t("phrase4"),
+ ];
  // Subtitle + button appear ONCE on first load
  const subtitleStart = 0.6;
  const buttonStart = subtitleStart + 0.3;
@@ -90,7 +90,7 @@ export default function Hero() {
  <span className="block">{line1}</span>
  <span className="block font-bold text-bone/30">
  <RotatingTypewriter
- phrases={ROTATING_PHRASES}
+ phrases={rotatingPhrases}
  cycleMs={CYCLE_MS}
  />
  </span>
@@ -111,7 +111,7 @@ export default function Hero() {
  boxShadow:"inset 0 0 0 1px rgba(255,255,255,0.22)",
  }}
  >
- <span>Initiate</span>
+ <span>{t("cta")}</span>
  <span
  aria-hidden
  className="transition-transform duration-200 ease-out group-hover:translate-x-0.5"
@@ -142,7 +142,7 @@ export default function Hero() {
  <span className="block">{line1}</span>
  <span className="block font-bold text-bone/30">
  <RotatingTypewriter
- phrases={ROTATING_PHRASES}
+ phrases={rotatingPhrases}
  cycleMs={CYCLE_MS}
  />
  </span>
@@ -163,7 +163,7 @@ export default function Hero() {
  boxShadow:"inset 0 0 0 1px rgba(255,255,255,0.22)",
  }}
  >
- <span>Initiate</span>
+ <span>{t("cta")}</span>
  <span
  aria-hidden
  className="transition-transform duration-200 ease-out group-hover:translate-x-0.5"

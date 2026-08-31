@@ -3,7 +3,7 @@
 import { useState } from"react";
 import { motion, AnimatePresence, LayoutGroup } from"framer-motion";
 import Image from"next/image";
-import Link from"next/link";
+import { Link } from"@/i18n/navigation";
 import type { Project } from"@/lib/content";
 
 const EASE = [0.16, 1, 0.3, 1] as const;

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useRef } from "react";
 import BrandsMarquee from "@/components/sections/about/BrandsMarquee";
 import Stats from "@/components/sections/about/Stats";

@@ -1,18 +1,19 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-
-const items = [
-  { label: "Self", href: "/" },
-  { label: "Story", href: "/about" },
-  { label: "Belief", href: "/services" },
-  { label: "Creations", href: "/work" },
-] as const;
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Nav() {
+  const t = useTranslations("nav");
+  const items = [
+    { label: t("self"), href: "/" },
+    { label: t("story"), href: "/about" },
+    { label: t("belief"), href: "/services" },
+    { label: t("creations"), href: "/work" },
+  ] as const;
   const [open, setOpen] = useState(false);
   const [atTop, setAtTop] = useState(true);
   const pathname = usePathname();
@@ -54,23 +55,26 @@ export default function Nav() {
             Ernso Azor
           </Link>
 
-          <button
-            aria-label="Toggle menu"
-            onClick={() => setOpen((v) => !v)}
-            className="relative z-10 flex h-9 w-9 flex-col items-end justify-center gap-2 text-bone"
-            data-cursor="hover"
-          >
-            <span
-              className={`h-px w-7 bg-current transition-transform duration-300 ease-in-out ${
-                open ? "translate-y-[4.5px] rotate-45" : ""
-              }`}
-            />
-            <span
-              className={`h-px w-7 bg-current transition-transform duration-300 ease-in-out ${
-                open ? "-translate-y-[4.5px] -rotate-45" : ""
-              }`}
-            />
-          </button>
+          <div className="flex items-center gap-4">
+            <LanguageSwitcher />
+            <button
+              aria-label="Toggle menu"
+              onClick={() => setOpen((v) => !v)}
+              className="relative z-10 flex h-9 w-9 flex-col items-end justify-center gap-2 text-bone"
+              data-cursor="hover"
+            >
+              <span
+                className={`h-px w-7 bg-current transition-transform duration-300 ease-in-out ${
+                  open ? "translate-y-[4.5px] rotate-45" : ""
+                }`}
+              />
+              <span
+                className={`h-px w-7 bg-current transition-transform duration-300 ease-in-out ${
+                  open ? "-translate-y-[4.5px] -rotate-45" : ""
+                }`}
+              />
+            </button>
+          </div>
         </div>
       </header>
 
@@ -84,7 +88,7 @@ export default function Nav() {
             className="fixed inset-y-4 inset-x-0 z-40 mx-auto flex max-w-[1400px] flex-col justify-center overflow-hidden bg-black px-6 text-bone md:inset-y-10 md:px-12"
           >
             <nav className="flex flex-col gap-3">
-              {[...items, { label: "Initiate", href: "/initiate" }].map(
+              {[...items, { label: t("initiate"), href: "/initiate" }].map(
                 (item, i) => {
                   const active = item.href === pathname;
                   return (

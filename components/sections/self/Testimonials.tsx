@@ -3,45 +3,16 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useFitText } from "@/lib/useFitText";
+import { useTranslations } from "next-intl";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
-const testimonials = [
-  {
-    initials: "MK",
-    name: "Marcus Keller",
-    role: "CEO, Vantage Holdings",
-    quote:
-      "Ernso didn't just design our identity, he uncovered it. Boardrooms take us seriously now in a way they didn't before.",
-  },
-  {
-    initials: "AR",
-    name: "Amara Reyes",
-    role: "Independent Consultant",
-    quote:
-      "My personal brand finally matches the level I actually operate at. Clients now come to me already convinced.",
-  },
-  {
-    initials: "JD",
-    name: "Jules Duval",
-    role: "Recording Artist",
-    quote:
-      "He made my presence feel as powerful as my music. The whole system, visuals, tone, story, finally lines up.",
-  },
-  {
-    initials: "NP",
-    name: "Nadia Prescott",
-    role: "Director, Prescott Foundation",
-    quote:
-      "He translated a decade of institutional work into a presence that finally commands the room. Partners notice immediately.",
-  },
-  {
-    initials: "TO",
-    name: "Theo Osei",
-    role: "Founder, Osei & Partners",
-    quote:
-      "Every touchpoint now feels deliberate. Clients tell me they trusted us before we even opened our mouths.",
-  },
+const testimonialNames = [
+  { initials: "MK", name: "Marcus Keller" },
+  { initials: "AR", name: "Amara Reyes" },
+  { initials: "JD", name: "Jules Duval" },
+  { initials: "NP", name: "Nadia Prescott" },
+  { initials: "TO", name: "Theo Osei" },
 ];
 
 function Stars() {
@@ -57,6 +28,12 @@ function Stars() {
 }
 
 export default function Testimonials() {
+  const t = useTranslations("testimonials");
+  const testimonials = testimonialNames.map((n, i) => ({
+    ...n,
+    role: t(`t${i + 1}role` as "t1role"),
+    quote: t(`t${i + 1}quote` as "t1quote"),
+  }));
   // Duplicate the set so the -50% translate loop is seamless
   const track = [...testimonials, ...testimonials];
   const containerRef = useRef<HTMLDivElement>(null);
@@ -78,7 +55,7 @@ export default function Testimonials() {
               visibility: fontSize ? "visible" : "hidden",
             }}
           >
-            What they say.
+            {t("title")}
           </motion.h2>
         </div>
       </div>

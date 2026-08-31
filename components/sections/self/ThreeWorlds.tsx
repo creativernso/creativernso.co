@@ -3,11 +3,17 @@
 import { motion } from"framer-motion";
 import { useRef } from"react";
 import { useFitText } from"@/lib/useFitText";
-import { worlds } from"@/lib/content";
+import { useTranslations } from"next-intl";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
 export default function ThreeWorlds() {
+ const t = useTranslations("worlds");
+ const worlds = [
+ { numeral:"I", title: t("world1Title"), body: t("world1Body") },
+ { numeral:"II", title: t("world2Title"), body: t("world2Body") },
+ { numeral:"III", title: t("world3Title"), body: t("world3Body") },
+ ];
  const rectRef = useRef<HTMLDivElement>(null);
  const { textRef, fontSize } = useFitText<HTMLHeadingElement>(rectRef);
 
@@ -30,7 +36,7 @@ export default function ThreeWorlds() {
  visibility: fontSize ?"visible":"hidden",
  }}
  >
- The worlds I operate in.
+ {t("title")}
  </motion.h2>
 
  {/* Three worlds, merged into one rectangle */}
