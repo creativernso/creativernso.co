@@ -82,7 +82,7 @@ export default function AboutContent() {
         </div>
 
         {/* Parcours */}
-        <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 md:mt-8 md:text-[19px] md:leading-[1.65]">
+        <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 md:mt-8 md:text-[19px] md:leading-[1.65] md:[text-align:justify]">
           <p>
             It started long before I had a word for any of it. As a child, I
             was the one who noticed things nobody else seemed to register:
