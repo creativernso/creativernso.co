@@ -7,12 +7,18 @@ import Testimonials from"@/components/sections/self/Testimonials";
 import ReadyToBeSeen from"@/components/sections/self/ReadyToBeSeen";
 import { client } from"@/lib/sanity/client";
 import { projectsQuery } from"@/lib/sanity/queries";
-import type { Project } from"@/lib/content";
+import { localizeProject, type RawProject } from"@/lib/content";
 
 export const revalidate = 30;
 
-export default async function HomePage() {
- const projects = await client.fetch<Project[]>(projectsQuery);
+export default async function HomePage({
+ params,
+}: {
+ params: Promise<{ locale: string }>;
+}) {
+ const { locale } = await params;
+ const raw = await client.fetch<RawProject[]>(projectsQuery);
+ const projects = raw.map((p) => localizeProject(p, locale));
  return (
  <>
  <Hero />

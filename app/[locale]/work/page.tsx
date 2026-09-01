@@ -1,7 +1,7 @@
 import Image from"next/image";
 import { client } from"@/lib/sanity/client";
 import { projectsQuery } from"@/lib/sanity/queries";
-import type { Project } from"@/lib/content";
+import { localizeProject, type RawProject } from"@/lib/content";
 import WorkFilter from"@/components/sections/work/WorkFilter";
 import MarkLibrary from"@/components/sections/work/MarkLibrary";
 import { getTranslations } from "next-intl/server";
@@ -16,8 +16,14 @@ export async function generateMetadata() {
   };
 }
 
-export default async function WorkPage() {
- const projects = await client.fetch<Project[]>(projectsQuery);
+export default async function WorkPage({
+ params,
+}: {
+ params: Promise<{ locale: string }>;
+}) {
+ const { locale } = await params;
+ const raw = await client.fetch<RawProject[]>(projectsQuery);
+ const projects = raw.map((p) => localizeProject(p, locale));
  const t = await getTranslations("work");
  return (
  <section

@@ -15,6 +15,7 @@ const projectFields = groq`
   date,
   tags,
   year,
+  i18n,
   "image": image.asset->url,
   "hero": hero.asset->url,
   "feature": feature.asset->url,

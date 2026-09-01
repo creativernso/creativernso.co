@@ -41,6 +41,44 @@ export type Project = {
   closer: string;
 };
 
+type ProjectTranslation = {
+  title?: string;
+  label?: string;
+  subtitle?: string;
+  overview?: string[];
+  tags?: string[];
+};
+
+// Raw shape returned by Sanity, before locale resolution — see
+// sanity/schemaTypes/project.ts and lib/sanity/queries.ts.
+export type RawProject = Project & {
+  i18n?: {
+    fr?: ProjectTranslation;
+    pt?: ProjectTranslation;
+    es?: ProjectTranslation;
+  };
+};
+
+// Resolves a raw Sanity project into the shape components expect, applying
+// the translation for `locale` (falling back to the English base fields for
+// any translated field that's empty or missing).
+export function localizeProject(p: RawProject, locale: string): Project {
+  const { i18n, ...base } = p;
+  const t =
+    locale === "fr" || locale === "pt" || locale === "es"
+      ? i18n?.[locale]
+      : undefined;
+  if (!t) return base;
+  return {
+    ...base,
+    title: t.title || base.title,
+    label: t.label || base.label,
+    subtitle: t.subtitle || base.subtitle,
+    overview: t.overview?.length ? t.overview : base.overview,
+    tags: t.tags?.length ? t.tags : base.tags,
+  };
+}
+
 // Project data now lives in Sanity (see sanity/schemaTypes/project.ts and
 // lib/sanity/queries.ts) and is fetched at request/build time. The `Project`
 // type above is kept as the shared shape consumed by WorkFilter, SelectedWork

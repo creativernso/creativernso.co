@@ -1,5 +1,36 @@
 import { defineType, defineField } from 'sanity'
 
+const translationFields = [
+  defineField({
+    name: 'title',
+    title: 'Title',
+    type: 'string',
+  }),
+  defineField({
+    name: 'label',
+    title: 'Label',
+    type: 'string',
+  }),
+  defineField({
+    name: 'subtitle',
+    title: 'Subtitle',
+    type: 'string',
+  }),
+  defineField({
+    name: 'overview',
+    title: 'Overview',
+    type: 'array',
+    of: [{ type: 'text' }],
+    description: 'One entry per paragraph of the project story.',
+  }),
+  defineField({
+    name: 'tags',
+    title: 'Tags',
+    type: 'array',
+    of: [{ type: 'string' }],
+  }),
+]
+
 export const project = defineType({
   name: 'project',
   title: 'Project',
@@ -85,6 +116,19 @@ export const project = defineType({
       title: 'Tags',
       type: 'array',
       of: [{ type: 'string' }],
+    }),
+    defineField({
+      name: 'i18n',
+      title: 'Translations',
+      type: 'object',
+      description:
+        'Translated copy for each non-English language. Any field left empty falls back to the English fields above.',
+      options: { collapsible: true, collapsed: true },
+      fields: [
+        { name: 'fr', title: 'French', type: 'object', fields: translationFields },
+        { name: 'pt', title: 'Portuguese', type: 'object', fields: translationFields },
+        { name: 'es', title: 'Spanish', type: 'object', fields: translationFields },
+      ],
     }),
     defineField({
       name: 'image',
