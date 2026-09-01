@@ -31,7 +31,7 @@ export default function LanguageSwitcher() {
         onClick={() => setOpen((v) => !v)}
         data-cursor="hover"
         aria-label="Change language"
-        className="inline-flex h-9 min-w-[44px] items-center justify-center border border-bone/40 px-3 font-mono text-[13px] uppercase tracking-[0.1em] text-bone transition-colors hover:border-bone/70"
+        className="inline-flex h-9 w-9 items-center justify-center border border-bone/40 font-mono text-[10px] uppercase tracking-[0.05em] text-bone transition-colors hover:border-bone/70"
       >
         {locale}
       </button>
