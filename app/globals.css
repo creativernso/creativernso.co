@@ -106,16 +106,18 @@ html.lenis body {
   }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@layer base {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-button {
-  background: none;
-  border: none;
-  color: inherit;
-  font: inherit;
+  button {
+    background: none;
+    border-width: 0;
+    color: inherit;
+    font: inherit;
+  }
 }
 
 .meta {
