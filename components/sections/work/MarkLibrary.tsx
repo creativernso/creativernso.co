@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
 const marks = [
   "01", "02", "03", "04", "05", "06", "07", "08", "09", "10",
@@ -14,15 +15,15 @@ const marks = [
   "106", "107", "108", "109", "111",
 ];
 
-export default function MarkLibrary() {
+export default async function MarkLibrary() {
+  const t = await getTranslations("work");
   return (
     <div className="mt-24 md:mt-32">
       <h2 className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.04em]">
-        The Mark Library
+        {t("markLibraryTitle")}
       </h2>
       <p className="mt-3 text-[15px] text-muted-2 md:text-[18px]">
-        Every shape carries a decision. Every curve, every angle, every
-        weight chosen with intention.
+        {t("markLibraryDesc")}
       </p>
 
       <div

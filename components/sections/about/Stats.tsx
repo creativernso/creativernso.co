@@ -2,19 +2,20 @@
 
 import { useEffect, useRef, useState } from"react";
 import { motion, useInView, animate } from"framer-motion";
+import { useTranslations } from "next-intl";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
 type Stat = {
  target: number;
  suffix?: string;
- label: string;
+ labelKey: "experience" | "brandsRevealed" | "worldsServed";
 };
 
 const stats: Stat[] = [
- { target: 8, suffix:"+", label:"Experience"},
- { target: 80, suffix:"+", label:"Brands revealed"},
- { target: 3, label:"Worlds served"},
+ { target: 8, suffix:"+", labelKey:"experience"},
+ { target: 80, suffix:"+", labelKey:"brandsRevealed"},
+ { target: 3, labelKey:"worldsServed"},
 ];
 
 function Counter({
@@ -50,6 +51,7 @@ function Counter({
 }
 
 export default function Stats() {
+ const t = useTranslations("about.stats");
  const ref = useRef<HTMLDivElement>(null);
  const inView = useInView(ref, { once: true, amount: 0.35 });
 
@@ -64,7 +66,7 @@ export default function Stats() {
 
  return (
  <motion.div
- key={s.label}
+ key={s.labelKey}
  className="relative text-center"
  initial={{ opacity: 0, y: 28 }}
  animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -143,7 +145,7 @@ export default function Stats() {
  }}
  className="mt-1.5 whitespace-nowrap font-mono text-[5px] uppercase tracking-[0.08em] text-muted-2 md:mt-2 md:text-[11px] md:tracking-[0.45em]"
  >
- {s.label.replace(/\s+/g," ")}
+ {t(s.labelKey)}
  </motion.div>
  </motion.div>
  );

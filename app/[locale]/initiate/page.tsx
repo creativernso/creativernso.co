@@ -1,12 +1,17 @@
 import DirectContact from "@/components/sections/initiate/DirectContact";
 import ContactForm from "@/components/sections/initiate/ContactForm";
+import { getTranslations } from "next-intl/server";
 
-export const metadata = {
-  title: "Initiate — Ernso Azor",
-  description: "Start a conversation about your brand or product.",
-};
+export async function generateMetadata() {
+  const t = await getTranslations("initiate");
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  };
+}
 
-export default function InitiatePage() {
+export default async function InitiatePage() {
+  const t = await getTranslations("initiate");
   return (
     <section
       data-theme="dark"
@@ -15,11 +20,10 @@ export default function InitiatePage() {
       <div className="mx-auto max-w-[1400px] px-6 md:px-12">
         <header>
           <h1 className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]">
-            Let&rsquo;s build something.
+            {t("heroTitle")}
           </h1>
           <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-muted-2 md:text-[18px]">
-            Reach out directly, or share a few details about your project
-            below.
+            {t("heroSubtitle")}
           </p>
         </header>
 
@@ -29,7 +33,7 @@ export default function InitiatePage() {
 
         <div className="mt-16 md:mt-20">
           <h2 className="font-display text-bone text-[clamp(24px,3.6vw,48px)] font-bold leading-[1.15] tracking-[-0.03em]">
-            Tell me about your project
+            {t("formHeading")}
           </h2>
           <div className="mt-6 md:mt-8">
             <ContactForm />

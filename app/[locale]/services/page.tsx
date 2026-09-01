@@ -4,55 +4,20 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { useRef } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { useFitText } from "@/lib/useFitText";
 
 export const dynamic = "force-static";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
-const beliefs = [
-  {
-    n: "I",
-    title: "Branding is revelation",
-    body: "A brand is never invented. It is uncovered. The most powerful identities feel inevitable like they could only belong to that person, that institution, that artist. My job is to make that truth visible.",
-  },
-  {
-    n: "II",
-    title: "Uniqueness is the strategy",
-    body: "In a world of imitation, the most dangerous thing a brand can do is look like someone else. What makes you different whether you're a CEO or a creator is not a risk. It is your greatest asset.",
-  },
-  {
-    n: "III",
-    title: "Perception is power",
-    body: "How the world sees you determines what comes to you. For a corporation, it shapes deals. For an expert, it shapes authority. For an artist, it shapes reach. Managing perception is not vanity it is strategy.",
-  },
-  {
-    n: "IV",
-    title: "Design is a philosophy",
-    body: "Every color, typeface, and spatial decision communicates something. There are no neutral choices. Everything means something which means everything must be intentional, from a boardroom annual report to an Instagram grid.",
-  },
-  {
-    n: "V",
-    title: "Alignment is the goal",
-    body: "A brand works when what you say, what you show, and what you do all point in the same direction whether on a company website or a creator's social presence. Misalignment is the most expensive mistake a brand can make.",
-  },
-  {
-    n: "VI",
-    title: "The REVEAL Framework",
-    body: "Root → Excavate → Voice → Express → Align → Launch. A proprietary six-stage methodology that works across all three worlds: finding and revealing the authentic identity that was always there, waiting to be seen.",
-  },
-] as const;
-
-const revealRows = [
-  { letter: "R", name: "Root", desc: "Who you truly are before anything else" },
-  { letter: "E", name: "Excavate", desc: "The uniqueness that already exists" },
-  { letter: "V", name: "Voice", desc: "The language through which the brand speaks" },
-  { letter: "E", name: "Express", desc: "Strategy translated into visible identity" },
-  { letter: "A", name: "Align", desc: "Consistent across every touchpoint" },
-  { letter: "L", name: "Launch", desc: "Unmissable from the very first moment" },
-] as const;
+type Belief = { n: string; title: string; body: string };
+type RevealRow = { letter: string; name: string; desc: string };
 
 export default function BeliefPage() {
+  const t = useTranslations("services");
+  const beliefs = t.raw("beliefs") as Belief[];
+  const revealRows = t.raw("revealRows") as RevealRow[];
   const beliefsRectRef = useRef<HTMLDivElement>(null);
   const beliefsTitle = useFitText<HTMLHeadingElement>(beliefsRectRef);
 
@@ -72,8 +37,8 @@ export default function BeliefPage() {
           transition={{ duration: 0.7, ease: EASE }}
           className="font-display text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]"
         >
-          <span className="text-bone">What </span>
-          <span className="text-bone/35">I believe.</span>
+          <span className="text-bone">{t("titleLead")}</span>
+          <span className="text-bone/35">{t("titleRest")}</span>
         </motion.h1>
 
         {/* ============== DESKTOP — image background + overlaid quote ============== */}
@@ -98,14 +63,14 @@ export default function BeliefPage() {
           <div className="absolute inset-0 mx-auto flex max-w-[1400px] items-center justify-end px-6 md:pl-16 md:pr-28 lg:pr-36 xl:pr-44">
             <div className="max-w-[640px] md:max-w-[720px]">
               <p className="font-display text-[clamp(28px,3.4vw,56px)] font-bold leading-[1.05] tracking-[-0.035em]">
-                <span className="block text-bone">Everyone is a brand.</span>
+                <span className="block text-bone">{t("heroQuoteLine1")}</span>
                 <span className="block text-bone">
-                  Most just don&rsquo;t know
+                  {t("heroQuoteLine2")}
                 </span>
-                <span className="block text-bone/40">how to show it.</span>
+                <span className="block text-bone/40">{t("heroQuoteLine3")}</span>
               </p>
               <p className="mt-5 text-[12px] text-bone/65 md:mt-7 md:text-[14px]">
-                Ernso Azor &nbsp;·&nbsp; Graphic Designer / Brand Strategist
+                {t("imageCaptionName")} &nbsp;·&nbsp; {t("imageCaptionRole")}
               </p>
             </div>
           </div>
@@ -137,19 +102,19 @@ export default function BeliefPage() {
 
           <div className="absolute inset-x-0 top-0 flex flex-col items-center px-5 pt-[14%] text-center">
             <p className="text-[10px] leading-snug text-bone/85">
-              <span className="font-semibold text-bone">Ernso Azor</span>
+              <span className="font-semibold text-bone">{t("imageCaptionName")}</span>
               <span className="px-1.5 text-bone/45">·</span>
               <span className="text-bone/75">
-                Graphic Designer / Brand Strategist
+                {t("imageCaptionRole")}
               </span>
             </p>
 
             <p className="mt-3 font-display text-[26px] font-bold leading-[1.08] tracking-[-0.03em]">
-              <span className="block text-bone">Everyone is a brand.</span>
+              <span className="block text-bone">{t("heroQuoteLine1")}</span>
               <span className="block text-bone">
-                Most just don&rsquo;t know
+                {t("heroQuoteLine2")}
               </span>
-              <span className="block text-bone/35">how to show it.</span>
+              <span className="block text-bone/35">{t("heroQuoteLine3")}</span>
             </p>
           </div>
 
@@ -176,7 +141,7 @@ export default function BeliefPage() {
                 visibility: beliefsTitle.fontSize ? "visible" : "hidden",
               }}
             >
-              The beliefs that never change.
+              {t("beliefsTitle")}
             </motion.h2>
           </div>
 
@@ -232,10 +197,10 @@ export default function BeliefPage() {
                 visibility: revealTitle.fontSize ? "visible" : "hidden",
               }}
             >
-              The REVEAL Framework.
+              {t("revealTitle")}
             </motion.h2>
             <p className="mt-3 text-[15px] text-muted-2 md:text-[18px]">
-              A six-stage methodology, applied in order, every time.
+              {t("revealSubtitle")}
             </p>
           </div>
 
@@ -294,8 +259,8 @@ export default function BeliefPage() {
           className="mt-10 md:mt-14"
         >
           <p className="font-display text-[clamp(14px,1.8vw,24px)] font-normal leading-tight tracking-[-0.02em] text-bone md:whitespace-nowrap">
-            <span>One process. Three worlds. One direction: </span>
-            <span className="text-bone/35">from obscurity to unmistakable</span>
+            <span>{t("taglineLead")}</span>
+            <span className="text-bone/35">{t("taglineRest")}</span>
           </p>
         </motion.div>
 
@@ -311,10 +276,10 @@ export default function BeliefPage() {
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
             <div>
               <h3 className="font-display text-[clamp(22px,2.6vw,34px)] font-bold leading-[1.1] tracking-[-0.03em] text-bone">
-                Let&rsquo;s build something
+                {t("ctaHeading")}
               </h3>
               <p className="mt-3 text-[13.5px] leading-relaxed text-muted-2 md:whitespace-nowrap md:text-[14.5px]">
-                If what you&rsquo;ve read here aligns with how you see your brand
+                {t("ctaSubtext")}
               </p>
             </div>
 
@@ -325,7 +290,7 @@ export default function BeliefPage() {
               className="group inline-flex items-center gap-3 px-7 py-4 font-mono text-[12px] font-medium uppercase tracking-[0.32em] text-bone transition-colors hover:bg-bone hover:text-black md:text-[13px] md:tracking-[0.4em]"
               style={{ boxShadow: "inset 0 0 0 0.5px rgba(255,255,255,0.18)" }}
             >
-              <span>Initiate</span>
+              <span>{t("cta")}</span>
               <span
                 aria-hidden
                 className="transition-transform duration-200 ease-out group-hover:translate-x-0.5"

@@ -71,5 +71,217 @@
     "title": "Pronto para ser visto?",
     "subtitle": "Me conte sobre sua visão. Eu digo como torná-la imperdível.",
     "cta": "Iniciar"
+  },
+  "about": {
+    "metaTitle": "Sobre — Ernso Azor",
+    "metaDescription": "Estrategista e designer de marca. Mais de 8 anos em três mundos. O fio condutor.",
+    "heroTitle": "Como cheguei até aqui.",
+    "parcours": {
+      "p1": "Tudo começou muito antes de eu ter uma palavra para isso. Quando criança, eu era quem notava coisas que ninguém mais parecia registrar: o jeito como um logo soava sutilmente errado mesmo sem eu saber por quê, o jeito como uma única cor podia mudar o clima inteiro de um ambiente, o jeito como alguns nomes ficavam gravados na memória para sempre enquanto outros desapareciam assim que você desviava o olhar. Eu não estava estudando identidade de marca. Eu simplesmente não conseguia parar de enxergá-la, em tudo, o tempo todo. Esse tipo de atenção não parece um dom quando você é jovem. Parece ruído. Levei anos para entender que, na verdade, era uma bússola.",
+      "p2": "Essa bússola finalmente encontrou sua linguagem em 2018, em Porto Príncipe, no Haiti, em uma das principais escolas técnicas do país, onde me matriculei para me formar técnico em informática, não designer. O design gráfico entrou na minha vida quase por acaso, um único módulo dentro de um currículo técnico muito maior. Mas no momento em que toquei nele, tudo o que a criança em mim vinha notando por anos finalmente teve para onde ir. Eu não estava aprendendo uma nova habilidade. Estavam finalmente me dando o vocabulário para algo que eu já fazia instintivamente a vida toda.",
+      "p3": "O verdadeiro ponto de virada veio rápido, mais rápido do que eu estava preparado. No meu segundo ano, ainda estudante com mais teoria do que prática, uma empresa confiou em mim para construir toda a sua identidade visual do zero. Lembro do peso daquele momento mais do que dos detalhes do briefing: a percepção de que alguém estava colocando seu negócio, seu nome, sua credibilidade, no meu julgamento. Eu disse sim mesmo assim. Aquele projeto se tornou a prova que carrego desde então: precisão não é só um hábito técnico, é uma forma de respeito. O mesmo rigor que faz um sistema funcionar sem falhas é exatamente o rigor que torna uma marca impossível de ignorar.",
+      "p4": "Hoje, essa dupla base, a obsessão de um engenheiro por estrutura e o instinto de um designer pelo que emociona as pessoas, aparece em cada projeto que toco, seja o cliente uma corporação, um fundador ou um artista. Estratégia sempre vem antes do estilo. Nada é decorativo se não for também deliberado. E toda identidade que construo ainda começa exatamente onde começou para mim aos dezenove anos: com a disciplina de notar o que é realmente verdadeiro, e o ofício de garantir que ninguém consiga ignorá-lo de novo."
+    },
+    "stats": {
+      "experience": "Experiência",
+      "brandsRevealed": "Marcas reveladas",
+      "worldsServed": "Mundos atendidos"
+    },
+    "drivesTitle": "O que me move.",
+    "drives": {
+      "p1": "Não faço isso pelos aplausos. Faço porque a maioria das pessoas, e a maioria das marcas, andam por aí com seu real valor escondido à vista de todos, e isso me parece um desperdício que não consigo ignorar.",
+      "p2": "Todo projeto começa da mesma forma: não com um moodboard, mas com uma pergunta. O que é realmente verdadeiro aqui, que ainda não foi dito? Corporação, profissional ou artista, não importa. No momento em que alguém para de administrar como é percebido e começa a construir a partir do que é real, tudo muda: como confiam nele, como se lembram dele, como pagam por ele.",
+      "p3": "Esse é o trabalho. Não deixar as coisas bonitas. Tornar a verdade impossível de ignorar."
+    },
+    "beyondTitle": "Além do trabalho.",
+    "beyond": {
+      "p1": "Fora da estratégia de marca, continuo construindo. Toco meus próprios empreendimentos digitais, e marketing digital é tanto uma obsessão quanto o design: entender como a atenção se move, o que faz alguém parar de rolar a tela e realmente ficar, nunca me deixa em paz.",
+      "p2": "O resto da minha vida segue o mesmo instinto que atravessa meu trabalho: notar, refinar, repetir. Toco violão. Treino, porque disciplina na academia e disciplina em um sistema de marca vêm do mesmo lugar. Passo horas em tutoriais e podcasts de pessoas que pensam mais afiado do que eu, não para coletar informação, mas porque aprender nunca deixa de parecer urgente para mim.",
+      "p3": "Sou atraído pela natureza pelo mesmo motivo que sou atraído por identidade de marca: ela recompensa a atenção. Olhe de perto o suficiente para qualquer coisa e ela começa a contar sua verdade.",
+      "p4": "Me cobro um padrão que a maioria das pessoas chamaria de excessivo. Tudo que toco, um projeto, um ambiente, um plano, precisa estar certo, não quase certo. E penso melhor sozinho. Solidão não é isolamento para mim, é onde realmente me questiono e coloco minhas próprias decisões à prova antes que alguém mais precise fazer isso. É assim que a ambição continua honesta em vez de virar ruído.",
+      "p5": "Penso em décadas, não em trimestres."
+    },
+    "ctaText": "Se o que você leu aqui faz sentido para você, você já sabe qual é o próximo passo.",
+    "cta": "Iniciar",
+    "brandsHeading": "Marcas com quem já trabalhei",
+    "toolsHeading": "Ferramentas"
+  },
+  "services": {
+    "titleLead": "No que ",
+    "titleRest": "eu acredito.",
+    "imageCaptionName": "Ernso Azor",
+    "imageCaptionRole": "Designer Gráfico / Estrategista de Marca",
+    "heroQuoteLine1": "Todo mundo é uma marca.",
+    "heroQuoteLine2": "A maioria simplesmente não sabe",
+    "heroQuoteLine3": "como mostrar isso.",
+    "beliefsTitle": "As convicções que nunca mudam.",
+    "beliefs": [
+      {
+        "n": "I",
+        "title": "Marca é revelação",
+        "body": "Uma marca nunca é inventada. Ela é descoberta. As identidades mais poderosas parecem inevitáveis, como se só pudessem pertencer àquela pessoa, aquela instituição, aquele artista. Meu trabalho é tornar essa verdade visível."
+      },
+      {
+        "n": "II",
+        "title": "Singularidade é a estratégia",
+        "body": "Em um mundo de imitação, a coisa mais perigosa que uma marca pode fazer é parecer com outra. O que te torna diferente, seja você CEO ou criador, não é um risco. É o seu maior ativo."
+      },
+      {
+        "n": "III",
+        "title": "Percepção é poder",
+        "body": "Como o mundo te vê determina o que chega até você. Para uma corporação, molda negócios. Para um especialista, molda autoridade. Para um artista, molda alcance. Administrar a percepção não é vaidade, é estratégia."
+      },
+      {
+        "n": "IV",
+        "title": "Design é uma filosofia",
+        "body": "Cada cor, tipografia e decisão espacial comunica algo. Não existem escolhas neutras. Tudo significa algo, o que quer dizer que tudo precisa ser intencional, de um relatório anual de diretoria a um grid do Instagram."
+      },
+      {
+        "n": "V",
+        "title": "Alinhamento é o objetivo",
+        "body": "Uma marca funciona quando o que você diz, o que você mostra e o que você faz apontam todos na mesma direção, seja no site de uma empresa ou na presença social de um criador. Desalinhamento é o erro mais caro que uma marca pode cometer."
+      },
+      {
+        "n": "VI",
+        "title": "O Método REVEAL",
+        "body": "Root → Excavate → Voice → Express → Align → Launch. Uma metodologia proprietária de seis etapas que funciona nos três mundos: encontrar e revelar a identidade autêntica que sempre esteve lá, esperando para ser vista."
+      }
+    ],
+    "revealTitle": "O Método REVEAL.",
+    "revealSubtitle": "Uma metodologia de seis etapas, aplicada em ordem, sempre.",
+    "revealRows": [
+      { "letter": "R", "name": "Root", "desc": "Quem você realmente é, antes de tudo o mais" },
+      { "letter": "E", "name": "Excavate", "desc": "A singularidade que já existe" },
+      { "letter": "V", "name": "Voice", "desc": "A linguagem através da qual a marca fala" },
+      { "letter": "E", "name": "Express", "desc": "Estratégia traduzida em identidade visível" },
+      { "letter": "A", "name": "Align", "desc": "Consistente em cada ponto de contato" },
+      { "letter": "L", "name": "Launch", "desc": "Imperdível desde o primeiro momento" }
+    ],
+    "taglineLead": "Um processo. Três mundos. Uma direção: ",
+    "taglineRest": "da obscuridade ao inconfundível",
+    "ctaHeading": "Vamos construir algo",
+    "ctaSubtext": "Se o que você leu aqui está alinhado com como você vê sua marca",
+    "cta": "Iniciar"
+  },
+  "work": {
+    "metaTitle": "Criações — Ernso Azor",
+    "metaDescription": "Um trabalho que revela — projetos de marca selecionados nos mundos institucional, individual e criativo.",
+    "heroTitle": "Um trabalho que revela.",
+    "filterAll": "Todos os trabalhos",
+    "filterInstitutional": "institucional",
+    "filterIndividual": "Individual",
+    "filterCreative": "Criativo & Público",
+    "emptyState": "Nada nesse mundo ainda — volte em breve, ou explore outras categorias.",
+    "markLibraryTitle": "A Biblioteca de Marcas",
+    "markLibraryDesc": "Cada forma carrega uma decisão. Cada curva, cada ângulo, cada peso escolhido com intenção."
+  },
+  "workDetail": {
+    "back": "Voltar",
+    "overviewHeading": "A visão geral do projeto",
+    "next": "Próximo"
+  },
+  "initiate": {
+    "metaTitle": "Iniciar — Ernso Azor",
+    "metaDescription": "Comece uma conversa sobre sua marca ou produto.",
+    "heroTitle": "Vamos construir algo.",
+    "heroSubtitle": "Entre em contato direto, ou compartilhe alguns detalhes do seu projeto abaixo.",
+    "formHeading": "Me conte sobre seu projeto",
+    "directContact": {
+      "emailLabel": "E-mail",
+      "emailDesc": "Para uma conversa direta e sem pressa.",
+      "whatsappLabel": "WhatsApp",
+      "whatsappDesc": "Para uma mensagem rápida, a qualquer momento."
+    },
+    "form": {
+      "namePlaceholder": "Nome",
+      "lastNamePlaceholder": "Sobrenome",
+      "emailPlaceholder": "E-mail",
+      "brandNamePlaceholder": "Nome da marca ou produto",
+      "deadlineLabel": "Prazo estimado",
+      "budgetLabel": "Orçamento estimado",
+      "sourceLabel": "Como você me encontrou",
+      "selectPlaceholder": "Selecione uma opção",
+      "descriptionPlaceholder": "Breve descrição do projeto",
+      "errorMessage": "Algo deu errado ao enviar seu briefing. Tente novamente ou escreva diretamente por e-mail.",
+      "sending": "Enviando…",
+      "submit": "Enviar",
+      "thankYou": "Obrigado, {firstName}.",
+      "confirmation": "Seu briefing de projeto foi recebido. Aguarde uma resposta em {email} em até um ou dois dias úteis.",
+      "deadlineOptions": [
+        { "value": "1 month", "label": "1 mês" },
+        { "value": "1–3 months", "label": "1 a 3 meses" },
+        { "value": "3+ months", "label": "3 meses ou mais" }
+      ],
+      "budgetOptions": [
+        { "value": "$1,000 – $3,000", "label": "$1.000 – $3.000" },
+        { "value": "$3,000 – $5,000", "label": "$3.000 – $5.000" },
+        { "value": "$5,000 – $7,000", "label": "$5.000 – $7.000" },
+        { "value": "$7,000 – $10,000+", "label": "$7.000 – $10.000+" }
+      ],
+      "sourceOptions": [
+        { "value": "Instagram", "label": "Instagram" },
+        { "value": "Behance", "label": "Behance" },
+        { "value": "Referral", "label": "Indicação" },
+        { "value": "LinkedIn", "label": "LinkedIn" },
+        { "value": "TikTok", "label": "TikTok" },
+        { "value": "YouTube", "label": "YouTube" }
+      ]
+    }
+  },
+  "terms": {
+    "metaTitle": "Termos de Serviço — Ernso Azor",
+    "metaDescription": "Os termos que regem o uso do site creativernso.co.",
+    "title": "Termos de Serviço",
+    "updatedLabel": "Última atualização:",
+    "updatedDate": "31 de agosto de 2026",
+    "intro": "Estes termos regem o uso do creativernso.co (\"este site\"), o portfólio pessoal de Ernso Azor, designer e estrategista de marca baseado em Curitiba, Brasil. Ao navegar neste site ou enviar o formulário de contato, você concorda com os termos abaixo.",
+    "s1Title": "1. Sobre este site",
+    "s1Body": "Este site é informativo: apresenta meu trabalho, minha trajetória e uma forma de entrar em contato. Ele não processa pagamentos, não cria contas nem vende produtos. Qualquer trabalho pago de design ou estratégia é acordado separadamente, diretamente comigo, e regido pelos termos daquele acordo específico, não por esta página.",
+    "s2Title": "2. Propriedade intelectual",
+    "s2Body": "Salvo indicação em contrário, todo o conteúdo deste site, incluindo textos, imagens e estudos de caso de projetos, é propriedade de Ernso Azor ou dos respectivos clientes apresentados, e é protegido por direitos autorais. Os trabalhos exibidos aqui são mostrados com permissão, como representação de trabalhos anteriores. Nada neste site pode ser reproduzido, redistribuído ou usado comercialmente sem consentimento prévio por escrito.",
+    "s3Title": "3. O formulário de contato",
+    "s3Body": "Enviar o formulário Iniciar envia suas informações para mim por e-mail. Isso não cria um contrato, não reserva uma vaga de projeto e não obriga nenhuma das partes a trabalhar juntas. Escopo do projeto, preço e termos só são finalizados por meio de um acordo separado e explícito.",
+    "s4Title": "4. Uso aceitável",
+    "s4Body": "Você concorda em não fazer mau uso deste site: nenhuma tentativa de interromper seu funcionamento, extrair seu conteúdo em larga escala, ou usar o formulário de contato para spam ou solicitações não relacionadas.",
+    "s5Title": "5. Sem garantia",
+    "s5Body": "Este site e seu conteúdo são fornecidos \"como estão\", sem garantias de qualquer tipo. Faço esforços razoáveis para mantê-lo preciso e disponível, mas não garanto acesso ininterrupto ou conteúdo livre de erros.",
+    "s6Title": "6. Limitação de responsabilidade",
+    "s6Body": "Na máxima extensão permitida por lei, não sou responsável por quaisquer danos indiretos, incidentais ou consequenciais decorrentes do uso deste site.",
+    "s7Title": "7. Links de terceiros",
+    "s7Body": "Este site contém links para plataformas de terceiros, incluindo Instagram, LinkedIn e Behance. Não sou responsável pelo conteúdo ou pelas práticas de privacidade dessas plataformas depois que você sai deste site.",
+    "s8Title": "8. Lei aplicável",
+    "s8Body": "Estes termos são regidos pelas leis do Brasil, sem considerar princípios de conflito de leis.",
+    "s9Title": "9. Alterações a estes termos",
+    "s9Body": "Estes termos podem ser atualizados periodicamente. O uso continuado deste site após uma alteração significa que você aceita os termos revisados.",
+    "s10Title": "10. Contato",
+    "s10Pre": "Dúvidas sobre estes termos podem ser enviadas para",
+    "s10Post": "."
+  },
+  "privacy": {
+    "metaTitle": "Política de Privacidade — Ernso Azor",
+    "metaDescription": "Como Ernso Azor coleta, usa e protege suas informações.",
+    "title": "Política de Privacidade",
+    "updatedLabel": "Última atualização:",
+    "updatedDate": "31 de agosto de 2026",
+    "intro": "Esta política explica quais informações o creativernso.co (\"este site\", \"eu\" ou \"mim\") coleta, como são usadas e quais escolhas você tem. Sou Ernso Azor, designer e estrategista de marca baseado em Curitiba, Brasil, e este site é meu portfólio pessoal e ponto de contato.",
+    "s1Title": "1. Informações que coleto",
+    "s1Body1": "As únicas informações pessoais que este site coleta são as que você escolhe enviar através do formulário de contato Iniciar: seu nome, endereço de e-mail, nome da marca ou produto, prazo e orçamento estimados, como você me encontrou, e uma descrição do seu projeto. Se você me enviar e-mail ou mensagem diretamente, recebo as informações que você incluir nessa mensagem.",
+    "s1Body2": "Este site não usa cookies, ferramentas de análise ou rastreadores de publicidade. Nenhuma criação de conta, informação de pagamento ou comportamento de navegação é coletado em nenhum momento.",
+    "s2Title": "2. Como uso suas informações",
+    "s2Body": "As informações enviadas pelo formulário de contato são usadas exclusivamente para responder à sua solicitação, entender seu projeto e dar continuidade a uma possível colaboração. Não vendo, alugo ou compartilho suas informações com terceiros para fins de marketing.",
+    "s3Title": "3. Serviços de terceiros",
+    "s3Body": "Os envios do formulário são entregues usando Resend, um provedor de infraestrutura de e-mail, que processa a mensagem a caminho da minha caixa de entrada. O conteúdo deste site (imagens e textos dos projetos) é gerenciado através do Sanity, um CMS headless; o Sanity não recebe nem processa nenhuma informação que você envia.",
+    "s4Title": "4. Retenção de dados",
+    "s4Body": "Mantenho correspondências e solicitações de projeto pelo tempo razoavelmente necessário para fins comerciais e de registro, ou até que você me peça para excluí-las.",
+    "s5Title": "5. Seus direitos",
+    "s5Pre": "Você pode me pedir a qualquer momento para acessar, corrigir ou excluir as informações que tenho sobre você enviando um e-mail para",
+    "s5Post": ". Responderei em um prazo razoável.",
+    "s6Title": "6. Privacidade infantil",
+    "s6Body": "Este site não é direcionado a crianças, e não coleto conscientemente informações de ninguém com menos de 16 anos.",
+    "s7Title": "7. Alterações a esta política",
+    "s7Body": "Se esta política mudar, a atualização será publicada nesta página com uma data revisada no topo.",
+    "s8Title": "8. Contato",
+    "s8Pre": "Dúvidas sobre esta política podem ser enviadas para",
+    "s8Post": "."
   }
 }

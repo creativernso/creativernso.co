@@ -71,5 +71,217 @@
     "title": "Prêt à être vu ?",
     "subtitle": "Parlez-moi de votre vision. Je vous dirai comment la rendre incontournable.",
     "cta": "Initier"
+  },
+  "about": {
+    "metaTitle": "À propos — Ernso Azor",
+    "metaDescription": "Stratège et designer de marque. Plus de 8 ans à travers trois mondes. Le fil conducteur.",
+    "heroTitle": "Comment j'en suis arrivé là.",
+    "parcours": {
+      "p1": "Tout a commencé bien avant que j'aie un mot pour le décrire. Enfant, j'étais celui qui remarquait des choses que personne d'autre ne semblait voir : la façon dont un logo sonnait subtilement faux sans que je sache pourquoi, la façon dont une seule couleur pouvait changer l'ambiance entière d'une pièce, la façon dont certains noms restaient gravés dans la mémoire pour toujours tandis que d'autres disparaissaient dès qu'on détournait le regard. Je n'étudiais pas l'identité de marque. J'étais simplement incapable d'arrêter de la voir, partout, tout le temps. Ce genre d'attention ne ressemble pas à un don quand on est jeune. Ça ressemble à du bruit. Il m'a fallu des années pour comprendre que c'était en réalité une boussole.",
+      "p2": "Cette boussole a finalement trouvé son langage en 2018, à Port-au-Prince, en Haïti, dans l'une des principales écoles techniques du pays, où je m'étais inscrit pour devenir technicien en informatique, pas designer. Le design graphique est entré dans ma vie presque par accident, un simple module au sein d'un cursus technique bien plus large. Mais dès que j'y ai touché, tout ce que l'enfant en moi remarquait depuis des années a soudain trouvé un endroit où aller. Je n'apprenais pas une nouvelle compétence. On me donnait enfin le vocabulaire pour quelque chose que je faisais déjà instinctivement depuis toujours.",
+      "p3": "Le vrai tournant est arrivé vite, plus vite que je n'étais prêt. En deuxième année, encore étudiant avec plus de théorie que d'expérience, une entreprise m'a fait confiance pour construire toute son identité visuelle à partir de rien. Je me souviens du poids de ce moment plus que des détails du brief : la prise de conscience que quelqu'un misait son entreprise, son nom, sa crédibilité, sur mon jugement. J'ai dit oui quand même. Ce projet est devenu la preuve que je porte depuis : la précision n'est pas qu'une habitude technique, c'est une forme de respect. La même rigueur qui fait tourner un système sans faille est exactement celle qui rend une marque impossible à ignorer.",
+      "p4": "Aujourd'hui, ce double fondement, l'obsession d'un ingénieur pour la structure et l'instinct d'un designer pour ce qui touche les gens, se retrouve dans chaque projet que je touche, que le client soit une entreprise, un fondateur ou un artiste. La stratégie passe toujours avant le style. Rien n'est décoratif s'il n'est pas aussi délibéré. Et chaque identité que je construis commence exactement là où tout a commencé pour moi à dix-neuf ans : avec la discipline de remarquer ce qui est réellement vrai, et le savoir-faire pour que plus personne ne puisse l'ignorer."
+    },
+    "stats": {
+      "experience": "Expérience",
+      "brandsRevealed": "Marques révélées",
+      "worldsServed": "Mondes servis"
+    },
+    "drivesTitle": "Ce qui me pousse.",
+    "drives": {
+      "p1": "Je ne fais pas ça pour les applaudissements. Je le fais parce que la plupart des gens, et la plupart des marques, se promènent avec leur vraie valeur cachée à la vue de tous, et ça me semble être un gâchis que je ne peux pas ignorer.",
+      "p2": "Chaque projet commence de la même façon : pas par un moodboard, mais par une question. Qu'est-ce qui est réellement vrai ici, et qui n'a pas encore été dit ? Entreprise, professionnel ou artiste, peu importe. Dès que quelqu'un arrête de gérer la façon dont il est perçu et commence à construire à partir de ce qui est réel, tout change : la confiance qu'on lui accorde, la façon dont on se souvient de lui, ce qu'on est prêt à payer pour lui.",
+      "p3": "C'est ça, le métier. Pas rendre les choses jolies. Rendre la vérité impossible à manquer."
+    },
+    "beyondTitle": "Au-delà du travail.",
+    "beyond": {
+      "p1": "En dehors de la stratégie de marque, je continue à construire. Je gère mes propres projets numériques, et le marketing digital est autant une obsession que le design : comprendre comment se déplace l'attention, ce qui fait qu'on arrête de défiler et qu'on reste vraiment, ne me quitte jamais.",
+      "p2": "Le reste de ma vie suit le même instinct qui traverse mon travail : remarquer, affiner, répéter. Je joue de la guitare. Je m'entraîne, parce que la discipline en salle de sport et la discipline dans un système de marque viennent du même endroit. Je passe des heures dans des tutoriels et des podcasts de gens qui pensent plus finement que moi, pas pour accumuler de l'information, mais parce qu'apprendre ne cesse jamais de me paraître urgent.",
+      "p3": "Je suis attiré par la nature pour la même raison que je suis attiré par l'identité de marque : elle récompense l'attention. Regardez n'importe quoi d'assez près et ça commence à vous révéler sa vérité.",
+      "p4": "Je me tiens à un niveau d'exigence que la plupart des gens trouveraient excessif. Tout ce que je touche, un projet, une pièce, un plan, doit être juste, pas presque juste. Et c'est seul que je réfléchis le mieux. La solitude n'est pas un repli pour moi, c'est là que je m'interroge vraiment et que je remets en question mes propres décisions avant que quelqu'un d'autre n'ait à le faire. C'est comme ça que l'ambition reste honnête au lieu de devenir du bruit.",
+      "p5": "Je pense en décennies, pas en trimestres."
+    },
+    "ctaText": "Si ce que vous venez de lire vous parle, vous savez déjà quelle est la prochaine étape.",
+    "cta": "Initier",
+    "brandsHeading": "Marques avec qui j'ai travaillé",
+    "toolsHeading": "Outils"
+  },
+  "services": {
+    "titleLead": "Ce ",
+    "titleRest": "en quoi je crois.",
+    "imageCaptionName": "Ernso Azor",
+    "imageCaptionRole": "Designer graphique / Stratège de marque",
+    "heroQuoteLine1": "Tout le monde est une marque.",
+    "heroQuoteLine2": "La plupart ne savent",
+    "heroQuoteLine3": "simplement pas le montrer.",
+    "beliefsTitle": "Les convictions qui ne changent jamais.",
+    "beliefs": [
+      {
+        "n": "I",
+        "title": "La marque est une révélation",
+        "body": "Une marque ne s'invente jamais. Elle se découvre. Les identités les plus puissantes semblent inévitables, comme si elles ne pouvaient appartenir qu'à cette personne, cette institution, cet artiste. Mon travail est de rendre cette vérité visible."
+      },
+      {
+        "n": "II",
+        "title": "L'unicité est la stratégie",
+        "body": "Dans un monde d'imitation, la chose la plus dangereuse qu'une marque puisse faire est de ressembler à quelqu'un d'autre. Ce qui vous rend différent, que vous soyez PDG ou créateur, n'est pas un risque. C'est votre plus grand atout."
+      },
+      {
+        "n": "III",
+        "title": "La perception est un pouvoir",
+        "body": "La façon dont le monde vous voit détermine ce qui vient à vous. Pour une entreprise, elle façonne les contrats. Pour un expert, elle façonne l'autorité. Pour un artiste, elle façonne la portée. Gérer la perception n'est pas de la vanité, c'est de la stratégie."
+      },
+      {
+        "n": "IV",
+        "title": "Le design est une philosophie",
+        "body": "Chaque couleur, chaque typographie, chaque décision spatiale communique quelque chose. Aucun choix n'est neutre. Tout signifie quelque chose, ce qui veut dire que tout doit être intentionnel, d'un rapport annuel de conseil d'administration à une grille Instagram."
+      },
+      {
+        "n": "V",
+        "title": "L'alignement est l'objectif",
+        "body": "Une marque fonctionne quand ce que vous dites, ce que vous montrez et ce que vous faites pointent tous dans la même direction, que ce soit sur le site d'une entreprise ou la présence sociale d'un créateur. Le désalignement est l'erreur la plus coûteuse qu'une marque puisse commettre."
+      },
+      {
+        "n": "VI",
+        "title": "La méthode REVEAL",
+        "body": "Root → Excavate → Voice → Express → Align → Launch. Une méthodologie propriétaire en six étapes qui fonctionne dans les trois mondes : trouver et révéler l'identité authentique qui a toujours été là, en attente d'être vue."
+      }
+    ],
+    "revealTitle": "La méthode REVEAL.",
+    "revealSubtitle": "Une méthodologie en six étapes, appliquée dans l'ordre, à chaque fois.",
+    "revealRows": [
+      { "letter": "R", "name": "Root", "desc": "Qui vous êtes réellement, avant tout le reste" },
+      { "letter": "E", "name": "Excavate", "desc": "L'unicité qui existe déjà" },
+      { "letter": "V", "name": "Voice", "desc": "Le langage à travers lequel la marque s'exprime" },
+      { "letter": "E", "name": "Express", "desc": "La stratégie traduite en identité visible" },
+      { "letter": "A", "name": "Align", "desc": "Cohérente sur chaque point de contact" },
+      { "letter": "L", "name": "Launch", "desc": "Incontournable dès le premier instant" }
+    ],
+    "taglineLead": "Un processus. Trois mondes. Une direction : ",
+    "taglineRest": "de l'anonymat à l'incontournable",
+    "ctaHeading": "Construisons quelque chose",
+    "ctaSubtext": "Si ce que vous venez de lire correspond à votre vision de votre marque",
+    "cta": "Initier"
+  },
+  "work": {
+    "metaTitle": "Créations — Ernso Azor",
+    "metaDescription": "Un travail qui révèle — projets de marque sélectionnés à travers les mondes institutionnel, individuel et créatif.",
+    "heroTitle": "Un travail qui révèle.",
+    "filterAll": "Tous les travaux",
+    "filterInstitutional": "institutionnel",
+    "filterIndividual": "Individuel",
+    "filterCreative": "Créatif & public",
+    "emptyState": "Rien dans ce monde pour l'instant — revenez bientôt, ou explorez les autres catégories.",
+    "markLibraryTitle": "La bibliothèque de marques",
+    "markLibraryDesc": "Chaque forme porte une décision. Chaque courbe, chaque angle, chaque poids choisi avec intention."
+  },
+  "workDetail": {
+    "back": "Retour",
+    "overviewHeading": "L'aperçu du projet",
+    "next": "Suivant"
+  },
+  "initiate": {
+    "metaTitle": "Initier — Ernso Azor",
+    "metaDescription": "Démarrez une conversation sur votre marque ou votre produit.",
+    "heroTitle": "Construisons quelque chose.",
+    "heroSubtitle": "Contactez-moi directement, ou partagez quelques détails sur votre projet ci-dessous.",
+    "formHeading": "Parlez-moi de votre projet",
+    "directContact": {
+      "emailLabel": "E-mail",
+      "emailDesc": "Pour une conversation directe et sans précipitation.",
+      "whatsappLabel": "WhatsApp",
+      "whatsappDesc": "Pour un message rapide, à tout moment."
+    },
+    "form": {
+      "namePlaceholder": "Prénom",
+      "lastNamePlaceholder": "Nom",
+      "emailPlaceholder": "E-mail",
+      "brandNamePlaceholder": "Nom de la marque ou du produit",
+      "deadlineLabel": "Échéance estimée",
+      "budgetLabel": "Budget estimé",
+      "sourceLabel": "Comment m'avez-vous trouvé",
+      "selectPlaceholder": "Sélectionnez une option",
+      "descriptionPlaceholder": "Brève description du projet",
+      "errorMessage": "Une erreur s'est produite lors de l'envoi de votre brief. Réessayez ou écrivez-moi directement par e-mail.",
+      "sending": "Envoi…",
+      "submit": "Envoyer",
+      "thankYou": "Merci, {firstName}.",
+      "confirmation": "Votre brief de projet a bien été reçu. Attendez une réponse à {email} sous un à deux jours ouvrés.",
+      "deadlineOptions": [
+        { "value": "1 month", "label": "1 mois" },
+        { "value": "1–3 months", "label": "1 à 3 mois" },
+        { "value": "3+ months", "label": "3 mois et plus" }
+      ],
+      "budgetOptions": [
+        { "value": "$1,000 – $3,000", "label": "$1,000 – $3,000" },
+        { "value": "$3,000 – $5,000", "label": "$3,000 – $5,000" },
+        { "value": "$5,000 – $7,000", "label": "$5,000 – $7,000" },
+        { "value": "$7,000 – $10,000+", "label": "$7,000 – $10,000+" }
+      ],
+      "sourceOptions": [
+        { "value": "Instagram", "label": "Instagram" },
+        { "value": "Behance", "label": "Behance" },
+        { "value": "Referral", "label": "Recommandation" },
+        { "value": "LinkedIn", "label": "LinkedIn" },
+        { "value": "TikTok", "label": "TikTok" },
+        { "value": "YouTube", "label": "YouTube" }
+      ]
+    }
+  },
+  "terms": {
+    "metaTitle": "Conditions d'utilisation — Ernso Azor",
+    "metaDescription": "Les conditions régissant l'utilisation du site creativernso.co.",
+    "title": "Conditions d'utilisation",
+    "updatedLabel": "Dernière mise à jour :",
+    "updatedDate": "31 août 2026",
+    "intro": "Ces conditions régissent votre utilisation de creativernso.co (« ce site »), le portfolio personnel d'Ernso Azor, designer et stratège de marque basé à Curitiba, au Brésil. En consultant ce site ou en soumettant le formulaire de contact, vous acceptez les conditions ci-dessous.",
+    "s1Title": "1. À propos de ce site",
+    "s1Body": "Ce site est informatif : il présente mon travail, mon parcours, et un moyen de me contacter. Il ne traite aucun paiement, ne crée aucun compte et ne vend aucun produit. Toute mission de design ou de stratégie payante est convenue séparément, directement avec moi, et régie par les termes de cet accord spécifique, et non par cette page.",
+    "s2Title": "2. Propriété intellectuelle",
+    "s2Body": "Sauf indication contraire, tout le contenu de ce site, y compris les textes, visuels et études de cas de projets, est la propriété d'Ernso Azor ou des clients respectifs présentés, et est protégé par le droit d'auteur. Les projets présentés ici le sont avec autorisation, à titre de représentation de travaux passés. Rien sur ce site ne peut être reproduit, redistribué ou utilisé commercialement sans consentement écrit préalable.",
+    "s3Title": "3. Le formulaire de contact",
+    "s3Body": "Soumettre le formulaire Initier envoie vos informations par e-mail. Cela ne crée aucun contrat, ne réserve aucune place pour un projet et n'oblige aucune des parties à travailler ensemble. La portée du projet, le tarif et les conditions ne sont finalisés que via un accord séparé et explicite.",
+    "s4Title": "4. Utilisation acceptable",
+    "s4Body": "Vous acceptez de ne pas abuser de ce site : aucune tentative de perturber son fonctionnement, d'en extraire le contenu à grande échelle, ou d'utiliser le formulaire de contact pour du spam ou des sollicitations sans rapport.",
+    "s5Title": "5. Absence de garantie",
+    "s5Body": "Ce site et son contenu sont fournis « en l'état », sans garantie d'aucune sorte. Je fais des efforts raisonnables pour le maintenir exact et disponible, mais je ne garantis pas un accès ininterrompu ni un contenu sans erreur.",
+    "s6Title": "6. Limitation de responsabilité",
+    "s6Body": "Dans toute la mesure permise par la loi, je ne suis pas responsable des dommages indirects, accessoires ou consécutifs découlant de votre utilisation de ce site.",
+    "s7Title": "7. Liens vers des tiers",
+    "s7Body": "Ce site renvoie vers des plateformes tierces, notamment Instagram, LinkedIn et Behance. Je ne suis pas responsable du contenu ni des pratiques de confidentialité de ces plateformes une fois que vous avez quitté ce site.",
+    "s8Title": "8. Droit applicable",
+    "s8Body": "Ces conditions sont régies par les lois du Brésil, sans égard aux principes de conflit de lois.",
+    "s9Title": "9. Modifications de ces conditions",
+    "s9Body": "Ces conditions peuvent être mises à jour de temps à autre. Continuer à utiliser ce site après une modification signifie que vous acceptez les conditions révisées.",
+    "s10Title": "10. Contact",
+    "s10Pre": "Les questions concernant ces conditions peuvent être envoyées à",
+    "s10Post": "."
+  },
+  "privacy": {
+    "metaTitle": "Politique de confidentialité — Ernso Azor",
+    "metaDescription": "Comment Ernso Azor collecte, utilise et protège vos informations.",
+    "title": "Politique de confidentialité",
+    "updatedLabel": "Dernière mise à jour :",
+    "updatedDate": "31 août 2026",
+    "intro": "Cette politique explique quelles informations creativernso.co (« ce site », « je » ou « moi ») collecte, comment elles sont utilisées, et les choix qui s'offrent à vous. Je suis Ernso Azor, designer et stratège de marque basé à Curitiba, au Brésil, et ce site est mon portfolio personnel et mon point de contact.",
+    "s1Title": "1. Informations que je collecte",
+    "s1Body1": "Les seules informations personnelles collectées par ce site sont celles que vous choisissez de soumettre via le formulaire de contact Initier : votre nom, votre adresse e-mail, le nom de votre marque ou produit, votre échéance et budget estimés, la façon dont vous m'avez trouvé, et une description de votre projet. Si vous m'écrivez ou me contactez directement à la place, je reçois les informations que vous incluez dans ce message.",
+    "s1Body2": "Ce site n'utilise ni cookies, ni outils d'analyse, ni traqueurs publicitaires. Aucune création de compte, information de paiement ou comportement de navigation n'est collecté à aucun moment.",
+    "s2Title": "2. Comment j'utilise vos informations",
+    "s2Body": "Les informations soumises via le formulaire de contact sont utilisées uniquement pour répondre à votre demande, comprendre votre projet et assurer le suivi d'une éventuelle collaboration. Je ne vends, ne loue ni ne partage vos informations avec des tiers à des fins marketing.",
+    "s3Title": "3. Services tiers",
+    "s3Body": "Les soumissions du formulaire sont acheminées via Resend, un fournisseur d'infrastructure d'e-mails, qui traite le message sur son chemin vers ma boîte de réception. Le contenu de ce site (images et textes des projets) est géré via Sanity, un CMS headless ; Sanity ne reçoit ni ne traite aucune information que vous soumettez.",
+    "s4Title": "4. Conservation des données",
+    "s4Body": "Je conserve la correspondance et les demandes de projet aussi longtemps que raisonnablement nécessaire à des fins commerciales et d'archivage, ou jusqu'à ce que vous me demandiez de les supprimer.",
+    "s5Title": "5. Vos droits",
+    "s5Pre": "Vous pouvez à tout moment me demander d'accéder, de corriger ou de supprimer les informations que je détiens à votre sujet en écrivant à",
+    "s5Post": ". Je répondrai dans un délai raisonnable.",
+    "s6Title": "6. Confidentialité des enfants",
+    "s6Body": "Ce site ne s'adresse pas aux enfants, et je ne collecte sciemment aucune information provenant de personnes de moins de 16 ans.",
+    "s7Title": "7. Modifications de cette politique",
+    "s7Body": "Si cette politique change, la mise à jour sera publiée sur cette page avec une date révisée en haut.",
+    "s8Title": "8. Contact",
+    "s8Pre": "Les questions concernant cette politique peuvent être envoyées à",
+    "s8Post": "."
   }
 }

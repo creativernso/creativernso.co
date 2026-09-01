@@ -3,6 +3,7 @@
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { useRef } from "react";
+import { useTranslations } from "next-intl";
 import { useFitText } from "@/lib/useFitText";
 import type { Project } from "@/lib/content";
 
@@ -13,6 +14,7 @@ export default function ProjectDetail({
   p: Project;
   next: Project;
 }) {
+  const t = useTranslations("workDetail");
   const overviewRef = useRef<HTMLDivElement>(null);
   const overview = useFitText<HTMLHeadingElement>(overviewRef);
 
@@ -35,7 +37,7 @@ export default function ProjectDetail({
             >
               ←
             </span>
-            <span>Back</span>
+            <span>{t("back")}</span>
           </Link>
           <div className="text-[14px] text-bone">
             {p.date.replace(/\s*[·.]\s*/g, "/")}
@@ -79,7 +81,7 @@ export default function ProjectDetail({
                 visibility: overview.fontSize ? "visible" : "hidden",
               }}
             >
-              The project overview
+              {t("overviewHeading")}
             </h2>
           </div>
         </div>
@@ -136,14 +138,14 @@ export default function ProjectDetail({
           </div>
           <div className="mt-5 flex flex-wrap items-center justify-between gap-4 px-1 md:mt-6 md:px-2">
             <div className="text-[13.5px] text-muted-2 md:text-[14px]">
-              Brand Strategy &amp; UI/UX Website Design
+              {next.label}
             </div>
             <Link
               href={`/work/${next.slug}`}
               data-cursor="hover"
               className="group inline-flex items-center gap-2 border border-bone/20 px-6 py-2.5 text-[13.5px] font-medium text-bone transition-colors hover:bg-bone hover:text-black"
             >
-              <span>Next</span>
+              <span>{t("next")}</span>
               <span
                 aria-hidden
                 className="transition-transform duration-500 ease-cinematic group-hover:translate-x-0.5"

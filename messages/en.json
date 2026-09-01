@@ -71,5 +71,217 @@
     "title": "Ready to be seen?",
     "subtitle": "Tell me about your vision. I’ll tell you how to make it unmissable.",
     "cta": "Initiate"
+  },
+  "about": {
+    "metaTitle": "About — Ernso Azor",
+    "metaDescription": "Brand strategist & designer. 8+ years across three worlds. The thread that holds.",
+    "heroTitle": "How I got here.",
+    "parcours": {
+      "p1": "It started long before I had a word for any of it. As a child, I was the one who noticed things nobody else seemed to register: the way a logo felt subtly wrong even when I couldn’t say why, the way a single colour could change the entire mood of a room, the way some names lodged themselves in your memory forever while others vanished the moment you looked away. I wasn’t studying identity. I was simply unable to stop seeing it, in everything, all the time. That kind of attention doesn’t feel like a gift when you’re young. It feels like noise. It took years to understand it was actually a compass.",
+      "p2": "That compass finally found its language in 2018, in Port-au-Prince, Haiti, at one of the country’s leading technical schools, where I enrolled to train as a computer science technician, not a designer. Graphic design entered my life almost as an afterthought, a single module tucked inside a much larger technical curriculum. But the moment I touched it, everything the child in me had been noticing for years suddenly had somewhere to go. I wasn’t learning a new skill. I was finally being handed the vocabulary for something I’d already been doing instinctively my whole life.",
+      "p3": "The real turning point came fast, faster than I was ready for. In my second year, still a student with more theory than experience, a company trusted me to build its entire visual identity from nothing. I remember the weight of that moment more than the details of the brief: the realization that someone was staking their business, their name, their credibility, on my judgment. I said yes anyway. That project became the proof I’ve carried ever since: precision isn’t just a technical habit, it’s a form of respect. The same rigor that makes a system run without failure is the exact rigor that makes a brand impossible to look away from.",
+      "p4": "Today, that dual foundation, an engineer’s obsession with structure and a designer’s instinct for what moves people, shows up in every project I touch, whether the client is a corporation, a founder, or an artist. Strategy always comes before style. Nothing is decorative unless it’s also deliberate. And every identity I build still starts exactly where it started for me at nineteen: with the discipline to notice what’s actually true, and the craft to make sure no one can ignore it again."
+    },
+    "stats": {
+      "experience": "Experience",
+      "brandsRevealed": "Brands revealed",
+      "worldsServed": "Worlds served"
+    },
+    "drivesTitle": "What drives me.",
+    "drives": {
+      "p1": "I don’t do this for the applause. I do it because most people, and most brands, are walking around with their real value hidden in plain sight, and that feels like a waste I can’t ignore.",
+      "p2": "Every project starts the same way: not with a mood board, but with a question. What is actually true here, that hasn’t been said yet? Corporation, professional, or artist, it doesn’t matter. The moment someone stops managing how they’re perceived and starts building from what’s real, everything changes: how they’re trusted, how they’re remembered, how they’re paid.",
+      "p3": "That’s the job. Not to make things look good. To make the truth impossible to miss."
+    },
+    "beyondTitle": "Beyond the work.",
+    "beyond": {
+      "p1": "Outside brand strategy, I’m still building. I run my own digital ventures, and digital marketing is as much an obsession as design: understanding how attention moves, what makes someone stop scrolling and actually stay, never really leaves me.",
+      "p2": "The rest of my life follows the same instinct that runs through my work: notice, refine, repeat. I play guitar. I train, because discipline in the gym and discipline in a brand system come from the same place. I spend hours in tutorials and podcasts from people who think sharper than I do, not to collect information, but because learning never stops feeling urgent to me.",
+      "p3": "I’m drawn to nature for the same reason I’m drawn to identity: it rewards attention. Look closely enough at anything and it starts telling you the truth about itself.",
+      "p4": "I hold myself to a standard most people would call excessive. Everything I touch, a project, a room, a plan, has to be right, not almost right. And I do my best thinking alone. Solitude isn’t withdrawal for me, it’s where I actually interrogate myself and question my own decisions before anyone else has to. It’s how ambition stays honest instead of becoming noise.",
+      "p5": "I think in decades, not quarters."
+    },
+    "ctaText": "If what you’ve read here resonates, you already know what the next step is.",
+    "cta": "Initiate",
+    "brandsHeading": "Brands I’ve worked for",
+    "toolsHeading": "Tools"
+  },
+  "services": {
+    "titleLead": "What ",
+    "titleRest": "I believe.",
+    "imageCaptionName": "Ernso Azor",
+    "imageCaptionRole": "Graphic Designer / Brand Strategist",
+    "heroQuoteLine1": "Everyone is a brand.",
+    "heroQuoteLine2": "Most just don’t know",
+    "heroQuoteLine3": "how to show it.",
+    "beliefsTitle": "The beliefs that never change.",
+    "beliefs": [
+      {
+        "n": "I",
+        "title": "Branding is revelation",
+        "body": "A brand is never invented. It is uncovered. The most powerful identities feel inevitable — like they could only belong to that person, that institution, that artist. My job is to make that truth visible."
+      },
+      {
+        "n": "II",
+        "title": "Uniqueness is the strategy",
+        "body": "In a world of imitation, the most dangerous thing a brand can do is look like someone else. What makes you different — whether you're a CEO or a creator — is not a risk. It is your greatest asset."
+      },
+      {
+        "n": "III",
+        "title": "Perception is power",
+        "body": "How the world sees you determines what comes to you. For a corporation, it shapes deals. For an expert, it shapes authority. For an artist, it shapes reach. Managing perception is not vanity — it is strategy."
+      },
+      {
+        "n": "IV",
+        "title": "Design is a philosophy",
+        "body": "Every color, typeface, and spatial decision communicates something. There are no neutral choices. Everything means something — which means everything must be intentional, from a boardroom annual report to an Instagram grid."
+      },
+      {
+        "n": "V",
+        "title": "Alignment is the goal",
+        "body": "A brand works when what you say, what you show, and what you do all point in the same direction — whether on a company website or a creator's social presence. Misalignment is the most expensive mistake a brand can make."
+      },
+      {
+        "n": "VI",
+        "title": "The REVEAL Framework",
+        "body": "Root → Excavate → Voice → Express → Align → Launch. A proprietary six-stage methodology that works across all three worlds: finding and revealing the authentic identity that was always there, waiting to be seen."
+      }
+    ],
+    "revealTitle": "The REVEAL Framework.",
+    "revealSubtitle": "A six-stage methodology, applied in order, every time.",
+    "revealRows": [
+      { "letter": "R", "name": "Root", "desc": "Who you truly are before anything else" },
+      { "letter": "E", "name": "Excavate", "desc": "The uniqueness that already exists" },
+      { "letter": "V", "name": "Voice", "desc": "The language through which the brand speaks" },
+      { "letter": "E", "name": "Express", "desc": "Strategy translated into visible identity" },
+      { "letter": "A", "name": "Align", "desc": "Consistent across every touchpoint" },
+      { "letter": "L", "name": "Launch", "desc": "Unmissable from the very first moment" }
+    ],
+    "taglineLead": "One process. Three worlds. One direction: ",
+    "taglineRest": "from obscurity to unmistakable",
+    "ctaHeading": "Let’s build something",
+    "ctaSubtext": "If what you’ve read here aligns with how you see your brand",
+    "cta": "Initiate"
+  },
+  "work": {
+    "metaTitle": "Work — Ernso Azor",
+    "metaDescription": "Work that reveals — selected brand projects across institutional, individual and creative worlds.",
+    "heroTitle": "Work that reveals.",
+    "filterAll": "All works",
+    "filterInstitutional": "institutional",
+    "filterIndividual": "Individual",
+    "filterCreative": "Creative & Public",
+    "emptyState": "Nothing in this world yet — check back soon, or browse other categories.",
+    "markLibraryTitle": "The Mark Library",
+    "markLibraryDesc": "Every shape carries a decision. Every curve, every angle, every weight chosen with intention."
+  },
+  "workDetail": {
+    "back": "Back",
+    "overviewHeading": "The project overview",
+    "next": "Next"
+  },
+  "initiate": {
+    "metaTitle": "Initiate — Ernso Azor",
+    "metaDescription": "Start a conversation about your brand or product.",
+    "heroTitle": "Let’s build something.",
+    "heroSubtitle": "Reach out directly, or share a few details about your project below.",
+    "formHeading": "Tell me about your project",
+    "directContact": {
+      "emailLabel": "Email",
+      "emailDesc": "For a direct, unhurried conversation.",
+      "whatsappLabel": "WhatsApp",
+      "whatsappDesc": "For a quick message, anytime."
+    },
+    "form": {
+      "namePlaceholder": "Name",
+      "lastNamePlaceholder": "Last name",
+      "emailPlaceholder": "Email",
+      "brandNamePlaceholder": "Brand or product name",
+      "deadlineLabel": "Estimated deadline",
+      "budgetLabel": "Estimated budget",
+      "sourceLabel": "How did you find me",
+      "selectPlaceholder": "Select an option",
+      "descriptionPlaceholder": "Brief project description",
+      "errorMessage": "Something went wrong sending your brief. Please try again or email directly.",
+      "sending": "Sending…",
+      "submit": "Submit",
+      "thankYou": "Thank you, {firstName}.",
+      "confirmation": "Your project brief has been received. Expect a reply at {email} within one to two business days.",
+      "deadlineOptions": [
+        { "value": "1 month", "label": "1 month" },
+        { "value": "1–3 months", "label": "1–3 months" },
+        { "value": "3+ months", "label": "3+ months" }
+      ],
+      "budgetOptions": [
+        { "value": "$1,000 – $3,000", "label": "$1,000 – $3,000" },
+        { "value": "$3,000 – $5,000", "label": "$3,000 – $5,000" },
+        { "value": "$5,000 – $7,000", "label": "$5,000 – $7,000" },
+        { "value": "$7,000 – $10,000+", "label": "$7,000 – $10,000+" }
+      ],
+      "sourceOptions": [
+        { "value": "Instagram", "label": "Instagram" },
+        { "value": "Behance", "label": "Behance" },
+        { "value": "Referral", "label": "Referral" },
+        { "value": "LinkedIn", "label": "LinkedIn" },
+        { "value": "TikTok", "label": "TikTok" },
+        { "value": "YouTube", "label": "YouTube" }
+      ]
+    }
+  },
+  "terms": {
+    "metaTitle": "Terms of Service — Ernso Azor",
+    "metaDescription": "The terms governing use of the creativernso.co website.",
+    "title": "Terms of Service",
+    "updatedLabel": "Last updated:",
+    "updatedDate": "August 31, 2026",
+    "intro": "These terms govern your use of creativernso.co (“this site”), the personal portfolio of Ernso Azor, a brand designer and strategist based in Curitiba, Brazil. By browsing this site or submitting the contact form, you agree to the terms below.",
+    "s1Title": "1. About this site",
+    "s1Body": "This site is informational: it presents my work, background, and a way to get in touch. It does not process payments, create accounts, or sell products. Any paid design or strategy engagement is agreed separately, directly with me, and is governed by the terms of that specific agreement, not by this page.",
+    "s2Title": "2. Intellectual property",
+    "s2Body": "Unless otherwise noted, all content on this site, including text, visuals, and project case studies, is the property of Ernso Azor or the respective clients featured, and is protected by copyright. Project work shown here is displayed with permission as a representation of past work. Nothing on this site may be reproduced, redistributed, or used commercially without prior written consent.",
+    "s3Title": "3. The contact form",
+    "s3Body": "Submitting the Initiate form sends your information to me by email. It does not create a contract, reserve a project slot, or obligate either party to work together. Project scope, pricing, and terms are only finalized through a separate, explicit agreement.",
+    "s4Title": "4. Acceptable use",
+    "s4Body": "You agree not to misuse this site: no attempts to disrupt its operation, scrape its content at scale, or use the contact form for spam or unrelated solicitation.",
+    "s5Title": "5. No warranty",
+    "s5Body": "This site and its content are provided “as is,” without warranties of any kind. I make reasonable efforts to keep it accurate and available, but do not guarantee uninterrupted access or error-free content.",
+    "s6Title": "6. Limitation of liability",
+    "s6Body": "To the fullest extent permitted by law, I am not liable for any indirect, incidental, or consequential damages arising from your use of this site.",
+    "s7Title": "7. Third-party links",
+    "s7Body": "This site links to third-party platforms, including Instagram, LinkedIn, and Behance. I am not responsible for the content or privacy practices of those platforms once you leave this site.",
+    "s8Title": "8. Governing law",
+    "s8Body": "These terms are governed by the laws of Brazil, without regard to conflict-of-law principles.",
+    "s9Title": "9. Changes to these terms",
+    "s9Body": "These terms may be updated from time to time. Continued use of this site after a change means you accept the revised terms.",
+    "s10Title": "10. Contact",
+    "s10Pre": "Questions about these terms can be sent to",
+    "s10Post": "."
+  },
+  "privacy": {
+    "metaTitle": "Privacy Policy — Ernso Azor",
+    "metaDescription": "How Ernso Azor collects, uses, and protects your information.",
+    "title": "Privacy Policy",
+    "updatedLabel": "Last updated:",
+    "updatedDate": "August 31, 2026",
+    "intro": "This policy explains what information creativernso.co (“this site,” “I,” or “me”) collects, how it is used, and the choices you have. I am Ernso Azor, a brand designer and strategist based in Curitiba, Brazil, and this site is my personal portfolio and contact point.",
+    "s1Title": "1. Information I collect",
+    "s1Body1": "The only personal information this site collects is what you choose to submit through the Initiate contact form: your name, email address, brand or product name, estimated timeline and budget, how you found me, and a description of your project. If you email or message me directly instead, I receive whatever information you include in that message.",
+    "s1Body2": "This site does not use cookies, analytics, or advertising trackers. No account creation, payment information, or browsing behaviour is collected at any point.",
+    "s2Title": "2. How I use your information",
+    "s2Body": "Information submitted through the contact form is used solely to respond to your inquiry, understand your project, and follow up about a potential collaboration. I do not sell, rent, or share your information with third parties for marketing purposes.",
+    "s3Title": "3. Third-party services",
+    "s3Body": "Form submissions are delivered using Resend, an email infrastructure provider, which processes the message on its way to my inbox. This site’s content (project imagery and text) is managed through Sanity, a headless CMS; Sanity does not receive or process any information you submit.",
+    "s4Title": "4. Data retention",
+    "s4Body": "I keep correspondence and project inquiries for as long as reasonably needed for business and record-keeping purposes, or until you ask me to delete it.",
+    "s5Title": "5. Your rights",
+    "s5Pre": "You can ask me at any time to access, correct, or delete the information I hold about you by emailing",
+    "s5Post": ". I will respond within a reasonable timeframe.",
+    "s6Title": "6. Children’s privacy",
+    "s6Body": "This site is not directed at children, and I do not knowingly collect information from anyone under the age of 16.",
+    "s7Title": "7. Changes to this policy",
+    "s7Body": "If this policy changes, the update will be posted on this page with a revised date at the top.",
+    "s8Title": "8. Contact",
+    "s8Pre": "Questions about this policy can be sent to",
+    "s8Post": "."
   }
 }

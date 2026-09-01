@@ -1,19 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
 const EMAIL = "hey@creativernso.co";
 const WHATSAPP_NUMBER: string = "";
 
-const channels = [
+function useChannels() {
+  const t = useTranslations("initiate.directContact");
+  return [
   {
     key: "email",
-    label: "Email",
+    label: t("emailLabel"),
     value: EMAIL,
     href: `mailto:${EMAIL}`,
-    desc: "For a direct, unhurried conversation.",
+    desc: t("emailDesc"),
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
         <rect x="3" y="5" width="18" height="14" rx="2" />
@@ -25,10 +28,10 @@ const channels = [
     ? [
         {
           key: "whatsapp",
-          label: "WhatsApp",
+          label: t("whatsappLabel"),
           value: WHATSAPP_NUMBER,
           href: `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, "")}`,
-          desc: "For a quick message, anytime.",
+          desc: t("whatsappDesc"),
           icon: (
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
               <path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.4c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.5-.1-.1-.6-1.4-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.3.9 2.5 1.1 2.6.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3z" />
@@ -38,9 +41,11 @@ const channels = [
         },
       ]
     : []),
-];
+  ];
+}
 
 export default function DirectContact() {
+  const channels = useChannels();
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}

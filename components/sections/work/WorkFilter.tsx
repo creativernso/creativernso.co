@@ -4,24 +4,27 @@ import { useState } from"react";
 import { motion, AnimatePresence, LayoutGroup } from"framer-motion";
 import Image from"next/image";
 import { Link } from"@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import type { Project } from"@/lib/content";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
-const filters = [
- { key:"All", label:"All works"},
- { key:"Institutional", label:"institutional"},
- { key:"Authority", label:"Individual"},
- { key:"Creative", label:"Creative & Public"},
-] as const;
+const filterKeys = ["All", "Institutional", "Authority", "Creative"] as const;
 
-type Key = (typeof filters)[number]["key"];
+type Key = (typeof filterKeys)[number];
 
 export default function WorkFilter({
  projects,
 }: {
  projects: readonly Project[];
 }) {
+ const t = useTranslations("work");
+ const filters = [
+ { key:"All"as Key, label: t("filterAll")},
+ { key:"Institutional"as Key, label: t("filterInstitutional")},
+ { key:"Authority"as Key, label: t("filterIndividual")},
+ { key:"Creative"as Key, label: t("filterCreative")},
+ ];
  const [active, setActive] = useState<Key>("All");
  const filtered =
  active ==="All"? [...projects] : projects.filter((p) => p.world === active);
@@ -126,8 +129,7 @@ export default function WorkFilter({
  {filtered.length === 0 && (
  <div className="mt-12 border border-bone/15 bg-black/30 backdrop-blur-md backdrop-saturate-100 p-10 text-center">
  <p className="text-[14px] text-muted-2">
- Nothing in this world yet check back soon, or browse other
- categories.
+ {t("emptyState")}
  </p>
  </div>
  )}

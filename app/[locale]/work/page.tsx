@@ -4,17 +4,21 @@ import { projectsQuery } from"@/lib/sanity/queries";
 import type { Project } from"@/lib/content";
 import WorkFilter from"@/components/sections/work/WorkFilter";
 import MarkLibrary from"@/components/sections/work/MarkLibrary";
+import { getTranslations } from "next-intl/server";
 
 export const revalidate = 30;
 
-export const metadata = {
- title:"Work Ernso Azor",
- description:
-"Work that reveals selected brand projects across institutional, individual and creative worlds.",
-};
+export async function generateMetadata() {
+  const t = await getTranslations("work");
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  };
+}
 
 export default async function WorkPage() {
  const projects = await client.fetch<Project[]>(projectsQuery);
+ const t = await getTranslations("work");
  return (
  <section
  data-theme="dark"
@@ -37,7 +41,7 @@ export default async function WorkPage() {
  {/* Header */}
  <header className="mt-8 md:mt-12">
  <h1 className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]">
- Work that reveals.
+ {t("heroTitle")}
  </h1>
  </header>
 

@@ -2,30 +2,19 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
-const deadlineOptions = ["1 month", "1–3 months", "3+ months"];
-
-const budgetOptions = [
-  "$1,000 – $3,000",
-  "$3,000 – $5,000",
-  "$5,000 – $7,000",
-  "$7,000 – $10,000+",
-];
-
-const sourceOptions = [
-  "Instagram",
-  "Behance",
-  "Referral",
-  "LinkedIn",
-  "TikTok",
-  "YouTube",
-];
+type Option = { value: string; label: string };
 
 type Status = "idle" | "submitting" | "done" | "error";
 
 export default function ContactForm() {
+  const t = useTranslations("initiate.form");
+  const deadlineOptions = t.raw("deadlineOptions") as Option[];
+  const budgetOptions = t.raw("budgetOptions") as Option[];
+  const sourceOptions = t.raw("sourceOptions") as Option[];
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -76,11 +65,10 @@ export default function ContactForm() {
     return (
       <div className="border border-bone/10 bg-black/30 backdrop-blur-md backdrop-saturate-100 px-6 py-10 text-center md:px-12 md:py-16">
         <div className="font-display text-bone text-[clamp(28px,4vw,44px)] font-bold leading-[1.1] tracking-[-0.03em]">
-          Thank you, {firstName}.
+          {t("thankYou", { firstName })}
         </div>
         <p className="mx-auto mt-4 max-w-md text-[14px] leading-relaxed text-muted-2 md:text-[16px]">
-          Your project brief has been received. Expect a reply at {email}{" "}
-          within one to two business days.
+          {t("confirmation", { email })}
         </p>
       </div>
     );
@@ -121,7 +109,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <input
           type="text"
-          placeholder="Name"
+          placeholder={t("namePlaceholder")}
           required
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
@@ -129,7 +117,7 @@ export default function ContactForm() {
         />
         <input
           type="text"
-          placeholder="Last name"
+          placeholder={t("lastNamePlaceholder")}
           required
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
@@ -137,7 +125,7 @@ export default function ContactForm() {
         />
         <input
           type="email"
-          placeholder="Email"
+          placeholder={t("emailPlaceholder")}
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -145,7 +133,7 @@ export default function ContactForm() {
         />
         <input
           type="text"
-          placeholder="Brand or product name"
+          placeholder={t("brandNamePlaceholder")}
           required
           value={brandName}
           onChange={(e) => setBrandName(e.target.value)}
@@ -156,7 +144,7 @@ export default function ContactForm() {
       {/* Deadline */}
       <div className="mt-8">
         <label className="text-[13px] font-medium uppercase tracking-[0.18em] text-muted-2">
-          Estimated deadline
+          {t("deadlineLabel")}
         </label>
         <div className="relative mt-3">
           <select
@@ -167,11 +155,11 @@ export default function ContactForm() {
             className={`${selectClass} ${deadline ? "text-bone" : "text-muted-2"}`}
           >
             <option value="" disabled hidden>
-              Select an option
+              {t("selectPlaceholder")}
             </option>
             {deadlineOptions.map((d) => (
-              <option key={d} value={d} className="bg-ink text-bone">
-                {d}
+              <option key={d.value} value={d.value} className="bg-ink text-bone">
+                {d.label}
               </option>
             ))}
           </select>
@@ -182,7 +170,7 @@ export default function ContactForm() {
       {/* Budget */}
       <div className="mt-8">
         <label className="text-[13px] font-medium uppercase tracking-[0.18em] text-muted-2">
-          Estimated budget
+          {t("budgetLabel")}
         </label>
         <div className="relative mt-3">
           <select
@@ -193,11 +181,11 @@ export default function ContactForm() {
             className={`${selectClass} ${budget ? "text-bone" : "text-muted-2"}`}
           >
             <option value="" disabled hidden>
-              Select an option
+              {t("selectPlaceholder")}
             </option>
             {budgetOptions.map((b) => (
-              <option key={b} value={b} className="bg-ink text-bone">
-                {b}
+              <option key={b.value} value={b.value} className="bg-ink text-bone">
+                {b.label}
               </option>
             ))}
           </select>
@@ -208,7 +196,7 @@ export default function ContactForm() {
       {/* Source */}
       <div className="mt-8">
         <label className="text-[13px] font-medium uppercase tracking-[0.18em] text-muted-2">
-          How did you find me
+          {t("sourceLabel")}
         </label>
         <div className="relative mt-3">
           <select
@@ -219,11 +207,11 @@ export default function ContactForm() {
             className={`${selectClass} ${source ? "text-bone" : "text-muted-2"}`}
           >
             <option value="" disabled hidden>
-              Select an option
+              {t("selectPlaceholder")}
             </option>
             {sourceOptions.map((s) => (
-              <option key={s} value={s} className="bg-ink text-bone">
-                {s}
+              <option key={s.value} value={s.value} className="bg-ink text-bone">
+                {s.label}
               </option>
             ))}
           </select>
@@ -234,7 +222,7 @@ export default function ContactForm() {
       {/* Description */}
       <div className="mt-8">
         <textarea
-          placeholder="Brief project description"
+          placeholder={t("descriptionPlaceholder")}
           required
           rows={5}
           value={description}
@@ -245,8 +233,7 @@ export default function ContactForm() {
 
       {status === "error" && (
         <p className="mt-4 text-[13px] text-gold-ember">
-          Something went wrong sending your brief. Please try again or email
-          directly.
+          {t("errorMessage")}
         </p>
       )}
 
@@ -257,7 +244,7 @@ export default function ContactForm() {
           disabled={!isComplete || status === "submitting"}
           className="inline-flex items-center gap-2 border border-bone bg-bone/[0.06] px-9 py-3.5 text-[12px] font-medium uppercase tracking-[0.2em] text-bone transition-colors enabled:hover:bg-bone enabled:hover:text-black disabled:border-bone/60 disabled:bg-transparent disabled:text-bone/50"
         >
-          {status === "submitting" ? "Sending…" : "Submit"}
+          {status === "submitting" ? t("sending") : t("submit")}
         </button>
       </div>
     </motion.form>

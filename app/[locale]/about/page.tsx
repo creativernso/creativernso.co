@@ -1,10 +1,13 @@
 import AboutContent from"@/components/sections/about/AboutContent";
+import { getTranslations } from "next-intl/server";
 
-export const metadata = {
- title:"About, Ernso Azor",
- description:
-"Brand strategist & designer. 8+ years across three worlds. The thread that holds.",
-};
+export async function generateMetadata() {
+  const t = await getTranslations("about");
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  };
+}
 
 export default function AboutPage() {
  return <AboutContent />;
