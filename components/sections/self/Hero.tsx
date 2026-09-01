@@ -86,7 +86,7 @@ export default function Hero() {
  {/* Text overlay — vertically centered (shifted down), left-aligned */}
  <div className="absolute inset-0 flex translate-y-12 items-center px-6 md:translate-y-16 md:px-12">
  <div className="max-w-[720px] lg:max-w-[1000px] xl:max-w-[1200px]">
- <h1 className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]">
+ <h1 className="font-display text-bone text-[clamp(30px,4vw,76px)] font-bold leading-[1.05] tracking-[-0.04em]">
  <span className="block">{line1}</span>
  <span className="block font-bold text-bone/30">
  <RotatingTypewriter
@@ -138,7 +138,7 @@ export default function Hero() {
 
  {/* Text overlay — anchored toward the top of the image, below the nav */}
  <div className="absolute inset-x-0 top-0 flex flex-col items-center px-6 pt-[calc(100px+9vh)] text-center">
- <h1 className="font-display text-bone text-[30px] font-bold leading-[1.1] tracking-[-0.04em]">
+ <h1 className="font-display text-bone text-[25px] font-bold leading-[1.1] tracking-[-0.04em]">
  <span className="block">{line1}</span>
  <span className="block font-bold text-bone/30">
  <RotatingTypewriter
