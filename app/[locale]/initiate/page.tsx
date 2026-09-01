@@ -22,7 +22,7 @@ export default async function InitiatePage() {
           <h1 className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]">
             {t("heroTitle")}
           </h1>
-          <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-muted-2 md:text-[18px]">
+          <p className="mt-3 text-[15px] leading-relaxed text-muted-2 md:whitespace-nowrap md:text-[18px]">
             {t("heroSubtitle")}
           </p>
         </header>
