@@ -53,7 +53,6 @@ type ProjectTranslation = {
 // sanity/schemaTypes/project.ts and lib/sanity/queries.ts.
 export type RawProject = Project & {
   i18n?: {
-    fr?: ProjectTranslation;
     pt?: ProjectTranslation;
     es?: ProjectTranslation;
   };
@@ -65,9 +64,7 @@ export type RawProject = Project & {
 export function localizeProject(p: RawProject, locale: string): Project {
   const { i18n, ...base } = p;
   const t =
-    locale === "fr" || locale === "pt" || locale === "es"
-      ? i18n?.[locale]
-      : undefined;
+    locale === "pt" || locale === "es" ? i18n?.[locale] : undefined;
   if (!t) return base;
   return {
     ...base,

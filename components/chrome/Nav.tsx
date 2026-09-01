@@ -55,7 +55,8 @@ export default function Nav() {
             Ernso Azor
           </Link>
 
-          <div className="relative">
+          <div className="flex items-center gap-3">
+            <LanguageSwitcher />
             <button
               aria-label="Toggle menu"
               onClick={() => setOpen((v) => !v)}
@@ -73,9 +74,6 @@ export default function Nav() {
                 }`}
               />
             </button>
-            <div className="absolute right-0 top-full mt-3">
-              <LanguageSwitcher />
-            </div>
           </div>
         </div>
       </header>
