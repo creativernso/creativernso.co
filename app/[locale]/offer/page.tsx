@@ -50,20 +50,11 @@ export default function OfferPage() {
         </motion.div>
 
         {/* Header — "What I bring to the table." */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.05, ease: EASE }}
-          className="meta mt-8 flex items-center gap-3 text-muted-2 md:mt-12"
-        >
-          {t("eyebrow")}
-        </motion.div>
-
         <motion.h1
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1, ease: EASE }}
-          className="mt-4 font-display text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]"
+          transition={{ duration: 0.7, delay: 0.05, ease: EASE }}
+          className="mt-8 font-display text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em] md:mt-12"
         >
           <span className="text-bone">{t("titleLead")}</span>
           <span className="text-bone/35">{t("titleRest")}</span>
@@ -72,7 +63,7 @@ export default function OfferPage() {
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.15, ease: EASE }}
+          transition={{ duration: 0.7, delay: 0.1, ease: EASE }}
           className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-2 md:text-[18px]"
         >
           {t("heroSubtitle")}
@@ -197,8 +188,7 @@ export default function OfferPage() {
                   </span>
 
                   <div className="flex-1">
-                    <div className="meta text-muted-2">{step.label}</div>
-                    <h3 className="mt-2 font-display text-bone text-[22px] font-bold leading-[1.2] tracking-[-0.02em] md:text-[28px]">
+                    <h3 className="font-display text-bone text-[22px] font-bold leading-[1.2] tracking-[-0.02em] md:text-[28px]">
                       {step.name}
                     </h3>
                     <p className="mt-3 max-w-2xl text-[15px] leading-[1.6] text-muted-2 md:text-[16px]">
