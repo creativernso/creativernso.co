@@ -88,7 +88,7 @@ export default function OfferPage() {
             >
               {t("disciplinesTitle")}
             </motion.h2>
-            <p className="mt-3 max-w-2xl text-[15px] text-muted-2 md:text-[18px]">
+            <p className="mt-3 text-[15px] text-muted-2 md:text-[18px]">
               {t("disciplinesIntro")}
             </p>
           </div>
@@ -157,7 +157,7 @@ export default function OfferPage() {
             >
               {t("processTitle")}
             </motion.h2>
-            <p className="mt-3 max-w-2xl text-[15px] text-muted-2 md:text-[18px]">
+            <p className="mt-3 text-[15px] text-muted-2 md:text-[18px]">
               {t("processIntro")}
             </p>
           </div>
