@@ -89,7 +89,7 @@ export default function AboutContent() {
             />
           </div>
 
-          <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 [hyphens:auto] [text-align:justify] [text-wrap:pretty] md:mt-8 md:text-[19px] md:leading-[1.65]">
+          <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:mt-8 md:text-[19px] md:leading-[1.65]">
             <p>{t("parcours.p1")}</p>
             <p>{t("parcours.p2")}</p>
             <p>{t("parcours.p3")}</p>
@@ -120,7 +120,7 @@ export default function AboutContent() {
             style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
           >
             <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-8">
-              <div className="flex flex-col justify-center space-y-5 text-[14px] leading-[1.6] text-muted-2 [hyphens:auto] [text-align:justify] [text-wrap:pretty] md:text-[17px] md:leading-[1.65]">
+              <div className="flex flex-col justify-center space-y-5 text-[14px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:text-[17px] md:leading-[1.65]">
                 <p>{t("drives.p1")}</p>
                 <p>{t("drives.p2")}</p>
                 <p>{t("drives.p3")}</p>
@@ -169,7 +169,7 @@ export default function AboutContent() {
               />
             </div>
 
-            <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 [hyphens:auto] [text-align:justify] [text-wrap:pretty] md:mt-8 md:text-[19px] md:leading-[1.65]">
+            <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:mt-8 md:text-[19px] md:leading-[1.65]">
               <p>{t("beyond.p1")}</p>
               <p>{t("beyond.p2")}</p>
               <p>{t("beyond.p3")}</p>
