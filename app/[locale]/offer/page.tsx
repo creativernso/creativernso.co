@@ -1,6 +1,7 @@
 "use client";
 
 import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
@@ -30,12 +31,30 @@ export default function OfferPage() {
       className="relative min-h-screen py-10 text-bone md:py-14"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-12">
+        {/* Hero image */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: EASE }}
+          className="relative aspect-[2400/1126] overflow-hidden border border-bone/20 bg-black/30"
+        >
+          <Image
+            src="/about-worlds.jpg"
+            alt="Ernso Azor"
+            fill
+            sizes="(min-width: 1400px) 1304px, (min-width: 768px) 90vw, 95vw"
+            quality={88}
+            className="object-cover"
+            priority
+          />
+        </motion.div>
+
         {/* Header — "What I bring to the table." */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: EASE }}
-          className="meta flex items-center gap-3 text-gold"
+          transition={{ duration: 0.6, delay: 0.05, ease: EASE }}
+          className="meta mt-8 flex items-center gap-3 text-muted-2 md:mt-12"
         >
           {t("eyebrow")}
         </motion.div>
@@ -43,7 +62,7 @@ export default function OfferPage() {
         <motion.h1
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.05, ease: EASE }}
+          transition={{ duration: 0.7, delay: 0.1, ease: EASE }}
           className="mt-4 font-display text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]"
         >
           <span className="text-bone">{t("titleLead")}</span>
@@ -53,7 +72,7 @@ export default function OfferPage() {
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1, ease: EASE }}
+          transition={{ duration: 0.7, delay: 0.15, ease: EASE }}
           className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-2 md:text-[18px]"
         >
           {t("heroSubtitle")}
@@ -178,7 +197,7 @@ export default function OfferPage() {
                   </span>
 
                   <div className="flex-1">
-                    <div className="meta text-gold">{step.label}</div>
+                    <div className="meta text-muted-2">{step.label}</div>
                     <h3 className="mt-2 font-display text-bone text-[22px] font-bold leading-[1.2] tracking-[-0.02em] md:text-[28px]">
                       {step.name}
                     </h3>
