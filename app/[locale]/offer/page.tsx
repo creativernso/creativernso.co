@@ -73,7 +73,7 @@ const PROCESS_IMAGES: (string | null)[] = [
   "/process-02-proposal.jpg",
   "/process-03-agreement.jpg",
   "/process-04-creation.jpg",
-  null,
+  "/process-05-review.jpg",
   null,
 ];
 
