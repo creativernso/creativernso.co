@@ -179,7 +179,7 @@ export default function OfferPage() {
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 1.2, ease: EASE }}
               style={{ transformOrigin: "top" }}
-              className="absolute inset-y-0 left-1/2 hidden w-px -translate-x-1/2 bg-bone/15 md:block"
+              className="absolute inset-y-0 left-[22px] w-px -translate-x-1/2 bg-bone/15 md:left-1/2"
             />
 
             <div className="flex flex-col gap-10 md:gap-6">
@@ -195,7 +195,7 @@ export default function OfferPage() {
                   >
                     {/* mobile: simple stacked card */}
                     <div className="flex items-start gap-4 md:hidden">
-                      <span className="flex h-11 w-11 shrink-0 items-center justify-center border border-bone/20 font-display text-[14px] font-bold text-bone">
+                      <span className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center border border-bone/20 bg-ink font-display text-[14px] font-bold text-bone">
                         {step.n}
                       </span>
                       <div>
