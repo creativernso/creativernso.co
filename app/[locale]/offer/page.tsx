@@ -31,12 +31,23 @@ export default function OfferPage() {
       className="relative min-h-screen py-10 text-bone md:py-14"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-12">
+        {/* Header — "What I bring to the table." */}
+        <motion.h1
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: EASE }}
+          className="font-display text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]"
+        >
+          <span className="text-bone">{t("titleLead")}</span>
+          <span className="text-bone/35">{t("titleRest")}</span>
+        </motion.h1>
+
         {/* Hero image */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: EASE }}
-          className="relative aspect-[2400/1126] overflow-hidden border border-bone/20 bg-black/30"
+          transition={{ duration: 0.7, delay: 0.05, ease: EASE }}
+          className="relative mt-8 aspect-[2400/1126] overflow-hidden border border-bone/20 bg-black/30 md:mt-12"
         >
           <Image
             src="/about-worlds.jpg"
@@ -48,26 +59,6 @@ export default function OfferPage() {
             priority
           />
         </motion.div>
-
-        {/* Header — "What I bring to the table." */}
-        <motion.h1
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.05, ease: EASE }}
-          className="mt-8 font-display text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em] md:mt-12"
-        >
-          <span className="text-bone">{t("titleLead")}</span>
-          <span className="text-bone/35">{t("titleRest")}</span>
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1, ease: EASE }}
-          className="mt-4 text-[15px] leading-relaxed text-muted-2 md:text-[18px]"
-        >
-          {t("heroSubtitle")}
-        </motion.p>
 
         {/* "The Disciplines" */}
         <div className="mt-24 md:mt-32">
