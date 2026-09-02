@@ -13,6 +13,7 @@ export default function Nav() {
     { label: t("story"), href: "/about" },
     { label: t("belief"), href: "/services" },
     { label: t("creations"), href: "/work" },
+    { label: t("offer"), href: "/offer" },
   ] as const;
   const [open, setOpen] = useState(false);
   const [atTop, setAtTop] = useState(true);

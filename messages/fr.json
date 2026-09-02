@@ -4,6 +4,7 @@
     "story": "Histoire",
     "belief": "Conviction",
     "creations": "Créations",
+    "offer": "Offre",
     "initiate": "Initier"
   },
   "footer": {
@@ -150,17 +151,156 @@
     "revealTitle": "La méthode REVEAL.",
     "revealSubtitle": "Une méthodologie en six étapes, appliquée dans l'ordre, à chaque fois.",
     "revealRows": [
-      { "letter": "R", "name": "Root", "desc": "Qui vous êtes réellement, avant tout le reste" },
-      { "letter": "E", "name": "Excavate", "desc": "L'unicité qui existe déjà" },
-      { "letter": "V", "name": "Voice", "desc": "Le langage à travers lequel la marque s'exprime" },
-      { "letter": "E", "name": "Express", "desc": "La stratégie traduite en identité visible" },
-      { "letter": "A", "name": "Align", "desc": "Cohérente sur chaque point de contact" },
-      { "letter": "L", "name": "Launch", "desc": "Incontournable dès le premier instant" }
+      {
+        "letter": "R",
+        "name": "Root",
+        "desc": "Qui vous êtes réellement, avant tout le reste"
+      },
+      {
+        "letter": "E",
+        "name": "Excavate",
+        "desc": "L'unicité qui existe déjà"
+      },
+      {
+        "letter": "V",
+        "name": "Voice",
+        "desc": "Le langage à travers lequel la marque s'exprime"
+      },
+      {
+        "letter": "E",
+        "name": "Express",
+        "desc": "La stratégie traduite en identité visible"
+      },
+      {
+        "letter": "A",
+        "name": "Align",
+        "desc": "Cohérente sur chaque point de contact"
+      },
+      {
+        "letter": "L",
+        "name": "Launch",
+        "desc": "Incontournable dès le premier instant"
+      }
     ],
     "taglineLead": "Un processus. Trois mondes. Une direction : ",
     "taglineRest": "de l'anonymat à l'incontournable",
     "ctaHeading": "Construisons quelque chose",
     "ctaSubtext": "Si ce que vous venez de lire correspond à votre vision de votre marque",
+    "cta": "Initier"
+  },
+  "offer": {
+    "metaTitle": "Offre — Ernso Azor",
+    "metaDescription": "L’étendue complète de ce que je fais, et exactement comment nous travaillons ensemble — du premier échange à la livraison finale.",
+    "eyebrow": "04 — Offre",
+    "titleLead": "Ce que j'apporte ",
+    "titleRest": "à la table.",
+    "heroSubtitle": "Chaque collaboration est construite autour de votre réalité spécifique. Pas de forfaits fixes. Pas de solutions standard. Une réponse précise à un besoin précis.",
+    "disciplinesTitle": "Les Disciplines",
+    "disciplinesIntro": "Voici l’étendue complète de ce que je fais. Selon votre projet, nous sélectionnerons, combinerons et séquencerons ces disciplines pour construire exactement ce dont votre marque a besoin — et rien de plus.",
+    "disciplineGroups": [
+      {
+        "n": "I",
+        "name": "Stratégie de Marque",
+        "items": [
+          "Stratégie et Positionnement de Marque",
+          "Audit et Diagnostic de Marque",
+          "Analyse du Paysage Concurrentiel",
+          "Recherche et Insights Audience",
+          "Cadre de Message et Ton de Voix",
+          "Architecture de Marque",
+          "Naming de Marque"
+        ]
+      },
+      {
+        "n": "II",
+        "name": "Identité Visuelle",
+        "items": [
+          "Design d'Identité de Marque (système complet)",
+          "Design de Logo et Symbole",
+          "Système Typographique",
+          "Système Colorimétrique",
+          "Charte Graphique / Brand Book",
+          "Langage Visuel et Design de Motifs",
+          "Iconographie et Illustration"
+        ]
+      },
+      {
+        "n": "III",
+        "name": "Présence Digitale",
+        "items": [
+          "Web Design",
+          "Design UI/UX",
+          "Architecture de Marque Sociale",
+          "Stratégie Visuelle de Plateforme",
+          "Design de Contenu et Gabarits",
+          "Motion et Design d'Interaction"
+        ]
+      },
+      {
+        "n": "IV",
+        "name": "Personal Branding",
+        "items": [
+          "Stratégie de Marque Personnelle",
+          "Identité de Marque Personnelle",
+          "Positionnement d'Autorité",
+          "Design de Présence Digitale",
+          "Positionnement de Plateforme (LinkedIn, Instagram, Behance)"
+        ]
+      },
+      {
+        "n": "V",
+        "name": "Conseil et Direction",
+        "items": [
+          "Séances de Conseil de Marque",
+          "Ateliers de Marque",
+          "Direction Créative",
+          "Stratégie de Lancement",
+          "Gestion et Évolution de Marque"
+        ]
+      }
+    ],
+    "processTitle": "Comment nous travaillons ensemble.",
+    "processIntro": "Du premier message à la livraison finale — voici exactement à quoi ressemble la collaboration. Aucune surprise. Aucune ambiguïté. Juste un processus clair et structuré, conçu pour protéger votre temps et produire des résultats exceptionnels.",
+    "processSteps": [
+      {
+        "n": "01",
+        "label": "Le premier échange.",
+        "name": "Découverte",
+        "desc": "Chaque projet commence par l'écoute. Selon votre disponibilité, nous commençons par un appel de découverte ou un questionnaire détaillé. L'objectif est simple : comprendre votre réalité, identifier vos besoins et trouver ce qui vous rend différent. Rien n'est supposé. Tout est mérité à partir de ce que vous partagez."
+      },
+      {
+        "n": "02",
+        "label": "Une solution pensée pour vous.",
+        "name": "Proposition",
+        "desc": "À partir de ce que j'apprends lors de la Découverte, je construis une proposition sur mesure. Pas un forfait tiré d'un menu — une réponse précise à votre situation spécifique. Périmètre, livrables, calendrier et direction stratégique, tous alignés sur ce dont votre marque a réellement besoin."
+      },
+      {
+        "n": "03",
+        "label": "De la clarté avant de commencer.",
+        "name": "Accord",
+        "desc": "Vous examinez et validez la proposition. Une fois alignés, j'envoie le devis officiel. Après signature, un acompte de 60% confirme le démarrage du projet. Tout est documenté. Les deux parties sont protégées."
+      },
+      {
+        "n": "04",
+        "label": "Là où le travail se fait.",
+        "name": "Création",
+        "desc": "Le projet démarre. Selon le périmètre, cette phase suit le Cadre REVEAL — allant du fondement stratégique à l'expression visuelle. Vous êtes tenu informé à chaque étape clé. Rien n'est présenté sans intention."
+      },
+      {
+        "n": "05",
+        "label": "Votre voix dans le travail.",
+        "name": "Révision",
+        "desc": "Je soumets le travail à votre relecture. Nous entrons dans une phase de révision structurée — vos retours sont intégrés avec précision jusqu'à ce que chaque détail soit validé. C'est une collaboration, pas une présentation."
+      },
+      {
+        "n": "06",
+        "label": "La remise.",
+        "name": "Livraison",
+        "desc": "Tout est approuvé. Le paiement final de 40% est effectué. Je livre le pack complet de fichiers — tous les formats, toutes les directives, tous les actifs — prêts à être utilisés, déployés et possédés. La marque est à vous."
+      }
+    ],
+    "ctaHeading": "Prêt à commencer ?",
+    "ctaSubtext": "Parlez-moi de votre projet. Je vous dirai exactement ce dont il a besoin.",
     "cta": "Initier"
   },
   "work": {
@@ -184,48 +324,162 @@
     "metaTitle": "Initier — Ernso Azor",
     "metaDescription": "Démarrez une conversation sur votre marque ou votre produit.",
     "heroTitle": "Construisons quelque chose.",
-    "heroSubtitle": "Contactez-moi directement, ou partagez quelques détails sur votre projet ci-dessous.",
-    "formHeading": "Parlez-moi de votre projet",
-    "directContact": {
-      "emailLabel": "E-mail",
-      "emailDesc": "Pour une conversation directe et sans précipitation.",
-      "whatsappLabel": "WhatsApp",
-      "whatsappDesc": "Pour un message rapide, à tout moment."
+    "heroSubtitle": "Chaque projet commence par une conversation. Choisissez comment vous souhaitez commencer.",
+    "choice": {
+      "title": "Comment souhaitez-vous commencer ?",
+      "call": {
+        "title": "Réserver un Appel Découverte",
+        "subtitle": "Nous échangeons directement. Choisissez un créneau qui vous convient."
+      },
+      "questionnaire": {
+        "title": "Recevoir un Questionnaire",
+        "subtitle": "Vous préférez prendre votre temps ? Répondez à votre rythme."
+      }
     },
-    "form": {
-      "namePlaceholder": "Prénom",
-      "lastNamePlaceholder": "Nom",
-      "emailPlaceholder": "E-mail",
-      "brandNamePlaceholder": "Nom de la marque ou du produit",
-      "deadlineLabel": "Échéance estimée",
-      "budgetLabel": "Budget estimé",
-      "sourceLabel": "Comment m'avez-vous trouvé",
-      "selectPlaceholder": "Sélectionnez une option",
-      "descriptionPlaceholder": "Brève description du projet",
-      "errorMessage": "Une erreur s'est produite lors de l'envoi de votre brief. Réessayez ou écrivez-moi directement par e-mail.",
+    "call": {
+      "loading": "Chargement du calendrier…",
+      "confirmedHeadline": "C'est confirmé.",
+      "confirmedSubtext": "Je vous retrouve à l'heure prévue. Une confirmation a été envoyée à votre e-mail. Venez prêt à parler de votre marque."
+    },
+    "questionnaire": {
+      "back": "Retour",
+      "next": "Suivant",
+      "submit": "Envoyer Mon Brief",
       "sending": "Envoi…",
-      "submit": "Envoyer",
-      "thankYou": "Merci, {firstName}.",
-      "confirmation": "Votre brief de projet a bien été reçu. Attendez une réponse à {email} sous un à deux jours ouvrés.",
-      "deadlineOptions": [
-        { "value": "1 month", "label": "1 mois" },
-        { "value": "1–3 months", "label": "1 à 3 mois" },
-        { "value": "3+ months", "label": "3 mois et plus" }
-      ],
-      "budgetOptions": [
-        { "value": "$1,000 – $3,000", "label": "$1,000 – $3,000" },
-        { "value": "$3,000 – $5,000", "label": "$3,000 – $5,000" },
-        { "value": "$5,000 – $7,000", "label": "$5,000 – $7,000" },
-        { "value": "$7,000 – $10,000+", "label": "$7,000 – $10,000+" }
-      ],
-      "sourceOptions": [
-        { "value": "Instagram", "label": "Instagram" },
-        { "value": "Behance", "label": "Behance" },
-        { "value": "Referral", "label": "Recommandation" },
-        { "value": "LinkedIn", "label": "LinkedIn" },
-        { "value": "TikTok", "label": "TikTok" },
-        { "value": "YouTube", "label": "YouTube" }
-      ]
+      "errorMessage": "Une erreur est survenue lors de l’envoi de votre brief. Réessayez ou écrivez directement à hey@creativernso.co.",
+      "confirmedHeadline": "Brief reçu.",
+      "confirmedSubtext": "J’ai tout ce dont j’ai besoin pour commencer. Vous aurez de mes nouvelles sous 48 heures. Vérifiez votre boîte de réception pour une confirmation.",
+      "confirmedSignature": "— Ernso Azor",
+      "q1": {
+        "title": "Qui êtes-vous ?",
+        "subtitle": "Laquelle de ces options vous décrit le mieux ?",
+        "options": [
+          {
+            "value": "institution",
+            "label": "Une Entreprise ou Institution"
+          },
+          {
+            "value": "professional",
+            "label": "Un Professionnel ou Expert"
+          },
+          {
+            "value": "creator",
+            "label": "Un Artiste, Créateur ou Personnalité Publique"
+          }
+        ]
+      },
+      "q2": {
+        "titleInstitution": "Quel est le nom de votre organisation ?",
+        "titleProfessional": "Quel est votre nom et votre domaine ?",
+        "titleCreator": "Quel est votre nom d'artiste ou pseudo ?",
+        "placeholder": "Tapez votre réponse"
+      },
+      "q3": {
+        "title": "Qu’est-ce qui vous amène ?",
+        "subtitle": "Quelle est la principale raison de votre contact aujourd’hui ?",
+        "hint": "Sélectionnez toutes les options pertinentes",
+        "options": [
+          {
+            "value": "brand-strategy",
+            "label": "Stratégie de Marque"
+          },
+          {
+            "value": "brand-identity",
+            "label": "Design d'Identité de Marque"
+          },
+          {
+            "value": "logo-mark",
+            "label": "Design de Logo et Symbole"
+          },
+          {
+            "value": "personal-branding",
+            "label": "Marque Personnelle"
+          },
+          {
+            "value": "social-architecture",
+            "label": "Architecture de Marque Sociale"
+          },
+          {
+            "value": "web-design",
+            "label": "Web Design"
+          },
+          {
+            "value": "creative-direction",
+            "label": "Direction Créative"
+          },
+          {
+            "value": "brand-consulting",
+            "label": "Conseil de Marque"
+          },
+          {
+            "value": "other",
+            "label": "Autre"
+          }
+        ]
+      },
+      "q4": {
+        "title": "Dites-m’en plus",
+        "subtitle": "Décrivez votre projet ou votre situation en quelques mots.",
+        "placeholder": "De quoi avez-vous besoin ?\nQu’est-ce qui ne fonctionne pas ?\nQue voulez-vous changer ?"
+      },
+      "q5": {
+        "title": "Calendrier",
+        "subtitle": "Quel est votre calendrier idéal ?",
+        "options": [
+          {
+            "value": "asap",
+            "label": "Dès que possible"
+          },
+          {
+            "value": "1-month",
+            "label": "Dans le mois"
+          },
+          {
+            "value": "3-months",
+            "label": "Dans les 3 mois"
+          },
+          {
+            "value": "flexible",
+            "label": "Aucune échéance fixe"
+          }
+        ]
+      },
+      "q6": {
+        "title": "Budget",
+        "subtitle": "Quel est votre budget approximatif pour ce projet ?",
+        "options": [
+          {
+            "value": "under-1000",
+            "label": "Moins de 1 000 $"
+          },
+          {
+            "value": "1000-3000",
+            "label": "1 000 $ – 3 000 $"
+          },
+          {
+            "value": "3000-7000",
+            "label": "3 000 $ – 7 000 $"
+          },
+          {
+            "value": "7000-15000",
+            "label": "7 000 $ – 15 000 $"
+          },
+          {
+            "value": "15000-plus",
+            "label": "15 000 $+"
+          },
+          {
+            "value": "discuss",
+            "label": "Je préfère en discuter"
+          }
+        ]
+      },
+      "q7": {
+        "title": "Contact",
+        "subtitle": "Où puis-je vous joindre ?",
+        "namePlaceholder": "Nom complet",
+        "emailPlaceholder": "Adresse e-mail"
+      }
     }
   },
   "terms": {

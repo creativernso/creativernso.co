@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@calcom/embed-react": "^1.5.3",
     "@sanity/image-url": "^2.1.1",
     "@sanity/vision": "^3.88.2",
     "framer-motion": "^11.11.17",

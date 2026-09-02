@@ -4,6 +4,7 @@
     "story": "Historia",
     "belief": "Convicción",
     "creations": "Creaciones",
+    "offer": "Oferta",
     "initiate": "Iniciar"
   },
   "footer": {
@@ -150,17 +151,156 @@
     "revealTitle": "El Método REVEAL.",
     "revealSubtitle": "Una metodología de seis etapas, aplicada en orden, cada vez.",
     "revealRows": [
-      { "letter": "R", "name": "Root", "desc": "Quién eres realmente, antes que todo lo demás" },
-      { "letter": "E", "name": "Excavate", "desc": "La singularidad que ya existe" },
-      { "letter": "V", "name": "Voice", "desc": "El lenguaje a través del cual habla la marca" },
-      { "letter": "E", "name": "Express", "desc": "Estrategia traducida en identidad visible" },
-      { "letter": "A", "name": "Align", "desc": "Coherente en cada punto de contacto" },
-      { "letter": "L", "name": "Launch", "desc": "Inolvidable desde el primer momento" }
+      {
+        "letter": "R",
+        "name": "Root",
+        "desc": "Quién eres realmente, antes que todo lo demás"
+      },
+      {
+        "letter": "E",
+        "name": "Excavate",
+        "desc": "La singularidad que ya existe"
+      },
+      {
+        "letter": "V",
+        "name": "Voice",
+        "desc": "El lenguaje a través del cual habla la marca"
+      },
+      {
+        "letter": "E",
+        "name": "Express",
+        "desc": "Estrategia traducida en identidad visible"
+      },
+      {
+        "letter": "A",
+        "name": "Align",
+        "desc": "Coherente en cada punto de contacto"
+      },
+      {
+        "letter": "L",
+        "name": "Launch",
+        "desc": "Inolvidable desde el primer momento"
+      }
     ],
     "taglineLead": "Un proceso. Tres mundos. Una dirección: ",
     "taglineRest": "de la anonimidad a lo inconfundible",
     "ctaHeading": "Construyamos algo",
     "ctaSubtext": "Si lo que acabas de leer coincide con cómo ves tu marca",
+    "cta": "Iniciar"
+  },
+  "offer": {
+    "metaTitle": "Oferta — Ernso Azor",
+    "metaDescription": "El alcance completo de lo que hago, y exactamente cómo trabajamos juntos — desde la primera conversación hasta la entrega final.",
+    "eyebrow": "04 — Oferta",
+    "titleLead": "Lo que aporto ",
+    "titleRest": "a la mesa.",
+    "heroSubtitle": "Cada proyecto se construye alrededor de tu realidad específica. Sin paquetes fijos. Sin soluciones estándar. Una respuesta precisa para una necesidad precisa.",
+    "disciplinesTitle": "Las Disciplinas",
+    "disciplinesIntro": "Este es el alcance completo de lo que hago. Según tu proyecto, seleccionaremos, combinaremos y secuenciaremos estas disciplinas para construir exactamente lo que tu marca necesita — y nada de lo que no necesita.",
+    "disciplineGroups": [
+      {
+        "n": "I",
+        "name": "Estrategia de Marca",
+        "items": [
+          "Estrategia y Posicionamiento de Marca",
+          "Auditoría y Diagnóstico de Marca",
+          "Análisis del Panorama Competitivo",
+          "Investigación e Insights de Audiencia",
+          "Marco de Mensajes y Tono de Voz",
+          "Arquitectura de Marca",
+          "Naming de Marca"
+        ]
+      },
+      {
+        "n": "II",
+        "name": "Identidad Visual",
+        "items": [
+          "Diseño de Identidad de Marca (sistema completo)",
+          "Diseño de Logo y Símbolo",
+          "Sistema Tipográfico",
+          "Sistema de Color",
+          "Manual de Marca / Brand Book",
+          "Lenguaje Visual y Diseño de Patrones",
+          "Iconografía e Ilustración"
+        ]
+      },
+      {
+        "n": "III",
+        "name": "Presencia Digital",
+        "items": [
+          "Diseño Web",
+          "Diseño UI/UX",
+          "Arquitectura de Marca Social",
+          "Estrategia Visual de Plataforma",
+          "Diseño de Contenido y Plantillas",
+          "Motion y Diseño de Interacción"
+        ]
+      },
+      {
+        "n": "IV",
+        "name": "Marca Personal",
+        "items": [
+          "Estrategia de Marca Personal",
+          "Identidad de Marca Personal",
+          "Posicionamiento de Autoridad",
+          "Diseño de Presencia Digital",
+          "Posicionamiento de Plataforma (LinkedIn, Instagram, Behance)"
+        ]
+      },
+      {
+        "n": "V",
+        "name": "Consultoría y Dirección",
+        "items": [
+          "Sesiones de Consultoría de Marca",
+          "Talleres de Marca",
+          "Dirección Creativa",
+          "Estrategia de Lanzamiento",
+          "Gestión y Evolución de Marca"
+        ]
+      }
+    ],
+    "processTitle": "Cómo trabajamos juntos.",
+    "processIntro": "Desde el primer mensaje hasta la entrega final — esto es exactamente cómo se ve la colaboración. Sin sorpresas. Sin ambigüedad. Solo un proceso claro y estructurado, diseñado para proteger tu tiempo y producir resultados excepcionales.",
+    "processSteps": [
+      {
+        "n": "01",
+        "label": "La primera conversación.",
+        "name": "Descubrimiento",
+        "desc": "Todo proyecto comienza con escuchar. Según tu disponibilidad, empezamos con una llamada de descubrimiento o un cuestionario detallado. El objetivo es simple: entender tu realidad, identificar tus necesidades y encontrar lo que te hace diferente. Nada se asume. Todo se gana a partir de lo que compartes."
+      },
+      {
+        "n": "02",
+        "label": "Una solución hecha para ti.",
+        "name": "Propuesta",
+        "desc": "Con base en lo que aprendo en el Descubrimiento, construyo una propuesta personalizada. No un paquete sacado de un menú — una respuesta precisa a tu situación específica. Alcance, entregables, cronograma y dirección estratégica, todo alineado con lo que tu marca realmente necesita."
+      },
+      {
+        "n": "03",
+        "label": "Claridad antes de empezar.",
+        "name": "Acuerdo",
+        "desc": "Revisas y validas la propuesta. Una vez alineados, envío el presupuesto oficial. Tras la firma, un depósito del 60% confirma el inicio del proyecto. Todo queda documentado. Ambas partes están protegidas."
+      },
+      {
+        "n": "04",
+        "label": "Donde ocurre el trabajo.",
+        "name": "Creación",
+        "desc": "El proyecto comienza. Según el alcance, esta fase sigue el Método REVEAL — pasando de la base estratégica a la expresión visual. Te mantengo informado en cada hito clave. Nada se presenta sin intención."
+      },
+      {
+        "n": "05",
+        "label": "Tu voz en el trabajo.",
+        "name": "Revisión",
+        "desc": "Presento el trabajo para tu revisión. Entramos en una fase estructurada de ajustes — tu feedback se integra con precisión hasta que cada detalle esté validado. Esto es una colaboración, no una presentación."
+      },
+      {
+        "n": "06",
+        "label": "La entrega.",
+        "name": "Entrega",
+        "desc": "Todo queda aprobado. Se completa el pago final del 40%. Entrego el paquete completo de archivos — todos los formatos, todas las guías, todos los recursos — listos para ser usados, escalados y poseídos. La marca es tuya."
+      }
+    ],
+    "ctaHeading": "¿Listo para empezar?",
+    "ctaSubtext": "Cuéntame sobre tu proyecto. Te diré exactamente qué necesita.",
     "cta": "Iniciar"
   },
   "work": {
@@ -184,48 +324,162 @@
     "metaTitle": "Iniciar — Ernso Azor",
     "metaDescription": "Empieza una conversación sobre tu marca o producto.",
     "heroTitle": "Construyamos algo.",
-    "heroSubtitle": "Escríbeme directamente, o comparte algunos detalles de tu proyecto abajo.",
-    "formHeading": "Cuéntame sobre tu proyecto",
-    "directContact": {
-      "emailLabel": "Correo electrónico",
-      "emailDesc": "Para una conversación directa y sin prisas.",
-      "whatsappLabel": "WhatsApp",
-      "whatsappDesc": "Para un mensaje rápido, en cualquier momento."
+    "heroSubtitle": "Todo proyecto comienza con una conversación. Elige cómo quieres empezar.",
+    "choice": {
+      "title": "¿Cómo te gustaría empezar?",
+      "call": {
+        "title": "Reservar una Llamada de Descubrimiento",
+        "subtitle": "Hablamos directamente. Elige un horario que te funcione."
+      },
+      "questionnaire": {
+        "title": "Recibir un Cuestionario",
+        "subtitle": "¿Prefieres tomarte tu tiempo? Responde a tu propio ritmo."
+      }
     },
-    "form": {
-      "namePlaceholder": "Nombre",
-      "lastNamePlaceholder": "Apellido",
-      "emailPlaceholder": "Correo electrónico",
-      "brandNamePlaceholder": "Nombre de la marca o producto",
-      "deadlineLabel": "Plazo estimado",
-      "budgetLabel": "Presupuesto estimado",
-      "sourceLabel": "Cómo me encontraste",
-      "selectPlaceholder": "Selecciona una opción",
-      "descriptionPlaceholder": "Breve descripción del proyecto",
-      "errorMessage": "Algo salió mal al enviar tu brief. Inténtalo de nuevo o escríbeme directamente por correo.",
+    "call": {
+      "loading": "Cargando calendario…",
+      "confirmedHeadline": "Está confirmado.",
+      "confirmedSubtext": "Nos vemos en el horario programado. Se ha enviado una confirmación a tu correo. Ven listo para hablar de tu marca."
+    },
+    "questionnaire": {
+      "back": "Atrás",
+      "next": "Siguiente",
+      "submit": "Enviar Mi Brief",
       "sending": "Enviando…",
-      "submit": "Enviar",
-      "thankYou": "Gracias, {firstName}.",
-      "confirmation": "Tu brief de proyecto fue recibido. Espera una respuesta en {email} dentro de uno a dos días hábiles.",
-      "deadlineOptions": [
-        { "value": "1 month", "label": "1 mes" },
-        { "value": "1–3 months", "label": "1 a 3 meses" },
-        { "value": "3+ months", "label": "3 meses o más" }
-      ],
-      "budgetOptions": [
-        { "value": "$1,000 – $3,000", "label": "$1,000 – $3,000" },
-        { "value": "$3,000 – $5,000", "label": "$3,000 – $5,000" },
-        { "value": "$5,000 – $7,000", "label": "$5,000 – $7,000" },
-        { "value": "$7,000 – $10,000+", "label": "$7,000 – $10,000+" }
-      ],
-      "sourceOptions": [
-        { "value": "Instagram", "label": "Instagram" },
-        { "value": "Behance", "label": "Behance" },
-        { "value": "Referral", "label": "Recomendación" },
-        { "value": "LinkedIn", "label": "LinkedIn" },
-        { "value": "TikTok", "label": "TikTok" },
-        { "value": "YouTube", "label": "YouTube" }
-      ]
+      "errorMessage": "Algo salió mal al enviar tu brief. Intenta de nuevo o escribe directamente a hey@creativernso.co.",
+      "confirmedHeadline": "Brief recibido.",
+      "confirmedSubtext": "Tengo todo lo que necesito para empezar. Tendrás noticias mías dentro de 48 horas. Revisa tu bandeja de entrada para una confirmación.",
+      "confirmedSignature": "— Ernso Azor",
+      "q1": {
+        "title": "¿Quién eres?",
+        "subtitle": "¿Cuál de estas opciones te describe mejor?",
+        "options": [
+          {
+            "value": "institution",
+            "label": "Una Empresa o Institución"
+          },
+          {
+            "value": "professional",
+            "label": "Un Profesional o Experto"
+          },
+          {
+            "value": "creator",
+            "label": "Un Artista, Creador o Figura Pública"
+          }
+        ]
+      },
+      "q2": {
+        "titleInstitution": "¿Cuál es el nombre de tu organización?",
+        "titleProfessional": "¿Cuál es tu nombre y área de especialización?",
+        "titleCreator": "¿Cuál es tu nombre artístico o usuario?",
+        "placeholder": "Escribe tu respuesta"
+      },
+      "q3": {
+        "title": "¿Qué te trae aquí?",
+        "subtitle": "¿Cuál es el motivo principal de tu contacto hoy?",
+        "hint": "Selecciona todas las que apliquen",
+        "options": [
+          {
+            "value": "brand-strategy",
+            "label": "Estrategia de Marca"
+          },
+          {
+            "value": "brand-identity",
+            "label": "Diseño de Identidad de Marca"
+          },
+          {
+            "value": "logo-mark",
+            "label": "Diseño de Logo y Símbolo"
+          },
+          {
+            "value": "personal-branding",
+            "label": "Marca Personal"
+          },
+          {
+            "value": "social-architecture",
+            "label": "Arquitectura de Marca Social"
+          },
+          {
+            "value": "web-design",
+            "label": "Diseño Web"
+          },
+          {
+            "value": "creative-direction",
+            "label": "Dirección Creativa"
+          },
+          {
+            "value": "brand-consulting",
+            "label": "Consultoría de Marca"
+          },
+          {
+            "value": "other",
+            "label": "Otro"
+          }
+        ]
+      },
+      "q4": {
+        "title": "Cuéntame más",
+        "subtitle": "Describe tu proyecto o situación en pocas palabras.",
+        "placeholder": "¿Qué necesitas?\n¿Qué no está funcionando?\n¿Qué quieres cambiar?"
+      },
+      "q5": {
+        "title": "Cronograma",
+        "subtitle": "¿Cuál es tu cronograma ideal?",
+        "options": [
+          {
+            "value": "asap",
+            "label": "Lo antes posible"
+          },
+          {
+            "value": "1-month",
+            "label": "Dentro de 1 mes"
+          },
+          {
+            "value": "3-months",
+            "label": "Dentro de 3 meses"
+          },
+          {
+            "value": "flexible",
+            "label": "Sin fecha límite fija"
+          }
+        ]
+      },
+      "q6": {
+        "title": "Rango de presupuesto",
+        "subtitle": "¿Cuál es tu presupuesto aproximado para este proyecto?",
+        "options": [
+          {
+            "value": "under-1000",
+            "label": "Menos de $1,000"
+          },
+          {
+            "value": "1000-3000",
+            "label": "$1,000 – $3,000"
+          },
+          {
+            "value": "3000-7000",
+            "label": "$3,000 – $7,000"
+          },
+          {
+            "value": "7000-15000",
+            "label": "$7,000 – $15,000"
+          },
+          {
+            "value": "15000-plus",
+            "label": "$15,000+"
+          },
+          {
+            "value": "discuss",
+            "label": "Prefiero hablarlo directamente"
+          }
+        ]
+      },
+      "q7": {
+        "title": "Contacto",
+        "subtitle": "¿Dónde puedo contactarte?",
+        "namePlaceholder": "Nombre completo",
+        "emailPlaceholder": "Correo electrónico"
+      }
     }
   },
   "terms": {

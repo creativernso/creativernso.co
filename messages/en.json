@@ -4,6 +4,7 @@
     "story": "Story",
     "belief": "Belief",
     "creations": "Creations",
+    "offer": "Offer",
     "initiate": "Initiate"
   },
   "footer": {
@@ -150,17 +151,156 @@
     "revealTitle": "The REVEAL Framework.",
     "revealSubtitle": "A six-stage methodology, applied in order, every time.",
     "revealRows": [
-      { "letter": "R", "name": "Root", "desc": "Who you truly are before anything else" },
-      { "letter": "E", "name": "Excavate", "desc": "The uniqueness that already exists" },
-      { "letter": "V", "name": "Voice", "desc": "The language through which the brand speaks" },
-      { "letter": "E", "name": "Express", "desc": "Strategy translated into visible identity" },
-      { "letter": "A", "name": "Align", "desc": "Consistent across every touchpoint" },
-      { "letter": "L", "name": "Launch", "desc": "Unmissable from the very first moment" }
+      {
+        "letter": "R",
+        "name": "Root",
+        "desc": "Who you truly are before anything else"
+      },
+      {
+        "letter": "E",
+        "name": "Excavate",
+        "desc": "The uniqueness that already exists"
+      },
+      {
+        "letter": "V",
+        "name": "Voice",
+        "desc": "The language through which the brand speaks"
+      },
+      {
+        "letter": "E",
+        "name": "Express",
+        "desc": "Strategy translated into visible identity"
+      },
+      {
+        "letter": "A",
+        "name": "Align",
+        "desc": "Consistent across every touchpoint"
+      },
+      {
+        "letter": "L",
+        "name": "Launch",
+        "desc": "Unmissable from the very first moment"
+      }
     ],
     "taglineLead": "One process. Three worlds. One direction: ",
     "taglineRest": "from obscurity to unmistakable",
     "ctaHeading": "Let’s build something",
     "ctaSubtext": "If what you’ve read here aligns with how you see your brand",
+    "cta": "Initiate"
+  },
+  "offer": {
+    "metaTitle": "Offer — Ernso Azor",
+    "metaDescription": "The full scope of what I do, and exactly how we work together — from the first conversation to final delivery.",
+    "eyebrow": "04 — Offer",
+    "titleLead": "What I bring ",
+    "titleRest": "to the table.",
+    "heroSubtitle": "Every engagement is built around your specific reality. No fixed packages. No standard solutions. A precise answer to a precise need.",
+    "disciplinesTitle": "The Disciplines",
+    "disciplinesIntro": "This is the full scope of what I do. Depending on your project, we will select, combine, and sequence these disciplines to build exactly what your brand needs — and nothing it doesn't.",
+    "disciplineGroups": [
+      {
+        "n": "I",
+        "name": "Brand Strategy",
+        "items": [
+          "Brand Strategy & Positioning",
+          "Brand Audit & Diagnosis",
+          "Competitive Landscape Analysis",
+          "Audience Research & Insights",
+          "Messaging Framework & Tone of Voice",
+          "Brand Architecture",
+          "Brand Naming"
+        ]
+      },
+      {
+        "n": "II",
+        "name": "Visual Identity",
+        "items": [
+          "Brand Identity Design (complete system)",
+          "Logo & Mark Design",
+          "Typography System",
+          "Color System",
+          "Brand Guidelines / Brand Book",
+          "Visual Language & Pattern Design",
+          "Iconography & Illustration"
+        ]
+      },
+      {
+        "n": "III",
+        "name": "Digital Presence",
+        "items": [
+          "Web Design",
+          "UI/UX Design",
+          "Social Brand Architecture",
+          "Platform Visual Strategy",
+          "Content Design & Templates",
+          "Motion & Interaction Design"
+        ]
+      },
+      {
+        "n": "IV",
+        "name": "Personal Branding",
+        "items": [
+          "Personal Brand Strategy",
+          "Personal Brand Identity",
+          "Authority Positioning",
+          "Digital Presence Design",
+          "Platform Positioning (LinkedIn, Instagram, Behance)"
+        ]
+      },
+      {
+        "n": "V",
+        "name": "Consulting & Direction",
+        "items": [
+          "Brand Consulting Sessions",
+          "Brand Workshops",
+          "Creative Direction",
+          "Launch Strategy",
+          "Brand Management & Evolution"
+        ]
+      }
+    ],
+    "processTitle": "How we work together.",
+    "processIntro": "From the first message to the final delivery — here is exactly what the collaboration looks like. No surprises. No ambiguity. Just a clear, structured process designed to protect your time and produce exceptional results.",
+    "processSteps": [
+      {
+        "n": "01",
+        "label": "The first conversation.",
+        "name": "Discovery",
+        "desc": "Every project begins with listening. Depending on your availability, we start with a discovery call or a detailed questionnaire. The goal is simple: understand your reality, identify your needs, and find what makes you different. Nothing is assumed. Everything is earned from what you share."
+      },
+      {
+        "n": "02",
+        "label": "A solution built for you.",
+        "name": "Proposal",
+        "desc": "Based on what I learn in Discovery, I build a custom proposal. Not a package pulled from a menu — a precise answer to your specific situation. Scope, deliverables, timeline, and strategic direction, all aligned to what your brand actually needs."
+      },
+      {
+        "n": "03",
+        "label": "Clarity before we begin.",
+        "name": "Agreement",
+        "desc": "You review and validate the proposal. Once aligned, I send the official quote. Upon signature, a 60% deposit confirms the project start. Everything is documented. Both sides are protected."
+      },
+      {
+        "n": "04",
+        "label": "Where the work happens.",
+        "name": "Creation",
+        "desc": "The project begins. Depending on scope, this phase follows the REVEAL Framework — moving from strategic foundation to visual expression. You are kept informed at every key milestone. Nothing is presented without intention."
+      },
+      {
+        "n": "05",
+        "label": "Your voice in the work.",
+        "name": "Review",
+        "desc": "I submit the work for your review. We enter a structured revision phase — your feedback is integrated with precision until every detail is validated. This is a collaboration, not a presentation."
+      },
+      {
+        "n": "06",
+        "label": "The handover.",
+        "name": "Delivery",
+        "desc": "Everything is approved. The final 40% payment is completed. I deliver the complete file package — all formats, all guidelines, all assets — ready to be used, scaled, and owned. The brand is yours."
+      }
+    ],
+    "ctaHeading": "Ready to begin?",
+    "ctaSubtext": "Tell me about your project. I will tell you exactly what it needs.",
     "cta": "Initiate"
   },
   "work": {
@@ -184,48 +324,162 @@
     "metaTitle": "Initiate — Ernso Azor",
     "metaDescription": "Start a conversation about your brand or product.",
     "heroTitle": "Let’s build something.",
-    "heroSubtitle": "Reach out directly, or share a few details about your project below.",
-    "formHeading": "Tell me about your project",
-    "directContact": {
-      "emailLabel": "Email",
-      "emailDesc": "For a direct, unhurried conversation.",
-      "whatsappLabel": "WhatsApp",
-      "whatsappDesc": "For a quick message, anytime."
+    "heroSubtitle": "Every project starts with a conversation. Choose how you'd like to begin.",
+    "choice": {
+      "title": "How would you like to begin?",
+      "call": {
+        "title": "Book a Discovery Call",
+        "subtitle": "We speak directly. Choose a time that works for you."
+      },
+      "questionnaire": {
+        "title": "Receive a Questionnaire",
+        "subtitle": "Prefer to take your time? Answer at your own pace."
+      }
     },
-    "form": {
-      "namePlaceholder": "Name",
-      "lastNamePlaceholder": "Last name",
-      "emailPlaceholder": "Email",
-      "brandNamePlaceholder": "Brand or product name",
-      "deadlineLabel": "Estimated deadline",
-      "budgetLabel": "Estimated budget",
-      "sourceLabel": "How did you find me",
-      "selectPlaceholder": "Select an option",
-      "descriptionPlaceholder": "Brief project description",
-      "errorMessage": "Something went wrong sending your brief. Please try again or email directly.",
+    "call": {
+      "loading": "Loading calendar…",
+      "confirmedHeadline": "It's confirmed.",
+      "confirmedSubtext": "I will see you at the scheduled time. A confirmation has been sent to your email. Come ready to talk about your brand."
+    },
+    "questionnaire": {
+      "back": "Back",
+      "next": "Next",
+      "submit": "Send My Brief",
       "sending": "Sending…",
-      "submit": "Submit",
-      "thankYou": "Thank you, {firstName}.",
-      "confirmation": "Your project brief has been received. Expect a reply at {email} within one to two business days.",
-      "deadlineOptions": [
-        { "value": "1 month", "label": "1 month" },
-        { "value": "1–3 months", "label": "1–3 months" },
-        { "value": "3+ months", "label": "3+ months" }
-      ],
-      "budgetOptions": [
-        { "value": "$1,000 – $3,000", "label": "$1,000 – $3,000" },
-        { "value": "$3,000 – $5,000", "label": "$3,000 – $5,000" },
-        { "value": "$5,000 – $7,000", "label": "$5,000 – $7,000" },
-        { "value": "$7,000 – $10,000+", "label": "$7,000 – $10,000+" }
-      ],
-      "sourceOptions": [
-        { "value": "Instagram", "label": "Instagram" },
-        { "value": "Behance", "label": "Behance" },
-        { "value": "Referral", "label": "Referral" },
-        { "value": "LinkedIn", "label": "LinkedIn" },
-        { "value": "TikTok", "label": "TikTok" },
-        { "value": "YouTube", "label": "YouTube" }
-      ]
+      "errorMessage": "Something went wrong sending your brief. Please try again or email hey@creativernso.co directly.",
+      "confirmedHeadline": "Brief received.",
+      "confirmedSubtext": "I have everything I need to get started. Expect to hear from me within 48 hours. Check your inbox for a confirmation.",
+      "confirmedSignature": "— Ernso Azor",
+      "q1": {
+        "title": "Who are you?",
+        "subtitle": "Which of these best describes you?",
+        "options": [
+          {
+            "value": "institution",
+            "label": "A Corporation or Institution"
+          },
+          {
+            "value": "professional",
+            "label": "A Professional or Expert"
+          },
+          {
+            "value": "creator",
+            "label": "An Artist, Creator or Public Figure"
+          }
+        ]
+      },
+      "q2": {
+        "titleInstitution": "What is the name of your organization?",
+        "titleProfessional": "What is your name and field?",
+        "titleCreator": "What is your artist name or handle?",
+        "placeholder": "Type your answer"
+      },
+      "q3": {
+        "title": "What brings you here?",
+        "subtitle": "What is the main reason you are reaching out today?",
+        "hint": "Select all that apply",
+        "options": [
+          {
+            "value": "brand-strategy",
+            "label": "Brand Strategy"
+          },
+          {
+            "value": "brand-identity",
+            "label": "Brand Identity Design"
+          },
+          {
+            "value": "logo-mark",
+            "label": "Logo & Mark Design"
+          },
+          {
+            "value": "personal-branding",
+            "label": "Personal Branding"
+          },
+          {
+            "value": "social-architecture",
+            "label": "Social Brand Architecture"
+          },
+          {
+            "value": "web-design",
+            "label": "Web Design"
+          },
+          {
+            "value": "creative-direction",
+            "label": "Creative Direction"
+          },
+          {
+            "value": "brand-consulting",
+            "label": "Brand Consulting"
+          },
+          {
+            "value": "other",
+            "label": "Other"
+          }
+        ]
+      },
+      "q4": {
+        "title": "Tell me more",
+        "subtitle": "Describe your project or situation in a few words.",
+        "placeholder": "What do you need?\nWhat is not working?\nWhat do you want to change?"
+      },
+      "q5": {
+        "title": "Timeline",
+        "subtitle": "What is your ideal timeline?",
+        "options": [
+          {
+            "value": "asap",
+            "label": "As soon as possible"
+          },
+          {
+            "value": "1-month",
+            "label": "Within 1 month"
+          },
+          {
+            "value": "3-months",
+            "label": "Within 3 months"
+          },
+          {
+            "value": "flexible",
+            "label": "No fixed deadline"
+          }
+        ]
+      },
+      "q6": {
+        "title": "Budget range",
+        "subtitle": "What is your approximate budget for this project?",
+        "options": [
+          {
+            "value": "under-1000",
+            "label": "Under $1,000"
+          },
+          {
+            "value": "1000-3000",
+            "label": "$1,000 – $3,000"
+          },
+          {
+            "value": "3000-7000",
+            "label": "$3,000 – $7,000"
+          },
+          {
+            "value": "7000-15000",
+            "label": "$7,000 – $15,000"
+          },
+          {
+            "value": "15000-plus",
+            "label": "$15,000+"
+          },
+          {
+            "value": "discuss",
+            "label": "I prefer to discuss this"
+          }
+        ]
+      },
+      "q7": {
+        "title": "Contact",
+        "subtitle": "Where should I reach you?",
+        "namePlaceholder": "Full name",
+        "emailPlaceholder": "Email address"
+      }
     }
   },
   "terms": {
