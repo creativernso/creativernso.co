@@ -64,7 +64,7 @@ export default function OfferPage() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1, ease: EASE }}
-          className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-2 md:text-[18px]"
+          className="mt-4 text-[15px] leading-relaxed text-muted-2 md:text-[18px]"
         >
           {t("heroSubtitle")}
         </motion.p>
