@@ -93,36 +93,35 @@ export default function OfferPage() {
             </p>
           </div>
 
-          {/* Discipline groups — merged rectangle, one row per group */}
+          {/* Discipline groups — card grid, one card per group */}
           <div
             ref={disciplinesRectRef}
             className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 md:mt-8"
             style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
           >
-            <div className="divide-y divide-bone/10">
+            <div className="grid grid-cols-1 border-l border-t border-bone/10 sm:grid-cols-2">
               {disciplineGroups.map((g, i) => (
-                <motion.div
+                <motion.article
                   key={g.name}
-                  initial={{ opacity: 0, y: 14 }}
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.5, delay: i * 0.05, ease: EASE }}
-                  className="flex flex-col gap-4 px-6 py-7 transition-colors hover:bg-bone/[0.03] sm:flex-row sm:gap-8 md:px-10 md:py-9"
+                  transition={{ duration: 0.55, delay: (i % 2) * 0.08, ease: EASE }}
+                  className={`flex flex-col border-b border-r border-bone/10 px-6 pb-7 pt-7 transition-colors hover:bg-bone/[0.03] md:px-10 md:pb-9 md:pt-9 ${
+                    i === disciplineGroups.length - 1 ? "sm:col-span-2" : ""
+                  }`}
                   data-cursor="hover"
                 >
-                  <div className="flex items-center gap-4 sm:w-[200px] sm:shrink-0 sm:flex-col sm:items-start sm:gap-3 md:w-[240px]">
-                    <span
-                      aria-hidden
-                      className="flex h-14 w-14 shrink-0 items-center justify-center border border-bone/15 font-display text-[22px] font-bold text-bone md:h-16 md:w-16 md:text-[26px]"
-                    >
-                      {g.n}
-                    </span>
-                    <span className="font-display text-[22px] font-bold text-bone md:text-[24px]">
-                      {g.name}
-                    </span>
-                  </div>
-
-                  <ul className="flex flex-1 flex-wrap content-start gap-2">
+                  <span
+                    aria-hidden
+                    className="select-none font-display text-[15px] font-bold tracking-[0.1em] text-bone"
+                  >
+                    {g.n}
+                  </span>
+                  <h3 className="mt-3 font-display text-bone text-[22px] font-bold leading-[1.2] tracking-[-0.02em] md:text-[26px]">
+                    {g.name}
+                  </h3>
+                  <ul className="mt-5 flex flex-wrap gap-2">
                     {g.items.map((item) => (
                       <li
                         key={item}
@@ -133,7 +132,7 @@ export default function OfferPage() {
                       </li>
                     ))}
                   </ul>
-                </motion.div>
+                </motion.article>
               ))}
             </div>
           </div>
@@ -163,39 +162,36 @@ export default function OfferPage() {
             </p>
           </div>
 
-          {/* Process steps — merged rectangle, one row per step */}
+          {/* Process steps — card grid, one card per step */}
           <div
             ref={processRectRef}
             className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 md:mt-8"
             style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
           >
-            <div className="divide-y divide-bone/10">
+            <div className="grid grid-cols-1 border-l border-t border-bone/10 sm:grid-cols-2">
               {processSteps.map((step, i) => (
-                <motion.div
+                <motion.article
                   key={step.n}
-                  initial={{ opacity: 0, y: 14 }}
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.5, delay: i * 0.05, ease: EASE }}
-                  className="flex flex-col gap-4 px-6 py-7 transition-colors hover:bg-bone/[0.03] sm:flex-row sm:gap-8 md:px-10 md:py-9"
+                  transition={{ duration: 0.55, delay: (i % 2) * 0.08, ease: EASE }}
+                  className="flex flex-col border-b border-r border-bone/10 px-6 pb-7 pt-7 transition-colors hover:bg-bone/[0.03] md:px-10 md:pb-9 md:pt-9"
                   data-cursor="hover"
                 >
                   <span
                     aria-hidden
-                    className="flex h-14 w-14 shrink-0 items-center justify-center border border-bone/15 font-display text-[22px] font-bold text-bone md:h-16 md:w-16 md:text-[26px]"
+                    className="select-none font-display text-[15px] font-bold tracking-[0.1em] text-bone"
                   >
                     {step.n}
                   </span>
-
-                  <div className="flex-1">
-                    <h3 className="font-display text-bone text-[22px] font-bold leading-[1.2] tracking-[-0.02em] md:text-[28px]">
-                      {step.name}
-                    </h3>
-                    <p className="mt-3 max-w-2xl text-[15px] leading-[1.6] text-muted-2 md:text-[16px]">
-                      {step.desc}
-                    </p>
-                  </div>
-                </motion.div>
+                  <h3 className="mt-3 font-display text-bone text-[22px] font-bold leading-[1.2] tracking-[-0.02em] md:text-[26px]">
+                    {step.name}
+                  </h3>
+                  <p className="mt-3 text-[15px] leading-[1.6] text-muted-2 md:text-[16px]">
+                    {step.desc}
+                  </p>
+                </motion.article>
               ))}
             </div>
           </div>
