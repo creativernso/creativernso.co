@@ -68,15 +68,41 @@ function DisciplineRow({
   );
 }
 
-function ProcessNumeralPanel({ n }: { n: string }) {
+const PROCESS_IMAGES: (string | null)[] = [
+  "/process-01-discovery.jpg",
+  "/process-02-proposal.jpg",
+  "/process-03-agreement.jpg",
+  null,
+  null,
+  null,
+];
+
+function ProcessNumeralPanel({
+  n,
+  image,
+}: {
+  n: string;
+  image: string | null;
+}) {
   return (
     <div className="relative hidden aspect-[4/3] overflow-hidden border border-bone/10 bg-bone/[0.02] md:block">
-      <span
-        aria-hidden
-        className="absolute inset-0 flex select-none items-center justify-center font-display text-[150px] font-bold leading-none text-bone/[0.06]"
-      >
-        {n}
-      </span>
+      {image ? (
+        <Image
+          src={image}
+          alt=""
+          fill
+          sizes="(min-width: 1400px) 600px, 45vw"
+          quality={85}
+          className="object-cover grayscale"
+        />
+      ) : (
+        <span
+          aria-hidden
+          className="absolute inset-0 flex select-none items-center justify-center font-display text-[150px] font-bold leading-none text-bone/[0.06]"
+        >
+          {n}
+        </span>
+      )}
     </div>
   );
 }
@@ -223,11 +249,11 @@ export default function OfferPage() {
                           <span className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center border border-bone/20 bg-ink font-display text-[15px] font-bold text-bone">
                             {step.n}
                           </span>
-                          <ProcessNumeralPanel n={step.n} />
+                          <ProcessNumeralPanel n={step.n} image={PROCESS_IMAGES[i]} />
                         </>
                       ) : (
                         <>
-                          <ProcessNumeralPanel n={step.n} />
+                          <ProcessNumeralPanel n={step.n} image={PROCESS_IMAGES[i]} />
                           <span className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center border border-bone/20 bg-ink font-display text-[15px] font-bold text-bone">
                             {step.n}
                           </span>
