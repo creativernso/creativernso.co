@@ -45,7 +45,7 @@ export async function POST(req: Request) {
     const result = await resend.emails.send({
       from: FROM_EMAIL,
       to: ADMIN_EMAIL,
-      subject: "New Discovery Call Booked — Ernso Azor",
+      subject: "New Discovery Call Booked · Ernso Azor",
       html: `
         <div style="font-family: -apple-system, sans-serif; max-width: 560px; margin: 0 auto; color: #151516;">
           <p style="font-size: 15px; line-height: 1.6;">A new discovery call was just booked via the Initiate page.</p>

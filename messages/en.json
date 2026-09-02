@@ -74,7 +74,7 @@
     "cta": "Initiate"
   },
   "about": {
-    "metaTitle": "About — Ernso Azor",
+    "metaTitle": "About · Ernso Azor",
     "metaDescription": "Brand strategist & designer. 8+ years across three worlds. The thread that holds.",
     "heroTitle": "How I got here.",
     "parcours": {
@@ -120,27 +120,27 @@
       {
         "n": "I",
         "title": "Branding is revelation",
-        "body": "A brand is never invented. It is uncovered. The most powerful identities feel inevitable — like they could only belong to that person, that institution, that artist. My job is to make that truth visible."
+        "body": "A brand is never invented. It is uncovered. The most powerful identities feel inevitable: like they could only belong to that person, that institution, that artist. My job is to make that truth visible."
       },
       {
         "n": "II",
         "title": "Uniqueness is the strategy",
-        "body": "In a world of imitation, the most dangerous thing a brand can do is look like someone else. What makes you different — whether you're a CEO or a creator — is not a risk. It is your greatest asset."
+        "body": "In a world of imitation, the most dangerous thing a brand can do is look like someone else. What makes you different, whether you're a CEO or a creator, is not a risk. It is your greatest asset."
       },
       {
         "n": "III",
         "title": "Perception is power",
-        "body": "How the world sees you determines what comes to you. For a corporation, it shapes deals. For an expert, it shapes authority. For an artist, it shapes reach. Managing perception is not vanity — it is strategy."
+        "body": "How the world sees you determines what comes to you. For a corporation, it shapes deals. For an expert, it shapes authority. For an artist, it shapes reach. Managing perception is not vanity. It is strategy."
       },
       {
         "n": "IV",
         "title": "Design is a philosophy",
-        "body": "Every color, typeface, and spatial decision communicates something. There are no neutral choices. Everything means something — which means everything must be intentional, from a boardroom annual report to an Instagram grid."
+        "body": "Every color, typeface, and spatial decision communicates something. There are no neutral choices. Everything means something, which means everything must be intentional, from a boardroom annual report to an Instagram grid."
       },
       {
         "n": "V",
         "title": "Alignment is the goal",
-        "body": "A brand works when what you say, what you show, and what you do all point in the same direction — whether on a company website or a creator's social presence. Misalignment is the most expensive mistake a brand can make."
+        "body": "A brand works when what you say, what you show, and what you do all point in the same direction, whether on a company website or a creator's social presence. Misalignment is the most expensive mistake a brand can make."
       },
       {
         "n": "VI",
@@ -189,14 +189,14 @@
     "cta": "Initiate"
   },
   "offer": {
-    "metaTitle": "Offer — Ernso Azor",
-    "metaDescription": "The full scope of what I do, and exactly how we work together — from the first conversation to final delivery.",
-    "eyebrow": "04 — Offer",
+    "metaTitle": "Offer · Ernso Azor",
+    "metaDescription": "The full scope of what I do, and exactly how we work together: from the first conversation to final delivery.",
+    "eyebrow": "04 · Offer",
     "titleLead": "What I bring ",
     "titleRest": "to the table.",
     "heroSubtitle": "Every engagement is built around your specific reality. No fixed packages. No standard solutions. A precise answer to a precise need.",
     "disciplinesTitle": "The Disciplines",
-    "disciplinesIntro": "This is the full scope of what I do. Depending on your project, we will select, combine, and sequence these disciplines to build exactly what your brand needs — and nothing it doesn't.",
+    "disciplinesIntro": "This is the full scope of what I do. Depending on your project, we will select, combine, and sequence these disciplines to build exactly what your brand needs. And nothing it doesn't.",
     "disciplineGroups": [
       {
         "n": "I",
@@ -260,7 +260,7 @@
       }
     ],
     "processTitle": "How we work together.",
-    "processIntro": "From the first message to the final delivery — here is exactly what the collaboration looks like. No surprises. No ambiguity. Just a clear, structured process designed to protect your time and produce exceptional results.",
+    "processIntro": "From the first message to the final delivery: here is exactly what the collaboration looks like. No surprises. No ambiguity. Just a clear, structured process designed to protect your time and produce exceptional results.",
     "processSteps": [
       {
         "n": "01",
@@ -272,7 +272,7 @@
         "n": "02",
         "label": "A solution built for you.",
         "name": "Proposal",
-        "desc": "Based on what I learn in Discovery, I build a custom proposal. Not a package pulled from a menu — a precise answer to your specific situation. Scope, deliverables, timeline, and strategic direction, all aligned to what your brand actually needs."
+        "desc": "Based on what I learn in Discovery, I build a custom proposal. Not a package pulled from a menu: a precise answer to your specific situation. Scope, deliverables, timeline, and strategic direction, all aligned to what your brand actually needs."
       },
       {
         "n": "03",
@@ -284,19 +284,19 @@
         "n": "04",
         "label": "Where the work happens.",
         "name": "Creation",
-        "desc": "The project begins. Depending on scope, this phase follows the REVEAL Framework — moving from strategic foundation to visual expression. You are kept informed at every key milestone. Nothing is presented without intention."
+        "desc": "The project begins. Depending on scope, this phase follows the REVEAL Framework: moving from strategic foundation to visual expression. You are kept informed at every key milestone. Nothing is presented without intention."
       },
       {
         "n": "05",
         "label": "Your voice in the work.",
         "name": "Review",
-        "desc": "I submit the work for your review. We enter a structured revision phase — your feedback is integrated with precision until every detail is validated. This is a collaboration, not a presentation."
+        "desc": "I submit the work for your review. We enter a structured revision phase: your feedback is integrated with precision until every detail is validated. This is a collaboration, not a presentation."
       },
       {
         "n": "06",
         "label": "The handover.",
         "name": "Delivery",
-        "desc": "Everything is approved. The final 40% payment is completed. I deliver the complete file package — all formats, all guidelines, all assets — ready to be used, scaled, and owned. The brand is yours."
+        "desc": "Everything is approved. The final 40% payment is completed. I deliver the complete file package: all formats, all guidelines, all assets, ready to be used, scaled, and owned. The brand is yours."
       }
     ],
     "ctaHeading": "Ready to begin?",
@@ -304,14 +304,14 @@
     "cta": "Initiate"
   },
   "work": {
-    "metaTitle": "Work — Ernso Azor",
-    "metaDescription": "Work that reveals — selected brand projects across institutional, individual and creative worlds.",
+    "metaTitle": "Work · Ernso Azor",
+    "metaDescription": "Work that reveals: selected brand projects across institutional, individual and creative worlds.",
     "heroTitle": "Work that reveals.",
     "filterAll": "All works",
     "filterInstitutional": "institutional",
     "filterIndividual": "Individual",
     "filterCreative": "Creative & Public",
-    "emptyState": "Nothing in this world yet — check back soon, or browse other categories.",
+    "emptyState": "Nothing in this world yet. Check back soon, or browse other categories.",
     "markLibraryTitle": "The Mark Library",
     "markLibraryDesc": "Every shape carries a decision. Every curve, every angle, every weight chosen with intention."
   },
@@ -321,7 +321,7 @@
     "next": "Next"
   },
   "initiate": {
-    "metaTitle": "Initiate — Ernso Azor",
+    "metaTitle": "Initiate · Ernso Azor",
     "metaDescription": "Start a conversation about your brand or product.",
     "heroTitle": "Let’s build something.",
     "heroSubtitle": "Every project starts with a conversation. Choose how you'd like to begin.",
@@ -349,7 +349,7 @@
       "errorMessage": "Something went wrong sending your brief. Please try again or email hey@creativernso.co directly.",
       "confirmedHeadline": "Brief received.",
       "confirmedSubtext": "I have everything I need to get started. Expect to hear from me within 48 hours. Check your inbox for a confirmation.",
-      "confirmedSignature": "— Ernso Azor",
+      "confirmedSignature": "Ernso Azor",
       "q1": {
         "title": "Who are you?",
         "subtitle": "Which of these best describes you?",
@@ -483,7 +483,7 @@
     }
   },
   "terms": {
-    "metaTitle": "Terms of Service — Ernso Azor",
+    "metaTitle": "Terms of Service · Ernso Azor",
     "metaDescription": "The terms governing use of the creativernso.co website.",
     "title": "Terms of Service",
     "updatedLabel": "Last updated:",
@@ -512,7 +512,7 @@
     "s10Post": "."
   },
   "privacy": {
-    "metaTitle": "Privacy Policy — Ernso Azor",
+    "metaTitle": "Privacy Policy · Ernso Azor",
     "metaDescription": "How Ernso Azor collects, uses, and protects your information.",
     "title": "Privacy Policy",
     "updatedLabel": "Last updated:",

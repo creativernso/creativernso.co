@@ -73,7 +73,7 @@ export async function POST(req: Request) {
       from: FROM_EMAIL,
       to: email,
       replyTo: ADMIN_EMAIL,
-      subject: "Your brief has been received — Ernso Azor",
+      subject: "Your brief has been received · Ernso Azor",
       html: `
         <div style="font-family: -apple-system, sans-serif; max-width: 560px; margin: 0 auto; color: #151516;">
           <p style="font-size: 15px; line-height: 1.6;">${escapeHtml(name)},</p>
@@ -90,7 +90,7 @@ export async function POST(req: Request) {
           <p style="font-size: 15px; line-height: 1.6;">I will be in touch within 48 hours with my thoughts and next steps.</p>
           <p style="font-size: 15px; line-height: 1.6;">In the meantime, feel free to explore my work at <a href="https://creativernso.co" style="color: #151516;">creativernso.co</a></p>
           <p style="font-size: 15px; line-height: 1.6; margin-top: 28px;">
-            — Ernso Azor<br />
+            Ernso Azor<br />
             Brand Designer &amp; Strategist<br />
             @creativernso<br />
             hey@creativernso.co
@@ -108,7 +108,7 @@ export async function POST(req: Request) {
       from: FROM_EMAIL,
       to: ADMIN_EMAIL,
       replyTo: email,
-      subject: `New Brief Received — ${name} — ${profileLabel}`,
+      subject: `New Brief Received · ${name} · ${profileLabel}`,
       html: `
         <div style="font-family: -apple-system, sans-serif; max-width: 560px; margin: 0 auto; color: #151516;">
           <p style="font-size: 15px; line-height: 1.6;">New project brief received via the Initiate page.</p>

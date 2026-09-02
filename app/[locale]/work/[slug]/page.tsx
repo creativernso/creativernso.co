@@ -26,7 +26,7 @@ export async function generateMetadata({
  }
  const p = localizeProject(raw, locale);
  return {
- title: `${p.title} — Ernso Azor`,
+ title: `${p.title} · Ernso Azor`,
  description: p.subtitle,
  };
 }

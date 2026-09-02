@@ -74,7 +74,7 @@
     "cta": "Iniciar"
   },
   "about": {
-    "metaTitle": "Sobre mí — Ernso Azor",
+    "metaTitle": "Sobre mí · Ernso Azor",
     "metaDescription": "Estratega y diseñador de marca. Más de 8 años en tres mundos. El hilo que lo conecta todo.",
     "heroTitle": "Cómo llegué hasta aquí.",
     "parcours": {
@@ -189,14 +189,14 @@
     "cta": "Iniciar"
   },
   "offer": {
-    "metaTitle": "Oferta — Ernso Azor",
-    "metaDescription": "El alcance completo de lo que hago, y exactamente cómo trabajamos juntos — desde la primera conversación hasta la entrega final.",
-    "eyebrow": "04 — Oferta",
+    "metaTitle": "Oferta · Ernso Azor",
+    "metaDescription": "El alcance completo de lo que hago, y exactamente cómo trabajamos juntos: desde la primera conversación hasta la entrega final.",
+    "eyebrow": "04 · Oferta",
     "titleLead": "Lo que aporto ",
     "titleRest": "a la mesa.",
     "heroSubtitle": "Cada proyecto se construye alrededor de tu realidad específica. Sin paquetes fijos. Sin soluciones estándar. Una respuesta precisa para una necesidad precisa.",
     "disciplinesTitle": "Las Disciplinas",
-    "disciplinesIntro": "Este es el alcance completo de lo que hago. Según tu proyecto, seleccionaremos, combinaremos y secuenciaremos estas disciplinas para construir exactamente lo que tu marca necesita — y nada de lo que no necesita.",
+    "disciplinesIntro": "Este es el alcance completo de lo que hago. Según tu proyecto, seleccionaremos, combinaremos y secuenciaremos estas disciplinas para construir exactamente lo que tu marca necesita. Y nada de lo que no necesita.",
     "disciplineGroups": [
       {
         "n": "I",
@@ -260,7 +260,7 @@
       }
     ],
     "processTitle": "Cómo trabajamos juntos.",
-    "processIntro": "Desde el primer mensaje hasta la entrega final — esto es exactamente cómo se ve la colaboración. Sin sorpresas. Sin ambigüedad. Solo un proceso claro y estructurado, diseñado para proteger tu tiempo y producir resultados excepcionales.",
+    "processIntro": "Desde el primer mensaje hasta la entrega final: esto es exactamente cómo se ve la colaboración. Sin sorpresas. Sin ambigüedad. Solo un proceso claro y estructurado, diseñado para proteger tu tiempo y producir resultados excepcionales.",
     "processSteps": [
       {
         "n": "01",
@@ -272,7 +272,7 @@
         "n": "02",
         "label": "Una solución hecha para ti.",
         "name": "Propuesta",
-        "desc": "Con base en lo que aprendo en el Descubrimiento, construyo una propuesta personalizada. No un paquete sacado de un menú — una respuesta precisa a tu situación específica. Alcance, entregables, cronograma y dirección estratégica, todo alineado con lo que tu marca realmente necesita."
+        "desc": "Con base en lo que aprendo en el Descubrimiento, construyo una propuesta personalizada. No un paquete sacado de un menú: una respuesta precisa a tu situación específica. Alcance, entregables, cronograma y dirección estratégica, todo alineado con lo que tu marca realmente necesita."
       },
       {
         "n": "03",
@@ -284,19 +284,19 @@
         "n": "04",
         "label": "Donde ocurre el trabajo.",
         "name": "Creación",
-        "desc": "El proyecto comienza. Según el alcance, esta fase sigue el Método REVEAL — pasando de la base estratégica a la expresión visual. Te mantengo informado en cada hito clave. Nada se presenta sin intención."
+        "desc": "El proyecto comienza. Según el alcance, esta fase sigue el Método REVEAL: pasando de la base estratégica a la expresión visual. Te mantengo informado en cada hito clave. Nada se presenta sin intención."
       },
       {
         "n": "05",
         "label": "Tu voz en el trabajo.",
         "name": "Revisión",
-        "desc": "Presento el trabajo para tu revisión. Entramos en una fase estructurada de ajustes — tu feedback se integra con precisión hasta que cada detalle esté validado. Esto es una colaboración, no una presentación."
+        "desc": "Presento el trabajo para tu revisión. Entramos en una fase estructurada de ajustes: tu feedback se integra con precisión hasta que cada detalle esté validado. Esto es una colaboración, no una presentación."
       },
       {
         "n": "06",
         "label": "La entrega.",
         "name": "Entrega",
-        "desc": "Todo queda aprobado. Se completa el pago final del 40%. Entrego el paquete completo de archivos — todos los formatos, todas las guías, todos los recursos — listos para ser usados, escalados y poseídos. La marca es tuya."
+        "desc": "Todo queda aprobado. Se completa el pago final del 40%. Entrego el paquete completo de archivos: todos los formatos, todas las guías, todos los recursos, listos para ser usados, escalados y poseídos. La marca es tuya."
       }
     ],
     "ctaHeading": "¿Listo para empezar?",
@@ -304,14 +304,14 @@
     "cta": "Iniciar"
   },
   "work": {
-    "metaTitle": "Creaciones — Ernso Azor",
-    "metaDescription": "Un trabajo que revela — proyectos de marca seleccionados en los mundos institucional, individual y creativo.",
+    "metaTitle": "Creaciones · Ernso Azor",
+    "metaDescription": "Un trabajo que revela: proyectos de marca seleccionados en los mundos institucional, individual y creativo.",
     "heroTitle": "Un trabajo que revela.",
     "filterAll": "Todos los trabajos",
     "filterInstitutional": "institucional",
     "filterIndividual": "Individual",
     "filterCreative": "Creativo y público",
-    "emptyState": "Nada en este mundo todavía — vuelve pronto, o explora otras categorías.",
+    "emptyState": "Nada en este mundo todavía. Vuelve pronto, o explora otras categorías.",
     "markLibraryTitle": "La Biblioteca de Marcas",
     "markLibraryDesc": "Cada forma lleva una decisión. Cada curva, cada ángulo, cada peso elegido con intención."
   },
@@ -321,7 +321,7 @@
     "next": "Siguiente"
   },
   "initiate": {
-    "metaTitle": "Iniciar — Ernso Azor",
+    "metaTitle": "Iniciar · Ernso Azor",
     "metaDescription": "Empieza una conversación sobre tu marca o producto.",
     "heroTitle": "Construyamos algo.",
     "heroSubtitle": "Todo proyecto comienza con una conversación. Elige cómo quieres empezar.",
@@ -349,7 +349,7 @@
       "errorMessage": "Algo salió mal al enviar tu brief. Intenta de nuevo o escribe directamente a hey@creativernso.co.",
       "confirmedHeadline": "Brief recibido.",
       "confirmedSubtext": "Tengo todo lo que necesito para empezar. Tendrás noticias mías dentro de 48 horas. Revisa tu bandeja de entrada para una confirmación.",
-      "confirmedSignature": "— Ernso Azor",
+      "confirmedSignature": "Ernso Azor",
       "q1": {
         "title": "¿Quién eres?",
         "subtitle": "¿Cuál de estas opciones te describe mejor?",
@@ -483,7 +483,7 @@
     }
   },
   "terms": {
-    "metaTitle": "Términos de Servicio — Ernso Azor",
+    "metaTitle": "Términos de Servicio · Ernso Azor",
     "metaDescription": "Los términos que rigen el uso del sitio creativernso.co.",
     "title": "Términos de Servicio",
     "updatedLabel": "Última actualización:",
@@ -512,7 +512,7 @@
     "s10Post": "."
   },
   "privacy": {
-    "metaTitle": "Política de Privacidad — Ernso Azor",
+    "metaTitle": "Política de Privacidad · Ernso Azor",
     "metaDescription": "Cómo Ernso Azor recopila, usa y protege tu información.",
     "title": "Política de Privacidad",
     "updatedLabel": "Última actualización:",
