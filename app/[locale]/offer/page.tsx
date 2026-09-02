@@ -2,8 +2,8 @@
 
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
-import { useRef } from "react";
-import { motion } from "framer-motion";
+import { useRef, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useFitText } from "@/lib/useFitText";
 
@@ -14,13 +14,79 @@ const EASE = [0.16, 1, 0.3, 1] as const;
 type DisciplineGroup = { n: string; name: string; items: string[] };
 type ProcessStep = { n: string; label: string; name: string; desc: string };
 
+function DisciplineRow({
+  group,
+  isOpen,
+  onToggle,
+}: {
+  group: DisciplineGroup;
+  isOpen: boolean;
+  onToggle: () => void;
+}) {
+  return (
+    <div className="border-b border-bone/10 last:border-b-0">
+      <button
+        type="button"
+        onClick={onToggle}
+        data-cursor="hover"
+        aria-expanded={isOpen}
+        className="flex w-full items-center justify-between gap-6 py-6 text-left md:py-7"
+      >
+        <span
+          className={`font-display text-[22px] font-bold leading-[1.2] tracking-[-0.02em] transition-colors md:text-[28px] ${
+            isOpen ? "text-bone" : "text-bone/60"
+          }`}
+        >
+          {group.name}
+        </span>
+        <span
+          aria-hidden
+          className="relative flex h-4 w-4 shrink-0 items-center justify-center"
+        >
+          <span className="absolute h-px w-4 bg-bone" />
+          <span
+            className="absolute h-4 w-px bg-bone transition-transform duration-300 ease-out"
+            style={{ transform: isOpen ? "scaleY(0)" : "scaleY(1)" }}
+          />
+        </span>
+      </button>
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.35, ease: EASE }}
+            className="overflow-hidden"
+          >
+            <p className="pb-7 pr-10 text-[14px] leading-[1.75] text-muted-2 md:pb-9 md:pr-16 md:text-[15.5px]">
+              {group.items.join("   ·   ")}
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+function ProcessNumeralPanel({ n }: { n: string }) {
+  return (
+    <div className="relative hidden aspect-[4/3] overflow-hidden border border-bone/10 bg-bone/[0.02] md:block">
+      <span
+        aria-hidden
+        className="absolute inset-0 flex select-none items-center justify-center font-display text-[150px] font-bold leading-none text-bone/[0.06]"
+      >
+        {n}
+      </span>
+    </div>
+  );
+}
+
 export default function OfferPage() {
   const t = useTranslations("offer");
   const disciplineGroups = t.raw("disciplineGroups") as DisciplineGroup[];
   const processSteps = t.raw("processSteps") as ProcessStep[];
-
-  const disciplinesRectRef = useRef<HTMLDivElement>(null);
-  const disciplinesTitle = useFitText<HTMLHeadingElement>(disciplinesRectRef);
+  const [openDiscipline, setOpenDiscipline] = useState(0);
 
   const processRectRef = useRef<HTMLDivElement>(null);
   const processTitle = useFitText<HTMLHeadingElement>(processRectRef);
@@ -60,76 +126,43 @@ export default function OfferPage() {
           />
         </motion.div>
 
-        {/* "The Disciplines" */}
+        {/* "The Disciplines" — asymmetric split: intro left, accordion right */}
         <div className="mt-24 md:mt-32">
-          <div>
-            <motion.h2
-              ref={disciplinesTitle.textRef}
-              initial={{ opacity: 0, y: 14 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.4 }}
-              transition={{ duration: 0.6, ease: EASE }}
-              className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.03em]"
-              style={{
-                fontSize: disciplinesTitle.fontSize
-                  ? `${disciplinesTitle.fontSize}px`
-                  : "clamp(36px, 5vw, 96px)",
-                visibility: disciplinesTitle.fontSize ? "visible" : "hidden",
-              }}
-            >
-              {t("disciplinesTitle")}
-            </motion.h2>
-            <p className="mt-3 text-[15px] text-muted-2 md:text-[18px]">
-              {t("disciplinesIntro")}
-            </p>
-          </div>
-
-          {/* Discipline groups — card grid, one card per group */}
-          <div
-            ref={disciplinesRectRef}
-            className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 md:mt-8"
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, ease: EASE }}
+            className="overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100"
             style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
           >
-            <div className="grid grid-cols-1 border-l border-t border-bone/10 sm:grid-cols-2">
-              {disciplineGroups.map((g, i) => (
-                <motion.article
-                  key={g.name}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.55, delay: (i % 2) * 0.08, ease: EASE }}
-                  className={`flex flex-col border-b border-r border-bone/10 px-6 pb-7 pt-7 transition-colors hover:bg-bone/[0.03] md:px-10 md:pb-9 md:pt-9 ${
-                    i === disciplineGroups.length - 1 ? "sm:col-span-2" : ""
-                  }`}
-                  data-cursor="hover"
-                >
-                  <span
-                    aria-hidden
-                    className="select-none font-display text-[15px] font-bold tracking-[0.1em] text-bone"
-                  >
-                    {g.n}
-                  </span>
-                  <h3 className="mt-3 font-display text-bone text-[22px] font-bold leading-[1.2] tracking-[-0.02em] md:text-[26px]">
-                    {g.name}
-                  </h3>
-                  <ul className="mt-5 flex flex-wrap gap-2">
-                    {g.items.map((item) => (
-                      <li
-                        key={item}
-                        className="px-3 py-1.5 text-[12px] font-medium text-bone/85 md:px-3.5 md:text-[13px]"
-                        style={{ boxShadow: "inset 0 0 0 0.5px rgba(255,255,255,0.08)" }}
-                      >
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </motion.article>
-              ))}
+            <div className="md:grid md:grid-cols-[300px_1fr] lg:grid-cols-[360px_1fr]">
+              <div className="border-b border-bone/10 px-6 pb-8 pt-8 md:border-b-0 md:border-r md:px-10 md:py-10">
+                <h2 className="font-display text-bone text-[clamp(28px,3vw,44px)] font-bold leading-[1.1] tracking-[-0.03em]">
+                  {t("disciplinesTitle")}
+                </h2>
+                <p className="mt-4 text-[14px] leading-relaxed text-muted-2 md:text-[15.5px]">
+                  {t("disciplinesIntro")}
+                </p>
+              </div>
+
+              <div className="px-6 md:px-10">
+                {disciplineGroups.map((g, i) => (
+                  <DisciplineRow
+                    key={g.name}
+                    group={g}
+                    isOpen={openDiscipline === i}
+                    onToggle={() =>
+                      setOpenDiscipline((cur) => (cur === i ? -1 : i))
+                    }
+                  />
+                ))}
+              </div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        {/* "How we work together." */}
+        {/* "How we work together." — alternating timeline */}
         <div className="mt-24 md:mt-32">
           <div>
             <motion.h2
@@ -153,37 +186,81 @@ export default function OfferPage() {
             </p>
           </div>
 
-          {/* Process steps — card grid, one card per step */}
-          <div
-            ref={processRectRef}
-            className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 md:mt-8"
-            style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
-          >
-            <div className="grid grid-cols-1 border-l border-t border-bone/10 sm:grid-cols-2">
-              {processSteps.map((step, i) => (
-                <motion.article
-                  key={step.n}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.55, delay: (i % 2) * 0.08, ease: EASE }}
-                  className="flex flex-col border-b border-r border-bone/10 px-6 pb-7 pt-7 transition-colors hover:bg-bone/[0.03] md:px-10 md:pb-9 md:pt-9"
-                  data-cursor="hover"
-                >
-                  <span
-                    aria-hidden
-                    className="select-none font-display text-[15px] font-bold tracking-[0.1em] text-bone"
+          <div className="relative mt-16 md:mt-20">
+            {/* connecting line, grows in on scroll */}
+            <motion.div
+              aria-hidden
+              initial={{ scaleY: 0 }}
+              whileInView={{ scaleY: 1 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 1.2, ease: EASE }}
+              style={{ transformOrigin: "top" }}
+              className="absolute inset-y-0 left-1/2 hidden w-px -translate-x-1/2 bg-bone/15 md:block"
+            />
+
+            <div className="flex flex-col gap-10 md:gap-6">
+              {processSteps.map((step, i) => {
+                const isEven = i % 2 === 0;
+                return (
+                  <motion.div
+                    key={step.n}
+                    initial={{ opacity: 0, y: 28 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 0.6, delay: 0.05, ease: EASE }}
                   >
-                    {step.n}
-                  </span>
-                  <h3 className="mt-3 font-display text-bone text-[22px] font-bold leading-[1.2] tracking-[-0.02em] md:text-[26px]">
-                    {step.name}
-                  </h3>
-                  <p className="mt-3 text-[15px] leading-[1.6] text-muted-2 md:text-[16px]">
-                    {step.desc}
-                  </p>
-                </motion.article>
-              ))}
+                    {/* mobile: simple stacked card */}
+                    <div className="flex items-start gap-4 md:hidden">
+                      <span className="flex h-11 w-11 shrink-0 items-center justify-center border border-bone/20 font-display text-[14px] font-bold text-bone">
+                        {step.n}
+                      </span>
+                      <div>
+                        <h3 className="font-display text-bone text-[19px] font-bold leading-[1.2] tracking-[-0.02em]">
+                          {step.name}
+                        </h3>
+                        <p className="mt-2 text-[14px] leading-[1.6] text-muted-2">
+                          {step.desc}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* desktop: alternating zigzag with connecting line */}
+                    <div className="hidden md:grid md:grid-cols-[1fr_auto_1fr] md:items-center md:gap-8 lg:gap-12">
+                      {isEven ? (
+                        <>
+                          <div className="text-right">
+                            <h3 className="font-display text-bone text-[24px] font-bold leading-[1.2] tracking-[-0.02em] lg:text-[28px]">
+                              {step.name}
+                            </h3>
+                            <p className="mt-3 text-[15px] leading-[1.6] text-muted-2 lg:text-[16px]">
+                              {step.desc}
+                            </p>
+                          </div>
+                          <span className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center border border-bone/20 bg-ink font-display text-[15px] font-bold text-bone">
+                            {step.n}
+                          </span>
+                          <ProcessNumeralPanel n={step.n} />
+                        </>
+                      ) : (
+                        <>
+                          <ProcessNumeralPanel n={step.n} />
+                          <span className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center border border-bone/20 bg-ink font-display text-[15px] font-bold text-bone">
+                            {step.n}
+                          </span>
+                          <div>
+                            <h3 className="font-display text-bone text-[24px] font-bold leading-[1.2] tracking-[-0.02em] lg:text-[28px]">
+                              {step.name}
+                            </h3>
+                            <p className="mt-3 text-[15px] leading-[1.6] text-muted-2 lg:text-[16px]">
+                              {step.desc}
+                            </p>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  </motion.div>
+                );
+              })}
             </div>
           </div>
         </div>
