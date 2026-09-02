@@ -74,7 +74,7 @@ const PROCESS_IMAGES: (string | null)[] = [
   "/process-03-agreement.jpg",
   "/process-04-creation.jpg",
   "/process-05-review.jpg",
-  null,
+  "/process-06-delivery.jpg",
 ];
 
 function ProcessNumeralPanel({
