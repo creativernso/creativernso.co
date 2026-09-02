@@ -123,7 +123,7 @@ export default function OfferPage() {
         </motion.div>
 
         {/* "The Disciplines" — asymmetric split: intro left, accordion right */}
-        <div className="mt-24 md:mt-32">
+        <div className="mt-12 md:mt-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
