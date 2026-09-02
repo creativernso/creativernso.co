@@ -2,10 +2,9 @@
 
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { useFitText } from "@/lib/useFitText";
 
 export const dynamic = "force-static";
 
@@ -88,9 +87,6 @@ export default function OfferPage() {
   const processSteps = t.raw("processSteps") as ProcessStep[];
   const [openDiscipline, setOpenDiscipline] = useState(0);
 
-  const processRectRef = useRef<HTMLDivElement>(null);
-  const processTitle = useFitText<HTMLHeadingElement>(processRectRef);
-
   return (
     <section
       data-theme="dark"
@@ -164,27 +160,15 @@ export default function OfferPage() {
 
         {/* "How we work together." — alternating timeline */}
         <div className="mt-24 md:mt-32">
-          <div>
-            <motion.h2
-              ref={processTitle.textRef}
-              initial={{ opacity: 0, y: 14 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.4 }}
-              transition={{ duration: 0.6, ease: EASE }}
-              className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.03em]"
-              style={{
-                fontSize: processTitle.fontSize
-                  ? `${processTitle.fontSize}px`
-                  : "clamp(36px, 5vw, 96px)",
-                visibility: processTitle.fontSize ? "visible" : "hidden",
-              }}
-            >
-              {t("processTitle")}
-            </motion.h2>
-            <p className="mt-3 text-[15px] text-muted-2 md:text-[18px]">
-              {t("processIntro")}
-            </p>
-          </div>
+          <motion.h2
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.6, ease: EASE }}
+            className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.03em]"
+          >
+            {t("processTitle")}
+          </motion.h2>
 
           <div className="relative mt-16 md:mt-20">
             {/* connecting line, grows in on scroll */}
