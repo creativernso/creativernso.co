@@ -38,7 +38,7 @@ export default function MarkGrid({
       <motion.div
         initial={{ opacity: 0, y: 64 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
+        viewport={{ once: true, amount: 0 }}
         transition={{ duration: 0.8, ease: EASE }}
         className="mt-8 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 md:mt-10"
         style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
