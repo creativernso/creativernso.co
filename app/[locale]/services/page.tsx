@@ -233,7 +233,7 @@ export default function BeliefPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.25 }}
                 transition={{ duration: 0.8, ease: EASE }}
-                className="font-display text-[clamp(24px,2.6vw,36px)] font-normal leading-[1.25] tracking-[-0.02em] text-bone"
+                className="font-display text-[19px] font-normal leading-[1.25] tracking-[-0.02em] text-bone md:text-[clamp(24px,2.6vw,36px)]"
               >
                 <span>{t("taglineLead")}</span>
                 <span className="text-bone/35">{t("taglineRest")}</span>
