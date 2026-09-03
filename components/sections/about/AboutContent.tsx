@@ -6,6 +6,7 @@ import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import BrandsMarquee from "@/components/sections/about/BrandsMarquee";
 import Stats from "@/components/sections/about/Stats";
+import ReadMoreText from "@/components/primitives/ReadMoreText";
 import { useFitText } from "@/lib/useFitText";
 
 const brands = [
@@ -89,12 +90,17 @@ export default function AboutContent() {
             />
           </div>
 
-          <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:mt-8 md:text-[19px] md:leading-[1.65]">
-            <p>{t("parcours.p1")}</p>
-            <p>{t("parcours.p2")}</p>
-            <p>{t("parcours.p3")}</p>
-            <p>{t("parcours.p4")}</p>
-          </div>
+          <ReadMoreText
+            paragraphs={[
+              t("parcours.p1"),
+              t("parcours.p2"),
+              t("parcours.p3"),
+              t("parcours.p4"),
+            ]}
+            readMoreLabel={t("readMore")}
+            readLessLabel={t("readLess")}
+            className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:mt-8 md:text-[19px] md:leading-[1.65]"
+          />
         </div>
 
         {/* Stats, animated counters */}
@@ -120,11 +126,12 @@ export default function AboutContent() {
             style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
           >
             <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-8">
-              <div className="flex flex-col justify-center space-y-5 text-[14px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:text-[17px] md:leading-[1.65]">
-                <p>{t("drives.p1")}</p>
-                <p>{t("drives.p2")}</p>
-                <p>{t("drives.p3")}</p>
-              </div>
+              <ReadMoreText
+                paragraphs={[t("drives.p1"), t("drives.p2"), t("drives.p3")]}
+                readMoreLabel={t("readMore")}
+                readLessLabel={t("readLess")}
+                className="flex flex-col justify-center space-y-5 text-[14px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:text-[17px] md:leading-[1.65]"
+              />
 
               <div className="relative aspect-square overflow-hidden bg-black">
                 <Image
@@ -169,13 +176,18 @@ export default function AboutContent() {
               />
             </div>
 
-            <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:mt-8 md:text-[19px] md:leading-[1.65]">
-              <p>{t("beyond.p1")}</p>
-              <p>{t("beyond.p2")}</p>
-              <p>{t("beyond.p3")}</p>
-              <p>{t("beyond.p4")}</p>
-              <p>{t("beyond.p5")}</p>
-            </div>
+            <ReadMoreText
+              paragraphs={[
+                t("beyond.p1"),
+                t("beyond.p2"),
+                t("beyond.p3"),
+                t("beyond.p4"),
+                t("beyond.p5"),
+              ]}
+              readMoreLabel={t("readMore")}
+              readLessLabel={t("readLess")}
+              className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:mt-8 md:text-[19px] md:leading-[1.65]"
+            />
           </div>
         </div>
 

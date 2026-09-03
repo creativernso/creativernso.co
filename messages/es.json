@@ -105,7 +105,9 @@
     "ctaText": "Si lo que acabas de leer resuena contigo, ya sabes cuál es el siguiente paso.",
     "cta": "Iniciar",
     "brandsHeading": "Marcas con las que he trabajado",
-    "toolsHeading": "Herramientas"
+    "toolsHeading": "Herramientas",
+    "readMore": "Leer más",
+    "readLess": "Leer menos"
   },
   "services": {
     "titleLead": "En qué ",

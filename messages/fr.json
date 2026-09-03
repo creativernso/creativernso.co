@@ -105,7 +105,9 @@
     "ctaText": "Si ce que vous venez de lire vous parle, vous savez déjà quelle est la prochaine étape.",
     "cta": "Initier",
     "brandsHeading": "Marques avec qui j'ai travaillé",
-    "toolsHeading": "Outils"
+    "toolsHeading": "Outils",
+    "readMore": "Lire plus",
+    "readLess": "Lire moins"
   },
   "services": {
     "titleLead": "Ce ",

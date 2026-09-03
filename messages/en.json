@@ -105,7 +105,9 @@
     "ctaText": "If what you’ve read here resonates, you already know what the next step is.",
     "cta": "Initiate",
     "brandsHeading": "Brands I’ve worked for",
-    "toolsHeading": "Tools"
+    "toolsHeading": "Tools",
+    "readMore": "Read more",
+    "readLess": "Read less"
   },
   "services": {
     "titleLead": "What ",

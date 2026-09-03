@@ -105,7 +105,9 @@
     "ctaText": "Se o que você leu aqui faz sentido para você, você já sabe qual é o próximo passo.",
     "cta": "Iniciar",
     "brandsHeading": "Marcas com quem já trabalhei",
-    "toolsHeading": "Ferramentas"
+    "toolsHeading": "Ferramentas",
+    "readMore": "Ler mais",
+    "readLess": "Ler menos"
   },
   "services": {
     "titleLead": "No que ",
