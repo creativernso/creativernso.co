@@ -117,6 +117,22 @@ export default function OfferPage() {
   const pageTitle = useFitText<HTMLHeadingElement>(contentRef);
   const processTitle = useFitText<HTMLHeadingElement>(contentRef);
 
+  // Glue every word solid except the one break point between titleRest's
+  // first word and the rest, so the title only ever wraps there — e.g.
+  // "What I bring to" / "the table." — instead of wherever the browser's
+  // default greedy wrap happens to land.
+  const titleLeadGlued = t("titleLead").trim().replace(/ /g, " ");
+  const titleRestRaw = t("titleRest");
+  const titleRestBreak = titleRestRaw.indexOf(" ");
+  const titleRestFirstWord =
+    titleRestBreak === -1
+      ? titleRestRaw
+      : titleRestRaw.slice(0, titleRestBreak);
+  const titleRestRemainder =
+    titleRestBreak === -1
+      ? ""
+      : titleRestRaw.slice(titleRestBreak + 1).replace(/ /g, " ");
+
   return (
     <section
       data-theme="dark"
@@ -137,8 +153,11 @@ export default function OfferPage() {
             visibility: pageTitle.fontSize ? "visible" : "hidden",
           }}
         >
-          <span className="text-bone">{t("titleLead")}</span>
-          <span className="whitespace-nowrap text-bone/35">{t("titleRest")}</span>
+          <span className="text-bone">{titleLeadGlued}</span>
+          {" "}
+          <span className="text-bone/35">
+            {titleRestFirstWord} {titleRestRemainder}
+          </span>
         </motion.h1>
 
         {/* Hero image */}
