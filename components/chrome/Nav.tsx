@@ -106,10 +106,10 @@ export default function Nav() {
                       <Link
                         href={item.href}
                         onClick={() => setOpen(false)}
-                        className={`block font-display text-5xl tracking-tight transition-colors md:text-6xl ${
+                        className={`block font-display text-5xl font-semibold tracking-tight transition-colors md:text-6xl ${
                           active
-                            ? "font-normal text-muted-2"
-                            : "font-semibold text-bone hover:text-muted-2"
+                            ? "text-muted-2"
+                            : "text-bone hover:text-muted-2"
                         }`}
                       >
                         {item.label}
