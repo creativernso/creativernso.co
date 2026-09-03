@@ -166,7 +166,7 @@ export default function BeliefPage() {
                     aria-hidden
                     className="select-none font-display text-[15px] font-bold tracking-[0.1em] text-bone"
                   >
-                    {b.n}
+                    {b.n}-
                   </span>
                   <h3 className="mt-3 font-display text-bone text-[22px] font-bold leading-[1.2] tracking-[-0.02em] md:text-[26px]">
                     {b.title}
