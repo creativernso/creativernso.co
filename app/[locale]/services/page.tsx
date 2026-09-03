@@ -233,7 +233,7 @@ export default function BeliefPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{ duration: 0.5, delay: i * 0.05, ease: EASE }}
-                  className="group flex flex-col gap-1 py-3.5 first:pt-0 last:pb-0 sm:flex-row sm:items-start sm:gap-6 md:gap-8 md:py-2"
+                  className="group flex flex-col gap-1.5 py-3.5 first:pt-0 last:pb-0 sm:min-h-[64px] sm:flex-row sm:items-center sm:gap-6 md:min-h-[72px] md:gap-8 md:py-2"
                   data-cursor="hover"
                 >
                   {/* Letter + mobile-only eyebrow */}
@@ -241,18 +241,18 @@ export default function BeliefPage() {
                     <span className="shrink-0 font-display text-[26px] font-bold leading-none text-bone sm:w-14 md:w-20 md:text-[34px]">
                       {r.letter}.
                     </span>
-                    <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted-2 sm:hidden">
+                    <span className="text-[14px] font-semibold uppercase tracking-[0.1em] text-muted-2 sm:hidden">
                       {r.name}
                     </span>
                   </div>
 
                   {/* Eyebrow — desktop own column */}
-                  <span className="hidden shrink-0 text-[11px] font-medium uppercase tracking-[0.16em] text-muted-2 sm:block sm:w-[130px] sm:pt-2 md:w-[160px] md:text-[12px]">
+                  <span className="hidden shrink-0 text-[14px] font-semibold uppercase tracking-[0.08em] text-muted-2 sm:block sm:w-[130px] md:w-[160px] md:text-[16px]">
                     {r.name}
                   </span>
 
                   {/* Title */}
-                  <h3 className="font-display text-[19px] font-bold leading-[1.3] tracking-[-0.01em] text-bone sm:flex-1 sm:pt-1 md:text-[24px]">
+                  <h3 className="font-display text-[15px] font-normal leading-[1.5] text-bone sm:flex-1 md:text-[18px]">
                     {r.desc}
                   </h3>
                 </motion.div>
