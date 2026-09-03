@@ -45,10 +45,10 @@ export default function Testimonials() {
         <div ref={containerRef}>
           <motion.h2
             ref={textRef}
-            initial={{ opacity: 0, y: 14 }}
+            initial={{ opacity: 0, y: 64 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
-            transition={{ duration: 0.55, ease: EASE }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: EASE }}
             className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
             style={{
               fontSize: fontSize ? `${fontSize}px` : "clamp(36px, 6.5vw, 116px)",

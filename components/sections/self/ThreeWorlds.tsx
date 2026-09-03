@@ -26,10 +26,10 @@ export default function ThreeWorlds() {
  {/* Title only */}
  <motion.h2
  ref={textRef}
- initial={{ opacity: 0, y: 14 }}
+ initial={{ opacity: 0, y: 64 }}
  whileInView={{ opacity: 1, y: 0 }}
- viewport={{ once: true, amount: 0.4 }}
- transition={{ duration: 0.55, ease: EASE }}
+ viewport={{ once: true, amount: 0.25 }}
+ transition={{ duration: 0.8, ease: EASE }}
  className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
  style={{
  fontSize: fontSize ? `${fontSize}px` :"clamp(36px, 6.5vw, 116px)",
@@ -49,10 +49,10 @@ export default function ThreeWorlds() {
  {worlds.map((w, i) => (
  <motion.article
  key={w.numeral}
- initial={{ opacity: 0, y: 28 }}
+ initial={{ opacity: 0, y: 64 }}
  whileInView={{ opacity: 1, y: 0 }}
- viewport={{ once: true, amount: 0.3 }}
- transition={{ duration: 0.6, delay: i * 0.1, ease: EASE }}
+ viewport={{ once: true, amount: 0.25 }}
+ transition={{ duration: 0.8, delay: i * 0.1, ease: EASE }}
  className="flex flex-col px-5 pb-5 pt-7 md:px-10 md:pb-8 md:pt-12"
  data-cursor="hover"
  >

@@ -34,7 +34,7 @@ export default function BeliefPage() {
         <motion.h1
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: EASE }}
+          transition={{ duration: 0.8, ease: EASE }}
           className="font-display text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]"
         >
           <span className="text-bone">{t("titleLead")}</span>
@@ -129,10 +129,10 @@ export default function BeliefPage() {
           <div>
             <motion.h2
               ref={beliefsTitle.textRef}
-              initial={{ opacity: 0, y: 14 }}
+              initial={{ opacity: 0, y: 64 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.4 }}
-              transition={{ duration: 0.6, ease: EASE }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.8, ease: EASE }}
               className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.03em]"
               style={{
                 fontSize: beliefsTitle.fontSize
@@ -155,10 +155,10 @@ export default function BeliefPage() {
               {beliefs.map((b, i) => (
                 <motion.article
                   key={b.n}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 64 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.55, delay: (i % 2) * 0.08, ease: EASE }}
+                  viewport={{ once: true, amount: 0.25 }}
+                  transition={{ duration: 0.8, delay: (i % 2) * 0.08, ease: EASE }}
                   className="flex flex-col border-b border-r border-bone/10 px-6 pb-7 pt-7 md:px-10 md:pb-9 md:pt-9"
                   data-cursor="hover"
                 >
@@ -185,10 +185,10 @@ export default function BeliefPage() {
           <div ref={revealRectRef}>
             <motion.h2
               ref={revealTitle.textRef}
-              initial={{ opacity: 0, y: 14 }}
+              initial={{ opacity: 0, y: 64 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.4 }}
-              transition={{ duration: 0.6, ease: EASE }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.8, ease: EASE }}
               className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.03em]"
               style={{
                 fontSize: revealTitle.fontSize
@@ -205,10 +205,10 @@ export default function BeliefPage() {
           <div className="mt-8 md:mt-10 md:grid md:grid-cols-[0.85fr_1.15fr] md:items-start md:gap-12 lg:gap-16">
             {/* Left — framework visual */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 64 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.7, ease: EASE }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.8, ease: EASE }}
             >
               <div className="relative aspect-square overflow-hidden border border-bone/15 bg-black/30">
                 <Image
@@ -229,10 +229,10 @@ export default function BeliefPage() {
               {revealRows.map((r, i) => (
                 <motion.div
                   key={r.name}
-                  initial={{ opacity: 0, y: 14 }}
+                  initial={{ opacity: 0, y: 64 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.5, delay: i * 0.05, ease: EASE }}
+                  viewport={{ once: true, amount: 0.25 }}
+                  transition={{ duration: 0.8, delay: i * 0.05, ease: EASE }}
                   className="group flex flex-col gap-1.5 py-3.5 first:pt-0 last:pb-0 sm:min-h-[64px] sm:flex-row sm:items-center sm:gap-6 md:min-h-[72px] md:gap-8 md:py-2"
                   data-cursor="hover"
                 >
@@ -263,10 +263,10 @@ export default function BeliefPage() {
 
         {/* Tagline under REVEAL */}
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 64 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.6, ease: EASE }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.8, ease: EASE }}
           className="mt-10 md:mt-14"
         >
           <p className="font-display text-[clamp(14px,1.8vw,24px)] font-normal leading-tight tracking-[-0.02em] text-bone md:whitespace-nowrap">
@@ -277,10 +277,10 @@ export default function BeliefPage() {
 
         {/* CTA — Let's build something */}
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 64 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.7, ease: EASE }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.8, ease: EASE }}
           className="mt-16 bg-black/40 px-6 py-8 backdrop-blur-md md:mt-24 md:px-12 md:py-14"
           style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
         >

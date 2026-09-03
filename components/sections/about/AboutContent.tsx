@@ -3,11 +3,14 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { useRef } from "react";
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import BrandsMarquee from "@/components/sections/about/BrandsMarquee";
 import Stats from "@/components/sections/about/Stats";
 import ReadMoreText from "@/components/primitives/ReadMoreText";
 import { useFitText } from "@/lib/useFitText";
+
+const EASE = [0.16, 1, 0.3, 1] as const;
 
 const brands = [
   "/brands/brand-07.png",
@@ -60,7 +63,12 @@ export default function AboutContent() {
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-12">
         {/* Title */}
-        <div ref={heroRef}>
+        <motion.div
+          ref={heroRef}
+          initial={{ opacity: 0, y: 64 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: EASE }}
+        >
           <h1
             ref={hero.textRef}
             className="mt-6 font-display text-bone whitespace-nowrap font-bold leading-[1.05] tracking-[-0.04em] md:mt-10"
@@ -71,10 +79,14 @@ export default function AboutContent() {
           >
             {t("heroTitle")}
           </h1>
-        </div>
+        </motion.div>
 
         {/* Portrait + Parcours, wrapped in one bordered card */}
-        <div
+        <motion.div
+          initial={{ opacity: 0, y: 64 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.8, ease: EASE }}
           className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 p-4 md:mt-10 md:p-6"
           style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
         >
@@ -101,14 +113,20 @@ export default function AboutContent() {
             readLessLabel={t("readLess")}
             className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:mt-8 md:text-[19px] md:leading-[1.65]"
           />
-        </div>
+        </motion.div>
 
         {/* Stats, animated counters */}
         <Stats />
 
         {/* What drives me. */}
         <div className="mt-24 md:mt-32">
-          <div ref={drivesRef}>
+          <motion.div
+            ref={drivesRef}
+            initial={{ opacity: 0, y: 64 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: EASE }}
+          >
             <h2
               ref={drives.textRef}
               className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
@@ -119,9 +137,13 @@ export default function AboutContent() {
             >
               {t("drivesTitle")}
             </h2>
-          </div>
+          </motion.div>
 
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 64 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: EASE }}
             className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 p-4 md:mt-8 md:p-6"
             style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
           >
@@ -143,12 +165,18 @@ export default function AboutContent() {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* Beyond the work. */}
         <div className="mt-24 md:mt-32">
-          <div ref={beyondRef}>
+          <motion.div
+            ref={beyondRef}
+            initial={{ opacity: 0, y: 64 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: EASE }}
+          >
             <h2
               ref={beyond.textRef}
               className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
@@ -159,9 +187,13 @@ export default function AboutContent() {
             >
               {t("beyondTitle")}
             </h2>
-          </div>
+          </motion.div>
 
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 64 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: EASE }}
             className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 p-4 md:mt-8 md:p-6"
             style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
           >
@@ -188,11 +220,15 @@ export default function AboutContent() {
               readLessLabel={t("readLess")}
               className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:mt-8 md:text-[19px] md:leading-[1.65]"
             />
-          </div>
+          </motion.div>
         </div>
 
         {/* Ready to begin? CTA */}
-        <div
+        <motion.div
+          initial={{ opacity: 0, y: 64 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.8, ease: EASE }}
           className="mt-10 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 px-5 py-7 md:mt-8 md:px-12 md:py-14"
           style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
         >
@@ -220,11 +256,17 @@ export default function AboutContent() {
               </span>
             </Link>
           </div>
-        </div>
+        </motion.div>
 
         {/* Brand wall, animated marquee */}
         <div className="mt-24 md:mt-32">
-          <div ref={brandsRef}>
+          <motion.div
+            ref={brandsRef}
+            initial={{ opacity: 0, y: 64 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: EASE }}
+          >
             <h2
               ref={brandsTitle.textRef}
               className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
@@ -237,7 +279,7 @@ export default function AboutContent() {
             >
               {t("brandsHeading")}
             </h2>
-          </div>
+          </motion.div>
           <div className="mt-6 md:mt-8">
             <BrandsMarquee />
           </div>
@@ -245,13 +287,23 @@ export default function AboutContent() {
 
         {/* Tools */}
         <div className="mt-24 md:mt-32">
-          <h2 className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.04em]">
+          <motion.h2
+            initial={{ opacity: 0, y: 64 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: EASE }}
+            className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.04em]"
+          >
             {t("toolsHeading")}
-          </h2>
+          </motion.h2>
           <ul className="mt-8 grid grid-cols-5 gap-2.5 md:gap-3 md:[grid-template-columns:repeat(15,minmax(0,1fr))]">
             {tools.map((src, i) => (
-              <li
+              <motion.li
                 key={i}
+                initial={{ opacity: 0, y: 64 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{ duration: 0.8, delay: (i % 5) * 0.06, ease: EASE }}
                 className="relative aspect-square border border-bone/10 bg-black/30 p-2 md:p-2.5"
               >
                 <div className="relative h-full w-full">
@@ -263,7 +315,7 @@ export default function AboutContent() {
                     className="object-contain"
                   />
                 </div>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>

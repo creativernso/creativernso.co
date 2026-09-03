@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { LegalTitle, LegalBody } from "@/components/primitives/LegalReveal";
 
 export async function generateMetadata() {
   const t = await getTranslations("privacy");
@@ -16,14 +17,12 @@ export default async function PrivacyPage() {
       className="relative min-h-screen py-10 text-bone md:py-14"
     >
       <div className="mx-auto max-w-[760px] px-6 md:px-12">
-        <h1 className="font-display text-bone text-[clamp(32px,5vw,64px)] font-bold leading-[1.05] tracking-[-0.04em]">
-          {t("title")}
-        </h1>
+        <LegalTitle>{t("title")}</LegalTitle>
         <p className="mt-3 text-[13px] text-muted-2">
           {t("updatedLabel")} {t("updatedDate")}
         </p>
 
-        <div className="mt-10 space-y-9 text-[15px] leading-[1.7] text-muted-2 md:text-[16px]">
+        <LegalBody>
           <p>{t("intro")}</p>
 
           <div>
@@ -100,7 +99,7 @@ export default async function PrivacyPage() {
               {t("s8Post")}
             </p>
           </div>
-        </div>
+        </LegalBody>
       </div>
     </section>
   );

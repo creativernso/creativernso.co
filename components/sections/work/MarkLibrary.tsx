@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import MarkGrid from "@/components/sections/work/MarkGrid";
 
 const marks = [
   "01", "02", "03", "04", "05", "06", "07", "08", "09", "10",
@@ -18,37 +18,10 @@ const marks = [
 export default async function MarkLibrary() {
   const t = await getTranslations("work");
   return (
-    <div className="mt-24 md:mt-32">
-      <h2 className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.04em]">
-        {t("markLibraryTitle")}
-      </h2>
-      <p className="mt-3 text-[15px] text-muted-2 md:text-[18px]">
-        {t("markLibraryDesc")}
-      </p>
-
-      <div
-        className="mt-8 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 md:mt-10"
-        style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
-      >
-        <div className="grid grid-cols-2 border-l border-t border-bone/10 sm:grid-cols-3 md:grid-cols-4">
-          {marks.map((n) => (
-            <div
-              key={n}
-              className="relative flex aspect-square items-center justify-center border-b border-r border-bone/10 p-4 md:p-10"
-            >
-              <div className="relative h-full w-full">
-                <Image
-                  src={`/marks/MARKS-${n}.png`}
-                  alt={`Mark ${n}`}
-                  fill
-                  sizes="(min-width: 768px) 25vw, 50vw"
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+    <MarkGrid
+      title={t("markLibraryTitle")}
+      desc={t("markLibraryDesc")}
+      marks={marks}
+    />
   );
 }

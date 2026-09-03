@@ -26,10 +26,10 @@ export default function SelectedWork({ projects }: { projects: Project[] }) {
  {/* Title — auto-scaled to match the width of the project grid below */}
  <motion.h2
  ref={textRef}
- initial={{ opacity: 0, y: 14 }}
+ initial={{ opacity: 0, y: 64 }}
  whileInView={{ opacity: 1, y: 0 }}
- viewport={{ once: true, amount: 0.4 }}
- transition={{ duration: 0.55, ease: EASE }}
+ viewport={{ once: true, amount: 0.25 }}
+ transition={{ duration: 0.8, ease: EASE }}
  className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
  style={{
  fontSize: fontSize ? `${fontSize}px` :"clamp(44px, 7.5vw, 140px)",
@@ -47,10 +47,10 @@ export default function SelectedWork({ projects }: { projects: Project[] }) {
  {featured.map((p, i) => (
  <motion.div
  key={p.slug}
- initial={{ opacity: 0, y: 24 }}
+ initial={{ opacity: 0, y: 64 }}
  whileInView={{ opacity: 1, y: 0 }}
- viewport={{ once: true, amount: 0.2 }}
- transition={{ duration: 0.6, delay: (i % 2) * 0.08, ease: EASE }}
+ viewport={{ once: true, amount: 0.25 }}
+ transition={{ duration: 0.8, delay: (i % 2) * 0.08, ease: EASE }}
  >
  <Link
  href={`/work/${p.slug}`}
@@ -100,10 +100,10 @@ export default function SelectedWork({ projects }: { projects: Project[] }) {
 
  {/* Pill CTA with arrow */}
  <motion.div
- initial={{ opacity: 0, y: 14 }}
+ initial={{ opacity: 0, y: 64 }}
  whileInView={{ opacity: 1, y: 0 }}
- viewport={{ once: true, amount: 0.6 }}
- transition={{ duration: 0.6, ease: EASE }}
+ viewport={{ once: true, amount: 0.25 }}
+ transition={{ duration: 0.8, ease: EASE }}
  className="mt-6 md:mt-8"
  >
  <Link

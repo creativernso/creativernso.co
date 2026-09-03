@@ -12,10 +12,10 @@ export default function ReadyToBeSeen() {
  <section data-theme="dark"className="pb-10 md:pb-14">
  <div className="mx-auto max-w-[1400px] px-6 md:px-12">
  <motion.div
- initial={{ opacity: 0, y: 24 }}
+ initial={{ opacity: 0, y: 64 }}
  whileInView={{ opacity: 1, y: 0 }}
- viewport={{ once: true, amount: 0.4 }}
- transition={{ duration: 0.6, ease: EASE }}
+ viewport={{ once: true, amount: 0.25 }}
+ transition={{ duration: 0.8, ease: EASE }}
  className="relative overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 px-5 py-7 md:px-12 md:py-14"
  style={{ boxShadow:"inset 0 0 0 1px rgba(255,255,255,0.14)"}}
  >

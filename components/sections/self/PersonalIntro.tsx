@@ -13,10 +13,10 @@ export default function PersonalIntro() {
     <section data-theme="dark" className="relative py-10 text-bone md:py-14">
       <div className="mx-auto max-w-[1400px] px-6 md:px-12">
         <motion.h2
-          initial={{ opacity: 0, y: 14 }}
+          initial={{ opacity: 0, y: 64 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.55, ease: EASE }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.8, ease: EASE }}
           className="font-display text-[clamp(36px,6vw,88px)] font-bold leading-[1.05] tracking-[-0.04em]"
         >
           <span className="text-bone">{t("titleLine1")}</span>
@@ -25,10 +25,10 @@ export default function PersonalIntro() {
         </motion.h2>
 
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: 64 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6, ease: EASE }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.8, ease: EASE }}
           className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 p-4 md:mt-8 md:p-6"
           style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
         >

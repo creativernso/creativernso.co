@@ -72,10 +72,10 @@ export default function WorkFilter({
  <motion.div
  key={p.slug}
  layout
- initial={{ opacity: 0, y: 24 }}
+ initial={{ opacity: 0, y: 64 }}
  animate={{ opacity: 1, y: 0 }}
  exit={{ opacity: 0, y: -12 }}
- transition={{ duration: 0.7, ease: EASE }}
+ transition={{ duration: 0.8, ease: EASE }}
  className="sticky md:static"
  style={{ top: `calc(96px + ${i * 14}px)` }}
  >

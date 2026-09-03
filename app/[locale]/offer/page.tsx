@@ -123,7 +123,7 @@ export default function OfferPage() {
         <motion.h1
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: EASE }}
+          transition={{ duration: 0.8, ease: EASE }}
           className="font-display text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]"
         >
           <span className="text-bone">{t("titleLead")}</span>
@@ -134,7 +134,7 @@ export default function OfferPage() {
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.05, ease: EASE }}
+          transition={{ duration: 0.8, delay: 0.05, ease: EASE }}
           className="relative mt-8 aspect-[2400/1126] overflow-hidden border border-bone/20 bg-black/30 md:mt-12"
         >
           <Image
@@ -151,10 +151,10 @@ export default function OfferPage() {
         {/* "The Disciplines" — asymmetric split: intro left, accordion right */}
         <div className="mt-12 md:mt-16">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 64 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, ease: EASE }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: EASE }}
             className="overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100"
             style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
           >
@@ -187,10 +187,10 @@ export default function OfferPage() {
         {/* "How we work together." — alternating timeline */}
         <div className="mt-24 md:mt-32">
           <motion.h2
-            initial={{ opacity: 0, y: 14 }}
+            initial={{ opacity: 0, y: 64 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
-            transition={{ duration: 0.6, ease: EASE }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: EASE }}
             className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.03em]"
           >
             {t("processTitle")}
@@ -277,10 +277,10 @@ export default function OfferPage() {
 
         {/* CTA — Ready to begin? */}
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 64 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.7, ease: EASE }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.8, ease: EASE }}
           className="mt-16 bg-black/40 px-6 py-8 backdrop-blur-md md:mt-24 md:px-12 md:py-14"
           style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
         >

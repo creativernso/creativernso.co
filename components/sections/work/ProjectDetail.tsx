@@ -3,9 +3,12 @@
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { useRef } from "react";
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useFitText } from "@/lib/useFitText";
 import type { Project } from "@/lib/content";
+
+const EASE = [0.16, 1, 0.3, 1] as const;
 
 export default function ProjectDetail({
   p,
@@ -48,15 +51,30 @@ export default function ProjectDetail({
         <div className="mt-3 h-px w-full bg-bone/15" />
 
         {/* Title + subtitle */}
-        <h1 className="mt-8 font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.04em]">
+        <motion.h1
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: EASE }}
+          className="mt-8 font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.04em]"
+        >
           {p.label}
-        </h1>
-        <p className="mt-3 text-[18px] font-light leading-relaxed text-muted-2 md:whitespace-nowrap md:text-[32px]">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.05, ease: EASE }}
+          className="mt-3 text-[18px] font-light leading-relaxed text-muted-2 md:whitespace-nowrap md:text-[32px]"
+        >
           {p.subtitle}
-        </p>
+        </motion.p>
 
         {/* Hero image */}
-        <div className="relative mt-10 aspect-[1400/714] overflow-hidden bg-black/30 md:mt-12">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1, ease: EASE }}
+          className="relative mt-10 aspect-[1400/714] overflow-hidden bg-black/30 md:mt-12"
+        >
           <Image
             src={p.hero}
             alt={p.title}
@@ -66,11 +84,17 @@ export default function ProjectDetail({
             className="object-cover"
             priority
           />
-        </div>
+        </motion.div>
 
         {/* Overview */}
         <div className="mt-10 md:mt-12">
-          <div ref={overviewRef}>
+          <motion.div
+            ref={overviewRef}
+            initial={{ opacity: 0, y: 64 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: EASE }}
+          >
             <h2
               ref={overview.textRef}
               className="font-display text-bone whitespace-nowrap font-bold tracking-[-0.04em]"
@@ -83,17 +107,29 @@ export default function ProjectDetail({
             >
               {t("overviewHeading")}
             </h2>
-          </div>
+          </motion.div>
         </div>
-        <div className="mt-4 space-y-5 text-[14px] leading-relaxed text-muted-2 md:text-[20px] md:[hyphens:auto] md:[text-align:justify] md:[text-wrap:pretty]">
+        <motion.div
+          initial={{ opacity: 0, y: 64 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.8, ease: EASE }}
+          className="mt-4 space-y-5 text-[14px] leading-relaxed text-muted-2 md:text-[20px] md:[hyphens:auto] md:[text-align:justify] md:[text-wrap:pretty]"
+        >
           {(p.overview ?? []).map((para, i) => (
             <p key={i}>{para}</p>
           ))}
-        </div>
+        </motion.div>
 
         {/* Feature image */}
         {p.feature && (
-          <div className="relative mt-16 aspect-[1400/714] overflow-hidden bg-black/30 md:mt-20">
+          <motion.div
+            initial={{ opacity: 0, y: 64 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: EASE }}
+            className="relative mt-16 aspect-[1400/714] overflow-hidden bg-black/30 md:mt-20"
+          >
             <Image
               src={p.feature}
               alt={`${p.title} feature`}
@@ -102,14 +138,18 @@ export default function ProjectDetail({
             quality={92}
               className="object-cover"
             />
-          </div>
+          </motion.div>
         )}
 
         {/* Gallery — one full-width image per row, like the hero */}
         <div className="mt-6 flex flex-col gap-4 md:mt-8 md:gap-6">
           {(p.gallery ?? []).map((src, idx) => (
-            <div
+            <motion.div
               key={idx}
+              initial={{ opacity: 0, y: 64 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.8, ease: EASE }}
               className="relative aspect-[1400/714] overflow-hidden bg-black/30"
             >
               <Image
@@ -120,12 +160,17 @@ export default function ProjectDetail({
             quality={92}
                 className="object-cover"
               />
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* Next project card */}
-        <div className="mt-20 overflow-hidden border border-bone/10 bg-black/30 backdrop-blur-md backdrop-saturate-100 p-5 md:mt-28 md:p-6">
+        <motion.div
+          initial={{ opacity: 0, y: 64 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.8, ease: EASE }}
+          className="mt-20 overflow-hidden border border-bone/10 bg-black/30 backdrop-blur-md backdrop-saturate-100 p-5 md:mt-28 md:p-6">
           <div className="relative aspect-[16/10] overflow-hidden bg-black/30">
             <Image
               src={next.hero}
@@ -154,7 +199,7 @@ export default function ProjectDetail({
               </span>
             </Link>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

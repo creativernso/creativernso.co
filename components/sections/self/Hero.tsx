@@ -99,7 +99,7 @@ export default function Hero() {
  <motion.div
  initial={{ opacity: 0, y: 12 }}
  animate={{ opacity: 1, y: 0 }}
- transition={{ duration: 0.6, delay: buttonStart, ease: EASE }}
+ transition={{ duration: 0.8, delay: buttonStart, ease: EASE }}
  className="mt-8"
  >
  <Link
@@ -151,7 +151,7 @@ export default function Hero() {
  <motion.div
  initial={{ opacity: 0, y: 12 }}
  animate={{ opacity: 1, y: 0 }}
- transition={{ duration: 0.6, delay: buttonStart, ease: EASE }}
+ transition={{ duration: 0.8, delay: buttonStart, ease: EASE }}
  className="mt-5"
  >
  <Link
