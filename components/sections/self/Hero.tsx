@@ -69,7 +69,7 @@ export default function Hero() {
  data-theme="dark"
  className="relative -mt-[100px] h-[100svh] w-full py-4 md:-mt-[120px] md:py-10"
  >
- <div className="mx-auto h-full max-w-[1400px] px-0">
+ <div className="mx-auto h-full max-w-[1400px] px-6 md:px-0">
  <div className="relative h-full w-full overflow-hidden bg-black">
  {/* ============== DESKTOP ============== */}
  <div className="relative hidden h-full w-full md:block">
