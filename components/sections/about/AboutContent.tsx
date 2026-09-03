@@ -68,7 +68,7 @@ export default function AboutContent() {
         >
           <h1
             ref={hero.textRef}
-            className="mt-6 font-display text-bone font-bold leading-[1.05] tracking-[-0.04em] md:mt-10"
+            className="mt-6 font-display text-bone font-bold leading-[1.05] tracking-[-0.04em] md:mt-10 md:whitespace-nowrap"
             style={{
               fontSize: hero.fontSize ? `${hero.fontSize}px` : "clamp(36px, 5vw, 96px)",
               visibility: hero.fontSize ? "visible" : "hidden",
@@ -125,7 +125,7 @@ export default function AboutContent() {
           >
             <h2
               ref={drives.textRef}
-              className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em]"
+              className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em] md:whitespace-nowrap"
               style={{
                 fontSize: drives.fontSize ? `${drives.fontSize}px` : "clamp(36px, 5vw, 96px)",
                 visibility: drives.fontSize ? "visible" : "hidden",
@@ -174,7 +174,7 @@ export default function AboutContent() {
           >
             <h2
               ref={beyond.textRef}
-              className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em]"
+              className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em] md:whitespace-nowrap"
               style={{
                 fontSize: beyond.fontSize ? `${beyond.fontSize}px` : "clamp(36px, 5vw, 96px)",
                 visibility: beyond.fontSize ? "visible" : "hidden",
@@ -263,7 +263,7 @@ export default function AboutContent() {
           >
             <h2
               ref={brandsTitle.textRef}
-              className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em]"
+              className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em] md:whitespace-nowrap"
               style={{
                 fontSize: brandsTitle.fontSize
                   ? `${brandsTitle.fontSize}px`
@@ -287,7 +287,7 @@ export default function AboutContent() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.8, ease: EASE }}
-            className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em]"
+            className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em] md:whitespace-nowrap"
             style={{
               fontSize: toolsTitle.fontSize
                 ? `${toolsTitle.fontSize}px`

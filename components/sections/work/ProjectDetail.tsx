@@ -57,7 +57,7 @@ export default function ProjectDetail({
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: EASE }}
-          className="mt-8 font-display text-bone font-bold leading-[1.1] tracking-[-0.04em]"
+          className="mt-8 font-display text-bone font-bold leading-[1.1] tracking-[-0.04em] md:whitespace-nowrap"
           style={{
             fontSize: pageTitle.fontSize
               ? `${pageTitle.fontSize}px`
@@ -104,7 +104,7 @@ export default function ProjectDetail({
           >
             <h2
               ref={overview.textRef}
-              className="font-display text-bone font-bold tracking-[-0.04em]"
+              className="font-display text-bone font-bold tracking-[-0.04em] md:whitespace-nowrap"
               style={{
                 fontSize: overview.fontSize
                   ? `${overview.fontSize}px`
