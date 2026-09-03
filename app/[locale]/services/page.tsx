@@ -271,20 +271,6 @@ export default function BeliefPage() {
           </div>
         </div>
 
-        {/* Tagline under REVEAL */}
-        <motion.div
-          initial={{ opacity: 0, y: 64 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.25 }}
-          transition={{ duration: 0.8, ease: EASE }}
-          className="mt-10 md:mt-14"
-        >
-          <p className="font-display text-[clamp(14px,1.8vw,24px)] font-normal leading-tight tracking-[-0.02em] text-bone md:whitespace-nowrap">
-            <span>{t("taglineLead")}</span>
-            <span className="text-bone/35">{t("taglineRest")}</span>
-          </p>
-        </motion.div>
-
         {/* CTA — Let's build something */}
         <motion.div
           initial={{ opacity: 0, y: 64 }}
