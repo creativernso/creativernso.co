@@ -18,6 +18,8 @@ export default function BeliefPage() {
   const t = useTranslations("services");
   const beliefs = t.raw("beliefs") as Belief[];
   const revealRows = t.raw("revealRows") as RevealRow[];
+  const contentRef = useRef<HTMLDivElement>(null);
+  const pageTitle = useFitText<HTMLHeadingElement>(contentRef);
   const beliefsRectRef = useRef<HTMLDivElement>(null);
   const beliefsTitle = useFitText<HTMLHeadingElement>(beliefsRectRef);
 
@@ -29,13 +31,20 @@ export default function BeliefPage() {
       data-theme="dark"
       className="relative min-h-screen py-10 text-bone md:py-14"
     >
-      <div className="mx-auto max-w-[1400px] px-6 md:px-12">
+      <div ref={contentRef} className="mx-auto max-w-[1400px] px-6 md:px-12">
         {/* Header — "What I believe." */}
         <motion.h1
+          ref={pageTitle.textRef}
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: EASE }}
-          className="font-display text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]"
+          className="font-display font-bold leading-[1.05] tracking-[-0.04em]"
+          style={{
+            fontSize: pageTitle.fontSize
+              ? `${pageTitle.fontSize}px`
+              : "clamp(36px, 5vw, 96px)",
+            visibility: pageTitle.fontSize ? "visible" : "hidden",
+          }}
         >
           <span className="text-bone">{t("titleLead")}</span>
           <span className="text-bone/35">{t("titleRest")}</span>

@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { useRef } from "react";
 import { motion } from "framer-motion";
+import { useFitText } from "@/lib/useFitText";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -14,14 +16,24 @@ export default function MarkGrid({
   desc: string;
   marks: string[];
 }) {
+  const gridRef = useRef<HTMLDivElement>(null);
+  const gridTitle = useFitText<HTMLHeadingElement>(gridRef);
+
   return (
     <div className="mt-24 md:mt-32">
       <motion.h2
+        ref={gridTitle.textRef}
         initial={{ opacity: 0, y: 64 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.25 }}
         transition={{ duration: 0.8, ease: EASE }}
-        className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.04em]"
+        className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em]"
+        style={{
+          fontSize: gridTitle.fontSize
+            ? `${gridTitle.fontSize}px`
+            : "clamp(36px, 5vw, 96px)",
+          visibility: gridTitle.fontSize ? "visible" : "hidden",
+        }}
       >
         {title}
       </motion.h2>
@@ -36,6 +48,7 @@ export default function MarkGrid({
       </motion.p>
 
       <motion.div
+        ref={gridRef}
         initial={{ opacity: 0, y: 64 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0 }}

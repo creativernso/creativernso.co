@@ -18,15 +18,16 @@ export default function ProjectDetail({
   next: Project;
 }) {
   const t = useTranslations("workDetail");
-  const overviewRef = useRef<HTMLDivElement>(null);
-  const overview = useFitText<HTMLHeadingElement>(overviewRef);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const pageTitle = useFitText<HTMLHeadingElement>(contentRef);
+  const overview = useFitText<HTMLHeadingElement>(contentRef);
 
   return (
     <section
       data-theme="dark"
       className="relative min-h-screen bg-ink py-10 text-bone md:py-14"
     >
-      <div className="mx-auto max-w-[1400px] px-6 md:px-12">
+      <div ref={contentRef} className="mx-auto max-w-[1400px] px-6 md:px-12">
         {/* Top row Back + date */}
         <div className="flex items-center justify-between">
           <Link
@@ -52,10 +53,17 @@ export default function ProjectDetail({
 
         {/* Title + subtitle */}
         <motion.h1
+          ref={pageTitle.textRef}
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: EASE }}
-          className="mt-8 font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.04em]"
+          className="mt-8 font-display text-bone font-bold leading-[1.1] tracking-[-0.04em]"
+          style={{
+            fontSize: pageTitle.fontSize
+              ? `${pageTitle.fontSize}px`
+              : "clamp(36px, 5vw, 96px)",
+            visibility: pageTitle.fontSize ? "visible" : "hidden",
+          }}
         >
           {p.label}
         </motion.h1>
@@ -89,7 +97,6 @@ export default function ProjectDetail({
         {/* Overview */}
         <div className="mt-10 md:mt-12">
           <motion.div
-            ref={overviewRef}
             initial={{ opacity: 0, y: 64 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}

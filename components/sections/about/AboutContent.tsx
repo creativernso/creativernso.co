@@ -47,24 +47,21 @@ const tools = [
 
 export default function AboutContent() {
   const t = useTranslations("about");
-  const heroRef = useRef<HTMLDivElement>(null);
-  const drivesRef = useRef<HTMLDivElement>(null);
-  const beyondRef = useRef<HTMLDivElement>(null);
-  const brandsRef = useRef<HTMLDivElement>(null);
-  const hero = useFitText<HTMLHeadingElement>(heroRef);
-  const drives = useFitText<HTMLHeadingElement>(drivesRef);
-  const beyond = useFitText<HTMLHeadingElement>(beyondRef);
-  const brandsTitle = useFitText<HTMLHeadingElement>(brandsRef);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const hero = useFitText<HTMLHeadingElement>(contentRef);
+  const drives = useFitText<HTMLHeadingElement>(contentRef);
+  const beyond = useFitText<HTMLHeadingElement>(contentRef);
+  const brandsTitle = useFitText<HTMLHeadingElement>(contentRef);
+  const toolsTitle = useFitText<HTMLHeadingElement>(contentRef);
 
   return (
     <section
       data-theme="dark"
       className="relative min-h-screen py-10 text-bone md:py-14"
     >
-      <div className="mx-auto max-w-[1400px] px-6 md:px-12">
+      <div ref={contentRef} className="mx-auto max-w-[1400px] px-6 md:px-12">
         {/* Title */}
         <motion.div
-          ref={heroRef}
           initial={{ opacity: 0, y: 64 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: EASE }}
@@ -121,7 +118,6 @@ export default function AboutContent() {
         {/* What drives me. */}
         <div className="mt-24 md:mt-32">
           <motion.div
-            ref={drivesRef}
             initial={{ opacity: 0, y: 64 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
@@ -171,7 +167,6 @@ export default function AboutContent() {
         {/* Beyond the work. */}
         <div className="mt-24 md:mt-32">
           <motion.div
-            ref={beyondRef}
             initial={{ opacity: 0, y: 64 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
@@ -261,7 +256,6 @@ export default function AboutContent() {
         {/* Brand wall, animated marquee */}
         <div className="mt-24 md:mt-32">
           <motion.div
-            ref={brandsRef}
             initial={{ opacity: 0, y: 64 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
@@ -288,11 +282,18 @@ export default function AboutContent() {
         {/* Tools */}
         <div className="mt-24 md:mt-32">
           <motion.h2
+            ref={toolsTitle.textRef}
             initial={{ opacity: 0, y: 64 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.8, ease: EASE }}
-            className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.04em]"
+            className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em]"
+            style={{
+              fontSize: toolsTitle.fontSize
+                ? `${toolsTitle.fontSize}px`
+                : "clamp(36px, 5vw, 96px)",
+              visibility: toolsTitle.fontSize ? "visible" : "hidden",
+            }}
           >
             {t("toolsHeading")}
           </motion.h2>

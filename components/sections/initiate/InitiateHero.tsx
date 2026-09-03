@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { useRef } from "react";
 import { motion } from "framer-motion";
+import { useFitText } from "@/lib/useFitText";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -12,10 +14,14 @@ export default function InitiateHero({
   title: string;
   subtitle: string;
 }) {
+  const heroRef = useRef<HTMLDivElement>(null);
+  const pageTitle = useFitText<HTMLHeadingElement>(heroRef);
+
   return (
     <>
       {/* Hero image */}
       <motion.div
+        ref={heroRef}
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: EASE }}
@@ -38,7 +44,16 @@ export default function InitiateHero({
         transition={{ duration: 0.8, delay: 0.05, ease: EASE }}
         className="mt-8 md:mt-12"
       >
-        <h1 className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]">
+        <h1
+          ref={pageTitle.textRef}
+          className="font-display text-bone font-bold leading-[1.05] tracking-[-0.04em]"
+          style={{
+            fontSize: pageTitle.fontSize
+              ? `${pageTitle.fontSize}px`
+              : "clamp(36px, 5vw, 96px)",
+            visibility: pageTitle.fontSize ? "visible" : "hidden",
+          }}
+        >
           {title}
         </h1>
         <p className="mt-3 text-[15px] leading-relaxed text-muted-2 md:text-[18px]">

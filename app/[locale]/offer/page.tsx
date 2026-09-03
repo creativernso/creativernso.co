@@ -2,9 +2,10 @@
 
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { useFitText } from "@/lib/useFitText";
 
 export const dynamic = "force-static";
 
@@ -112,19 +113,29 @@ export default function OfferPage() {
   const disciplineGroups = t.raw("disciplineGroups") as DisciplineGroup[];
   const processSteps = t.raw("processSteps") as ProcessStep[];
   const [openDiscipline, setOpenDiscipline] = useState(0);
+  const contentRef = useRef<HTMLDivElement>(null);
+  const pageTitle = useFitText<HTMLHeadingElement>(contentRef);
+  const processTitle = useFitText<HTMLHeadingElement>(contentRef);
 
   return (
     <section
       data-theme="dark"
       className="relative min-h-screen py-10 text-bone md:py-14"
     >
-      <div className="mx-auto max-w-[1400px] px-6 md:px-12">
+      <div ref={contentRef} className="mx-auto max-w-[1400px] px-6 md:px-12">
         {/* Header — "What I bring to the table." */}
         <motion.h1
+          ref={pageTitle.textRef}
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: EASE }}
-          className="font-display text-[clamp(36px,5vw,96px)] font-bold leading-[1.05] tracking-[-0.04em]"
+          className="font-display font-bold leading-[1.05] tracking-[-0.04em]"
+          style={{
+            fontSize: pageTitle.fontSize
+              ? `${pageTitle.fontSize}px`
+              : "clamp(36px, 5vw, 96px)",
+            visibility: pageTitle.fontSize ? "visible" : "hidden",
+          }}
         >
           <span className="text-bone">{t("titleLead")}</span>
           <span className="text-bone/35">{t("titleRest")}</span>
@@ -187,11 +198,18 @@ export default function OfferPage() {
         {/* "How we work together." — alternating timeline */}
         <div className="mt-24 md:mt-32">
           <motion.h2
+            ref={processTitle.textRef}
             initial={{ opacity: 0, y: 64 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.8, ease: EASE }}
-            className="font-display text-bone text-[clamp(36px,5vw,96px)] font-bold leading-[1.1] tracking-[-0.03em]"
+            className="font-display text-bone font-bold leading-[1.1] tracking-[-0.03em]"
+            style={{
+              fontSize: processTitle.fontSize
+                ? `${processTitle.fontSize}px`
+                : "clamp(36px, 5vw, 96px)",
+              visibility: processTitle.fontSize ? "visible" : "hidden",
+            }}
           >
             {t("processTitle")}
           </motion.h2>

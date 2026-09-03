@@ -41,8 +41,8 @@ export default function Testimonials() {
 
   return (
     <section data-theme="dark" className="pt-10 pb-16 text-bone md:pt-14 md:pb-24">
-      <div className="mx-auto max-w-[1400px] px-6 md:px-12">
-        <div ref={containerRef}>
+      <div ref={containerRef} className="mx-auto max-w-[1400px] px-6 md:px-12">
+        <div>
           <motion.h2
             ref={textRef}
             initial={{ opacity: 0, y: 64 }}
