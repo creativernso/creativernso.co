@@ -234,7 +234,7 @@ export default function BeliefPage() {
                 <span className="text-bone/35">{t("taglineRest")}</span>
               </motion.p>
 
-              <div className="mt-8 divide-y divide-bone/10 md:mt-10">
+              <div className="mt-5 divide-y divide-bone/10 md:mt-5">
                 {revealRows.map((r, i) => (
                 <motion.div
                   key={r.name}
