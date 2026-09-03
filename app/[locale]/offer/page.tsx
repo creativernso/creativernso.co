@@ -138,7 +138,7 @@ export default function OfferPage() {
           }}
         >
           <span className="text-bone">{t("titleLead")}</span>
-          <span className="text-bone/35">{t("titleRest")}</span>
+          <span className="whitespace-nowrap text-bone/35">{t("titleRest")}</span>
         </motion.h1>
 
         {/* Hero image */}
