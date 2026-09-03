@@ -233,7 +233,7 @@ export default function BeliefPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{ duration: 0.5, delay: i * 0.05, ease: EASE }}
-                  className="group flex flex-col gap-1.5 py-6 first:pt-0 sm:flex-row sm:items-start sm:gap-8 md:gap-10 md:py-7"
+                  className="group flex flex-col gap-1 py-3.5 first:pt-0 last:pb-0 sm:flex-row sm:items-start sm:gap-6 md:gap-8 md:py-2"
                   data-cursor="hover"
                 >
                   {/* Letter + mobile-only eyebrow */}
