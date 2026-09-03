@@ -187,7 +187,7 @@ export default function BeliefPage() {
 
         {/* The REVEAL Framework. title */}
         <div className="mt-24 md:mt-32">
-          <div ref={revealRectRef}>
+          <div>
             <motion.h2
               ref={revealTitle.textRef}
               initial={{ opacity: 0, y: 64 }}
@@ -207,7 +207,10 @@ export default function BeliefPage() {
           </div>
 
           {/* Image + REVEAL rows — two-column layout */}
-          <div className="mt-8 md:mt-10 md:grid md:grid-cols-[0.85fr_1.15fr] md:items-start md:gap-12 lg:gap-16">
+          <div
+            ref={revealRectRef}
+            className="mt-8 md:mt-10 md:grid md:grid-cols-[0.85fr_1.15fr] md:items-start md:gap-12 lg:gap-16"
+          >
             {/* Left — framework visual */}
             <motion.div
               initial={{ opacity: 0, y: 64 }}
