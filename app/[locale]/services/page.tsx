@@ -182,7 +182,7 @@ export default function BeliefPage() {
 
         {/* The REVEAL Framework. title */}
         <div className="mt-24 md:mt-32">
-          <div>
+          <div ref={revealRectRef}>
             <motion.h2
               ref={revealTitle.textRef}
               initial={{ opacity: 0, y: 14 }}
@@ -199,18 +199,33 @@ export default function BeliefPage() {
             >
               {t("revealTitle")}
             </motion.h2>
-            <p className="mt-3 text-[15px] text-muted-2 md:text-[18px]">
-              {t("revealSubtitle")}
-            </p>
           </div>
 
-          {/* REVEAL rows — merged rectangle, one row per stage */}
-          <div
-            ref={revealRectRef}
-            className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 md:mt-8"
-            style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
-          >
-            <div className="divide-y divide-bone/10">
+          {/* Image + REVEAL rows — two-column layout */}
+          <div className="mt-8 md:mt-10 md:grid md:grid-cols-[0.85fr_1.15fr] md:items-start md:gap-12 lg:gap-16">
+            {/* Left — framework visual */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.7, ease: EASE }}
+            >
+              <div className="relative aspect-square overflow-hidden border border-bone/15 bg-black/30">
+                <Image
+                  src="/hero-portrait.jpg"
+                  alt=""
+                  fill
+                  sizes="(min-width: 768px) 40vw, 90vw"
+                  className="object-cover"
+                />
+              </div>
+              <p className="mt-4 text-[11px] uppercase tracking-[0.16em] text-muted-2 md:text-[12px]">
+                {t("revealSubtitle")}
+              </p>
+            </motion.div>
+
+            {/* Right — REVEAL rows */}
+            <div className="mt-10 divide-y divide-bone/10 md:mt-0">
               {revealRows.map((r, i) => (
                 <motion.div
                   key={r.name}
@@ -218,32 +233,28 @@ export default function BeliefPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{ duration: 0.5, delay: i * 0.05, ease: EASE }}
-                  className="group flex flex-col gap-3 px-6 py-6 transition-colors hover:bg-bone/[0.03] sm:flex-row sm:items-center sm:gap-6 md:px-10 md:py-7"
+                  className="group flex flex-col gap-1.5 py-6 first:pt-0 sm:flex-row sm:items-start sm:gap-8 md:gap-10 md:py-7"
                   data-cursor="hover"
                 >
-                  {/* Letter badge */}
-                  <div className="flex items-center gap-4 sm:contents">
-                    <span
-                      aria-hidden
-                      className="flex h-14 w-14 shrink-0 items-center justify-center border border-bone/15 font-display text-[22px] font-bold text-bone md:h-20 md:w-20 md:text-[34px]"
-                    >
-                      {r.letter}
+                  {/* Letter + mobile-only eyebrow */}
+                  <div className="flex items-baseline gap-4 sm:contents">
+                    <span className="shrink-0 font-display text-[26px] font-bold leading-none text-bone sm:w-14 md:w-20 md:text-[34px]">
+                      {r.letter}.
                     </span>
-
-                    {/* Name — shown next to the badge on mobile, own column on desktop */}
-                    <span className="font-display text-[26px] font-bold text-bone sm:hidden">
+                    <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-muted-2 sm:hidden">
                       {r.name}
                     </span>
                   </div>
 
-                  <span className="hidden font-display text-[24px] font-bold text-bone sm:block sm:w-[150px] md:w-[220px] md:text-[38px]">
+                  {/* Eyebrow — desktop own column */}
+                  <span className="hidden shrink-0 text-[11px] font-medium uppercase tracking-[0.16em] text-muted-2 sm:block sm:w-[130px] sm:pt-2 md:w-[160px] md:text-[12px]">
                     {r.name}
                   </span>
 
-                  {/* Description */}
-                  <span className="text-[15px] leading-relaxed text-muted-2 sm:flex-1 sm:text-right md:text-[22px]">
+                  {/* Title */}
+                  <h3 className="font-display text-[19px] font-bold leading-[1.3] tracking-[-0.01em] text-bone sm:flex-1 sm:pt-1 md:text-[24px]">
                     {r.desc}
-                  </span>
+                  </h3>
                 </motion.div>
               ))}
             </div>
