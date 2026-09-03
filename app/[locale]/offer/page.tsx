@@ -214,10 +214,10 @@ export default function OfferPage() {
                 return (
                   <motion.div
                     key={step.n}
-                    initial={{ opacity: 0, y: 28 }}
+                    initial={{ opacity: 0, y: 64 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.3 }}
-                    transition={{ duration: 0.6, delay: 0.05, ease: EASE }}
+                    viewport={{ once: true, amount: 0.25 }}
+                    transition={{ duration: 0.8, delay: i * 0.1, ease: EASE }}
                   >
                     {/* mobile: simple stacked card */}
                     <div className="flex items-start gap-4 md:hidden">
