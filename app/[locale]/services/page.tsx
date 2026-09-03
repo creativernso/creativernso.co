@@ -247,26 +247,21 @@ export default function BeliefPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.25 }}
                   transition={{ duration: 0.8, delay: i * 0.05, ease: EASE }}
-                  className="group flex flex-col gap-1.5 py-3.5 first:pt-0 last:pb-0 sm:min-h-[64px] sm:flex-row sm:items-center sm:gap-6 md:min-h-[72px] md:gap-8 md:py-2"
+                  className="group flex flex-row items-center gap-3 py-3.5 first:pt-0 last:pb-0 min-h-[64px] sm:gap-6 md:min-h-[72px] md:gap-8 md:py-2"
                   data-cursor="hover"
                 >
-                  {/* Letter + mobile-only eyebrow */}
-                  <div className="flex items-baseline gap-4 sm:contents">
-                    <span className="shrink-0 font-display text-[26px] font-bold leading-none text-bone sm:w-14 md:w-20 md:text-[34px]">
-                      {r.letter}.
-                    </span>
-                    <span className="text-[14px] font-semibold uppercase tracking-[0.1em] text-muted-2 sm:hidden">
-                      {r.name}
-                    </span>
-                  </div>
+                  {/* Letter */}
+                  <span className="shrink-0 font-display text-[22px] font-bold leading-none text-bone w-8 sm:w-14 sm:text-[26px] md:w-20 md:text-[34px]">
+                    {r.letter}.
+                  </span>
 
-                  {/* Eyebrow — desktop own column */}
-                  <span className="hidden shrink-0 text-[14px] font-semibold uppercase tracking-[0.08em] text-muted-2 sm:block sm:w-[130px] md:w-[160px] md:text-[16px]">
+                  {/* Eyebrow */}
+                  <span className="shrink-0 text-[10px] font-semibold uppercase leading-[1.3] tracking-[0.04em] text-muted-2 w-[62px] sm:w-[130px] sm:text-[14px] sm:tracking-[0.08em] md:w-[160px] md:text-[16px]">
                     {r.name}
                   </span>
 
                   {/* Title */}
-                  <h3 className="font-display text-[15px] font-normal leading-[1.5] text-bone text-right sm:flex-1 md:text-[18px]">
+                  <h3 className="flex-1 font-display text-[13px] font-normal leading-[1.35] text-bone text-right sm:text-[15px] sm:leading-[1.5] md:text-[18px]">
                     {r.desc}
                   </h3>
                 </motion.div>
