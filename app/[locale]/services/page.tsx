@@ -50,17 +50,17 @@ export default function BeliefPage() {
         >
           <div className="relative w-full">
             <Image
-              src="/img-blf.jpg"
+              src="/belief-hero.jpg"
               alt="Ernso Azor portrait"
               width={2400}
-              height={1200}
+              height={1126}
               sizes="100vw"
               priority
               className="h-auto w-full select-none"
             />
           </div>
 
-          <div className="absolute inset-0 mx-auto flex max-w-[1400px] items-center justify-end px-6 md:pl-16 md:pr-28 lg:pr-36 xl:pr-44">
+          <div className="absolute inset-0 mx-auto flex max-w-[1400px] items-center justify-start px-6 md:pl-16 lg:pl-24">
             <div className="max-w-[640px] md:max-w-[720px]">
               <p className="font-display text-[clamp(28px,3.4vw,56px)] font-bold leading-[1.05] tracking-[-0.035em]">
                 <span className="block text-bone">{t("heroQuoteLine1")}</span>
