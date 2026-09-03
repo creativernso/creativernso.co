@@ -90,17 +90,22 @@ export default function BeliefPage() {
         >
           <div className="relative w-full">
             <Image
-              src="/Mobil_beleif.jpg"
+              src="/belief-hero-mobile.jpg"
               alt="Ernso Azor portrait"
-              width={1200}
-              height={1778}
+              width={1080}
+              height={1350}
               sizes="100vw"
               priority
               className="h-auto w-full select-none"
             />
           </div>
 
-          <div className="absolute inset-x-0 top-0 flex flex-col items-center px-5 pt-[14%] text-center">
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 top-0 h-[42%] bg-gradient-to-b from-black/80 via-black/40 to-transparent"
+          />
+
+          <div className="absolute inset-x-0 top-0 flex flex-col items-center px-5 pt-[8%] text-center">
             <p className="text-[10px] leading-snug text-bone/85">
               <span className="font-semibold text-bone">{t("imageCaptionName")}</span>
               <span className="px-1.5 text-bone/45">·</span>
