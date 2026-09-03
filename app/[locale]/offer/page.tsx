@@ -304,7 +304,7 @@ export default function OfferPage() {
         >
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
             <div>
-              <h3 className="font-display text-[clamp(22px,2.6vw,34px)] font-bold leading-[1.1] tracking-[-0.03em] text-bone">
+              <h3 className="font-display text-[clamp(28px,3.6vw,48px)] font-bold leading-[1.1] tracking-[-0.03em] text-bone">
                 {t("ctaHeading")}
               </h3>
               <p className="mt-3 text-[13.5px] leading-relaxed text-muted-2 md:whitespace-nowrap md:text-[14.5px]">
