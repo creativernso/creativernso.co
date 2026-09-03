@@ -261,7 +261,7 @@ export default function BeliefPage() {
                   </span>
 
                   {/* Title */}
-                  <h3 className="font-display text-[15px] font-normal leading-[1.5] text-bone sm:flex-1 md:text-[18px]">
+                  <h3 className="font-display text-[15px] font-normal leading-[1.5] text-bone sm:flex-1 sm:text-right md:text-[18px]">
                     {r.desc}
                   </h3>
                 </motion.div>
