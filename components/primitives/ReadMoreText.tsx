@@ -42,7 +42,7 @@ export default function ReadMoreText({
           type="button"
           onClick={() => setExpanded((e) => !e)}
           data-cursor="hover"
-          className="self-start text-left text-[12px] font-medium uppercase tracking-[0.18em] text-bone underline underline-offset-4 decoration-bone/30 transition-colors hover:decoration-bone md:hidden"
+          className="self-start text-left text-[12px] font-medium uppercase tracking-[0.18em] text-bone transition-colors hover:text-muted-2 md:hidden"
         >
           {expanded ? readLessLabel : readMoreLabel}
         </button>
