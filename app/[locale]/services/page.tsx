@@ -219,14 +219,23 @@ export default function BeliefPage() {
                   className="object-cover"
                 />
               </div>
-              <p className="mt-4 text-[11px] uppercase tracking-[0.16em] text-muted-2 md:text-[12px]">
-                {t("revealSubtitle")}
-              </p>
             </motion.div>
 
-            {/* Right — REVEAL rows */}
-            <div className="mt-10 divide-y divide-bone/10 md:mt-0">
-              {revealRows.map((r, i) => (
+            {/* Right — tagline + REVEAL rows */}
+            <div className="mt-8 md:mt-0">
+              <motion.p
+                initial={{ opacity: 0, y: 64 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{ duration: 0.8, ease: EASE }}
+                className="font-display text-[clamp(24px,2.6vw,36px)] font-normal leading-[1.25] tracking-[-0.02em] text-bone"
+              >
+                <span>{t("taglineLead")}</span>
+                <span className="text-bone/35">{t("taglineRest")}</span>
+              </motion.p>
+
+              <div className="mt-8 divide-y divide-bone/10 md:mt-10">
+                {revealRows.map((r, i) => (
                 <motion.div
                   key={r.name}
                   initial={{ opacity: 0, y: 64 }}
@@ -257,6 +266,7 @@ export default function BeliefPage() {
                   </h3>
                 </motion.div>
               ))}
+              </div>
             </div>
           </div>
         </div>
