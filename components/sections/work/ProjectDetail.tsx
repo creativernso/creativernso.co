@@ -97,7 +97,7 @@ export default function ProjectDetail({
           >
             <h2
               ref={overview.textRef}
-              className="font-display text-bone whitespace-nowrap font-bold tracking-[-0.04em]"
+              className="font-display text-bone font-bold tracking-[-0.04em]"
               style={{
                 fontSize: overview.fontSize
                   ? `${overview.fontSize}px`

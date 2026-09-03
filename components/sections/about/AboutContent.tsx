@@ -71,7 +71,7 @@ export default function AboutContent() {
         >
           <h1
             ref={hero.textRef}
-            className="mt-6 font-display text-bone whitespace-nowrap font-bold leading-[1.05] tracking-[-0.04em] md:mt-10"
+            className="mt-6 font-display text-bone font-bold leading-[1.05] tracking-[-0.04em] md:mt-10"
             style={{
               fontSize: hero.fontSize ? `${hero.fontSize}px` : "clamp(36px, 5vw, 96px)",
               visibility: hero.fontSize ? "visible" : "hidden",
@@ -129,7 +129,7 @@ export default function AboutContent() {
           >
             <h2
               ref={drives.textRef}
-              className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
+              className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em]"
               style={{
                 fontSize: drives.fontSize ? `${drives.fontSize}px` : "clamp(36px, 5vw, 96px)",
                 visibility: drives.fontSize ? "visible" : "hidden",
@@ -179,7 +179,7 @@ export default function AboutContent() {
           >
             <h2
               ref={beyond.textRef}
-              className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
+              className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em]"
               style={{
                 fontSize: beyond.fontSize ? `${beyond.fontSize}px` : "clamp(36px, 5vw, 96px)",
                 visibility: beyond.fontSize ? "visible" : "hidden",
@@ -269,7 +269,7 @@ export default function AboutContent() {
           >
             <h2
               ref={brandsTitle.textRef}
-              className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
+              className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em]"
               style={{
                 fontSize: brandsTitle.fontSize
                   ? `${brandsTitle.fontSize}px`

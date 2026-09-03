@@ -49,7 +49,7 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.8, ease: EASE }}
-            className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.04em]"
+            className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em]"
             style={{
               fontSize: fontSize ? `${fontSize}px` : "clamp(36px, 6.5vw, 116px)",
               visibility: fontSize ? "visible" : "hidden",

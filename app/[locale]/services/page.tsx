@@ -138,7 +138,7 @@ export default function BeliefPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.25 }}
               transition={{ duration: 0.8, ease: EASE }}
-              className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.03em]"
+              className="font-display text-bone font-bold leading-[1.1] tracking-[-0.03em]"
               style={{
                 fontSize: beliefsTitle.fontSize
                   ? `${beliefsTitle.fontSize}px`
@@ -194,7 +194,7 @@ export default function BeliefPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.25 }}
               transition={{ duration: 0.8, ease: EASE }}
-              className="font-display text-bone whitespace-nowrap font-bold leading-[1.1] tracking-[-0.03em]"
+              className="font-display text-bone font-bold leading-[1.1] tracking-[-0.03em]"
               style={{
                 fontSize: revealTitle.fontSize
                   ? `${revealTitle.fontSize}px`

@@ -3,13 +3,18 @@
 import { useEffect, useRef, useState, type RefObject } from "react";
 
 /**
- * Scales a single-line heading's font-size so it spans exactly the width
- * of `containerRef`. Re-measures once the real webfont has swapped in
- * (font-display: swap means the first paint is often a fallback font),
- * on resize, and whenever the container's own size changes.
+ * Scales a heading's font-size so it spans exactly the width of
+ * `containerRef`, down to a minimum of `minSize` (matching the site's
+ * standard clamp() floor of 36px) — below that it stops shrinking and
+ * wraps instead, so short/narrow containers (mobile) never produce an
+ * illegibly small heading. Re-measures once the real webfont has
+ * swapped in (font-display: swap means the first paint is often a
+ * fallback font), on resize, and whenever the container's own size
+ * changes.
  */
 export function useFitText<T extends HTMLElement>(
-  containerRef: RefObject<HTMLElement>
+  containerRef: RefObject<HTMLElement>,
+  minSize = 36
 ) {
   const textRef = useRef<T>(null);
   const [fontSize, setFontSize] = useState<number | null>(null);
@@ -23,7 +28,8 @@ export function useFitText<T extends HTMLElement>(
       const currentSize = parseFloat(getComputedStyle(text).fontSize);
       const naturalWidth = text.scrollWidth;
       if (!naturalWidth || !currentSize) return;
-      setFontSize(currentSize * (targetWidth / naturalWidth));
+      const fitted = currentSize * (targetWidth / naturalWidth);
+      setFontSize(Math.max(fitted, minSize));
     };
 
     fit();
