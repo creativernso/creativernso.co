@@ -307,7 +307,7 @@ export default function OfferPage() {
               <h3 className="font-display text-[clamp(34px,4.6vw,60px)] font-bold leading-[1.1] tracking-[-0.03em] text-bone">
                 {t("ctaHeading")}
               </h3>
-              <p className="mt-3 text-[16px] leading-relaxed text-muted-2 md:whitespace-nowrap md:text-[19px]">
+              <p className="mt-3 text-[16px] leading-relaxed text-muted-2 md:whitespace-nowrap md:text-[24px]">
                 {t("ctaSubtext")}
               </p>
             </div>
