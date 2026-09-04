@@ -56,7 +56,7 @@ export default function InitiateHero({
         >
           {title}
         </h1>
-        <p className="mt-3 text-[15px] leading-relaxed text-muted-2 md:text-[18px]">
+        <p className="mt-3 text-[17px] leading-relaxed text-muted-2 md:text-[22px]">
           {subtitle}
         </p>
       </motion.header>
