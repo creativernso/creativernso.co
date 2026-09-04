@@ -26,7 +26,7 @@ export default function InitiateHero({
       >
         <h1
           ref={pageTitle.textRef}
-          className="font-display text-bone font-bold leading-[1.05] tracking-[-0.04em] md:whitespace-nowrap"
+          className="font-display text-bone font-bold leading-[1.05] tracking-[-0.04em] md:whitespace-nowrap ml-[0.02em]"
           style={{
             fontSize: pageTitle.fontSize
               ? `${pageTitle.fontSize}px`
