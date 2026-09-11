@@ -9,6 +9,7 @@ import Nav from"@/components/chrome/Nav";
 import Footer from"@/components/chrome/Footer";
 import Cursor from"@/components/chrome/Cursor";
 import Grain from"@/components/chrome/Grain";
+import ImageGuard from"@/components/chrome/ImageGuard";
 // SmoothScroll (Lenis) disabled — replaced with native scroll-snap for section-based navigation
 // import SmoothScroll from"@/components/chrome/SmoothScroll";
 import PageTransition from"@/components/chrome/PageTransition";
@@ -88,6 +89,7 @@ export default async function RootLayout({
  }}
  />
  <NextIntlClientProvider>
+ <ImageGuard />
  <Cursor />
  <Grain />
 

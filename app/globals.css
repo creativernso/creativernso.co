@@ -38,6 +38,13 @@ body {
   background-color: #151516;
 }
 
+/* Discourage casual image saving (right-click / drag / long-press) */
+img {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
 /* Smooth anchor-link jumps (e.g. "Initiate" -> #contact) — free scroll
    otherwise, no scroll-snap (that fought native trackpad/wheel momentum). */
 html {
