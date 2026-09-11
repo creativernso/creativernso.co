@@ -96,6 +96,7 @@ export default function WorkFilter({
  src={p.image}
  alt={p.title}
  fill
+ unoptimized
  sizes="(min-width: 1400px) 620px, (min-width: 768px) 45vw, 90vw"
  quality={92}
  className="object-cover transition-transform duration-600 ease-out group-hover:scale-[1.04]"

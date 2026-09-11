@@ -10,13 +10,14 @@ const nextConfig = {
   },
   images: {
     // Vercel's Image Optimization has a monthly quota on unique source
-    // images; this site (dozens of Sanity projects, ~10+ images each) blew
-    // past it and every image — Sanity photos and local /public assets
-    // alike — started 402ing site-wide. Serve images unoptimized so they
-    // load directly instead of going through that pipeline. Sanity's own
-    // CDN already resizes/serves its images efficiently, so the loss here
-    // is mostly local /public assets not getting responsive variants.
-    unoptimized: true,
+    // images. Sanity content (dozens of projects, ~10+ images each) blew
+    // past it on its own, so every Sanity-sourced <Image> passes its own
+    // `unoptimized` prop to skip Vercel's pipeline entirely — Sanity's CDN
+    // already resizes/serves those efficiently. That leaves this config's
+    // default optimization in effect for the small, fixed set of local
+    // /public assets (hero images, process photos, etc.), which is what
+    // gets them resized/compressed per device instead of shipping the
+    // full-size source to every viewport.
     remotePatterns: [
       { protocol: "https", hostname: "picsum.photos" },
       { protocol: "https", hostname: "images.unsplash.com" },

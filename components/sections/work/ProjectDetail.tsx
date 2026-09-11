@@ -87,6 +87,7 @@ export default function ProjectDetail({
             src={p.hero}
             alt={p.title}
             fill
+            unoptimized
             sizes="(min-width: 1400px) 1304px, (min-width: 768px) 80vw, 95vw"
             quality={92}
             className="object-cover"
@@ -141,6 +142,7 @@ export default function ProjectDetail({
               src={p.feature}
               alt={`${p.title} feature`}
               fill
+              unoptimized
               sizes="(min-width: 1400px) 1304px, (min-width: 768px) 80vw, 95vw"
             quality={92}
               className="object-cover"
@@ -163,6 +165,7 @@ export default function ProjectDetail({
                 src={src}
                 alt={`${p.title} detail ${idx + 1}`}
                 fill
+                unoptimized
                 sizes="(min-width: 1400px) 1304px, (min-width: 768px) 80vw, 95vw"
             quality={92}
                 className="object-cover"
@@ -183,6 +186,7 @@ export default function ProjectDetail({
               src={next.hero}
               alt={`${next.title} preview`}
               fill
+              unoptimized
               sizes="(min-width: 1400px) 1220px, (min-width: 768px) 75vw, 90vw"
               quality={92}
               className="object-cover"

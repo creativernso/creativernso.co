@@ -43,6 +43,12 @@ export const metadata: Metadata = {
  title:"Ernso Azor. Revealing what was always there.",
  description:"One philosophy. Three worlds. No average.",
  type:"website",
+ url:"https://creativernso.co",
+ },
+ twitter: {
+ card:"summary_large_image",
+ title:"Ernso Azor. Revealing what was always there.",
+ description:"One philosophy. Three worlds. No average.",
  },
 };
 

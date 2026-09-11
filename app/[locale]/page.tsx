@@ -19,8 +19,25 @@ export default async function HomePage({
  const { locale } = await params;
  const raw = await client.fetch<RawProject[]>(projectsQuery);
  const projects = raw.map((p) => localizeProject(p, locale));
+ const jsonLd = {
+ "@context": "https://schema.org",
+ "@type": "ProfessionalService",
+ name: "Ernso Azor",
+ url: "https://creativernso.co",
+ image: "https://creativernso.co/opengraph-image.png",
+ description:
+ "Brand strategist & designer building identities across institutions, professionals and creators.",
+ founder: {
+ "@type": "Person",
+ name: "Ernso Azor",
+ },
+ };
  return (
  <>
+ <script
+ type="application/ld+json"
+ dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+ />
  <Hero />
  <div className="bg-site relative z-10">
  <HeadlineMarquee />
