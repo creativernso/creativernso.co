@@ -33,7 +33,7 @@ function DisciplineRow({
         className="flex w-full items-center justify-between gap-6 py-6 text-left md:py-7"
       >
         <span
-          className={`font-display text-[22px] font-bold leading-[1.2] tracking-[-0.02em] transition-colors md:text-[28px] ${
+          className={`font-display text-[22px] font-medium leading-[1.2] tracking-[-0.02em] transition-colors md:text-[28px] md:font-bold ${
             isOpen ? "text-bone" : "text-bone/60"
           }`}
         >
