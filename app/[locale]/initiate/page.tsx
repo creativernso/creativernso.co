@@ -18,7 +18,7 @@ export default async function InitiatePage() {
       className="relative min-h-screen bg-ink py-10 text-bone md:py-14"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-12">
-        <InitiateHero title={t("heroTitle")} subtitle={t("heroSubtitle")} />
+        <InitiateHero title={t("heroTitle")} />
 
         <InitiateFlow />
       </div>

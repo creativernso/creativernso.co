@@ -9,10 +9,8 @@ const EASE = [0.16, 1, 0.3, 1] as const;
 
 export default function InitiateHero({
   title,
-  subtitle,
 }: {
   title: string;
-  subtitle: string;
 }) {
   const contentRef = useRef<HTMLDivElement>(null);
   const pageTitle = useFitText<HTMLHeadingElement>(contentRef);
@@ -36,9 +34,6 @@ export default function InitiateHero({
         >
           {title}
         </h1>
-        <p className="mt-3 text-[17px] leading-relaxed text-muted-2 md:text-[22px]">
-          {subtitle}
-        </p>
       </motion.header>
 
       {/* Hero image */}
