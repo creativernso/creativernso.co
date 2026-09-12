@@ -75,7 +75,7 @@ export default function ThreeWorlds() {
  <h3 className="font-display text-bone text-[20px] font-medium leading-[1.2] tracking-[-0.02em] md:text-[32px]">
  {w.title}
  </h3>
- <p className="text-[13px] font-light leading-[1.6] text-muted-2 md:text-[17px] md:text-bone md:text-justify">
+ <p className="text-[13px] font-light leading-[1.6] text-muted-2 md:text-[17px] md:text-bone">
  {w.body}
  </p>
  </div>
