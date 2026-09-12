@@ -243,7 +243,7 @@ export default function OfferPage() {
                         {step.n}
                       </span>
                       <div>
-                        <h3 className="font-display text-bone text-[19px] font-bold leading-[1.2] tracking-[-0.02em]">
+                        <h3 className="font-display text-bone text-[19px] font-medium leading-[1.2] tracking-[-0.02em]">
                           {step.name}
                         </h3>
                         <p className="mt-2 text-[13px] leading-[1.6] text-muted-2">
