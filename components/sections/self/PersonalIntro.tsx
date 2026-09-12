@@ -49,33 +49,36 @@ export default function PersonalIntro() {
             <p>{t("p3")}</p>
           </div>
 
-          <div className="mt-8 md:mt-10 md:flex md:justify-end">
-            <Link
-              href="/about"
-              data-cursor="hover"
-              data-press
-              className="group inline-flex items-center gap-4 bg-black/30 px-8 py-4 text-[12px] font-medium uppercase tracking-[0.22em] text-bone backdrop-blur-md transition-colors hover:bg-bone hover:text-black md:text-[13px]"
-              style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.22)" }}
-            >
-              <span>{t("cta")}</span>
-              <span
-                aria-hidden
-                className="inline-flex h-5 w-5 items-center justify-center transition-transform duration-200 ease-out group-hover:translate-x-1"
+          <div className="mt-8 md:mt-10 md:grid md:grid-cols-2 md:gap-x-10">
+            <div className="hidden md:block" aria-hidden />
+            <div>
+              <Link
+                href="/about"
+                data-cursor="hover"
+                data-press
+                className="group inline-flex items-center gap-4 bg-black/30 px-8 py-4 text-[12px] font-medium uppercase tracking-[0.22em] text-bone backdrop-blur-md transition-colors hover:bg-bone hover:text-black md:text-[13px]"
+                style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.22)" }}
               >
-                <svg
-                  width="20"
-                  height="12"
-                  viewBox="0 0 20 12"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                <span>{t("cta")}</span>
+                <span
+                  aria-hidden
+                  className="inline-flex h-5 w-5 items-center justify-center transition-transform duration-200 ease-out group-hover:translate-x-1"
                 >
-                  <path d="M1 6h18M13 1l6 5-6 5" />
-                </svg>
-              </span>
-            </Link>
+                  <svg
+                    width="20"
+                    height="12"
+                    viewBox="0 0 20 12"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M1 6h18M13 1l6 5-6 5" />
+                  </svg>
+                </span>
+              </Link>
+            </div>
           </div>
         </motion.div>
       </div>
