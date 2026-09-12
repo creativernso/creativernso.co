@@ -49,7 +49,7 @@ export default function PersonalIntro() {
             <p>{t("p3")}</p>
           </div>
 
-          <div className="mt-8 md:mt-10">
+          <div className="mt-8 md:mt-10 md:flex md:justify-end">
             <Link
               href="/about"
               data-cursor="hover"
