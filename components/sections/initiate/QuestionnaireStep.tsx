@@ -52,7 +52,7 @@ function QuestionBlock({
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-3 text-[15px] leading-relaxed text-muted-2 md:text-[17px]">
+        <p className="mt-3 text-[13px] leading-relaxed text-muted-2 md:text-[17px]">
           {subtitle}
         </p>
       )}

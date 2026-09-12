@@ -94,7 +94,7 @@ export default function Testimonials() {
 
                 <div className="mt-5 h-px w-full bg-bone/10" />
 
-                <p className="mt-5 flex-1 text-[15px] leading-[1.6] text-bone/85">
+                <p className="mt-5 flex-1 text-[13px] leading-[1.6] text-bone/85 md:text-[15px]">
                   &ldquo;{t.quote}&rdquo;
                 </p>
 

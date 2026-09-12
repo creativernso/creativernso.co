@@ -43,7 +43,7 @@ export default function PersonalIntro() {
             />
           </div>
 
-          <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 [text-wrap:pretty] md:mt-8 md:text-[19px] md:leading-[1.65] md:[hyphens:auto] md:[text-align:justify]">
+          <div className="mt-6 space-y-5 text-[13px] leading-[1.6] text-muted-2 [text-wrap:pretty] md:mt-8 md:text-[19px] md:leading-[1.65] md:[hyphens:auto] md:[text-align:justify]">
             <p>{t("p1")}</p>
             <p>{t("p2")}</p>
             <p>{t("p3")}</p>

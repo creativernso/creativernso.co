@@ -108,7 +108,7 @@ export default function AboutContent() {
             ]}
             readMoreLabel={t("readMore")}
             readLessLabel={t("readLess")}
-            className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:mt-8 md:text-[19px] md:leading-[1.65]"
+            className="mt-6 space-y-5 text-[13px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:mt-8 md:text-[19px] md:leading-[1.65]"
           />
         </motion.div>
 
@@ -148,7 +148,7 @@ export default function AboutContent() {
                 paragraphs={[t("drives.p1"), t("drives.p2"), t("drives.p3")]}
                 readMoreLabel={t("readMore")}
                 readLessLabel={t("readLess")}
-                className="flex flex-col justify-center space-y-5 text-[14px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:text-[17px] md:leading-[1.65]"
+                className="flex flex-col justify-center space-y-5 text-[13px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:text-[17px] md:leading-[1.65]"
               />
 
               <div className="relative aspect-square overflow-hidden bg-black">
@@ -213,7 +213,7 @@ export default function AboutContent() {
               ]}
               readMoreLabel={t("readMore")}
               readLessLabel={t("readLess")}
-              className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:mt-8 md:text-[19px] md:leading-[1.65]"
+              className="mt-6 space-y-5 text-[13px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:mt-8 md:text-[19px] md:leading-[1.65]"
             />
           </motion.div>
         </div>

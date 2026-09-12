@@ -129,7 +129,7 @@ export default function WorkFilter({
 
  {filtered.length === 0 && (
  <div className="mt-12 border border-bone/15 bg-black/30 backdrop-blur-md backdrop-saturate-100 p-10 text-center">
- <p className="text-[14px] text-muted-2">
+ <p className="text-[13px] text-muted-2 md:text-[14px]">
  {t("emptyState")}
  </p>
  </div>

@@ -42,7 +42,7 @@ export default function MarkGrid({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.25 }}
         transition={{ duration: 0.8, delay: 0.05, ease: EASE }}
-        className="mt-3 text-[15px] text-muted-2 md:text-[18px]"
+        className="mt-3 text-[13px] text-muted-2 md:text-[18px]"
       >
         {desc}
       </motion.p>

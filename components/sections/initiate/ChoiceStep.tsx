@@ -55,7 +55,7 @@ export default function ChoiceStep({
               <h3 className="mt-5 font-display text-bone text-[24px] font-bold leading-[1.2] tracking-[-0.02em] md:text-[30px]">
                 {c.title}
               </h3>
-              <p className="mt-3 text-[14px] leading-[1.6] text-muted-2 md:text-[16px]">
+              <p className="mt-3 text-[13px] leading-[1.6] text-muted-2 md:text-[16px]">
                 {c.subtitle}
               </p>
               <span

@@ -122,7 +122,7 @@ export default function ProjectDetail({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.8, ease: EASE }}
-          className="mt-4 space-y-5 text-[14px] leading-relaxed text-muted-2 md:text-[20px] md:[hyphens:auto] md:[text-align:justify] md:[text-wrap:pretty]"
+          className="mt-4 space-y-5 text-[13px] leading-relaxed text-muted-2 md:text-[20px] md:[hyphens:auto] md:[text-align:justify] md:[text-wrap:pretty]"
         >
           {(p.overview ?? []).map((para, i) => (
             <p key={i}>{para}</p>

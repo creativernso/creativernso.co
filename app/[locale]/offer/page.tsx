@@ -59,7 +59,7 @@ function DisciplineRow({
             transition={{ duration: 0.35, ease: EASE }}
             className="overflow-hidden"
           >
-            <p className="pb-7 pr-10 text-[14px] leading-[1.75] text-muted-2 md:pb-9 md:pr-16 md:text-[15.5px]">
+            <p className="pb-7 pr-10 text-[13px] leading-[1.75] text-muted-2 md:pb-9 md:pr-16 md:text-[15.5px]">
               {group.items.join("   ·   ")}
             </p>
           </motion.div>
@@ -174,7 +174,7 @@ export default function OfferPage() {
                 <h2 className="font-display text-bone text-[clamp(28px,3vw,44px)] font-bold leading-[1.1] tracking-[-0.03em]">
                   {t("disciplinesTitle")}
                 </h2>
-                <p className="mt-4 text-[14px] leading-relaxed text-muted-2 md:text-[15.5px]">
+                <p className="mt-4 text-[13px] leading-relaxed text-muted-2 md:text-[15.5px]">
                   {t("disciplinesIntro")}
                 </p>
               </div>
@@ -246,7 +246,7 @@ export default function OfferPage() {
                         <h3 className="font-display text-bone text-[19px] font-bold leading-[1.2] tracking-[-0.02em]">
                           {step.name}
                         </h3>
-                        <p className="mt-2 text-[14px] leading-[1.6] text-muted-2">
+                        <p className="mt-2 text-[13px] leading-[1.6] text-muted-2">
                           {step.desc}
                         </p>
                       </div>

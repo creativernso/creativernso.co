@@ -185,7 +185,7 @@ export default function BeliefPage() {
                   <h3 className="mt-3 font-display text-bone text-[22px] font-bold leading-[1.2] tracking-[-0.02em] md:text-[26px]">
                     {b.title}
                   </h3>
-                  <p className="mt-3 text-[15px] leading-[1.6] text-muted-2 md:text-[16px]">
+                  <p className="mt-3 text-[13px] leading-[1.6] text-muted-2 md:text-[16px]">
                     {b.body}
                   </p>
                 </motion.article>
@@ -297,7 +297,7 @@ export default function BeliefPage() {
               <h3 className="font-display text-[clamp(22px,2.6vw,34px)] font-bold leading-[1.1] tracking-[-0.03em] text-bone">
                 {t("ctaHeading")}
               </h3>
-              <p className="mt-3 text-[13.5px] leading-relaxed text-muted-2 md:whitespace-nowrap md:text-[14.5px]">
+              <p className="mt-3 text-[13px] leading-relaxed text-muted-2 md:whitespace-nowrap md:text-[14.5px]">
                 {t("ctaSubtext")}
               </p>
             </div>

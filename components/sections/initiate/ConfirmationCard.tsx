@@ -24,7 +24,7 @@ export default function ConfirmationCard({
       <div className="font-display text-bone text-[clamp(28px,4.5vw,56px)] font-bold leading-[1.05] tracking-[-0.03em]">
         {headline}
       </div>
-      <p className="mx-auto mt-5 max-w-md text-[15px] leading-relaxed text-muted-2 md:text-[17px]">
+      <p className="mx-auto mt-5 max-w-md text-[13px] leading-relaxed text-muted-2 md:text-[17px]">
         {subtext}
       </p>
       {signature && (
