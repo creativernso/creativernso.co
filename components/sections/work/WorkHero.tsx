@@ -19,7 +19,7 @@ export default function WorkHero({ title }: { title: string }) {
     >
       <h1
         ref={textRef}
-        className="font-display text-bone font-bold leading-[1.05] tracking-[-0.04em] md:whitespace-nowrap"
+        className="font-display text-bone font-bold leading-[1.05] tracking-[-0.04em] md:whitespace-nowrap max-md:!whitespace-nowrap max-md:!visible"
         style={{
           fontSize: fontSize ? `${fontSize}px` : "clamp(36px, 5vw, 96px)",
           visibility: fontSize ? "visible" : "hidden",

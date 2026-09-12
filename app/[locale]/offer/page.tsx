@@ -129,7 +129,7 @@ export default function OfferPage() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: EASE }}
-          className="font-display font-bold leading-[1.05] tracking-[-0.04em] md:whitespace-nowrap"
+          className="font-display font-bold leading-[1.05] tracking-[-0.04em] md:whitespace-nowrap max-md:!whitespace-nowrap max-md:!visible"
           style={{
             fontSize: pageTitle.fontSize
               ? `${pageTitle.fontSize}px`
@@ -203,7 +203,7 @@ export default function OfferPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.8, ease: EASE }}
-            className="font-display text-bone font-bold leading-[1.1] tracking-[-0.03em] md:whitespace-nowrap"
+            className="font-display text-bone font-bold leading-[1.1] tracking-[-0.03em] md:whitespace-nowrap max-md:!whitespace-nowrap max-md:!visible"
             style={{
               fontSize: processTitle.fontSize
                 ? `${processTitle.fontSize}px`

@@ -24,7 +24,13 @@ import { useEffect, useRef, useState, type RefObject } from "react";
 export function useFitText<T extends HTMLElement>(
   containerRef: RefObject<HTMLElement>,
   minSize = 36,
-  maxSize = 140
+  maxSize = 140,
+  // Below the `md` breakpoint, headings cap out much smaller (matching the
+  // site's fixed mobile title size) and are allowed to shrink well below
+  // the desktop floor, since a long title still has to fit one line in a
+  // much narrower container.
+  mobileMaxSize = 36,
+  mobileMinSize = 16
 ) {
   const textRef = useRef<T>(null);
   const [fontSize, setFontSize] = useState<number | null>(null);
@@ -59,7 +65,10 @@ export function useFitText<T extends HTMLElement>(
 
       if (!naturalWidth) return;
       const fitted = currentSize * (targetWidth / naturalWidth);
-      setFontSize(Math.min(Math.max(fitted, minSize), maxSize));
+      const isMobile = window.innerWidth < 768;
+      const effectiveMin = isMobile ? mobileMinSize : minSize;
+      const effectiveMax = isMobile ? mobileMaxSize : maxSize;
+      setFontSize(Math.min(Math.max(fitted, effectiveMin), effectiveMax));
     };
 
     fit();

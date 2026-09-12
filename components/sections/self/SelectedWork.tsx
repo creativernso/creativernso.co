@@ -30,7 +30,7 @@ export default function SelectedWork({ projects }: { projects: Project[] }) {
  whileInView={{ opacity: 1, y: 0 }}
  viewport={{ once: true, amount: 0.25 }}
  transition={{ duration: 0.8, ease: EASE }}
- className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em] md:whitespace-nowrap max-md:!text-[36px] max-md:!whitespace-nowrap max-md:!visible"
+ className="font-display text-bone font-bold leading-[1.1] tracking-[-0.04em] md:whitespace-nowrap max-md:!whitespace-nowrap max-md:!visible"
  style={{
  fontSize: fontSize ? `${fontSize}px` :"clamp(44px, 7.5vw, 140px)",
  visibility: fontSize ?"visible":"hidden",
