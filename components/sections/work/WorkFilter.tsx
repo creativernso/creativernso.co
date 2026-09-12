@@ -65,7 +65,7 @@ export default function WorkFilter({
  </div>
  </LayoutGroup>
 
- {/* Grid — sticky cards stack as user scrolls */}
+ {/* Grid */}
  <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-6 md:mt-8 md:grid-cols-2 md:gap-x-8 md:gap-y-8">
  <AnimatePresence mode="popLayout"initial={false}>
  {filtered.map((p, i) => (
@@ -76,8 +76,6 @@ export default function WorkFilter({
  animate={{ opacity: 1, y: 0 }}
  exit={{ opacity: 0, y: -12 }}
  transition={{ duration: 0.8, ease: EASE }}
- className="sticky md:static"
- style={{ top: `calc(96px + ${i * 14}px)` }}
  >
  <Link
  href={`/work/${p.slug}`}
