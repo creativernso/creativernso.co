@@ -33,7 +33,7 @@ function DisciplineRow({
         className="flex w-full items-center justify-between gap-6 py-6 text-left md:py-7"
       >
         <span
-          className={`font-display text-[22px] font-medium leading-[1.2] tracking-[-0.02em] transition-colors md:text-[28px] md:font-bold ${
+          className={`font-display text-[22px] font-medium leading-[1.2] tracking-[-0.02em] transition-colors md:text-[28px] ${
             isOpen ? "text-bone" : "text-bone/60"
           }`}
         >
@@ -257,7 +257,7 @@ export default function OfferPage() {
                       {isEven ? (
                         <>
                           <div className="text-right">
-                            <h3 className="font-display text-bone text-[24px] font-bold leading-[1.2] tracking-[-0.02em] lg:text-[28px]">
+                            <h3 className="font-display text-bone text-[24px] font-medium leading-[1.2] tracking-[-0.02em] lg:text-[28px]">
                               {step.name}
                             </h3>
                             <p className="mt-3 text-[15px] leading-[1.6] text-muted-2 lg:text-[16px]">
@@ -276,7 +276,7 @@ export default function OfferPage() {
                             {step.n}
                           </span>
                           <div>
-                            <h3 className="font-display text-bone text-[24px] font-bold leading-[1.2] tracking-[-0.02em] lg:text-[28px]">
+                            <h3 className="font-display text-bone text-[24px] font-medium leading-[1.2] tracking-[-0.02em] lg:text-[28px]">
                               {step.name}
                             </h3>
                             <p className="mt-3 text-[15px] leading-[1.6] text-muted-2 lg:text-[16px]">

@@ -52,7 +52,7 @@ export default function ChoiceStep({
               <span className="flex h-12 w-12 shrink-0 items-center justify-center border border-bone/15 font-display text-[16px] font-bold text-bone transition-colors group-hover:border-bone">
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3 className="mt-5 font-display text-bone text-[24px] font-bold leading-[1.2] tracking-[-0.02em] md:text-[30px]">
+              <h3 className="mt-5 font-display text-bone text-[24px] font-medium leading-[1.2] tracking-[-0.02em] md:text-[30px]">
                 {c.title}
               </h3>
               <p className="mt-3 text-[13px] leading-[1.6] text-muted-2 md:text-[16px]">
