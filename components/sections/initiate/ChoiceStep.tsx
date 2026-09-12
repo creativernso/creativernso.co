@@ -27,7 +27,7 @@ export default function ChoiceStep({
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: EASE }}
-        className="font-display text-bone text-[clamp(24px,3.6vw,40px)] font-bold leading-[1.15] tracking-[-0.03em]"
+        className="font-display text-bone text-[clamp(30px,4.4vw,52px)] font-bold leading-[1.15] tracking-[-0.03em]"
       >
         {t("title")}
       </motion.h2>
