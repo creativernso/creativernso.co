@@ -34,7 +34,7 @@ function DisciplineRow({
       >
         <span
           className={`font-display text-[22px] font-medium leading-[1.2] tracking-[-0.02em] transition-colors md:text-[28px] ${
-            isOpen ? "text-bone" : "text-bone/60"
+            isOpen ? "text-bone/60" : "text-bone"
           }`}
         >
           {group.name}
