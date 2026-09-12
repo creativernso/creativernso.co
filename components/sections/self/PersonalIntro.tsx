@@ -32,7 +32,7 @@ export default function PersonalIntro() {
           className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 p-4 md:mt-8 md:p-6"
           style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
         >
-          <div className="relative aspect-[2400/1126] overflow-hidden bg-black">
+          <div className="relative aspect-square overflow-hidden bg-black md:aspect-[2400/1126]">
             <Image
               src="/personal-intro.jpg"
               alt="Ernso Azor at his desk"
@@ -43,7 +43,7 @@ export default function PersonalIntro() {
             />
           </div>
 
-          <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 [hyphens:auto] [text-align:justify] [text-wrap:pretty] md:mt-8 md:text-[19px] md:leading-[1.65]">
+          <div className="mt-6 space-y-5 text-[14px] leading-[1.6] text-muted-2 [text-wrap:pretty] md:mt-8 md:text-[19px] md:leading-[1.65] md:[hyphens:auto] md:[text-align:justify]">
             <p>{t("p1")}</p>
             <p>{t("p2")}</p>
             <p>{t("p3")}</p>
