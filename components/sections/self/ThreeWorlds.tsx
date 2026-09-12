@@ -72,7 +72,7 @@ export default function ThreeWorlds() {
 
  {/* Title + body */}
  <div className="mt-6 flex flex-col gap-5 md:mt-8">
- <h3 className="font-display text-bone text-[20px] font-bold leading-[1.2] tracking-[-0.02em] md:text-[32px]">
+ <h3 className="font-display text-bone text-[20px] font-medium leading-[1.2] tracking-[-0.02em] md:text-[32px] md:font-bold">
  {w.title}
  </h3>
  <p className="text-[13px] font-light leading-[1.6] text-muted-2 md:text-[17px] md:text-bone text-justify">
