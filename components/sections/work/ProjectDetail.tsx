@@ -76,21 +76,6 @@ export default function ProjectDetail({
           {p.subtitle}
         </motion.p>
 
-        {(p.sector || (p.tags ?? []).length > 0) && (
-          <motion.div
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.08, ease: EASE }}
-            className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 text-[12px] uppercase tracking-[0.14em] text-muted-2"
-          >
-            {p.sector && <span>{p.sector}</span>}
-            {p.sector && (p.tags ?? []).length > 0 && (
-              <span aria-hidden>·</span>
-            )}
-            {(p.tags ?? []).length > 0 && <span>{p.tags.join(" · ")}</span>}
-          </motion.div>
-        )}
-
         {/* Hero image */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
