@@ -146,14 +146,15 @@ export default function Hero() {
  />
 
  {/* Text overlay — anchored toward the top of the image, below the nav */}
- <div className="absolute inset-x-0 top-0 flex flex-col items-center px-6 pt-[calc(100px+9vh)] text-center">
+ <div className="absolute inset-x-0 top-0 flex flex-col items-center px-6 pt-[calc(100px+7vh)] text-center">
  <motion.p
  initial={{ opacity: 0, y: 12 }}
  animate={{ opacity: 1, y: 0 }}
  transition={{ duration: 0.8, delay: subtitleStart, ease: EASE }}
- className="mb-3 text-[8px] font-medium uppercase tracking-[0.14em] text-bone/50"
+ className="mb-3 text-[8px] font-medium uppercase leading-[1.5] tracking-[0.14em] text-bone/50"
  >
- {t("positioning")}
+ <span className="block">{t("positioningLine1")}</span>
+ <span className="block">{t("positioningLine2")}</span>
  </motion.p>
 
  <h1 className="font-display text-bone text-[25px] font-bold leading-[1.1] tracking-[-0.04em]">
