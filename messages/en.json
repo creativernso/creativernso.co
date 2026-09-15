@@ -20,12 +20,17 @@
     "pt": "Portuguese",
     "es": "Spanish"
   },
+  "home": {
+    "metaTitle": "Ernso Azor | Brand Designer & Brand Strategist in Curitiba",
+    "metaDescription": "Ernso Azor is a Brand Designer and Brand Strategist based in Curitiba, Brazil, building brand identities and visual systems for ambitious companies, professionals and creators."
+  },
   "hero": {
     "line1": "I don’t build brands.",
     "phrase1": "I reveal them.",
     "phrase2": "I uncover them.",
     "phrase3": "I position them.",
     "phrase4": "I elevate them.",
+    "positioning": "Brand Designer & Brand Strategist · Curitiba, Brazil",
     "cta": "Initiate"
   },
   "marquee": {
@@ -74,8 +79,8 @@
     "cta": "Initiate"
   },
   "about": {
-    "metaTitle": "About · Ernso Azor",
-    "metaDescription": "Brand strategist & designer. 8+ years across three worlds. The thread that holds.",
+    "metaTitle": "About Ernso Azor · Brand Designer & Strategist",
+    "metaDescription": "Ernso Azor is a Brand Designer and Brand Strategist based in Curitiba, Brazil. 8+ years across three worlds. The thread that holds it all together.",
     "heroTitle": "How I got here.",
     "parcours": {
       "p1": "It started long before I had a word for any of it. As a child, I was the one who noticed things nobody else seemed to register: the way a logo felt subtly wrong even when I couldn’t say why, the way a single colour could change the entire mood of a room, the way some names lodged themselves in your memory forever while others vanished the moment you looked away. I wasn’t studying identity. I was simply unable to stop seeing it, in everything, all the time. That kind of attention doesn’t feel like a gift when you’re young. It feels like noise. It took years to understand it was actually a compass.",
@@ -110,10 +115,12 @@
     "readLess": "Read less"
   },
   "services": {
+    "metaTitle": "Brand Philosophy · The REVEAL Framework · Ernso Azor",
+    "metaDescription": "Why branding is revelation, not invention. Ernso Azor's brand philosophy and the REVEAL Framework behind every brand identity he builds.",
     "titleLead": "What ",
     "titleRest": "i believe.",
     "imageCaptionName": "Ernso Azor",
-    "imageCaptionRole": "Graphic Designer / Brand Strategist",
+    "imageCaptionRole": "Brand Designer / Brand Strategist",
     "heroQuoteLine1": "Everyone is a brand.",
     "heroQuoteLine2": "Most just don’t know",
     "heroQuoteLine3": "how to show it.",
@@ -191,7 +198,7 @@
     "cta": "Initiate"
   },
   "offer": {
-    "metaTitle": "Offer · Ernso Azor",
+    "metaTitle": "Brand Strategy & Design Services · Ernso Azor",
     "metaDescription": "The full scope of what I do, and exactly how we work together: from the first conversation to final delivery.",
     "eyebrow": "04 · Offer",
     "titleLead": "What I bring ",

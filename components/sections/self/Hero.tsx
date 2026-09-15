@@ -96,6 +96,15 @@ export default function Hero() {
  </span>
  </h1>
 
+ <motion.p
+ initial={{ opacity: 0, y: 12 }}
+ animate={{ opacity: 1, y: 0 }}
+ transition={{ duration: 0.8, delay: subtitleStart, ease: EASE }}
+ className="mt-5 text-[12px] font-medium uppercase tracking-[0.22em] text-bone/50"
+ >
+ {t("positioning")}
+ </motion.p>
+
  <motion.div
  initial={{ opacity: 0, y: 12 }}
  animate={{ opacity: 1, y: 0 }}
@@ -147,6 +156,15 @@ export default function Hero() {
  />
  </span>
  </h1>
+
+ <motion.p
+ initial={{ opacity: 0, y: 12 }}
+ animate={{ opacity: 1, y: 0 }}
+ transition={{ duration: 0.8, delay: subtitleStart, ease: EASE }}
+ className="mt-3 text-[10px] font-medium uppercase tracking-[0.18em] text-bone/50"
+ >
+ {t("positioning")}
+ </motion.p>
 
  <motion.div
  initial={{ opacity: 0, y: 12 }}

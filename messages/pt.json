@@ -20,12 +20,17 @@
     "pt": "Português",
     "es": "Espanhol"
   },
+  "home": {
+    "metaTitle": "Ernso Azor | Designer de Marca e Estrategista de Marca em Curitiba",
+    "metaDescription": "Ernso Azor é Designer de Marca e Estrategista de Marca em Curitiba, Brasil, construindo identidades de marca e sistemas visuais para empresas, profissionais e criativos ambiciosos."
+  },
   "hero": {
     "line1": "Eu não construo marcas.",
     "phrase1": "Eu as revelo.",
     "phrase2": "Eu as descubro.",
     "phrase3": "Eu as posiciono.",
     "phrase4": "Eu as elevo.",
+    "positioning": "Designer de Marca & Estrategista de Marca · Curitiba, Brasil",
     "cta": "Iniciar"
   },
   "marquee": {
@@ -74,8 +79,8 @@
     "cta": "Iniciar"
   },
   "about": {
-    "metaTitle": "Sobre · Ernso Azor",
-    "metaDescription": "Estrategista e designer de marca. Mais de 8 anos em três mundos. O fio condutor.",
+    "metaTitle": "Sobre Ernso Azor · Designer e Estrategista de Marca",
+    "metaDescription": "Ernso Azor é Designer de Marca e Estrategista de Marca em Curitiba, Brasil. Mais de 8 anos em três mundos. O fio condutor de tudo.",
     "heroTitle": "Como cheguei até aqui.",
     "parcours": {
       "p1": "Tudo começou muito antes de eu ter uma palavra para isso. Quando criança, eu era quem notava coisas que ninguém mais parecia registrar: o jeito como um logo soava sutilmente errado mesmo sem eu saber por quê, o jeito como uma única cor podia mudar o clima inteiro de um ambiente, o jeito como alguns nomes ficavam gravados na memória para sempre enquanto outros desapareciam assim que você desviava o olhar. Eu não estava estudando identidade de marca. Eu simplesmente não conseguia parar de enxergá-la, em tudo, o tempo todo. Esse tipo de atenção não parece um dom quando você é jovem. Parece ruído. Levei anos para entender que, na verdade, era uma bússola.",
@@ -110,10 +115,12 @@
     "readLess": "Ler menos"
   },
   "services": {
+    "metaTitle": "Filosofia de Marca · O Método REVEAL · Ernso Azor",
+    "metaDescription": "Por que branding é revelação, não invenção. A filosofia de marca de Ernso Azor e o Método REVEAL por trás de cada identidade que ele constrói.",
     "titleLead": "No que ",
     "titleRest": "eu acredito.",
     "imageCaptionName": "Ernso Azor",
-    "imageCaptionRole": "Designer Gráfico / Estrategista de Marca",
+    "imageCaptionRole": "Designer de Marca / Estrategista de Marca",
     "heroQuoteLine1": "Todo mundo é uma marca.",
     "heroQuoteLine2": "A maioria simplesmente não sabe",
     "heroQuoteLine3": "como mostrar isso.",
@@ -191,7 +198,7 @@
     "cta": "Iniciar"
   },
   "offer": {
-    "metaTitle": "Oferta · Ernso Azor",
+    "metaTitle": "Estratégia e Design de Marca · Ernso Azor",
     "metaDescription": "O escopo completo do que eu faço, e exatamente como trabalhamos juntos: da primeira conversa à entrega final.",
     "eyebrow": "04 · Oferta",
     "titleLead": "O que eu trago ",

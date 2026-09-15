@@ -36,20 +36,32 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
- title:"Ernso Azor. Revealing what was always there.",
+ title:"Ernso Azor | Brand Designer & Brand Strategist in Curitiba",
  description:
-"Brand strategist & designer building identities across institutions, professionals and creators. One philosophy. Three worlds. No average.",
+"Ernso Azor is a Brand Designer and Brand Strategist based in Curitiba, Brazil, building brand identities and visual systems for ambitious companies, professionals and creators.",
  metadataBase: new URL("https://creativernso.co"),
+ keywords: [
+"Brand Designer",
+"Brand Strategist",
+"Brand Identity Designer",
+"Visual Identity Designer",
+"Brand Designer Curitiba",
+"Brand Designer Brazil",
+"Creative Director",
+ ],
  openGraph: {
- title:"Ernso Azor. Revealing what was always there.",
- description:"One philosophy. Three worlds. No average.",
+ title:"Ernso Azor | Brand Designer & Brand Strategist",
+ description:
+"Brand identities and visual systems for ambitious companies, professionals and creators. Based in Curitiba, Brazil, working internationally.",
  type:"website",
  url:"https://creativernso.co",
+ siteName:"Ernso Azor",
  },
  twitter: {
  card:"summary_large_image",
- title:"Ernso Azor. Revealing what was always there.",
- description:"One philosophy. Three worlds. No average.",
+ title:"Ernso Azor | Brand Designer & Brand Strategist",
+ description:
+"Brand identities and visual systems for ambitious companies, professionals and creators. Based in Curitiba, Brazil, working internationally.",
  },
 };
 
