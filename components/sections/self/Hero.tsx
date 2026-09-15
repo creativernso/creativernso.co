@@ -151,7 +151,7 @@ export default function Hero() {
  initial={{ opacity: 0, y: 12 }}
  animate={{ opacity: 1, y: 0 }}
  transition={{ duration: 0.8, delay: subtitleStart, ease: EASE }}
- className="mb-3 text-[10px] font-medium uppercase tracking-[0.18em] text-bone/50"
+ className="mb-3 text-[8px] font-medium uppercase tracking-[0.14em] text-bone/50"
  >
  {t("positioning")}
  </motion.p>
