@@ -86,6 +86,15 @@ export default function Hero() {
  {/* Text overlay — vertically centered (shifted down), left-aligned */}
  <div className="absolute inset-0 flex translate-y-16 items-center px-6 md:translate-y-20 md:px-12">
  <div className="max-w-[720px] lg:max-w-[1000px] xl:max-w-[1200px]">
+ <motion.p
+ initial={{ opacity: 0, y: 12 }}
+ animate={{ opacity: 1, y: 0 }}
+ transition={{ duration: 0.8, delay: subtitleStart, ease: EASE }}
+ className="mb-5 text-[12px] font-medium uppercase tracking-[0.22em] text-bone/50"
+ >
+ {t("positioning")}
+ </motion.p>
+
  <h1 className="font-display text-bone text-[clamp(34px,4.8vw,92px)] font-bold leading-[1.05] tracking-[-0.04em]">
  <span className="block">{line1}</span>
  <span className="block font-bold text-bone/30">
@@ -95,15 +104,6 @@ export default function Hero() {
  />
  </span>
  </h1>
-
- <motion.p
- initial={{ opacity: 0, y: 12 }}
- animate={{ opacity: 1, y: 0 }}
- transition={{ duration: 0.8, delay: subtitleStart, ease: EASE }}
- className="mt-5 text-[12px] font-medium uppercase tracking-[0.22em] text-bone/50"
- >
- {t("positioning")}
- </motion.p>
 
  <motion.div
  initial={{ opacity: 0, y: 12 }}
@@ -147,6 +147,15 @@ export default function Hero() {
 
  {/* Text overlay — anchored toward the top of the image, below the nav */}
  <div className="absolute inset-x-0 top-0 flex flex-col items-center px-6 pt-[calc(100px+9vh)] text-center">
+ <motion.p
+ initial={{ opacity: 0, y: 12 }}
+ animate={{ opacity: 1, y: 0 }}
+ transition={{ duration: 0.8, delay: subtitleStart, ease: EASE }}
+ className="mb-3 text-[10px] font-medium uppercase tracking-[0.18em] text-bone/50"
+ >
+ {t("positioning")}
+ </motion.p>
+
  <h1 className="font-display text-bone text-[25px] font-bold leading-[1.1] tracking-[-0.04em]">
  <span className="block">{line1}</span>
  <span className="block font-bold text-bone/30">
@@ -156,15 +165,6 @@ export default function Hero() {
  />
  </span>
  </h1>
-
- <motion.p
- initial={{ opacity: 0, y: 12 }}
- animate={{ opacity: 1, y: 0 }}
- transition={{ duration: 0.8, delay: subtitleStart, ease: EASE }}
- className="mt-3 text-[10px] font-medium uppercase tracking-[0.18em] text-bone/50"
- >
- {t("positioning")}
- </motion.p>
 
  <motion.div
  initial={{ opacity: 0, y: 12 }}
