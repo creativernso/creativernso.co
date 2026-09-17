@@ -6,6 +6,7 @@ import Image from"next/image";
 import { Link } from"@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import type { Project } from"@/lib/content";
+import { sanityImageUrl } from"@/lib/sanity/image";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -91,12 +92,11 @@ export default function WorkFilter({
  {/* Image — inset inside the outer container */}
  <div className="relative aspect-[5/4] overflow-hidden bg-black">
  <Image
- src={p.image}
+ src={sanityImageUrl(p.image, 1240)}
  alt={p.title}
  fill
  unoptimized
  sizes="(min-width: 1400px) 620px, (min-width: 768px) 45vw, 90vw"
- quality={92}
  className="object-cover transition-transform duration-600 ease-out group-hover:scale-[1.04]"
  />
  </div>

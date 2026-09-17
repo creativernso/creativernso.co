@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useFitText } from "@/lib/useFitText";
 import type { Project } from "@/lib/content";
+import { sanityImageUrl } from "@/lib/sanity/image";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -84,12 +85,11 @@ export default function ProjectDetail({
           className="relative mt-10 aspect-[1400/714] overflow-hidden bg-black/30 md:mt-12"
         >
           <Image
-            src={p.hero}
+            src={sanityImageUrl(p.hero, 2608)}
             alt={`${p.title} — brand identity designed by Ernso Azor`}
             fill
             unoptimized
             sizes="(min-width: 1400px) 1304px, (min-width: 768px) 80vw, 95vw"
-            quality={92}
             className="object-cover"
             priority
           />
@@ -139,12 +139,11 @@ export default function ProjectDetail({
             className="relative mt-16 aspect-[1400/714] overflow-hidden bg-black/30 md:mt-20"
           >
             <Image
-              src={p.feature}
+              src={sanityImageUrl(p.feature, 2608)}
               alt={`${p.title} visual identity application`}
               fill
               unoptimized
               sizes="(min-width: 1400px) 1304px, (min-width: 768px) 80vw, 95vw"
-            quality={92}
               className="object-cover"
             />
           </motion.div>
@@ -162,12 +161,11 @@ export default function ProjectDetail({
               className="relative aspect-[1400/714] overflow-hidden bg-black/30"
             >
               <Image
-                src={src}
+                src={sanityImageUrl(src, 2608)}
                 alt={`${p.title} detail ${idx + 1}`}
                 fill
                 unoptimized
                 sizes="(min-width: 1400px) 1304px, (min-width: 768px) 80vw, 95vw"
-            quality={92}
                 className="object-cover"
               />
             </motion.div>
@@ -183,12 +181,11 @@ export default function ProjectDetail({
           className="mt-20 overflow-hidden border border-bone/10 bg-black/30 backdrop-blur-md backdrop-saturate-100 p-5 md:mt-28 md:p-6">
           <div className="relative aspect-[16/10] overflow-hidden bg-black/30">
             <Image
-              src={next.hero}
+              src={sanityImageUrl(next.hero, 2440)}
               alt={`${next.title} preview`}
               fill
               unoptimized
               sizes="(min-width: 1400px) 1220px, (min-width: 768px) 75vw, 90vw"
-              quality={92}
               className="object-cover"
             />
           </div>
