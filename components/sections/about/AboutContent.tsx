@@ -215,6 +215,17 @@ export default function AboutContent() {
               readLessLabel={t("readLess")}
               className="mt-6 space-y-5 text-[13px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:mt-8 md:text-[19px] md:leading-[1.65] md:columns-2 md:gap-x-10 [&_p]:[break-inside:avoid-column]"
             />
+
+            <div className="relative mt-6 aspect-[16/9] overflow-hidden bg-black md:mt-8">
+              <Image
+                src="/about-gym.jpg"
+                alt="Ernso Azor training at the gym"
+                fill
+                sizes="(min-width: 1400px) 1232px, (min-width: 768px) 84vw, 88vw"
+                quality={88}
+                className="object-cover"
+              />
+            </div>
           </motion.div>
         </div>
 
