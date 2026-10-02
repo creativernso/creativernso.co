@@ -28,8 +28,8 @@ export default function ReadMoreText({
         <div
           className={
             expanded
-              ? "space-y-5 md:block"
-              : "hidden space-y-5 md:block"
+              ? "space-y-5 md:contents"
+              : "hidden space-y-5 md:contents"
           }
         >
           {rest.map((p, i) => (
