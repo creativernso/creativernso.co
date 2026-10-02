@@ -67,21 +67,6 @@ export default function ServicesContent() {
             />
           </div>
 
-          <div className="absolute inset-0 mx-auto flex max-w-[1400px] items-center justify-start px-6 md:pl-16 lg:pl-24">
-            <div className="max-w-[640px] md:max-w-[720px]">
-              <p className="font-display text-[clamp(28px,3.4vw,56px)] font-bold leading-[1.05] tracking-[-0.035em]">
-                <span className="block text-bone">{t("heroQuoteLine1")}</span>
-                <span className="block text-bone">
-                  {t("heroQuoteLine2")}
-                </span>
-                <span className="block text-bone/40">{t("heroQuoteLine3")}</span>
-              </p>
-              <p className="mt-5 text-[12px] text-bone/65 md:mt-7 md:text-[14px]">
-                {t("imageCaptionName")} &nbsp;·&nbsp; {t("imageCaptionRole")}
-              </p>
-            </div>
-          </div>
-
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0 border border-bone/15"
@@ -105,29 +90,6 @@ export default function ServicesContent() {
               priority
               className="h-auto w-full select-none"
             />
-          </div>
-
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-x-0 top-0 h-[42%] bg-gradient-to-b from-black/80 via-black/40 to-transparent"
-          />
-
-          <div className="absolute inset-x-0 top-0 flex flex-col items-center px-5 pt-[8%] text-center">
-            <p className="text-[10px] leading-snug text-bone/85">
-              <span className="font-semibold text-bone">{t("imageCaptionName")}</span>
-              <span className="px-1.5 text-bone/45">·</span>
-              <span className="text-bone/75">
-                {t("imageCaptionRole")}
-              </span>
-            </p>
-
-            <p className="mt-3 font-display text-[26px] font-bold leading-[1.08] tracking-[-0.03em]">
-              <span className="block text-bone">{t("heroQuoteLine1")}</span>
-              <span className="block text-bone">
-                {t("heroQuoteLine2")}
-              </span>
-              <span className="block text-bone/35">{t("heroQuoteLine3")}</span>
-            </p>
           </div>
 
           <div
