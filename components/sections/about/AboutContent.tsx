@@ -143,12 +143,12 @@ export default function AboutContent() {
             className="mt-6 overflow-hidden bg-black/30 backdrop-blur-md backdrop-saturate-100 p-4 md:mt-8 md:p-6"
             style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.14)" }}
           >
-            <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-8">
+            <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 md:gap-8">
               <ReadMoreText
                 paragraphs={[t("drives.p1"), t("drives.p2"), t("drives.p3")]}
                 readMoreLabel={t("readMore")}
                 readLessLabel={t("readLess")}
-                className="flex flex-col justify-center space-y-5 text-[13px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:text-[17px] md:leading-[1.65]"
+                className="flex flex-col justify-between space-y-5 text-[13px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:text-[17px] md:leading-[1.65]"
               />
 
               <div className="relative aspect-square overflow-hidden bg-black">
