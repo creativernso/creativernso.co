@@ -216,12 +216,22 @@ export default function AboutContent() {
               className="mt-6 space-y-5 text-[13px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:mt-8 md:text-[19px] md:leading-[1.65] md:columns-2 md:gap-x-10 [&_p]:[break-inside:avoid-column]"
             />
 
-            <div className="relative mt-6 aspect-[16/9] overflow-hidden bg-black md:mt-8">
+            <div className="relative mt-6 aspect-[4/5] overflow-hidden bg-black md:mt-8 md:hidden">
+              <Image
+                src="/about-gym-mobile.jpg"
+                alt="Ernso Azor training at the gym"
+                fill
+                sizes="90vw"
+                quality={88}
+                className="object-cover"
+              />
+            </div>
+            <div className="relative mt-6 hidden aspect-[16/9] overflow-hidden bg-black md:mt-8 md:block">
               <Image
                 src="/about-gym.jpg"
                 alt="Ernso Azor training at the gym"
                 fill
-                sizes="(min-width: 1400px) 1232px, (min-width: 768px) 84vw, 88vw"
+                sizes="(min-width: 1400px) 1232px, 84vw"
                 quality={88}
                 className="object-cover"
               />
