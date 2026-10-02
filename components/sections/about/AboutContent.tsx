@@ -145,7 +145,7 @@ export default function AboutContent() {
           >
             <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 md:gap-8">
               <ReadMoreText
-                paragraphs={[t("drives.p1"), t("drives.p2"), t("drives.p3")]}
+                paragraphs={[t("drives.p1"), t("drives.p1b"), t("drives.p2"), t("drives.p3")]}
                 readMoreLabel={t("readMore")}
                 readLessLabel={t("readLess")}
                 className="flex flex-col justify-between space-y-5 text-[13px] leading-[1.6] text-muted-2 text-left [hyphens:auto] [text-wrap:pretty] md:[text-align:justify] md:text-[17px] md:leading-[1.65]"
